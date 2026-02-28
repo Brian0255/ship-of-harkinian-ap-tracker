@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Haunted Wasteland",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Tower",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WASTELAND_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WASTELAND_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WASTELAND_NEAR_GS_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|WASTELAND_NEAR_GS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|WASTELAND_GS"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|WASTELAND_GS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Haunted Wasteland",
+            "x": 480,
+            "y": 233
+          }
+        ]
+      },
+      {
+        "name": "Carpet Salesman",
+
+        "sections": [
+          {
+            "name": "Item",
+            "access_rules": ["^$REACHABLE|WASTELAND_CARPET_SALESMAN"],
+            "visibility_rules": [
+              "$OPTION_NON_BEANS_MERCHANTS,$AGE_CHECK|WASTELAND_CARPET_SALESMAN"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Haunted Wasteland",
+            "x": 657,
+            "y": 731
+          }
+        ]
+      },
+      {
+        "name": "Before Quicksand",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|WASTELAND_BEFORE_QUICKSAND_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|WASTELAND_BEFORE_QUICKSAND_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Haunted Wasteland",
+            "x": 860,
+            "y": 673
+          }
+        ]
+      },
+      {
+        "name": "After Quicksand",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|WASTELAND_AFTER_QUICKSAND_CRATE1"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|WASTELAND_AFTER_QUICKSAND_CRATE1"
+            ],
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Haunted Wasteland",
+            "x": 798,
+            "y": 642
+          }
+        ]
+      },
+      {
+        "name": "Near Colossus",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|WASTELAND_NEAR_COLOSSUS_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|WASTELAND_NEAR_COLOSSUS_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Haunted Wasteland",
+            "x": 391,
+            "y": 340
+          }
+        ]
+      }
+    ]
+  }
+]

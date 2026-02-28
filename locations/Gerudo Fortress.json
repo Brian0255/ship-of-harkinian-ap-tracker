@@ -1,0 +1,713 @@
+[
+  {
+    "name": "Gerudo Fortress",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Top Floor Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|GF_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|GF_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 522,
+            "y": 198
+          }
+        ]
+      },
+      {
+        "name": "Top Floor Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|GF_GS_TOP_FLOOR"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|GF_GS_TOP_FLOOR"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 657,
+            "y": 304
+          }
+        ]
+      },
+      {
+        "name": "Break Room Crates",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_BREAK_ROOM_LEFT_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_BREAK_ROOM_LEFT_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1438,
+            "y": 97
+          }
+        ]
+      },
+      {
+        "name": "Break Room Hallway Crates",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_BREAK_HALLWAY_OUTER_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_BREAK_HALLWAY_OUTER_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1372,
+            "y": 162
+          }
+        ]
+      },
+      {
+        "name": "Break Room Table",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|TH_BREAK_ROOM_FRONT_POT"],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|TH_BREAK_ROOM_FRONT_POT"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1399,
+            "y": 68
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Table",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|TH_KITCHEN_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|TH_KITCHEN_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 999,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Cauldron",
+
+        "sections": [
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": ["^$REACHABLE|TH_KITCHEN_SUN_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|TH_KITCHEN_SUN_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1036,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Kitchen Crate",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_KITCHEN_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_KITCHEN_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 925,
+            "y": 581
+          }
+        ]
+      },
+      {
+        "name": "1 Torch Cell Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|TH_1_TORCH_CELL_RIGHT_POT"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|TH_1_TORCH_CELL_RIGHT_POT"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 721,
+            "y": 148
+          }
+        ]
+      },
+      {
+        "name": "1 Torch Cell Crate",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_1_TORCH_CELL_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_1_TORCH_CELL_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 717,
+            "y": 237
+          }
+        ]
+      },
+      {
+        "name": "Double Cell",
+
+        "sections": [
+          {
+            "name": "Carpenter Key",
+            "access_rules": ["^$REACHABLE|TH_DOUBLE_CELL_CARPENTER"],
+            "visibility_rules": ["$OPTION_NON_1_TORCH_CELL_KEYS_EXIST,$AGE_CHECK|TH_DOUBLE_CELL_CARPENTER"],
+            "chest_opened_img": "images/chest_images/freestanding_key_opened.png",
+            "chest_unopened_img": "images/chest_images/freestanding_key_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 930,
+            "y": 685
+          }
+        ]
+      },
+      {
+        "name": "Steep Slope Cell",
+
+        "sections": [
+          {
+            "name": "Carpenter Key",
+            "access_rules": ["^$REACHABLE|TH_STEEP_SLOPE_CARPENTER"],
+            "visibility_rules": ["$OPTION_NON_1_TORCH_CELL_KEYS_EXIST,$AGE_CHECK|TH_STEEP_SLOPE_CARPENTER"],
+            "chest_opened_img": "images/chest_images/freestanding_key_opened.png",
+            "chest_unopened_img": "images/chest_images/freestanding_key_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1253,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Steep Slope Cell Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|TH_STEEP_SLOPE_RIGHT_POT"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|TH_STEEP_SLOPE_RIGHT_POT"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1246,
+            "y": 314
+          }
+        ]
+      },
+      {
+        "name": "Double Cell Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|TH_DOUBLE_CELL_RIGHT_POT"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|TH_DOUBLE_CELL_RIGHT_POT"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1013,
+            "y": 647
+          }
+        ]
+      },
+      {
+        "name": "Double Cell Crates",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_DOUBLE_CELL_LEFT_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_DOUBLE_CELL_LEFT_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 853,
+            "y": 644
+          }
+        ]
+      },
+      {
+        "name": "Jailed Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|TH_RIGHTMOST_JAILED_POT"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|TH_RIGHTMOST_JAILED_POT"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 890,
+            "y": 755
+          }
+        ]
+      },
+      {
+        "name": "Above Jail",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_ABOVE_JAIL_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_ABOVE_JAIL_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 333,
+            "y": 96
+          }
+        ]
+      },
+      {
+        "name": "Entrance Crates",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_SOUTHMOST_CENTER_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_SOUTHMOST_CENTER_CRATE"
+            ],
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 386,
+            "y": 373
+          }
+        ]
+      },
+      {
+        "name": "Horseback Archery Range Big Targets",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_HBA_RANGE_CRATE_1"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_HBA_RANGE_CRATE_1"
+            ],
+            "item_count": 7
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1712,
+            "y": 396
+          }
+        ]
+      },
+      {
+        "name": "Horseback Archery Canopy",
+
+        "sections": [
+          {
+            "name": "HBA 1000 Points",
+            "access_rules": ["^$REACHABLE|GF_HBA_1000_POINTS"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "visibility_rules": ["$AGE_CHECK|GF_HBA_1000_POINTS"],
+            "item_count": 1
+          },
+          {
+            "name": "HBA 1500 Points",
+            "access_rules": ["^$REACHABLE|GF_HBA_1500_POINTS"],
+            "chest_opened_img": "images/chest_images/quiver_opened.png",
+            "chest_unopened_img": "images/chest_images/quiver_unopened.png",
+            "visibility_rules": ["$AGE_CHECK|GF_HBA_1500_POINTS"],
+            "item_count": 1
+          },
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_HBA_CANOPY_EAST_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_HBA_CANOPY_EAST_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1677,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Horseback Archery South Target",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_SOUTH_TARGET_EAST_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_SOUTH_TARGET_EAST_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1650,
+            "y": 618
+          }
+        ]
+      },
+      {
+        "name": "Horseback Archery North Target",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_NORTH_TARGET_EAST_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_NORTH_TARGET_EAST_CRATE"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|GF_GS_ARCHERY_RANGE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|GF_GS_ARCHERY_RANGE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1650,
+            "y": 174
+          }
+        ]
+      },
+      {
+        "name": "Near Kitchen Left Crates",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_NEAR_KITCHEN_LEFTMOST_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_NEAR_KITCHEN_LEFTMOST_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 818,
+            "y": 445
+          }
+        ]
+      },
+      {
+        "name": "Near Kitchen Right Crates",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_NEAR_KITCHEN_MIDDLE_RIGHT_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_NEAR_KITCHEN_MIDDLE_RIGHT_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 845,
+            "y": 538
+          }
+        ]
+      },
+      {
+        "name": "Dead End Cell Crate",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|TH_DEAD_END_CELL_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|TH_DEAD_END_CELL_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 953,
+            "y": 356
+          }
+        ]
+      },
+      {
+        "name": "Fairy Grotto",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|GF_FAIRY_GROTTO_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|GF_FAIRY_GROTTO_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 403,
+            "y": 400
+          }
+        ]
+      },
+      {
+        "name": "1 Torch Cell",
+
+        "sections": [
+          {
+            "name": "Carpenter Key",
+            "access_rules": ["^$REACHABLE|TH_1_TORCH_CARPENTER"],
+            "visibility_rules": ["$OPTION_1_TORCH_CELL_KEY_EXISTS,$AGE_CHECK|TH_1_TORCH_CARPENTER"],
+            "chest_opened_img": "images/chest_images/freestanding_key_opened.png",
+            "chest_unopened_img": "images/chest_images/freestanding_key_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 764,
+            "y": 189
+          }
+        ]
+      },
+      {
+        "name": "Dead End Cell",
+
+        "sections": [
+          {
+            "name": "Carpenter Key",
+            "access_rules": ["^$REACHABLE|TH_DEAD_END_CARPENTER"],
+            "visibility_rules": ["$OPTION_NON_1_TORCH_CELL_KEYS_EXIST,$AGE_CHECK|TH_DEAD_END_CARPENTER"],
+            "chest_opened_img": "images/chest_images/freestanding_key_opened.png",
+            "chest_unopened_img": "images/chest_images/freestanding_key_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 1135,
+            "y": 205
+          }
+        ]
+      },
+      {
+        "name": "Outskirts",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GF_OUTSKIRTS_NORTHEAST_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GF_OUTSKIRTS_NORTHEAST_CRATE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 303,
+            "y": 263
+          }
+        ]
+      },
+      {
+        "name": "Gerudo Fortress",
+
+        "sections": [
+          {
+            "name": "Freed All Carpenters",
+            "access_rules": ["^$REACHABLE|GF_GERUDO_MEMBERSHIP_CARD"],
+            "chest_opened_img": "images/chest_images/gerudo_membership_card_opened.png",
+            "chest_unopened_img": "images/chest_images/gerudo_membership_card_unopened.png",
+            "visibility_rules": ["$OPTION_CARPENTERS_NOT_FREE,$AGE_CHECK|GF_GERUDO_MEMBERSHIP_CARD"],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Gerudo Fortress",
+            "x": 258,
+            "y": 387,
+            "size": 33,
+            "border_thickness": 4,
+            "shape": "diamond"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,445 @@
+[
+  {
+    "name": "Jabu Jabu's Belly",
+    "overlay_background": "#80000000",
+    "access_rules": [" "],
+    "children": [
+      {
+        "name": "Boss Room",
+
+        "sections": [
+          {
+            "name": "Barinade",
+            "access_rules": ["^$REACHABLE|BARINADE"],
+            "visibility_rules": ["$AGE_CHECK|BARINADE"],
+            "chest_opened_img": "images/chest_images/boss_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Container",
+            "access_rules": [
+              "^$REACHABLE|JABU_JABUS_BELLY_BARINADE_HEART_CONTAINER"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_HEART_CONTAINER"
+            ],
+            "chest_opened_img": "images/chest_images/heart_container_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_container_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 502,
+            "y": 447
+          }
+        ]
+      },
+      {
+        "name": "Boomerang Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BOOMERANG_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|JABU_JABUS_BELLY_BOOMERANG_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 530,
+            "y": 215
+          }
+        ]
+      },
+      {
+        "name": "Map Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_MAP_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|JABU_JABUS_BELLY_MAP_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 32,
+            "y": 213
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_COMPASS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|JABU_JABUS_BELLY_COMPASS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 199,
+            "y": 66
+          }
+        ]
+      },
+      {
+        "name": "Water Switch Room",
+
+        "sections": [
+          {
+            "name": "Alcove Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BASEMENT_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BASEMENT_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 991,
+            "y": 561
+          }
+        ]
+      },
+      {
+        "name": "Lobby Basement Lower",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|JABU_JABUS_BELLY_GS_LOBBY_BASEMENT_LOWER"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_GS_LOBBY_BASEMENT_LOWER"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 867,
+            "y": 371
+          }
+        ]
+      },
+      {
+        "name": "Lobby Basement Upper",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|JABU_JABUS_BELLY_GS_LOBBY_BASEMENT_UPPER"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_GS_LOBBY_BASEMENT_UPPER"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 831,
+            "y": 394
+          }
+        ]
+      },
+      {
+        "name": "Before Boss Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_GS_NEAR_BOSS"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_GS_NEAR_BOSS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 544,
+            "y": 690
+          }
+        ]
+      },
+      {
+        "name": "Hidden Dive Room",
+
+        "sections": [
+          {
+            "name": "Deku Scrub",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_DEKU_SCRUB"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|JABU_JABUS_BELLY_DEKU_SCRUB"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 769,
+            "y": 662
+          }
+        ]
+      },
+      {
+        "name": "Above Big Octo",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_ABOVE_BIG_OCTO_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_ABOVE_BIG_OCTO_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 94,
+            "y": 376
+          }
+        ]
+      },
+      {
+        "name": "Barinade Pot 1",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BARINADE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 417,
+            "y": 483
+          }
+        ]
+      },
+      {
+        "name": "Barinade Pot 2",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BARINADE_POT2"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_POT2"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 583,
+            "y": 483
+          }
+        ]
+      },
+      {
+        "name": "Barinade Pot 3",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BARINADE_POT3"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 583,
+            "y": 405
+          }
+        ]
+      },
+      {
+        "name": "Barinade Pot 4",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BARINADE_POT4"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_POT4"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 417,
+            "y": 403
+          }
+        ]
+      },
+      {
+        "name": "Barinade Pot 5",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BARINADE_POT5"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_POT5"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 459,
+            "y": 362
+          }
+        ]
+      },
+      {
+        "name": "Barinade Pot 6",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_BARINADE_POT6"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_BARINADE_POT6"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 541,
+            "y": 364
+          }
+        ]
+      },
+      {
+        "name": "Two Octorok Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|JABU_JABUS_BELLY_TWO_OCTOROK_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_TWO_OCTOROK_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 5
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 707,
+            "y": 582
+          }
+        ]
+      },
+      {
+        "name": "Platform Room",
+
+        "sections": [
+          {
+            "name": "Small Crate",
+            "access_rules": [
+              "^$REACHABLE|JABU_JABUS_BELLY_PLATFORM_ROOM_SMALL_CRATE1"
+            ],
+            "chest_opened_img": "images/chest_images/small_crate_opened.png",
+            "chest_unopened_img": "images/chest_images/small_crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_DUNGEON,$AGE_CHECK|JABU_JABUS_BELLY_PLATFORM_ROOM_SMALL_CRATE1"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Jabu Jabu's Belly",
+            "x": 275,
+            "y": 630
+          }
+        ]
+      }
+    ]
+  }
+]

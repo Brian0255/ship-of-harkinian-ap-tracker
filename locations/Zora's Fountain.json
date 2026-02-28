@@ -1,0 +1,331 @@
+[
+  {
+    "name": "Zora's Fountain",
+        "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Great Fairy Fountain",
+
+        "sections": [
+          {
+            "name": "Reward",
+            "access_rules": [
+              "^$REACHABLE|ZF_GREAT_FAIRY_REWARD"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|ZF_GREAT_FAIRY_REWARD"
+            ],
+            "chest_opened_img": "images/chest_images/great_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/great_fairy_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 546,
+            "y": 818
+          }
+        ]
+      },
+      {
+        "name": "Iceberg",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": [
+              "^$REACHABLE|ZF_ICEBERG_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|ZF_ICEBERG_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 672,
+            "y": 351
+          }
+        ]
+      },
+      {
+        "name": "Fountain Bottom",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": [
+              "^$REACHABLE|ZF_BOTTOM_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|ZF_BOTTOM_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Green Rupee",
+            "access_rules": [
+              "^$REACHABLE|ZF_BOTTOM_NORTH_INNER_RUPEE"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|ZF_BOTTOM_NORTH_INNER_RUPEE"
+            ],
+            "item_count": 18
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 488,
+            "y": 336
+          }
+        ]
+      },
+      {
+        "name": "Above the Log",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|ZF_GS_ABOVE_THE_LOG"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|ZF_GS_ABOVE_THE_LOG"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 150,
+            "y": 688
+          }
+        ]
+      },
+      {
+        "name": "Fairy Fountain Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": [
+              "^$REACHABLE|ZF_TREE"
+            ],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|ZF_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|ZF_GS_TREE"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|ZF_GS_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 529,
+            "y": 728
+          }
+        ]
+      },
+      {
+        "name": "Hidden Cave Start",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|ZF_HIDDEN_CAVE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|ZF_HIDDEN_CAVE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 685,
+            "y": 780
+          }
+        ]
+      },
+      {
+        "name": "Hidden Cave End",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|ZF_GS_HIDDEN_CAVE"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|ZF_GS_HIDDEN_CAVE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 786,
+            "y": 598
+          }
+        ]
+      },
+      {
+        "name": "Near Jabu Left",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|ZF_NEAR_JABU_POT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|ZF_NEAR_JABU_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 197,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "name": "Near Jabu Right",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|ZF_NEAR_JABU_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|ZF_NEAR_JABU_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 197,
+            "y": 368
+          }
+        ]
+      },
+      {
+        "name": "Fairy Fountain Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|ZF_FAIRY_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|ZF_FAIRY_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|ZF_FAIRY_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|ZF_FAIRY_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 587,
+            "y": 737
+          }
+        ]
+      },
+      {
+        "name": "Jabu Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|ZF_JABU_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|ZF_JABU_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|ZF_JABU_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|ZF_JABU_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Fountain",
+            "x": 244,
+            "y": 154
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,4358 @@
+[
+  {
+    "chest_opened_img": "/images/items/open.png",
+    "chest_unopened_img": "/images/items/close.png",
+    "children": [
+      {
+        "chest_opened_img": "/images/items/open.png",
+        "chest_unopened_img": "/images/items/close.png",
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1028,
+            "y": 208
+          }
+        ],
+        "name": "Bottom of the Well",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Back Left Bombable Mound - Chest",
+            "ref": "Bottom of the Well/Back Left Bombable Mound/Chest"
+          },
+          {
+            "name": "Basement Before Rocks - Grass",
+            "ref": "Bottom of the Well/Basement Before Rocks/Grass"
+          },
+          {
+            "name": "Basement Behind Rocks - Grass",
+            "ref": "Bottom of the Well/Basement Behind Rocks/Grass"
+          },
+          {
+            "name": "Basement North Tunnel End - Sun's Song Fairy",
+            "ref": "Bottom of the Well/Basement North Tunnel End/Sun's Song Fairy"
+          },
+          {
+            "name": "Basement North Tunnel Front - Pot",
+            "ref": "Bottom of the Well/Basement North Tunnel Front/Pot"
+          },
+          {
+            "name": "Basement North Tunnel Middle - Pot",
+            "ref": "Bottom of the Well/Basement North Tunnel Middle/Pot"
+          },
+          {
+            "name": "Basement North Tunnel Near End - Pot",
+            "ref": "Bottom of the Well/Basement North Tunnel Near End/Pot"
+          },
+          {
+            "name": "Basement Platform - Blue Rupee",
+            "ref": "Bottom of the Well/Basement Platform/Blue Rupee"
+          },
+          {
+            "name": "Center Skulltula - Chest",
+            "ref": "Bottom of the Well/Center Skulltula/Chest"
+          },
+          {
+            "name": "Coffin Room Back Left Coffin - Freestanding Key",
+            "ref": "Bottom of the Well/Coffin Room Back Left Coffin/Freestanding Key"
+          },
+          {
+            "name": "Coffin Room Front Left Coffin - Heart",
+            "ref": "Bottom of the Well/Coffin Room Front Left Coffin/Heart"
+          },
+          {
+            "name": "Coffin Room Middle Right Coffin - Heart",
+            "ref": "Bottom of the Well/Coffin Room Middle Right Coffin/Heart"
+          },
+          {
+            "name": "Compass Room - Chest",
+            "ref": "Bottom of the Well/Compass Room/Chest"
+          },
+          {
+            "name": "Dead Hand Room Invisible Chest - Chest",
+            "ref": "Bottom of the Well/Dead Hand Room Invisible Chest/Chest"
+          },
+          {
+            "name": "Dead Hand Room Lens of Truth Chest - Chest",
+            "ref": "Bottom of the Well/Dead Hand Room Lens of Truth Chest/Chest"
+          },
+          {
+            "name": "East Inner Room - Gold Skulltula",
+            "ref": "Bottom of the Well/East Inner Room/Gold Skulltula"
+          },
+          {
+            "name": "Fire Keese Room Northwest - Pot",
+            "ref": "Bottom of the Well/Fire Keese Room Northwest/Pot"
+          },
+          {
+            "name": "Fire Keese Room Southeast - Chest",
+            "ref": "Bottom of the Well/Fire Keese Room Southeast/Chest"
+          },
+          {
+            "name": "Front Center Bombable Mound - Chest",
+            "ref": "Bottom of the Well/Front Center Bombable Mound/Chest"
+          },
+          {
+            "name": "Front Left Fake Wall - Chest",
+            "ref": "Bottom of the Well/Front Left Fake Wall/Chest"
+          },
+          {
+            "name": "Left Side - Pot",
+            "ref": "Bottom of the Well/Left Side/Pot"
+          },
+          {
+            "name": "Like Like - Chest",
+            "ref": "Bottom of the Well/Like Like/Chest"
+          },
+          {
+            "name": "Like Like - Gold Skulltula",
+            "ref": "Bottom of the Well/Like Like/Gold Skulltula"
+          },
+          {
+            "name": "Lullaby Statue Pool - Pot",
+            "ref": "Bottom of the Well/Lullaby Statue Pool/Pot"
+          },
+          {
+            "name": "Map Chest - Chest",
+            "ref": "Bottom of the Well/Map Chest/Chest"
+          },
+          {
+            "name": "Near Entrance - Pot",
+            "ref": "Bottom of the Well/Near Entrance/Pot"
+          },
+          {
+            "name": "Right Bottom Fake Wall - Chest",
+            "ref": "Bottom of the Well/Right Bottom Fake Wall/Chest"
+          },
+          {
+            "name": "Underwater Front - Chest",
+            "ref": "Bottom of the Well/Underwater Front/Chest"
+          },
+          {
+            "name": "Underwater Left - Chest",
+            "ref": "Bottom of the Well/Underwater Left/Chest"
+          },
+          {
+            "name": "West Inner Room - Gold Skulltula",
+            "ref": "Bottom of the Well/West Inner Room/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 987,
+            "y": 14
+          }
+        ],
+        "name": "Death Mountain Crater",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Death Mountain Crater/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Death Mountain Crater/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Distant Platform - Green Rupee",
+            "ref": "Death Mountain Crater/Distant Platform/Green Rupee"
+          },
+          {
+            "name": "Distant Platform - Red Rupee",
+            "ref": "Death Mountain Crater/Distant Platform/Red Rupee"
+          },
+          {
+            "name": "Goron City Exit Left - Pot",
+            "ref": "Death Mountain Crater/Goron City Exit Left/Pot"
+          },
+          {
+            "name": "Goron City Exit Right - Pot",
+            "ref": "Death Mountain Crater/Goron City Exit Right/Pot"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Death Mountain Crater/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Death Mountain Crater/Gossip Stone/Fairy"
+          },
+          {
+            "name": "Great Fairy Fountain - Reward",
+            "ref": "Death Mountain Crater/Great Fairy Fountain/Reward"
+          },
+          {
+            "name": "Hammer Grotto - Beehive",
+            "ref": "Death Mountain Crater/Hammer Grotto/Beehive"
+          },
+          {
+            "name": "Hammer Grotto - Center Scrub",
+            "ref": "Death Mountain Crater/Hammer Grotto/Center Scrub"
+          },
+          {
+            "name": "Hammer Grotto - Left Scrub",
+            "ref": "Death Mountain Crater/Hammer Grotto/Left Scrub"
+          },
+          {
+            "name": "Hammer Grotto - Right Scrub",
+            "ref": "Death Mountain Crater/Hammer Grotto/Right Scrub"
+          },
+          {
+            "name": "Middle Platform - Blue Rupee",
+            "ref": "Death Mountain Crater/Middle Platform/Blue Rupee"
+          },
+          {
+            "name": "Middle Platform - Red Rupee",
+            "ref": "Death Mountain Crater/Middle Platform/Red Rupee"
+          },
+          {
+            "name": "Near Warp Platform - Red Rupee",
+            "ref": "Death Mountain Crater/Near Warp Platform/Red Rupee"
+          },
+          {
+            "name": "Sheik in Crater - Song",
+            "ref": "Death Mountain Crater/Sheik in Crater/Song"
+          },
+          {
+            "name": "Upper Boulder Grotto - Beehive",
+            "ref": "Death Mountain Crater/Upper Boulder Grotto/Beehive"
+          },
+          {
+            "name": "Upper Boulder Grotto - Chest",
+            "ref": "Death Mountain Crater/Upper Boulder Grotto/Chest"
+          },
+          {
+            "name": "Upper Boulder Grotto - Fish",
+            "ref": "Death Mountain Crater/Upper Boulder Grotto/Fish"
+          },
+          {
+            "name": "Upper Boulder Grotto - Gossip Stone Big Fairy",
+            "ref": "Death Mountain Crater/Upper Boulder Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Upper Boulder Grotto - Gossip Stone Fairy",
+            "ref": "Death Mountain Crater/Upper Boulder Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Upper Boulder Grotto - Grass",
+            "ref": "Death Mountain Crater/Upper Boulder Grotto/Grass"
+          },
+          {
+            "name": "Upper Crate - Crate",
+            "ref": "Death Mountain Crater/Upper Crate/Crate"
+          },
+          {
+            "name": "Upper Crate - Gold Skulltula",
+            "ref": "Death Mountain Crater/Upper Crate/Gold Skulltula"
+          },
+          {
+            "name": "Upper Deku Scrub - Deku Scrub",
+            "ref": "Death Mountain Crater/Upper Deku Scrub/Deku Scrub"
+          },
+          {
+            "name": "Volcano - Piece of Heart",
+            "ref": "Death Mountain Crater/Volcano/Piece of Heart"
+          },
+          {
+            "name": "Wall - Piece of Heart",
+            "ref": "Death Mountain Crater/Wall/Piece of Heart"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 940,
+            "y": 122
+          }
+        ],
+        "name": "Death Mountain Trail",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above Dodongo's Cavern - Piece of Heart",
+            "ref": "Death Mountain Trail/Above Dodongo's Cavern/Piece of Heart"
+          },
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Death Mountain Trail/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Death Mountain Trail/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Biggoron - Trade Broken Sword",
+            "ref": "Death Mountain Trail/Biggoron/Trade Broken Sword"
+          },
+          {
+            "name": "Biggoron - Trade Claim Check",
+            "ref": "Death Mountain Trail/Biggoron/Trade Claim Check"
+          },
+          {
+            "name": "Biggoron - Trade Eyedrops",
+            "ref": "Death Mountain Trail/Biggoron/Trade Eyedrops"
+          },
+          {
+            "name": "Blue Rupee Boulder - Blue Rupee",
+            "ref": "Death Mountain Trail/Blue Rupee Boulder/Blue Rupee"
+          },
+          {
+            "name": "Boulder Above Dodongo's Cavern - Gold Skulltula",
+            "ref": "Death Mountain Trail/Boulder Above Dodongo's Cavern/Gold Skulltula"
+          },
+          {
+            "name": "Cow Grotto - Beehive",
+            "ref": "Death Mountain Trail/Cow Grotto/Beehive"
+          },
+          {
+            "name": "Cow Grotto - Cow",
+            "ref": "Death Mountain Trail/Cow Grotto/Cow"
+          },
+          {
+            "name": "Cow Grotto - Grass",
+            "ref": "Death Mountain Trail/Cow Grotto/Grass"
+          },
+          {
+            "name": "Cow Grotto - Green Rupee",
+            "ref": "Death Mountain Trail/Cow Grotto/Green Rupee"
+          },
+          {
+            "name": "Cow Grotto - Heart",
+            "ref": "Death Mountain Trail/Cow Grotto/Heart"
+          },
+          {
+            "name": "Cow Grotto - Red Rupee",
+            "ref": "Death Mountain Trail/Cow Grotto/Red Rupee"
+          },
+          {
+            "name": "Cow Grotto - Song of Storms Fairy",
+            "ref": "Death Mountain Trail/Cow Grotto/Song of Storms Fairy"
+          },
+          {
+            "name": "Falling Rocks Path - Gold Skulltula",
+            "ref": "Death Mountain Trail/Falling Rocks Path/Gold Skulltula"
+          },
+          {
+            "name": "Flag - Sun's Song Fairy",
+            "ref": "Death Mountain Trail/Flag/Sun's Song Fairy"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Death Mountain Trail/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Death Mountain Trail/Gossip Stone/Fairy"
+          },
+          {
+            "name": "Great Fairy Fountain - Reward",
+            "ref": "Death Mountain Trail/Great Fairy Fountain/Reward"
+          },
+          {
+            "name": "Near Kakariko - Gold Skulltula",
+            "ref": "Death Mountain Trail/Near Kakariko/Gold Skulltula"
+          },
+          {
+            "name": "Red Rupee Boulder - Red Rupee",
+            "ref": "Death Mountain Trail/Red Rupee Boulder/Red Rupee"
+          },
+          {
+            "name": "Red Rupee Boulder - Under Boulder Bombable Wall Chest",
+            "ref": "Death Mountain Trail/Red Rupee Boulder/Under Boulder Bombable Wall Chest"
+          },
+          {
+            "name": "Storms Grotto - Beehive",
+            "ref": "Death Mountain Trail/Storms Grotto/Beehive"
+          },
+          {
+            "name": "Storms Grotto - Chest",
+            "ref": "Death Mountain Trail/Storms Grotto/Chest"
+          },
+          {
+            "name": "Storms Grotto - Fish",
+            "ref": "Death Mountain Trail/Storms Grotto/Fish"
+          },
+          {
+            "name": "Storms Grotto - Gossip Stone Big Fairy",
+            "ref": "Death Mountain Trail/Storms Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Storms Grotto - Gossip Stone Fairy",
+            "ref": "Death Mountain Trail/Storms Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Storms Grotto - Grass",
+            "ref": "Death Mountain Trail/Storms Grotto/Grass"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1323,
+            "y": 472
+          }
+        ],
+        "name": "Deku Tree",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Basement Back Room - Gold Skulltula",
+            "ref": "Deku Tree/Basement Back Room/Gold Skulltula"
+          },
+          {
+            "name": "Basement Gate - Gold Skulltula",
+            "ref": "Deku Tree/Basement Gate/Gold Skulltula"
+          },
+          {
+            "name": "Basement Grass - Grass",
+            "ref": "Deku Tree/Basement Grass/Grass"
+          },
+          {
+            "name": "Basement Torch - Chest",
+            "ref": "Deku Tree/Basement Torch/Chest"
+          },
+          {
+            "name": "Basement Vines - Gold Skulltula",
+            "ref": "Deku Tree/Basement Vines/Gold Skulltula"
+          },
+          {
+            "name": "Boss Room Grass 1 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 1/Grass"
+          },
+          {
+            "name": "Boss Room Grass 2 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 2/Grass"
+          },
+          {
+            "name": "Boss Room Grass 3 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 3/Grass"
+          },
+          {
+            "name": "Boss Room Grass 4 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 4/Grass"
+          },
+          {
+            "name": "Boss Room Grass 5 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 5/Grass"
+          },
+          {
+            "name": "Boss Room Grass 6 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 6/Grass"
+          },
+          {
+            "name": "Boss Room Grass 7 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 7/Grass"
+          },
+          {
+            "name": "Boss Room Grass 8 - Grass",
+            "ref": "Deku Tree/Boss Room Grass 8/Grass"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Deku Tree/Boss Room/Heart Container"
+          },
+          {
+            "name": "Boss Room - Queen Gohma",
+            "ref": "Deku Tree/Boss Room/Queen Gohma"
+          },
+          {
+            "name": "Compass Room Compass Chest - Chest",
+            "ref": "Deku Tree/Compass Room Compass Chest/Chest"
+          },
+          {
+            "name": "Compass Room Side Room - Chest",
+            "ref": "Deku Tree/Compass Room Side Room/Chest"
+          },
+          {
+            "name": "Compass Room Side Room - Gold Skulltula",
+            "ref": "Deku Tree/Compass Room Side Room/Gold Skulltula"
+          },
+          {
+            "name": "Compass Room West Ledge - Grass",
+            "ref": "Deku Tree/Compass Room West Ledge/Grass"
+          },
+          {
+            "name": "Eye Switch Room Northeast - Grass",
+            "ref": "Deku Tree/Eye Switch Room Northeast/Grass"
+          },
+          {
+            "name": "Eye Switch Room Northwest - Grass",
+            "ref": "Deku Tree/Eye Switch Room Northwest/Grass"
+          },
+          {
+            "name": "Final Room East - Grass",
+            "ref": "Deku Tree/Final Room East/Grass"
+          },
+          {
+            "name": "Final Room Water East - Heart",
+            "ref": "Deku Tree/Final Room Water East/Heart"
+          },
+          {
+            "name": "Final Room Water Southwest - Heart",
+            "ref": "Deku Tree/Final Room Water Southwest/Heart"
+          },
+          {
+            "name": "Final Room Water West - Heart",
+            "ref": "Deku Tree/Final Room Water West/Heart"
+          },
+          {
+            "name": "Larvae Room - Grass",
+            "ref": "Deku Tree/Larvae Room/Grass"
+          },
+          {
+            "name": "Lobby Lower - Grass",
+            "ref": "Deku Tree/Lobby Lower/Grass"
+          },
+          {
+            "name": "Lobby Middle Center - Heart",
+            "ref": "Deku Tree/Lobby Middle Center/Heart"
+          },
+          {
+            "name": "Lobby Middle Map Chest - Chest",
+            "ref": "Deku Tree/Lobby Middle Map Chest/Chest"
+          },
+          {
+            "name": "Lobby Middle North - Grass",
+            "ref": "Deku Tree/Lobby Middle North/Grass"
+          },
+          {
+            "name": "Lobby Upper - Heart",
+            "ref": "Deku Tree/Lobby Upper/Heart"
+          },
+          {
+            "name": "Slingshot Room - Chest",
+            "ref": "Deku Tree/Slingshot Room/Chest"
+          },
+          {
+            "name": "Slingshot Room Northwest - Grass",
+            "ref": "Deku Tree/Slingshot Room Northwest/Grass"
+          },
+          {
+            "name": "Slingshot Room Side Room - Chest",
+            "ref": "Deku Tree/Slingshot Room Side Room/Chest"
+          },
+          {
+            "name": "Slingshot Room Southeast - Grass",
+            "ref": "Deku Tree/Slingshot Room Southeast/Grass"
+          },
+          {
+            "name": "Spike Roller Room - Grass",
+            "ref": "Deku Tree/Spike Roller Room/Grass"
+          },
+          {
+            "name": "Torches Room - Grass",
+            "ref": "Deku Tree/Torches Room/Grass"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 107,
+            "y": 194
+          }
+        ],
+        "name": "Desert Colossus",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Desert Colossus/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Desert Colossus/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Deku Scrub Grotto - Beehive",
+            "ref": "Desert Colossus/Deku Scrub Grotto/Beehive"
+          },
+          {
+            "name": "Deku Scrub Grotto - Front Scrub",
+            "ref": "Desert Colossus/Deku Scrub Grotto/Front Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Rear Scrub",
+            "ref": "Desert Colossus/Deku Scrub Grotto/Rear Scrub"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Desert Colossus/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Desert Colossus/Gossip Stone/Fairy"
+          },
+          {
+            "name": "Great Fairy Fountain - Reward",
+            "ref": "Desert Colossus/Great Fairy Fountain/Reward"
+          },
+          {
+            "name": "Hill - Gold Skulltula",
+            "ref": "Desert Colossus/Hill/Gold Skulltula"
+          },
+          {
+            "name": "Oasis Storms Fairies - Fairy",
+            "ref": "Desert Colossus/Oasis Storms Fairies/Fairy"
+          },
+          {
+            "name": "Rock Structure - Piece of Heart",
+            "ref": "Desert Colossus/Rock Structure/Piece of Heart"
+          },
+          {
+            "name": "Sheik at Colossus - Song",
+            "ref": "Desert Colossus/Sheik at Colossus/Song"
+          },
+          {
+            "name": "Tree - Gold Skulltula",
+            "ref": "Desert Colossus/Tree/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 879,
+            "y": 106
+          }
+        ],
+        "name": "Dodongo's Cavern",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above Boss Room - Chest",
+            "ref": "Dodongo's Cavern/Above Boss Room/Chest"
+          },
+          {
+            "name": "Alcove Above Stairs - Gold Skulltula",
+            "ref": "Dodongo's Cavern/Alcove Above Stairs/Gold Skulltula"
+          },
+          {
+            "name": "Back Room - Gold Skulltula",
+            "ref": "Dodongo's Cavern/Back Room/Gold Skulltula"
+          },
+          {
+            "name": "Back Room Before Tunnel - Pot",
+            "ref": "Dodongo's Cavern/Back Room Before Tunnel/Pot"
+          },
+          {
+            "name": "Back Room Tunnel - Pot",
+            "ref": "Dodongo's Cavern/Back Room Tunnel/Pot"
+          },
+          {
+            "name": "Before Boss Room - Grass",
+            "ref": "Dodongo's Cavern/Before Boss Room/Grass"
+          },
+          {
+            "name": "Blade Room South - Bomb Flower Platform Chest",
+            "ref": "Dodongo's Cavern/Blade Room South/Bomb Flower Platform Chest"
+          },
+          {
+            "name": "Blade Room South - Heart Behind Push Block",
+            "ref": "Dodongo's Cavern/Blade Room South/Heart Behind Push Block"
+          },
+          {
+            "name": "Blade Room South - Pillar Pot",
+            "ref": "Dodongo's Cavern/Blade Room South/Pillar Pot"
+          },
+          {
+            "name": "Bomb Bag Chest - Chest",
+            "ref": "Dodongo's Cavern/Bomb Bag Chest/Chest"
+          },
+          {
+            "name": "Bomb Bag Chest - Lower Grass",
+            "ref": "Dodongo's Cavern/Bomb Bag Chest/Lower Grass"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Dodongo's Cavern/Boss Room/Heart Container"
+          },
+          {
+            "name": "Boss Room - King Dodongo",
+            "ref": "Dodongo's Cavern/Boss Room/King Dodongo"
+          },
+          {
+            "name": "Compass Room - Chest",
+            "ref": "Dodongo's Cavern/Compass Room/Chest"
+          },
+          {
+            "name": "Double Eye Room - Pot",
+            "ref": "Dodongo's Cavern/Double Eye Room/Pot"
+          },
+          {
+            "name": "End of Bridge - Chest",
+            "ref": "Dodongo's Cavern/End of Bridge/Chest"
+          },
+          {
+            "name": "First Bridge - Grass",
+            "ref": "Dodongo's Cavern/First Bridge/Grass"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Dodongo's Cavern/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Dodongo's Cavern/Gossip Stone/Fairy"
+          },
+          {
+            "name": "Lobby Deku Scrub - Deku Scrub",
+            "ref": "Dodongo's Cavern/Lobby Deku Scrub/Deku Scrub"
+          },
+          {
+            "name": "Lobby Map Chest - Chest",
+            "ref": "Dodongo's Cavern/Lobby Map Chest/Chest"
+          },
+          {
+            "name": "Lower Lizalfos North Platform - Pot",
+            "ref": "Dodongo's Cavern/Lower Lizalfos North Platform/Pot"
+          },
+          {
+            "name": "Lower Lizalfos Room Lavafall - Heart",
+            "ref": "Dodongo's Cavern/Lower Lizalfos Room Lavafall/Heart"
+          },
+          {
+            "name": "Lower Lizalfos West Platform - Pot",
+            "ref": "Dodongo's Cavern/Lower Lizalfos West Platform/Pot"
+          },
+          {
+            "name": "Near Bomb Bag - Left Scrub",
+            "ref": "Dodongo's Cavern/Near Bomb Bag/Left Scrub"
+          },
+          {
+            "name": "Near Bomb Bag - Right Scrub",
+            "ref": "Dodongo's Cavern/Near Bomb Bag/Right Scrub"
+          },
+          {
+            "name": "Scarecrow - Gold Skulltula",
+            "ref": "Dodongo's Cavern/Scarecrow/Gold Skulltula"
+          },
+          {
+            "name": "Side Room First Pots - Pot",
+            "ref": "Dodongo's Cavern/Side Room First Pots/Pot"
+          },
+          {
+            "name": "Side Room Near Dodongos - Deku Scrub",
+            "ref": "Dodongo's Cavern/Side Room Near Dodongos/Deku Scrub"
+          },
+          {
+            "name": "Side Room Near Lower Lizalfos - Gold Skulltula",
+            "ref": "Dodongo's Cavern/Side Room Near Lower Lizalfos/Gold Skulltula"
+          },
+          {
+            "name": "Side Room Second Pots - Pot",
+            "ref": "Dodongo's Cavern/Side Room Second Pots/Pot"
+          },
+          {
+            "name": "Single Eye Room - Grass",
+            "ref": "Dodongo's Cavern/Single Eye Room/Grass"
+          },
+          {
+            "name": "Single Eye Room - Pot",
+            "ref": "Dodongo's Cavern/Single Eye Room/Pot"
+          },
+          {
+            "name": "Staircase East - Pot",
+            "ref": "Dodongo's Cavern/Staircase East/Pot"
+          },
+          {
+            "name": "Staircase West - Pot",
+            "ref": "Dodongo's Cavern/Staircase West/Pot"
+          },
+          {
+            "name": "Torch Room East - Pot",
+            "ref": "Dodongo's Cavern/Torch Room East/Pot"
+          },
+          {
+            "name": "Torch Room South - Pot",
+            "ref": "Dodongo's Cavern/Torch Room South/Pot"
+          },
+          {
+            "name": "Torch Room West - Pot",
+            "ref": "Dodongo's Cavern/Torch Room West/Pot"
+          },
+          {
+            "name": "Tunnel Before Lower Lizalfos - Pot",
+            "ref": "Dodongo's Cavern/Tunnel Before Lower Lizalfos/Pot"
+          },
+          {
+            "name": "Upper Lizalfos Room - Heart",
+            "ref": "Dodongo's Cavern/Upper Lizalfos Room/Heart"
+          },
+          {
+            "name": "Vines Above Stairs - Gold Skulltula",
+            "ref": "Dodongo's Cavern/Vines Above Stairs/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1025,
+            "y": 52
+          }
+        ],
+        "name": "Fire Temple",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "After Hammer - Small Crate",
+            "ref": "Fire Temple/After Hammer/Small Crate"
+          },
+          {
+            "name": "Before Boss Room Goron - Chest",
+            "ref": "Fire Temple/Before Boss Room Goron/Chest"
+          },
+          {
+            "name": "Before Boss Room Ledge - Pot",
+            "ref": "Fire Temple/Before Boss Room Ledge/Pot"
+          },
+          {
+            "name": "Big Lava Room North Open Door - Chest",
+            "ref": "Fire Temple/Big Lava Room North Open Door/Chest"
+          },
+          {
+            "name": "Big Lava Room Northeast Alcove - Pot",
+            "ref": "Fire Temple/Big Lava Room Northeast Alcove/Pot"
+          },
+          {
+            "name": "Big Lava Room South Door - Chest",
+            "ref": "Fire Temple/Big Lava Room South Door/Chest"
+          },
+          {
+            "name": "Boss Key Loop Flare Dancer Room - Chest",
+            "ref": "Fire Temple/Boss Key Loop Flare Dancer Room/Chest"
+          },
+          {
+            "name": "Boss Key Loop Flying Tile Room - Gold Skulltula",
+            "ref": "Fire Temple/Boss Key Loop Flying Tile Room/Gold Skulltula"
+          },
+          {
+            "name": "Boss Key Room - Boss Key Chest",
+            "ref": "Fire Temple/Boss Key Room/Boss Key Chest"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Fire Temple/Boss Room/Heart Container"
+          },
+          {
+            "name": "Boss Room - Volvagia",
+            "ref": "Fire Temple/Boss Room/Volvagia"
+          },
+          {
+            "name": "Boulder Maze Hidden Side Room - Gold Skulltula",
+            "ref": "Fire Temple/Boulder Maze Hidden Side Room/Gold Skulltula"
+          },
+          {
+            "name": "Boulder Maze Lower - Chest",
+            "ref": "Fire Temple/Boulder Maze Lower/Chest"
+          },
+          {
+            "name": "Boulder Maze Shortcut - Chest",
+            "ref": "Fire Temple/Boulder Maze Shortcut/Chest"
+          },
+          {
+            "name": "Boulder Maze Side Room - Chest",
+            "ref": "Fire Temple/Boulder Maze Side Room/Chest"
+          },
+          {
+            "name": "Boulder Maze Upper South - Chest",
+            "ref": "Fire Temple/Boulder Maze Upper South/Chest"
+          },
+          {
+            "name": "East Central Room - Heart",
+            "ref": "Fire Temple/East Central Room/Heart"
+          },
+          {
+            "name": "Fire Pillar Room - Heart",
+            "ref": "Fire Temple/Fire Pillar Room/Heart"
+          },
+          {
+            "name": "Fire Wall Room Exit Platform - Heart",
+            "ref": "Fire Temple/Fire Wall Room Exit Platform/Heart"
+          },
+          {
+            "name": "Fire Wall Room Pillars - East Heart",
+            "ref": "Fire Temple/Fire Wall Room Pillars/East Heart"
+          },
+          {
+            "name": "Fire Wall Room Pillars - West Heart",
+            "ref": "Fire Temple/Fire Wall Room Pillars/West Heart"
+          },
+          {
+            "name": "Flame Maze Compass Room - Chest",
+            "ref": "Fire Temple/Flame Maze Compass Room/Chest"
+          },
+          {
+            "name": "Flame Maze Left Pots - Pot",
+            "ref": "Fire Temple/Flame Maze Left Pots/Pot"
+          },
+          {
+            "name": "Flame Maze Right Pots - Pot",
+            "ref": "Fire Temple/Flame Maze Right Pots/Pot"
+          },
+          {
+            "name": "Highest Goron - Chest",
+            "ref": "Fire Temple/Highest Goron/Chest"
+          },
+          {
+            "name": "Map Room - Chest",
+            "ref": "Fire Temple/Map Room/Chest"
+          },
+          {
+            "name": "Megaton Hammer Room - Chest",
+            "ref": "Fire Temple/Megaton Hammer Room/Chest"
+          },
+          {
+            "name": "Scarecrow Climb - Gold Skulltula",
+            "ref": "Fire Temple/Scarecrow Climb/Gold Skulltula"
+          },
+          {
+            "name": "Scarecrow Top Platform - Chest",
+            "ref": "Fire Temple/Scarecrow Top Platform/Chest"
+          },
+          {
+            "name": "Scarecrow Top Wall - Gold Skulltula",
+            "ref": "Fire Temple/Scarecrow Top Wall/Gold Skulltula"
+          },
+          {
+            "name": "Song of Time Room - Gold Skulltula",
+            "ref": "Fire Temple/Song of Time Room/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1176,
+            "y": 335
+          }
+        ],
+        "name": "Forest Temple",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Basement Chest Room - Chest",
+            "ref": "Forest Temple/Basement Chest Room/Chest"
+          },
+          {
+            "name": "Basement Chest Room - Gold Skulltula",
+            "ref": "Forest Temple/Basement Chest Room/Gold Skulltula"
+          },
+          {
+            "name": "Block Push Room Eye Switch - Chest",
+            "ref": "Forest Temple/Block Push Room Eye Switch/Chest"
+          },
+          {
+            "name": "Blue Poe Room - Chest",
+            "ref": "Forest Temple/Blue Poe Room/Chest"
+          },
+          {
+            "name": "Blue Poe Room - Pot",
+            "ref": "Forest Temple/Blue Poe Room/Pot"
+          },
+          {
+            "name": "Boss Key Room - Boss Key Chest",
+            "ref": "Forest Temple/Boss Key Room/Boss Key Chest"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Forest Temple/Boss Room/Heart Container"
+          },
+          {
+            "name": "Boss Room - Phantom Ganon",
+            "ref": "Forest Temple/Boss Room/Phantom Ganon"
+          },
+          {
+            "name": "Falling Ceiling Room - Chest",
+            "ref": "Forest Temple/Falling Ceiling Room/Chest"
+          },
+          {
+            "name": "First Room Right Wall - Gold Skulltula",
+            "ref": "Forest Temple/First Room Right Wall/Gold Skulltula"
+          },
+          {
+            "name": "First Room Upper Tree - Chest",
+            "ref": "Forest Temple/First Room Upper Tree/Chest"
+          },
+          {
+            "name": "First Stalfos Room - Chest",
+            "ref": "Forest Temple/First Stalfos Room/Chest"
+          },
+          {
+            "name": "First Stalfos Room - Pot",
+            "ref": "Forest Temple/First Stalfos Room/Pot"
+          },
+          {
+            "name": "Floormaster Room - Chest",
+            "ref": "Forest Temple/Floormaster Room/Chest"
+          },
+          {
+            "name": "Frozen Eye Room - Pot",
+            "ref": "Forest Temple/Frozen Eye Room/Pot"
+          },
+          {
+            "name": "Green Poe Room - Pot",
+            "ref": "Forest Temple/Green Poe Room/Pot"
+          },
+          {
+            "name": "Level Island Courtyard - Gold Skulltula",
+            "ref": "Forest Temple/Level Island Courtyard/Gold Skulltula"
+          },
+          {
+            "name": "Level Island Courtyard - Heart",
+            "ref": "Forest Temple/Level Island Courtyard/Heart"
+          },
+          {
+            "name": "Lobby North Wall - Gold Skulltula",
+            "ref": "Forest Temple/Lobby North Wall/Gold Skulltula"
+          },
+          {
+            "name": "Lobby Southeast - Pot",
+            "ref": "Forest Temple/Lobby Southeast/Pot"
+          },
+          {
+            "name": "Lobby Southwest - Pot",
+            "ref": "Forest Temple/Lobby Southwest/Pot"
+          },
+          {
+            "name": "Map Room - Chest",
+            "ref": "Forest Temple/Map Room/Chest"
+          },
+          {
+            "name": "Raised Island Courtyard - Chest",
+            "ref": "Forest Temple/Raised Island Courtyard/Chest"
+          },
+          {
+            "name": "Raised Island Courtyard - Gold Skulltula",
+            "ref": "Forest Temple/Raised Island Courtyard/Gold Skulltula"
+          },
+          {
+            "name": "Red Poe Room - Chest",
+            "ref": "Forest Temple/Red Poe Room/Chest"
+          },
+          {
+            "name": "Upper Stalfos Room - Chest",
+            "ref": "Forest Temple/Upper Stalfos Room/Chest"
+          },
+          {
+            "name": "Upper Stalfos Room - Pot",
+            "ref": "Forest Temple/Upper Stalfos Room/Pot"
+          },
+          {
+            "name": "Well East - Chest",
+            "ref": "Forest Temple/Well East/Chest"
+          },
+          {
+            "name": "Well Middle - Heart",
+            "ref": "Forest Temple/Well Middle/Heart"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 787,
+            "y": 37
+          }
+        ],
+        "name": "Ganon's Castle",
+        "overlay_background": "#ffffff",
+        "sections": [
+          {
+            "name": "Outside - Arch - Gold Skulltula",
+            "ref": "Outside Ganon's Castle/Arch/Gold Skulltula"
+          },
+          {
+            "name": "Outside - Great Fairy Fountain - Reward",
+            "ref": "Outside Ganon's Castle/Great Fairy Fountain/Reward"
+          },
+          {
+            "name": "Boss Key Room - Boss Key Chest",
+            "ref": "Ganon's Castle/Boss Key Room/Boss Key Chest"
+          },
+          {
+            "name": "Fire Trial End - Pot",
+            "ref": "Ganon's Castle/Fire Trial End/Pot"
+          },
+          {
+            "name": "Fire Trial Heart - Heart",
+            "ref": "Ganon's Castle/Fire Trial Heart/Heart"
+          },
+          {
+            "name": "Forest Trial End - Pot",
+            "ref": "Ganon's Castle/Forest Trial End/Pot"
+          },
+          {
+            "name": "Forest Trial First Room - Clear Enemies Chest",
+            "ref": "Ganon's Castle/Forest Trial First Room/Clear Enemies Chest"
+          },
+          {
+            "name": "Ganon's Room Lower Northeast - Pot",
+            "ref": "Ganon's Castle/Ganon's Room Lower Northeast/Pot"
+          },
+          {
+            "name": "Ganon's Room Lower Northwest - Pot",
+            "ref": "Ganon's Castle/Ganon's Room Lower Northwest/Pot"
+          },
+          {
+            "name": "Invisible Deku Scrub Room - Center-Left Scrub",
+            "ref": "Ganon's Castle/Invisible Deku Scrub Room/Center-Left Scrub"
+          },
+          {
+            "name": "Invisible Deku Scrub Room - Center-Right Scrub",
+            "ref": "Ganon's Castle/Invisible Deku Scrub Room/Center-Right Scrub"
+          },
+          {
+            "name": "Invisible Deku Scrub Room - Fairy",
+            "ref": "Ganon's Castle/Invisible Deku Scrub Room/Fairy"
+          },
+          {
+            "name": "Invisible Deku Scrub Room - Left Scrub",
+            "ref": "Ganon's Castle/Invisible Deku Scrub Room/Left Scrub"
+          },
+          {
+            "name": "Invisible Deku Scrub Room - Right Scrub",
+            "ref": "Ganon's Castle/Invisible Deku Scrub Room/Right Scrub"
+          },
+          {
+            "name": "Light Trial Boulder Room - Pot",
+            "ref": "Ganon's Castle/Light Trial Boulder Room/Pot"
+          },
+          {
+            "name": "Light Trial End - Pot",
+            "ref": "Ganon's Castle/Light Trial End/Pot"
+          },
+          {
+            "name": "Light Trial First Room - Invisible Enemies Chest",
+            "ref": "Ganon's Castle/Light Trial First Room/Invisible Enemies Chest"
+          },
+          {
+            "name": "Light Trial First Room - Visible Chest",
+            "ref": "Ganon's Castle/Light Trial First Room/Visible Chest"
+          },
+          {
+            "name": "Light Trial Lullaby Chest - Chest",
+            "ref": "Ganon's Castle/Light Trial Lullaby Chest/Chest"
+          },
+          {
+            "name": "Shadow Trial End - Pot",
+            "ref": "Ganon's Castle/Shadow Trial End/Pot"
+          },
+          {
+            "name": "Shadow Trial Front - Chest",
+            "ref": "Ganon's Castle/Shadow Trial Front/Chest"
+          },
+          {
+            "name": "Shadow Trial Golden Gauntlets Chest - Chest",
+            "ref": "Ganon's Castle/Shadow Trial Golden Gauntlets Chest/Chest"
+          },
+          {
+            "name": "Shadow Trial Ice Bridge - Heart",
+            "ref": "Ganon's Castle/Shadow Trial Ice Bridge/Heart"
+          },
+          {
+            "name": "Shadow Trial Like Like - Pot",
+            "ref": "Ganon's Castle/Shadow Trial Like Like/Pot"
+          },
+          {
+            "name": "Spirit Trial Beamos - Sun's Song Fairy",
+            "ref": "Ganon's Castle/Spirit Trial Beamos/Sun's Song Fairy"
+          },
+          {
+            "name": "Spirit Trial Crystal Switch Room After Door - Invisible Chest",
+            "ref": "Ganon's Castle/Spirit Trial Crystal Switch Room After Door/Invisible Chest"
+          },
+          {
+            "name": "Spirit Trial Crystal Switch Room Before Door - Clear Enemies Chest",
+            "ref": "Ganon's Castle/Spirit Trial Crystal Switch Room Before Door/Clear Enemies Chest"
+          },
+          {
+            "name": "Spirit Trial End - Pot",
+            "ref": "Ganon's Castle/Spirit Trial End/Pot"
+          },
+          {
+            "name": "Spirit Trial Heart - Heart",
+            "ref": "Ganon's Castle/Spirit Trial Heart/Heart"
+          },
+          {
+            "name": "Water Trial End - Pot",
+            "ref": "Ganon's Castle/Water Trial End/Pot"
+          },
+          {
+            "name": "Water Trial Left - Chest",
+            "ref": "Ganon's Castle/Water Trial Left/Chest"
+          },
+          {
+            "name": "Water Trial Push Block Room - Pot",
+            "ref": "Ganon's Castle/Water Trial Push Block Room/Pot"
+          },
+          {
+            "name": "Water Trial Right - Chest",
+            "ref": "Ganon's Castle/Water Trial Right/Chest"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 350,
+            "y": 210
+          }
+        ],
+        "name": "Gerudo Fortress",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "1 Torch Cell - Carpenter",
+            "ref": "Gerudo Fortress/1 Torch Cell/Carpenter Key"
+          },
+          {
+            "name": "1 Torch Cell Crate - Crate",
+            "ref": "Gerudo Fortress/1 Torch Cell Crate/Crate"
+          },
+          {
+            "name": "1 Torch Cell Pots - Pot",
+            "ref": "Gerudo Fortress/1 Torch Cell Pots/Pot"
+          },
+          {
+            "name": "Above Jail - Crate",
+            "ref": "Gerudo Fortress/Above Jail/Crate"
+          },
+          {
+            "name": "Break Room Crates - Crate",
+            "ref": "Gerudo Fortress/Break Room Crates/Crate"
+          },
+          {
+            "name": "Break Room Hallway Crates - Crate",
+            "ref": "Gerudo Fortress/Break Room Hallway Crates/Crate"
+          },
+          {
+            "name": "Break Room Table - Pot",
+            "ref": "Gerudo Fortress/Break Room Table/Pot"
+          },
+          {
+            "name": "Dead End Cell - Carpenter",
+            "ref": "Gerudo Fortress/Dead End Cell/Carpenter Key"
+          },
+          {
+            "name": "Dead End Cell Crate - Crate",
+            "ref": "Gerudo Fortress/Dead End Cell Crate/Crate"
+          },
+          {
+            "name": "Double Cell - Carpenter",
+            "ref": "Gerudo Fortress/Double Cell/Carpenter Key"
+          },
+          {
+            "name": "Double Cell Crates - Crate",
+            "ref": "Gerudo Fortress/Double Cell Crates/Crate"
+          },
+          {
+            "name": "Double Cell Pots - Pot",
+            "ref": "Gerudo Fortress/Double Cell Pots/Pot"
+          },
+          {
+            "name": "Entrance Crates - Crate",
+            "ref": "Gerudo Fortress/Entrance Crates/Crate"
+          },
+          {
+            "name": "Fairy Grotto - Fairy",
+            "ref": "Gerudo Fortress/Fairy Grotto/Fairy"
+          },
+          {
+            "name": "Gerudo Fortress - Freed All Carpenters",
+            "ref": "Gerudo Fortress/Gerudo Fortress/Freed All Carpenters"
+          },
+          {
+            "name": "Horseback Archery Canopy - Crate",
+            "ref": "Gerudo Fortress/Horseback Archery Canopy/Crate"
+          },
+          {
+            "name": "Horseback Archery Canopy - HBA 1000 Points",
+            "ref": "Gerudo Fortress/Horseback Archery Canopy/HBA 1000 Points"
+          },
+          {
+            "name": "Horseback Archery Canopy - HBA 1500 Points",
+            "ref": "Gerudo Fortress/Horseback Archery Canopy/HBA 1500 Points"
+          },
+          {
+            "name": "Horseback Archery North Target - Crate",
+            "ref": "Gerudo Fortress/Horseback Archery North Target/Crate"
+          },
+          {
+            "name": "Horseback Archery North Target - Gold Skulltula",
+            "ref": "Gerudo Fortress/Horseback Archery North Target/Gold Skulltula"
+          },
+          {
+            "name": "Horseback Archery Range Big Targets - Crate",
+            "ref": "Gerudo Fortress/Horseback Archery Range Big Targets/Crate"
+          },
+          {
+            "name": "Horseback Archery South Target - Crate",
+            "ref": "Gerudo Fortress/Horseback Archery South Target/Crate"
+          },
+          {
+            "name": "Jailed Pots - Pot",
+            "ref": "Gerudo Fortress/Jailed Pots/Pot"
+          },
+          {
+            "name": "Kitchen Cauldron - Sun's Song Fairy",
+            "ref": "Gerudo Fortress/Kitchen Cauldron/Sun's Song Fairy"
+          },
+          {
+            "name": "Kitchen Crate - Crate",
+            "ref": "Gerudo Fortress/Kitchen Crate/Crate"
+          },
+          {
+            "name": "Kitchen Table - Pot",
+            "ref": "Gerudo Fortress/Kitchen Table/Pot"
+          },
+          {
+            "name": "Near Kitchen Left Crates - Crate",
+            "ref": "Gerudo Fortress/Near Kitchen Left Crates/Crate"
+          },
+          {
+            "name": "Near Kitchen Right Crates - Crate",
+            "ref": "Gerudo Fortress/Near Kitchen Right Crates/Crate"
+          },
+          {
+            "name": "Outskirts - Crate",
+            "ref": "Gerudo Fortress/Outskirts/Crate"
+          },
+          {
+            "name": "Steep Slope Cell - Carpenter",
+            "ref": "Gerudo Fortress/Steep Slope Cell/Carpenter Key"
+          },
+          {
+            "name": "Steep Slope Cell Pots - Pot",
+            "ref": "Gerudo Fortress/Steep Slope Cell Pots/Pot"
+          },
+          {
+            "name": "Top Floor Chest - Chest",
+            "ref": "Gerudo Fortress/Top Floor Chest/Chest"
+          },
+          {
+            "name": "Top Floor Wall - Gold Skulltula",
+            "ref": "Gerudo Fortress/Top Floor Wall/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 286,
+            "y": 221
+          }
+        ],
+        "name": "Gerudo Training Ground",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Beamos Room Chest - Chest",
+            "ref": "Gerudo Training Ground/Beamos Room Chest/Chest"
+          },
+          {
+            "name": "Beamos Room East - Heart",
+            "ref": "Gerudo Training Ground/Beamos Room East/Heart"
+          },
+          {
+            "name": "Beamos Room South - Heart",
+            "ref": "Gerudo Training Ground/Beamos Room South/Heart"
+          },
+          {
+            "name": "Eye Statue Room - Chest",
+            "ref": "Gerudo Training Ground/Eye Statue Room/Chest"
+          },
+          {
+            "name": "Hammer Room Clear Chest - Chest",
+            "ref": "Gerudo Training Ground/Hammer Room Clear Chest/Chest"
+          },
+          {
+            "name": "Hammer Room Switch Chest - Chest",
+            "ref": "Gerudo Training Ground/Hammer Room Switch Chest/Chest"
+          },
+          {
+            "name": "Heavy Block Room - Chest",
+            "ref": "Gerudo Training Ground/Heavy Block Room/Chest"
+          },
+          {
+            "name": "Hidden Ceiling Room - Chest",
+            "ref": "Gerudo Training Ground/Hidden Ceiling Room/Chest"
+          },
+          {
+            "name": "Lava Room Upper - Freestanding Key",
+            "ref": "Gerudo Training Ground/Lava Room Upper/Freestanding Key"
+          },
+          {
+            "name": "Like Like Room First Chest - Chest",
+            "ref": "Gerudo Training Ground/Like Like Room First Chest/Chest"
+          },
+          {
+            "name": "Like Like Room Fourth Chest - Chest",
+            "ref": "Gerudo Training Ground/Like Like Room Fourth Chest/Chest"
+          },
+          {
+            "name": "Like Like Room Second Chest - Chest",
+            "ref": "Gerudo Training Ground/Like Like Room Second Chest/Chest"
+          },
+          {
+            "name": "Like Like Room Third Chest - Invisible Chest",
+            "ref": "Gerudo Training Ground/Like Like Room Third Chest/Invisible Chest"
+          },
+          {
+            "name": "Lobby Left - Chest",
+            "ref": "Gerudo Training Ground/Lobby Left/Chest"
+          },
+          {
+            "name": "Lobby Middle - Song of Storms Fairy",
+            "ref": "Gerudo Training Ground/Lobby Middle/Song of Storms Fairy"
+          },
+          {
+            "name": "Lobby Right - Chest",
+            "ref": "Gerudo Training Ground/Lobby Right/Chest"
+          },
+          {
+            "name": "Maze Left Path Final Chest - Chest",
+            "ref": "Gerudo Training Ground/Maze Left Path Final Chest/Chest"
+          },
+          {
+            "name": "Maze Left Path First Chest - Chest",
+            "ref": "Gerudo Training Ground/Maze Left Path First Chest/Chest"
+          },
+          {
+            "name": "Maze Left Path Second Chest - Chest",
+            "ref": "Gerudo Training Ground/Maze Left Path Second Chest/Chest"
+          },
+          {
+            "name": "Maze Left Path Third Chest - Chest",
+            "ref": "Gerudo Training Ground/Maze Left Path Third Chest/Chest"
+          },
+          {
+            "name": "Maze Right Central Chest - Chest",
+            "ref": "Gerudo Training Ground/Maze Right Central Chest/Chest"
+          },
+          {
+            "name": "Maze Right Side Chest - Chest",
+            "ref": "Gerudo Training Ground/Maze Right Side Chest/Chest"
+          },
+          {
+            "name": "Near Scarecrow - Chest",
+            "ref": "Gerudo Training Ground/Near Scarecrow/Chest"
+          },
+          {
+            "name": "Stalfos Room - Chest",
+            "ref": "Gerudo Training Ground/Stalfos Room/Chest"
+          },
+          {
+            "name": "Water Room - Silver Rupee Chest",
+            "ref": "Gerudo Training Ground/Water Room/Silver Rupee Chest"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 367,
+            "y": 310
+          }
+        ],
+        "name": "Gerudo Valley",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Bean Patch - Cow Near Bean Patch",
+            "ref": "Gerudo Valley/Bean Patch/Cow Near Bean Patch"
+          },
+          {
+            "name": "Bean Patch - Crate Near Bean Patch",
+            "ref": "Gerudo Valley/Bean Patch/Crate Near Bean Patch"
+          },
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Gerudo Valley/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Gerudo Valley/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Behind Hammer Boulders - Chest",
+            "ref": "Gerudo Valley/Behind Hammer Boulders/Chest"
+          },
+          {
+            "name": "Behind Tent - Gold Skulltula",
+            "ref": "Gerudo Valley/Behind Tent/Gold Skulltula"
+          },
+          {
+            "name": "Carpenter - Trade Saw",
+            "ref": "Gerudo Valley/Carpenter/Trade Saw"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Gerudo Valley/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Gerudo Valley/Gossip Stone/Fairy"
+          },
+          {
+            "name": "Octorok Grotto - Blue Rupee",
+            "ref": "Gerudo Valley/Octorok Grotto/Blue Rupee"
+          },
+          {
+            "name": "Octorok Grotto - Green Rupee",
+            "ref": "Gerudo Valley/Octorok Grotto/Green Rupee"
+          },
+          {
+            "name": "Octorok Grotto - Red Rupee",
+            "ref": "Gerudo Valley/Octorok Grotto/Red Rupee"
+          },
+          {
+            "name": "Piece of Heart Crate - Crate",
+            "ref": "Gerudo Valley/Piece of Heart Crate/Crate"
+          },
+          {
+            "name": "Piece of Heart Crate - Piece of Heart",
+            "ref": "Gerudo Valley/Piece of Heart Crate/Piece of Heart"
+          },
+          {
+            "name": "Pillar - Gold Skulltula",
+            "ref": "Gerudo Valley/Pillar/Gold Skulltula"
+          },
+          {
+            "name": "Small Bridge - Gold Skulltula",
+            "ref": "Gerudo Valley/Small Bridge/Gold Skulltula"
+          },
+          {
+            "name": "Storms Grotto - Beehive",
+            "ref": "Gerudo Valley/Storms Grotto/Beehive"
+          },
+          {
+            "name": "Storms Grotto - Front Scrub",
+            "ref": "Gerudo Valley/Storms Grotto/Front Scrub"
+          },
+          {
+            "name": "Storms Grotto - Rear Scrub",
+            "ref": "Gerudo Valley/Storms Grotto/Rear Scrub"
+          },
+          {
+            "name": "Waterfall - Piece of Heart",
+            "ref": "Gerudo Valley/Waterfall/Piece of Heart"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 909,
+            "y": 55
+          }
+        ],
+        "name": "Goron City",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Boulder Maze Crate - Crate",
+            "ref": "Goron City/Boulder Maze Crate/Crate"
+          },
+          {
+            "name": "Boulder Maze Crate - Gold Skulltula",
+            "ref": "Goron City/Boulder Maze Crate/Gold Skulltula"
+          },
+          {
+            "name": "Boulder Maze Gossip Stone - Center Chest",
+            "ref": "Goron City/Boulder Maze Gossip Stone/Center Chest"
+          },
+          {
+            "name": "Boulder Maze Gossip Stone - Gossip Stone Big Fairy",
+            "ref": "Goron City/Boulder Maze Gossip Stone/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Boulder Maze Gossip Stone - Gossip Stone Fairy",
+            "ref": "Goron City/Boulder Maze Gossip Stone/Gossip Stone Fairy"
+          },
+          {
+            "name": "Boulder Maze Gossip Stone - Right Chest",
+            "ref": "Goron City/Boulder Maze Gossip Stone/Right Chest"
+          },
+          {
+            "name": "Boulder Maze Left - Chest",
+            "ref": "Goron City/Boulder Maze Left/Chest"
+          },
+          {
+            "name": "Center Platform - Gold Skulltula",
+            "ref": "Goron City/Center Platform/Gold Skulltula"
+          },
+          {
+            "name": "Darunia - Darunia's Joy",
+            "ref": "Goron City/Darunia/Darunia's Joy"
+          },
+          {
+            "name": "Darunia Left Table - Pot",
+            "ref": "Goron City/Darunia Left Table/Pot"
+          },
+          {
+            "name": "Darunia Right Table - Pot",
+            "ref": "Goron City/Darunia Right Table/Pot"
+          },
+          {
+            "name": "Lower Staircase - Pot",
+            "ref": "Goron City/Lower Staircase/Pot"
+          },
+          {
+            "name": "Medigoron - Item",
+            "ref": "Goron City/Medigoron/Item"
+          },
+          {
+            "name": "Medigoron Gossip Stone - Big Fairy",
+            "ref": "Goron City/Medigoron Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Medigoron Gossip Stone - Fairy",
+            "ref": "Goron City/Medigoron Gossip Stone/Fairy"
+          },
+          {
+            "name": "Medigoron Table - Pot",
+            "ref": "Goron City/Medigoron Table/Pot"
+          },
+          {
+            "name": "Open Grotto - Beehive",
+            "ref": "Goron City/Open Grotto/Beehive"
+          },
+          {
+            "name": "Open Grotto - Center Scrub",
+            "ref": "Goron City/Open Grotto/Center Scrub"
+          },
+          {
+            "name": "Open Grotto - Left Scrub",
+            "ref": "Goron City/Open Grotto/Left Scrub"
+          },
+          {
+            "name": "Open Grotto - Right Scrub",
+            "ref": "Goron City/Open Grotto/Right Scrub"
+          },
+          {
+            "name": "Rolling Goron - As Adult",
+            "ref": "Goron City/Rolling Goron/As Adult"
+          },
+          {
+            "name": "Rolling Goron - As Child",
+            "ref": "Goron City/Rolling Goron/As Child"
+          },
+          {
+            "name": "Shop - Item 2",
+            "ref": "Goron City/Shop/Item 2"
+          },
+          {
+            "name": "Shop - Item 3",
+            "ref": "Goron City/Shop/Item 3"
+          },
+          {
+            "name": "Shop - Item 4",
+            "ref": "Goron City/Shop/Item 4"
+          },
+          {
+            "name": "Shop - Item 5",
+            "ref": "Goron City/Shop/Item 5"
+          },
+          {
+            "name": "Shop - Item 6",
+            "ref": "Goron City/Shop/Item 6"
+          },
+          {
+            "name": "Shop - Item 7",
+            "ref": "Goron City/Shop/Item 7"
+          },
+          {
+            "name": "Shop - Item 8",
+            "ref": "Goron City/Shop/Item 8"
+          },
+          {
+            "name": "Spinning Pot - Piece of Heart",
+            "ref": "Goron City/Spinning Pot/Piece of Heart"
+          },
+          {
+            "name": "Upper Staircase - Pot",
+            "ref": "Goron City/Upper Staircase/Pot"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1121,
+            "y": 196
+          }
+        ],
+        "name": "Graveyard",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Graveyard/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Graveyard/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Dampe Gravedigging Tour - Piece of Heart",
+            "ref": "Graveyard/Dampe Gravedigging Tour/Piece of Heart"
+          },
+          {
+            "name": "Dampe Race Entrance North - Pot",
+            "ref": "Graveyard/Dampe Race Entrance North/Pot"
+          },
+          {
+            "name": "Dampe Race Entrance South - Pot",
+            "ref": "Graveyard/Dampe Race Entrance South/Pot"
+          },
+          {
+            "name": "Dampe Race Finish - Chest",
+            "ref": "Graveyard/Dampe Race Finish/Chest"
+          },
+          {
+            "name": "Dampe Race Finish - Piece of Heart (Finish In Under 1 Minute)",
+            "ref": "Graveyard/Dampe Race Finish/Piece of Heart (Finish In Under 1 Minute)"
+          },
+          {
+            "name": "Dampe Race Rupee 1 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 1/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 2 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 2/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 3 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 3/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 4 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 4/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 5 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 5/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 6 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 6/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 7 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 7/Green Rupee"
+          },
+          {
+            "name": "Dampe Race Rupee 8 - Green Rupee",
+            "ref": "Graveyard/Dampe Race Rupee 8/Green Rupee"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Graveyard/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Graveyard/Gossip Stone/Fairy"
+          },
+          {
+            "name": "Heart Piece Grave - Chest",
+            "ref": "Graveyard/Heart Piece Grave/Chest"
+          },
+          {
+            "name": "Near Entrance - Grass",
+            "ref": "Graveyard/Near Entrance/Grass"
+          },
+          {
+            "name": "Piece of Heart Crate - Crate",
+            "ref": "Graveyard/Piece of Heart Crate/Crate"
+          },
+          {
+            "name": "Piece of Heart Crate - Piece of Heart",
+            "ref": "Graveyard/Piece of Heart Crate/Piece of Heart"
+          },
+          {
+            "name": "Royal Family's Tomb End - Song",
+            "ref": "Graveyard/Royal Family's Tomb End/Song"
+          },
+          {
+            "name": "Royal Family's Tomb Torch Room - Chest",
+            "ref": "Graveyard/Royal Family's Tomb Torch Room/Chest"
+          },
+          {
+            "name": "Royal Family's Tomb Torch Room North - Sun's Song Fairy",
+            "ref": "Graveyard/Royal Family's Tomb Torch Room North/Sun's Song Fairy"
+          },
+          {
+            "name": "Shield Grave - Chest",
+            "ref": "Graveyard/Shield Grave/Chest"
+          },
+          {
+            "name": "Shield Grave - Fountain Fairy",
+            "ref": "Graveyard/Shield Grave/Fountain Fairy"
+          },
+          {
+            "name": "Wall - Gold Skulltula",
+            "ref": "Graveyard/Wall/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 204,
+            "y": 191
+          }
+        ],
+        "name": "Haunted Wasteland",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "After Quicksand - Crate",
+            "ref": "Haunted Wasteland/After Quicksand/Crate"
+          },
+          {
+            "name": "Before Quicksand - Crate",
+            "ref": "Haunted Wasteland/Before Quicksand/Crate"
+          },
+          {
+            "name": "Carpet Salesman - Item",
+            "ref": "Haunted Wasteland/Carpet Salesman/Item"
+          },
+          {
+            "name": "Near Colossus - Crate",
+            "ref": "Haunted Wasteland/Near Colossus/Crate"
+          },
+          {
+            "name": "Tower - Chest",
+            "ref": "Haunted Wasteland/Tower/Chest"
+          },
+          {
+            "name": "Tower - Gold Skulltula",
+            "ref": "Haunted Wasteland/Tower/Gold Skulltula"
+          },
+          {
+            "name": "Tower - Pot",
+            "ref": "Haunted Wasteland/Tower/Pot"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 786,
+            "y": 106
+          }
+        ],
+        "name": "Hyrule Castle",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Entrance Tree - Gold Skulltula",
+            "ref": "Hyrule Castle/Entrance Tree/Gold Skulltula"
+          },
+          {
+            "name": "Entrance Tree - Tree",
+            "ref": "Hyrule Castle/Entrance Tree/Tree"
+          },
+          {
+            "name": "Great Fairy Fountain - Reward",
+            "ref": "Hyrule Castle/Great Fairy Fountain/Reward"
+          },
+          {
+            "name": "Malon - Weird Egg",
+            "ref": "Hyrule Castle/Malon/Weird Egg"
+          },
+          {
+            "name": "Malon Gossip Stone - Big Fairy",
+            "ref": "Hyrule Castle/Malon Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Malon Gossip Stone - Fairy",
+            "ref": "Hyrule Castle/Malon Gossip Stone/Fairy"
+          },
+          {
+            "name": "Meeting Zelda - Song from Impa",
+            "ref": "Hyrule Castle/Meeting Zelda/Song from Impa"
+          },
+          {
+            "name": "Meeting Zelda - Zelda's Letter",
+            "ref": "Hyrule Castle/Meeting Zelda/Zelda's Letter"
+          },
+          {
+            "name": "Near Guards Tree 1 - Tree",
+            "ref": "Hyrule Castle/Near Guards Tree 1/Tree"
+          },
+          {
+            "name": "Near Guards Tree 2 - Tree",
+            "ref": "Hyrule Castle/Near Guards Tree 2/Tree"
+          },
+          {
+            "name": "Near Guards Tree 3 - Tree",
+            "ref": "Hyrule Castle/Near Guards Tree 3/Tree"
+          },
+          {
+            "name": "Near Guards Tree 4 - Tree",
+            "ref": "Hyrule Castle/Near Guards Tree 4/Tree"
+          },
+          {
+            "name": "Near Guards Tree 5 - Tree",
+            "ref": "Hyrule Castle/Near Guards Tree 5/Tree"
+          },
+          {
+            "name": "Near Guards Tree 6 - Tree",
+            "ref": "Hyrule Castle/Near Guards Tree 6/Tree"
+          },
+          {
+            "name": "Rock Wall Gossip Stone - Big Fairy",
+            "ref": "Hyrule Castle/Rock Wall Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Rock Wall Gossip Stone - Fairy",
+            "ref": "Hyrule Castle/Rock Wall Gossip Stone/Fairy"
+          },
+          {
+            "name": "Storms Grotto - Gold Skulltula",
+            "ref": "Hyrule Castle/Storms Grotto/Gold Skulltula"
+          },
+          {
+            "name": "Storms Grotto - Gossip Stone Big Fairy",
+            "ref": "Hyrule Castle/Storms Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Storms Grotto - Gossip Stone Fairy",
+            "ref": "Hyrule Castle/Storms Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Storms Grotto - Grass Near Grotto",
+            "ref": "Hyrule Castle/Storms Grotto/Grass Near Grotto"
+          },
+          {
+            "name": "Storms Grotto - Pot",
+            "ref": "Hyrule Castle/Storms Grotto/Pot"
+          },
+          {
+            "name": "Storms Grotto - Tree Near Grotto",
+            "ref": "Hyrule Castle/Storms Grotto/Tree Near Grotto"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 807,
+            "y": 318
+          }
+        ],
+        "name": "Hyrule Field",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Central Grass - Grass",
+            "ref": "Hyrule Field/Central Grass/Grass"
+          },
+          {
+            "name": "Cow Grotto - Cow",
+            "ref": "Hyrule Field/Cow Grotto/Cow"
+          },
+          {
+            "name": "Cow Grotto - Gold Skulltula",
+            "ref": "Hyrule Field/Cow Grotto/Gold Skulltula"
+          },
+          {
+            "name": "Cow Grotto - Gossip Stone Big Fairy",
+            "ref": "Hyrule Field/Cow Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Cow Grotto - Gossip Stone Fairy",
+            "ref": "Hyrule Field/Cow Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Cow Grotto - Grass",
+            "ref": "Hyrule Field/Cow Grotto/Grass"
+          },
+          {
+            "name": "Cow Grotto - Pot",
+            "ref": "Hyrule Field/Cow Grotto/Pot"
+          },
+          {
+            "name": "Deku Scrub Grotto - Beehive",
+            "ref": "Hyrule Field/Deku Scrub Grotto/Beehive"
+          },
+          {
+            "name": "Deku Scrub Grotto - Deku Scrub",
+            "ref": "Hyrule Field/Deku Scrub Grotto/Deku Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Song of Storms Fairy",
+            "ref": "Hyrule Field/Deku Scrub Grotto/Song of Storms Fairy"
+          },
+          {
+            "name": "East Trees - Tree",
+            "ref": "Hyrule Field/East Trees/Tree"
+          },
+          {
+            "name": "Fairy Grotto - Fairy",
+            "ref": "Hyrule Field/Fairy Grotto/Fairy"
+          },
+          {
+            "name": "Near Gerudo Valley Adult Tree - Tree",
+            "ref": "Hyrule Field/Near Gerudo Valley Adult Tree/Tree"
+          },
+          {
+            "name": "Near Gerudo Valley Child Tree - Tree",
+            "ref": "Hyrule Field/Near Gerudo Valley Child Tree/Tree"
+          },
+          {
+            "name": "Near Kokiri Forest Grass - Grass",
+            "ref": "Hyrule Field/Near Kokiri Forest Grass/Grass"
+          },
+          {
+            "name": "Near Market Grass - Grass",
+            "ref": "Hyrule Field/Near Market Grass/Grass"
+          },
+          {
+            "name": "Near Market Grotto - Beehive",
+            "ref": "Hyrule Field/Near Market Grotto/Beehive"
+          },
+          {
+            "name": "Near Market Grotto - Chest",
+            "ref": "Hyrule Field/Near Market Grotto/Chest"
+          },
+          {
+            "name": "Near Market Grotto - Fish",
+            "ref": "Hyrule Field/Near Market Grotto/Fish"
+          },
+          {
+            "name": "Near Market Grotto - Gossip Stone Big Fairy",
+            "ref": "Hyrule Field/Near Market Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Near Market Grotto - Gossip Stone Fairy",
+            "ref": "Hyrule Field/Near Market Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Near Market Grotto - Grass",
+            "ref": "Hyrule Field/Near Market Grotto/Grass"
+          },
+          {
+            "name": "Near Market Grotto - Trees Near Grotto",
+            "ref": "Hyrule Field/Near Market Grotto/Trees Near Grotto"
+          },
+          {
+            "name": "Northwest Trees - Tree",
+            "ref": "Hyrule Field/Northwest Trees/Tree"
+          },
+          {
+            "name": "Ocarina of Time - Item",
+            "ref": "Hyrule Field/Ocarina of Time/Item"
+          },
+          {
+            "name": "Ocarina of Time - Song from Ocarina of Time",
+            "ref": "Hyrule Field/Ocarina of Time/Song from Ocarina of Time"
+          },
+          {
+            "name": "Open Grotto - Beehive",
+            "ref": "Hyrule Field/Open Grotto/Beehive"
+          },
+          {
+            "name": "Open Grotto - Chest",
+            "ref": "Hyrule Field/Open Grotto/Chest"
+          },
+          {
+            "name": "Open Grotto - Fish",
+            "ref": "Hyrule Field/Open Grotto/Fish"
+          },
+          {
+            "name": "Open Grotto - Gossip Stone Big Fairy",
+            "ref": "Hyrule Field/Open Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Open Grotto - Gossip Stone Fairy",
+            "ref": "Hyrule Field/Open Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Open Grotto - Grass",
+            "ref": "Hyrule Field/Open Grotto/Grass"
+          },
+          {
+            "name": "Open Grotto - Tree West of Open Grotto",
+            "ref": "Hyrule Field/Open Grotto/Tree West of Open Grotto"
+          },
+          {
+            "name": "Outside Kakariko Tree - Tree",
+            "ref": "Hyrule Field/Outside Kakariko Tree/Tree"
+          },
+          {
+            "name": "Outside Lon Lon Ranch Tree - Tree",
+            "ref": "Hyrule Field/Outside Lon Lon Ranch Tree/Tree"
+          },
+          {
+            "name": "Outside Zora's River Tree - Tree",
+            "ref": "Hyrule Field/Outside Zora's River Tree/Tree"
+          },
+          {
+            "name": "Pond - Song of Storms Fairy",
+            "ref": "Hyrule Field/Pond/Song of Storms Fairy"
+          },
+          {
+            "name": "South Grass - Grass",
+            "ref": "Hyrule Field/South Grass/Grass"
+          },
+          {
+            "name": "Southeast Grotto - Beehive",
+            "ref": "Hyrule Field/Southeast Grotto/Beehive"
+          },
+          {
+            "name": "Southeast Grotto - Chest",
+            "ref": "Hyrule Field/Southeast Grotto/Chest"
+          },
+          {
+            "name": "Southeast Grotto - Fish",
+            "ref": "Hyrule Field/Southeast Grotto/Fish"
+          },
+          {
+            "name": "Southeast Grotto - Gossip Stone Big Fairy",
+            "ref": "Hyrule Field/Southeast Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Southeast Grotto - Gossip Stone Fairy",
+            "ref": "Hyrule Field/Southeast Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Southeast Grotto - Grass",
+            "ref": "Hyrule Field/Southeast Grotto/Grass"
+          },
+          {
+            "name": "Southeast Trees - Child Tree",
+            "ref": "Hyrule Field/Southeast Trees/Child Tree"
+          },
+          {
+            "name": "Southeast Trees - Tree",
+            "ref": "Hyrule Field/Southeast Trees/Tree"
+          },
+          {
+            "name": "Stone Bridge Tree Grotto - Gold Skulltula",
+            "ref": "Hyrule Field/Stone Bridge Tree Grotto/Gold Skulltula"
+          },
+          {
+            "name": "Stone Bridge Tree Grotto - Tree Near Grotto",
+            "ref": "Hyrule Field/Stone Bridge Tree Grotto/Tree Near Grotto"
+          },
+          {
+            "name": "Tektite Grotto - Piece of Heart",
+            "ref": "Hyrule Field/Tektite Grotto/Piece of Heart"
+          },
+          {
+            "name": "Tektite Grotto - Tree Near Grotto",
+            "ref": "Hyrule Field/Tektite Grotto/Tree Near Grotto"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1359,
+            "y": 141
+          }
+        ],
+        "name": "Ice Cavern",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Compass Room North - Gold Skulltula",
+            "ref": "Ice Cavern/Compass Room North/Gold Skulltula"
+          },
+          {
+            "name": "Compass Room North - Piece of Heart",
+            "ref": "Ice Cavern/Compass Room North/Piece of Heart"
+          },
+          {
+            "name": "Compass Room South - Chest",
+            "ref": "Ice Cavern/Compass Room South/Chest"
+          },
+          {
+            "name": "First Hall - Pot",
+            "ref": "Ice Cavern/First Hall/Pot"
+          },
+          {
+            "name": "Lobby - Blue Rupee",
+            "ref": "Ice Cavern/Lobby/Blue Rupee"
+          },
+          {
+            "name": "Map Room East Platform - Heart",
+            "ref": "Ice Cavern/Map Room East Platform/Heart"
+          },
+          {
+            "name": "Map Room Frozen Chest - Chest",
+            "ref": "Ice Cavern/Map Room Frozen Chest/Chest"
+          },
+          {
+            "name": "Map Room Frozen Pot - Pot",
+            "ref": "Ice Cavern/Map Room Frozen Pot/Pot"
+          },
+          {
+            "name": "Near End - Pot",
+            "ref": "Ice Cavern/Near End/Pot"
+          },
+          {
+            "name": "Push Block Room Song of Time Block - Red Rupee",
+            "ref": "Ice Cavern/Push Block Room Song of Time Block/Red Rupee"
+          },
+          {
+            "name": "Push Block Room Southeast - Gold Skulltula",
+            "ref": "Ice Cavern/Push Block Room Southeast/Gold Skulltula"
+          },
+          {
+            "name": "Rotating Spike Room - Song of Storms Fairy",
+            "ref": "Ice Cavern/Rotating Spike Room/Song of Storms Fairy"
+          },
+          {
+            "name": "Spinning Scythe Room North - Pot",
+            "ref": "Ice Cavern/Spinning Scythe Room North/Pot"
+          },
+          {
+            "name": "Spinning Scythe Room Southeast - Pot",
+            "ref": "Ice Cavern/Spinning Scythe Room Southeast/Pot"
+          },
+          {
+            "name": "Spinning Scythe Room Southwest - Gold Skulltula",
+            "ref": "Ice Cavern/Spinning Scythe Room Southwest/Gold Skulltula"
+          },
+          {
+            "name": "White Wolfos Room - Chest",
+            "ref": "Ice Cavern/White Wolfos Room/Chest"
+          },
+          {
+            "name": "White Wolfos Room - Song from Sheik in Ice Cavern",
+            "ref": "Ice Cavern/White Wolfos Room/Song from Sheik in Ice Cavern"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1375,
+            "y": 176
+          }
+        ],
+        "name": "Jabu Jabu's Belly",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above Big Octo - Pot",
+            "ref": "Jabu Jabu's Belly/Above Big Octo/Pot"
+          },
+          {
+            "name": "Barinade Pot 1 - Pot",
+            "ref": "Jabu Jabu's Belly/Barinade Pot 1/Pot"
+          },
+          {
+            "name": "Barinade Pot 2 - Pot",
+            "ref": "Jabu Jabu's Belly/Barinade Pot 2/Pot"
+          },
+          {
+            "name": "Barinade Pot 3 - Pot",
+            "ref": "Jabu Jabu's Belly/Barinade Pot 3/Pot"
+          },
+          {
+            "name": "Barinade Pot 4 - Pot",
+            "ref": "Jabu Jabu's Belly/Barinade Pot 4/Pot"
+          },
+          {
+            "name": "Barinade Pot 5 - Pot",
+            "ref": "Jabu Jabu's Belly/Barinade Pot 5/Pot"
+          },
+          {
+            "name": "Barinade Pot 6 - Pot",
+            "ref": "Jabu Jabu's Belly/Barinade Pot 6/Pot"
+          },
+          {
+            "name": "Before Boss Room - Gold Skulltula",
+            "ref": "Jabu Jabu's Belly/Before Boss Room/Gold Skulltula"
+          },
+          {
+            "name": "Boomerang Room - Chest",
+            "ref": "Jabu Jabu's Belly/Boomerang Room/Chest"
+          },
+          {
+            "name": "Boss Room - Barinade",
+            "ref": "Jabu Jabu's Belly/Boss Room/Barinade"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Jabu Jabu's Belly/Boss Room/Heart Container"
+          },
+          {
+            "name": "Compass Room - Chest",
+            "ref": "Jabu Jabu's Belly/Compass Room/Chest"
+          },
+          {
+            "name": "Hidden Dive Room - Deku Scrub",
+            "ref": "Jabu Jabu's Belly/Hidden Dive Room/Deku Scrub"
+          },
+          {
+            "name": "Lobby Basement Lower - Gold Skulltula",
+            "ref": "Jabu Jabu's Belly/Lobby Basement Lower/Gold Skulltula"
+          },
+          {
+            "name": "Lobby Basement Upper - Gold Skulltula",
+            "ref": "Jabu Jabu's Belly/Lobby Basement Upper/Gold Skulltula"
+          },
+          {
+            "name": "Map Room - Chest",
+            "ref": "Jabu Jabu's Belly/Map Room/Chest"
+          },
+          {
+            "name": "Platform Room - Small Crate",
+            "ref": "Jabu Jabu's Belly/Platform Room/Small Crate"
+          },
+          {
+            "name": "Two Octorok Room - Pot",
+            "ref": "Jabu Jabu's Belly/Two Octorok Room/Pot"
+          },
+          {
+            "name": "Water Switch Room - Alcove Pot",
+            "ref": "Jabu Jabu's Belly/Water Switch Room/Alcove Pot"
+          },
+          {
+            "name": "Water Switch Room - Gold Skulltula",
+            "ref": "Jabu Jabu's Belly/Water Switch Room/Gold Skulltula"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 988,
+            "y": 208
+          }
+        ],
+        "name": "Kakariko Village",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above Impa's House - Gold Skulltula",
+            "ref": "Kakariko Village/Above Impa's House/Gold Skulltula"
+          },
+          {
+            "name": "Anju - As Adult",
+            "ref": "Kakariko Village/Anju/As Adult"
+          },
+          {
+            "name": "Anju - As Child",
+            "ref": "Kakariko Village/Anju/As Child"
+          },
+          {
+            "name": "Anju - Trade Pocket Cucco",
+            "ref": "Kakariko Village/Anju/Trade Pocket Cucco"
+          },
+          {
+            "name": "Bazaar - Item 2",
+            "ref": "Kakariko Village/Bazaar/Item 2"
+          },
+          {
+            "name": "Bazaar - Item 3",
+            "ref": "Kakariko Village/Bazaar/Item 3"
+          },
+          {
+            "name": "Bazaar - Item 4",
+            "ref": "Kakariko Village/Bazaar/Item 4"
+          },
+          {
+            "name": "Bazaar - Item 5",
+            "ref": "Kakariko Village/Bazaar/Item 5"
+          },
+          {
+            "name": "Bazaar - Item 6",
+            "ref": "Kakariko Village/Bazaar/Item 6"
+          },
+          {
+            "name": "Bazaar - Item 7",
+            "ref": "Kakariko Village/Bazaar/Item 7"
+          },
+          {
+            "name": "Bazaar - Item 8",
+            "ref": "Kakariko Village/Bazaar/Item 8"
+          },
+          {
+            "name": "Behind Gold Skulltula House - Adult Crate",
+            "ref": "Kakariko Village/Behind Gold Skulltula House/Adult Crate"
+          },
+          {
+            "name": "Entrance Tree - Gold Skulltula",
+            "ref": "Kakariko Village/Entrance Tree/Gold Skulltula"
+          },
+          {
+            "name": "Entrance Tree - Grass",
+            "ref": "Kakariko Village/Entrance Tree/Grass"
+          },
+          {
+            "name": "Entrance Tree - Tree",
+            "ref": "Kakariko Village/Entrance Tree/Tree"
+          },
+          {
+            "name": "Fence - Adult Crate",
+            "ref": "Kakariko Village/Fence/Adult Crate"
+          },
+          {
+            "name": "Fence - Child Crate",
+            "ref": "Kakariko Village/Fence/Child Crate"
+          },
+          {
+            "name": "Granny's Potion Shop - Item",
+            "ref": "Kakariko Village/Granny's Potion Shop/Item"
+          },
+          {
+            "name": "Granny's Potion Shop - Pots by Door",
+            "ref": "Kakariko Village/Granny's Potion Shop/Pots by Door"
+          },
+          {
+            "name": "Granny's Potion Shop - Trade Odd Mushroom",
+            "ref": "Kakariko Village/Granny's Potion Shop/Trade Odd Mushroom"
+          },
+          {
+            "name": "Graveyard Sign - Grass",
+            "ref": "Kakariko Village/Graveyard Sign/Grass"
+          },
+          {
+            "name": "Guards House Wall - Gold Skulltula",
+            "ref": "Kakariko Village/Guards House Wall/Gold Skulltula"
+          },
+          {
+            "name": "Guards House Wall - Pot",
+            "ref": "Kakariko Village/Guards House Wall/Pot"
+          },
+          {
+            "name": "House Under Construction - Gold Skulltula",
+            "ref": "Kakariko Village/House Under Construction/Gold Skulltula"
+          },
+          {
+            "name": "House of Skulltula - 10 Gold Skulltula Reward",
+            "ref": "Kakariko Village/House of Skulltula/10 Gold Skulltula Reward"
+          },
+          {
+            "name": "House of Skulltula - 100 Gold Skulltula Reward",
+            "ref": "Kakariko Village/House of Skulltula/100 Gold Skulltula Reward"
+          },
+          {
+            "name": "House of Skulltula - 20 Gold Skulltula Reward",
+            "ref": "Kakariko Village/House of Skulltula/20 Gold Skulltula Reward"
+          },
+          {
+            "name": "House of Skulltula - 30 Gold Skulltula Reward",
+            "ref": "Kakariko Village/House of Skulltula/30 Gold Skulltula Reward"
+          },
+          {
+            "name": "House of Skulltula - 40 Gold Skulltula Reward",
+            "ref": "Kakariko Village/House of Skulltula/40 Gold Skulltula Reward"
+          },
+          {
+            "name": "House of Skulltula - 50 Gold Skulltula Reward",
+            "ref": "Kakariko Village/House of Skulltula/50 Gold Skulltula Reward"
+          },
+          {
+            "name": "Impa's House Back Entrance - Cow",
+            "ref": "Kakariko Village/Impa's House Back Entrance/Cow"
+          },
+          {
+            "name": "Impa's House Back Entrance - Piece of Heart",
+            "ref": "Kakariko Village/Impa's House Back Entrance/Piece of Heart"
+          },
+          {
+            "name": "Man on Roof - Piece of Heart",
+            "ref": "Kakariko Village/Man on Roof/Piece of Heart"
+          },
+          {
+            "name": "Near Bazaar Adult Crates - Adult Crate",
+            "ref": "Kakariko Village/Near Bazaar Adult Crates/Adult Crate"
+          },
+          {
+            "name": "Near Bazaar Child Crate - Child Crate",
+            "ref": "Kakariko Village/Near Bazaar Child Crate/Child Crate"
+          },
+          {
+            "name": "Near Boarding House Adult Crates - Adult Crate",
+            "ref": "Kakariko Village/Near Boarding House Adult Crates/Adult Crate"
+          },
+          {
+            "name": "Near Boarding House Child Crate - Child Crate",
+            "ref": "Kakariko Village/Near Boarding House Child Crate/Child Crate"
+          },
+          {
+            "name": "Near Graveyard - Child Crate",
+            "ref": "Kakariko Village/Near Graveyard/Child Crate"
+          },
+          {
+            "name": "Near Impa's House - Adult Crate",
+            "ref": "Kakariko Village/Near Impa's House/Adult Crate"
+          },
+          {
+            "name": "Near Impa's House - Pot",
+            "ref": "Kakariko Village/Near Impa's House/Pot"
+          },
+          {
+            "name": "Near Potion Shop Adult Crate - Adult Crate",
+            "ref": "Kakariko Village/Near Potion Shop Adult Crate/Adult Crate"
+          },
+          {
+            "name": "Near Potion Shop Pots - Pot",
+            "ref": "Kakariko Village/Near Potion Shop Pots/Pot"
+          },
+          {
+            "name": "Open Grotto - Beehive",
+            "ref": "Kakariko Village/Open Grotto/Beehive"
+          },
+          {
+            "name": "Open Grotto - Chest",
+            "ref": "Kakariko Village/Open Grotto/Chest"
+          },
+          {
+            "name": "Open Grotto - Fish",
+            "ref": "Kakariko Village/Open Grotto/Fish"
+          },
+          {
+            "name": "Open Grotto - Gossip Stone Big Fairy",
+            "ref": "Kakariko Village/Open Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Open Grotto - Gossip Stone Fairy",
+            "ref": "Kakariko Village/Open Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Open Grotto - Grass",
+            "ref": "Kakariko Village/Open Grotto/Grass"
+          },
+          {
+            "name": "Potion Shop - Item 2",
+            "ref": "Kakariko Village/Potion Shop/Item 2"
+          },
+          {
+            "name": "Potion Shop - Item 3",
+            "ref": "Kakariko Village/Potion Shop/Item 3"
+          },
+          {
+            "name": "Potion Shop - Item 4",
+            "ref": "Kakariko Village/Potion Shop/Item 4"
+          },
+          {
+            "name": "Potion Shop - Item 5",
+            "ref": "Kakariko Village/Potion Shop/Item 5"
+          },
+          {
+            "name": "Potion Shop - Item 6",
+            "ref": "Kakariko Village/Potion Shop/Item 6"
+          },
+          {
+            "name": "Potion Shop - Item 7",
+            "ref": "Kakariko Village/Potion Shop/Item 7"
+          },
+          {
+            "name": "Potion Shop - Item 8",
+            "ref": "Kakariko Village/Potion Shop/Item 8"
+          },
+          {
+            "name": "Redead Grotto - Chest",
+            "ref": "Kakariko Village/Redead Grotto/Chest"
+          },
+          {
+            "name": "Sheik in Kakariko - Song",
+            "ref": "Kakariko Village/Sheik in Kakariko/Song"
+          },
+          {
+            "name": "Shooting Gallery - Adult Crate by Door",
+            "ref": "Kakariko Village/Shooting Gallery/Adult Crate by Door"
+          },
+          {
+            "name": "Shooting Gallery - Reward",
+            "ref": "Kakariko Village/Shooting Gallery/Reward"
+          },
+          {
+            "name": "Skulltula House Wall - Gold Skulltula",
+            "ref": "Kakariko Village/Skulltula House Wall/Gold Skulltula"
+          },
+          {
+            "name": "Watchtower Ladder - Gold Skulltula",
+            "ref": "Kakariko Village/Watchtower Ladder/Gold Skulltula"
+          },
+          {
+            "name": "West of Open Grotto - Adult Crate",
+            "ref": "Kakariko Village/West of Open Grotto/Adult Crate"
+          },
+          {
+            "name": "Windmill - Child Crate by Door",
+            "ref": "Kakariko Village/Windmill/Child Crate by Door"
+          },
+          {
+            "name": "Windmill - Piece of Heart",
+            "ref": "Kakariko Village/Windmill/Piece of Heart"
+          },
+          {
+            "name": "Windmill - Song from Windmill",
+            "ref": "Kakariko Village/Windmill/Song from Windmill"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1185,
+            "y": 509
+          }
+        ],
+        "name": "Kokiri Forest",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Kokiri Forest/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Kokiri Forest/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Bean Platform - Blue Rupee",
+            "ref": "Kokiri Forest/Bean Platform/Blue Rupee"
+          },
+          {
+            "name": "Bean Platform - Red Rupee",
+            "ref": "Kokiri Forest/Bean Platform/Red Rupee"
+          },
+          {
+            "name": "Behind Mido's House - Blue Rupee",
+            "ref": "Kokiri Forest/Behind Mido's House/Blue Rupee"
+          },
+          {
+            "name": "Boulder Maze - First Rupee - Blue Rupee",
+            "ref": "Kokiri Forest/Boulder Maze - First Rupee/Blue Rupee"
+          },
+          {
+            "name": "Boulder Maze - First Rupee - Grass",
+            "ref": "Kokiri Forest/Boulder Maze - First Rupee/Grass"
+          },
+          {
+            "name": "Boulder Maze - Second Rupee - Blue Rupee",
+            "ref": "Kokiri Forest/Boulder Maze - Second Rupee/Blue Rupee"
+          },
+          {
+            "name": "Boulder Maze - Second Rupee - Grass",
+            "ref": "Kokiri Forest/Boulder Maze - Second Rupee/Grass"
+          },
+          {
+            "name": "Bridge - Blue Rupee",
+            "ref": "Kokiri Forest/Bridge/Blue Rupee"
+          },
+          {
+            "name": "Deku Tree Left Gossip Stone - Big Fairy",
+            "ref": "Kokiri Forest/Deku Tree Left Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Deku Tree Left Gossip Stone - Fairy",
+            "ref": "Kokiri Forest/Deku Tree Left Gossip Stone/Fairy"
+          },
+          {
+            "name": "Deku Tree Right Gossip Stone - Big Fairy",
+            "ref": "Kokiri Forest/Deku Tree Right Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Deku Tree Right Gossip Stone - Fairy",
+            "ref": "Kokiri Forest/Deku Tree Right Gossip Stone/Fairy"
+          },
+          {
+            "name": "Fences - Adult Grass",
+            "ref": "Kokiri Forest/Fences/Adult Grass"
+          },
+          {
+            "name": "Fences - Child Grass",
+            "ref": "Kokiri Forest/Fences/Child Grass"
+          },
+          {
+            "name": "House of Twins - Gold Skulltula",
+            "ref": "Kokiri Forest/House of Twins/Gold Skulltula"
+          },
+          {
+            "name": "House of Twins - Pot",
+            "ref": "Kokiri Forest/House of Twins/Pot"
+          },
+          {
+            "name": "In Front of Saria's House - Adult Grass",
+            "ref": "Kokiri Forest/In Front of Saria's House/Adult Grass"
+          },
+          {
+            "name": "In Front of Saria's House - Child Grass",
+            "ref": "Kokiri Forest/In Front of Saria's House/Child Grass"
+          },
+          {
+            "name": "Know-It-All House - Gold Skulltula",
+            "ref": "Kokiri Forest/Know-It-All House/Gold Skulltula"
+          },
+          {
+            "name": "Know-It-All House - Pot",
+            "ref": "Kokiri Forest/Know-It-All House/Pot"
+          },
+          {
+            "name": "Kokiri Sword - Chest",
+            "ref": "Kokiri Forest/Kokiri Sword/Chest"
+          },
+          {
+            "name": "Kokiri Sword - Grass",
+            "ref": "Kokiri Forest/Kokiri Sword/Grass"
+          },
+          {
+            "name": "Link's House - Cow",
+            "ref": "Kokiri Forest/Link's House/Cow"
+          },
+          {
+            "name": "Link's House - Pot",
+            "ref": "Kokiri Forest/Link's House/Pot"
+          },
+          {
+            "name": "Mido's House - Chest",
+            "ref": "Kokiri Forest/Mido's House/Chest"
+          },
+          {
+            "name": "North Grass - Blue Rupee",
+            "ref": "Kokiri Forest/North Grass/Blue Rupee"
+          },
+          {
+            "name": "Saria's House - House Heart",
+            "ref": "Kokiri Forest/Saria's House/House Heart"
+          },
+          {
+            "name": "Saria's House - Roof Heart",
+            "ref": "Kokiri Forest/Saria's House/Roof Heart"
+          },
+          {
+            "name": "Shop - Item 2",
+            "ref": "Kokiri Forest/Shop/Item 2"
+          },
+          {
+            "name": "Shop - Item 3",
+            "ref": "Kokiri Forest/Shop/Item 3"
+          },
+          {
+            "name": "Shop - Item 4",
+            "ref": "Kokiri Forest/Shop/Item 4"
+          },
+          {
+            "name": "Shop - Item 5",
+            "ref": "Kokiri Forest/Shop/Item 5"
+          },
+          {
+            "name": "Shop - Item 6",
+            "ref": "Kokiri Forest/Shop/Item 6"
+          },
+          {
+            "name": "Shop - Item 7",
+            "ref": "Kokiri Forest/Shop/Item 7"
+          },
+          {
+            "name": "Shop - Item 8",
+            "ref": "Kokiri Forest/Shop/Item 8"
+          },
+          {
+            "name": "South Grass - Blue Rupee",
+            "ref": "Kokiri Forest/South Grass/Blue Rupee"
+          },
+          {
+            "name": "Storms Grotto - Beehive",
+            "ref": "Kokiri Forest/Storms Grotto/Beehive"
+          },
+          {
+            "name": "Storms Grotto - Chest",
+            "ref": "Kokiri Forest/Storms Grotto/Chest"
+          },
+          {
+            "name": "Storms Grotto - Fish",
+            "ref": "Kokiri Forest/Storms Grotto/Fish"
+          },
+          {
+            "name": "Storms Grotto - Gossip Stone Big Fairy",
+            "ref": "Kokiri Forest/Storms Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Storms Grotto - Gossip Stone Fairy",
+            "ref": "Kokiri Forest/Storms Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Storms Grotto - Grass",
+            "ref": "Kokiri Forest/Storms Grotto/Grass"
+          },
+          {
+            "name": "Upper Gossip Stone - Big Fairy",
+            "ref": "Kokiri Forest/Upper Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Upper Gossip Stone - Fairy",
+            "ref": "Kokiri Forest/Upper Gossip Stone/Fairy"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 575,
+            "y": 684
+          }
+        ],
+        "name": "Lake Hylia",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Bean Patch - Fairy",
+            "ref": "Lake Hylia/Bean Patch/Fairy"
+          },
+          {
+            "name": "Bean Patch - Gold Skulltula",
+            "ref": "Lake Hylia/Bean Patch/Gold Skulltula"
+          },
+          {
+            "name": "Deku Scrub Grotto - Beehive",
+            "ref": "Lake Hylia/Deku Scrub Grotto/Beehive"
+          },
+          {
+            "name": "Deku Scrub Grotto - Center Scrub",
+            "ref": "Lake Hylia/Deku Scrub Grotto/Center Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Left Scrub",
+            "ref": "Lake Hylia/Deku Scrub Grotto/Left Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Right Scrub",
+            "ref": "Lake Hylia/Deku Scrub Grotto/Right Scrub"
+          },
+          {
+            "name": "East Grass - Grass",
+            "ref": "Lake Hylia/East Grass/Grass"
+          },
+          {
+            "name": "Fishing Hole - Adult Fishing",
+            "ref": "Lake Hylia/Fishing Hole/Adult Fishing"
+          },
+          {
+            "name": "Fishing Hole - Adult Pond Fish",
+            "ref": "Lake Hylia/Fishing Hole/Adult Pond Fish"
+          },
+          {
+            "name": "Fishing Hole - Child Fishing",
+            "ref": "Lake Hylia/Fishing Hole/Child Fishing"
+          },
+          {
+            "name": "Fishing Hole - Child Pond Fish",
+            "ref": "Lake Hylia/Fishing Hole/Child Pond Fish"
+          },
+          {
+            "name": "Lab Gossip Stone - Big Fairy",
+            "ref": "Lake Hylia/Lab Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Lab Gossip Stone - Fairy",
+            "ref": "Lake Hylia/Lab Gossip Stone/Fairy"
+          },
+          {
+            "name": "Lab Roof - Piece of Heart",
+            "ref": "Lake Hylia/Lab Roof/Piece of Heart"
+          },
+          {
+            "name": "Lab Wall - Gold Skulltula",
+            "ref": "Lake Hylia/Lab Wall/Gold Skulltula"
+          },
+          {
+            "name": "Laboratory - Crate",
+            "ref": "Lake Hylia/Laboratory/Crate"
+          },
+          {
+            "name": "Laboratory - Dive",
+            "ref": "Lake Hylia/Laboratory/Dive"
+          },
+          {
+            "name": "Laboratory - Gold Skulltula in Crate",
+            "ref": "Lake Hylia/Laboratory/Gold Skulltula in Crate"
+          },
+          {
+            "name": "Laboratory - Trade Eyeball Frog",
+            "ref": "Lake Hylia/Laboratory/Trade Eyeball Frog"
+          },
+          {
+            "name": "Laboratory - Underwater Red Rupee",
+            "ref": "Lake Hylia/Laboratory/Underwater Red Rupee"
+          },
+          {
+            "name": "Near Scarecrows - Child Grass",
+            "ref": "Lake Hylia/Near Scarecrows/Child Grass"
+          },
+          {
+            "name": "Near Zora's Domain Shortcut - Underwater Green Rupee",
+            "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Green Rupee"
+          },
+          {
+            "name": "Near Zora's Domain Shortcut - Underwater Item",
+            "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Item"
+          },
+          {
+            "name": "North Grass - Grass",
+            "ref": "Lake Hylia/North Grass/Grass"
+          },
+          {
+            "name": "Small Island - Gold Skulltula",
+            "ref": "Lake Hylia/Small Island/Gold Skulltula"
+          },
+          {
+            "name": "Small Island - Shoot the Sun",
+            "ref": "Lake Hylia/Small Island/Shoot the Sun"
+          },
+          {
+            "name": "Small Island - Sun's Song Fairy",
+            "ref": "Lake Hylia/Small Island/Sun's Song Fairy"
+          },
+          {
+            "name": "Southeast Gossip Stone - Big Fairy",
+            "ref": "Lake Hylia/Southeast Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Southeast Gossip Stone - Fairy",
+            "ref": "Lake Hylia/Southeast Gossip Stone/Fairy"
+          },
+          {
+            "name": "Southwest Gossip Stone - Big Fairy",
+            "ref": "Lake Hylia/Southwest Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Southwest Gossip Stone - Fairy",
+            "ref": "Lake Hylia/Southwest Gossip Stone/Fairy"
+          },
+          {
+            "name": "Southwest Grass - Grass",
+            "ref": "Lake Hylia/Southwest Grass/Grass"
+          },
+          {
+            "name": "Tree - Gold Skulltula",
+            "ref": "Lake Hylia/Tree/Gold Skulltula"
+          },
+          {
+            "name": "Tree - Grass",
+            "ref": "Lake Hylia/Tree/Grass"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 709,
+            "y": 355
+          }
+        ],
+        "name": "Lon Lon Ranch",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Back Wall - Gold Skulltula",
+            "ref": "Lon Lon Ranch/Back Wall/Gold Skulltula"
+          },
+          {
+            "name": "Deku Scrub Grotto - Beehive",
+            "ref": "Lon Lon Ranch/Deku Scrub Grotto/Beehive"
+          },
+          {
+            "name": "Deku Scrub Grotto - Center Scrub",
+            "ref": "Lon Lon Ranch/Deku Scrub Grotto/Center Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Left Scrub",
+            "ref": "Lon Lon Ranch/Deku Scrub Grotto/Left Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Right Scrub",
+            "ref": "Lon Lon Ranch/Deku Scrub Grotto/Right Scrub"
+          },
+          {
+            "name": "Front Wall - Pot",
+            "ref": "Lon Lon Ranch/Front Wall/Pot"
+          },
+          {
+            "name": "Gold Skulltula Tree - Crate Near Tree",
+            "ref": "Lon Lon Ranch/Gold Skulltula Tree/Crate Near Tree"
+          },
+          {
+            "name": "Gold Skulltula Tree - Gold Skulltula",
+            "ref": "Lon Lon Ranch/Gold Skulltula Tree/Gold Skulltula"
+          },
+          {
+            "name": "Gold Skulltula Tree - Tree",
+            "ref": "Lon Lon Ranch/Gold Skulltula Tree/Tree"
+          },
+          {
+            "name": "House Window - Gold Skulltula",
+            "ref": "Lon Lon Ranch/House Window/Gold Skulltula"
+          },
+          {
+            "name": "Rain Shed - Gold Skulltula",
+            "ref": "Lon Lon Ranch/Rain Shed/Gold Skulltula"
+          },
+          {
+            "name": "Rain Shed - Pot",
+            "ref": "Lon Lon Ranch/Rain Shed/Pot"
+          },
+          {
+            "name": "Ranch Center - Song from Malon",
+            "ref": "Lon Lon Ranch/Ranch Center/Song from Malon"
+          },
+          {
+            "name": "Stables - Cow",
+            "ref": "Lon Lon Ranch/Stables/Cow"
+          },
+          {
+            "name": "Talon's House - Chickens",
+            "ref": "Lon Lon Ranch/Talon's House/Chickens"
+          },
+          {
+            "name": "Talon's House 2F - Pot",
+            "ref": "Lon Lon Ranch/Talon's House 2F/Pot"
+          },
+          {
+            "name": "Tower - Cow",
+            "ref": "Lon Lon Ranch/Tower/Cow"
+          },
+          {
+            "name": "Tower - Piece of Heart",
+            "ref": "Lon Lon Ranch/Tower/Piece of Heart"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1172,
+            "y": 417
+          }
+        ],
+        "name": "Lost Woods",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above Theater - Gold Skulltula",
+            "ref": "Lost Woods/Above Theater/Gold Skulltula"
+          },
+          {
+            "name": "Bean Patch Near Bridge - Fairy",
+            "ref": "Lost Woods/Bean Patch Near Bridge/Fairy"
+          },
+          {
+            "name": "Bean Patch Near Bridge - Gold Skulltula",
+            "ref": "Lost Woods/Bean Patch Near Bridge/Gold Skulltula"
+          },
+          {
+            "name": "Bean Patch Near Theater - Deku Scrub",
+            "ref": "Lost Woods/Bean Patch Near Theater/Deku Scrub"
+          },
+          {
+            "name": "Bean Patch Near Theater - Fairy",
+            "ref": "Lost Woods/Bean Patch Near Theater/Fairy"
+          },
+          {
+            "name": "Bean Patch Near Theater - Gold Skulltula",
+            "ref": "Lost Woods/Bean Patch Near Theater/Gold Skulltula"
+          },
+          {
+            "name": "Bridge - Gift from Saria",
+            "ref": "Lost Woods/Bridge/Gift from Saria"
+          },
+          {
+            "name": "Deku Scrub Grotto - Beehive",
+            "ref": "Lost Woods/Deku Scrub Grotto/Beehive"
+          },
+          {
+            "name": "Deku Scrub Grotto - Front Scrub",
+            "ref": "Lost Woods/Deku Scrub Grotto/Front Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Rear Scrub",
+            "ref": "Lost Woods/Deku Scrub Grotto/Rear Scrub"
+          },
+          {
+            "name": "Deku Scrub Grotto - Sun's Song Fairy",
+            "ref": "Lost Woods/Deku Scrub Grotto/Sun's Song Fairy"
+          },
+          {
+            "name": "Deku Scrub Near Bridge - Deku Scrub",
+            "ref": "Lost Woods/Deku Scrub Near Bridge/Deku Scrub"
+          },
+          {
+            "name": "Deku Theater - Mask of Truth",
+            "ref": "Lost Woods/Deku Theater/Mask of Truth"
+          },
+          {
+            "name": "Deku Theater - Skull Mask",
+            "ref": "Lost Woods/Deku Theater/Skull Mask"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Lost Woods/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Lost Woods/Gossip Stone/Fairy"
+          },
+          {
+            "name": "In Front of Underwater Shortcut - Song of Storms Fairy",
+            "ref": "Lost Woods/In Front of Underwater Shortcut/Song of Storms Fairy"
+          },
+          {
+            "name": "Left Deku Scrub Near Theater - Deku Scrub",
+            "ref": "Lost Woods/Left Deku Scrub Near Theater/Deku Scrub"
+          },
+          {
+            "name": "Near Deku Scrub Grotto - Grass",
+            "ref": "Lost Woods/Near Deku Scrub Grotto/Grass"
+          },
+          {
+            "name": "Near Rupee Boulder - Grass",
+            "ref": "Lost Woods/Near Rupee Boulder/Grass"
+          },
+          {
+            "name": "Near Shortcuts Boulder Grotto - Grass",
+            "ref": "Lost Woods/Near Shortcuts Boulder Grotto/Grass"
+          },
+          {
+            "name": "Ocarina Memory Game - Piece of Heart",
+            "ref": "Lost Woods/Ocarina Memory Game/Piece of Heart"
+          },
+          {
+            "name": "Rupee Boulder - Blue Rupee",
+            "ref": "Lost Woods/Rupee Boulder/Blue Rupee"
+          },
+          {
+            "name": "Shortcuts Boulder Grotto - Beehive",
+            "ref": "Lost Woods/Shortcuts Boulder Grotto/Beehive"
+          },
+          {
+            "name": "Shortcuts Boulder Grotto - Chest",
+            "ref": "Lost Woods/Shortcuts Boulder Grotto/Chest"
+          },
+          {
+            "name": "Shortcuts Boulder Grotto - Fish",
+            "ref": "Lost Woods/Shortcuts Boulder Grotto/Fish"
+          },
+          {
+            "name": "Shortcuts Boulder Grotto - Gossip Stone Big Fairy",
+            "ref": "Lost Woods/Shortcuts Boulder Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Shortcuts Boulder Grotto - Gossip Stone Fairy",
+            "ref": "Lost Woods/Shortcuts Boulder Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Shortcuts Boulder Grotto - Grass",
+            "ref": "Lost Woods/Shortcuts Boulder Grotto/Grass"
+          },
+          {
+            "name": "Skull Kid - Piece of Heart",
+            "ref": "Lost Woods/Skull Kid/Piece of Heart"
+          },
+          {
+            "name": "Skull Kid - Trade Cojiro",
+            "ref": "Lost Woods/Skull Kid/Trade Cojiro"
+          },
+          {
+            "name": "Skull Kid - Trade Odd Potion",
+            "ref": "Lost Woods/Skull Kid/Trade Odd Potion"
+          },
+          {
+            "name": "Target in Woods - Bullet Bag",
+            "ref": "Lost Woods/Target in Woods/Bullet Bag"
+          },
+          {
+            "name": "Underwater Shortcut - Green Rupee",
+            "ref": "Lost Woods/Underwater Shortcut/Green Rupee"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 785,
+            "y": 184
+          }
+        ],
+        "name": "Market",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Back Alley House - Pot",
+            "ref": "Market/Back Alley House/Pot"
+          },
+          {
+            "name": "Bazaar - Item 2",
+            "ref": "Market/Bazaar/Item 2"
+          },
+          {
+            "name": "Bazaar - Item 3",
+            "ref": "Market/Bazaar/Item 3"
+          },
+          {
+            "name": "Bazaar - Item 4",
+            "ref": "Market/Bazaar/Item 4"
+          },
+          {
+            "name": "Bazaar - Item 5",
+            "ref": "Market/Bazaar/Item 5"
+          },
+          {
+            "name": "Bazaar - Item 6",
+            "ref": "Market/Bazaar/Item 6"
+          },
+          {
+            "name": "Bazaar - Item 7",
+            "ref": "Market/Bazaar/Item 7"
+          },
+          {
+            "name": "Bazaar - Item 8",
+            "ref": "Market/Bazaar/Item 8"
+          },
+          {
+            "name": "Bombchu Bowling - First Prize",
+            "ref": "Market/Bombchu Bowling/First Prize"
+          },
+          {
+            "name": "Bombchu Bowling - Second Prize",
+            "ref": "Market/Bombchu Bowling/Second Prize"
+          },
+          {
+            "name": "Bombchu Shop - Item 2",
+            "ref": "Market/Bombchu Shop/Item 2"
+          },
+          {
+            "name": "Bombchu Shop - Item 3",
+            "ref": "Market/Bombchu Shop/Item 3"
+          },
+          {
+            "name": "Bombchu Shop - Item 4",
+            "ref": "Market/Bombchu Shop/Item 4"
+          },
+          {
+            "name": "Bombchu Shop - Item 5",
+            "ref": "Market/Bombchu Shop/Item 5"
+          },
+          {
+            "name": "Bombchu Shop - Item 6",
+            "ref": "Market/Bombchu Shop/Item 6"
+          },
+          {
+            "name": "Bombchu Shop - Item 7",
+            "ref": "Market/Bombchu Shop/Item 7"
+          },
+          {
+            "name": "Bombchu Shop - Item 8",
+            "ref": "Market/Bombchu Shop/Item 8"
+          },
+          {
+            "name": "Guard House - 10 Big Poes Reward",
+            "ref": "Market/Guard House/10 Big Poes Reward"
+          },
+          {
+            "name": "Guard House - Adult Pot",
+            "ref": "Market/Guard House/Adult Pot"
+          },
+          {
+            "name": "Guard House - Child Pot",
+            "ref": "Market/Guard House/Child Pot"
+          },
+          {
+            "name": "Guard House - Crate",
+            "ref": "Market/Guard House/Crate"
+          },
+          {
+            "name": "Guard House - Gold Skulltula",
+            "ref": "Market/Guard House/Gold Skulltula"
+          },
+          {
+            "name": "Happy Mask Shop Grass - Grass",
+            "ref": "Market/Happy Mask Shop Grass/Grass"
+          },
+          {
+            "name": "Lost Dog - House Crate",
+            "ref": "Market/Lost Dog/House Crate"
+          },
+          {
+            "name": "Lost Dog - Piece of Heart",
+            "ref": "Market/Lost Dog/Piece of Heart"
+          },
+          {
+            "name": "Market Tree - Grass",
+            "ref": "Market/Market Tree/Grass"
+          },
+          {
+            "name": "Market Tree - Tree",
+            "ref": "Market/Market Tree/Tree"
+          },
+          {
+            "name": "Near Bazaar Crates - Crate",
+            "ref": "Market/Near Bazaar Crates/Crate"
+          },
+          {
+            "name": "Near Shooting Gallery Crates - Crate",
+            "ref": "Market/Near Shooting Gallery Crates/Crate"
+          },
+          {
+            "name": "Planted Grass - Grass",
+            "ref": "Market/Planted Grass/Grass"
+          },
+          {
+            "name": "Potion Shop - Item 2",
+            "ref": "Market/Potion Shop/Item 2"
+          },
+          {
+            "name": "Potion Shop - Item 3",
+            "ref": "Market/Potion Shop/Item 3"
+          },
+          {
+            "name": "Potion Shop - Item 4",
+            "ref": "Market/Potion Shop/Item 4"
+          },
+          {
+            "name": "Potion Shop - Item 5",
+            "ref": "Market/Potion Shop/Item 5"
+          },
+          {
+            "name": "Potion Shop - Item 6",
+            "ref": "Market/Potion Shop/Item 6"
+          },
+          {
+            "name": "Potion Shop - Item 7",
+            "ref": "Market/Potion Shop/Item 7"
+          },
+          {
+            "name": "Potion Shop - Item 8",
+            "ref": "Market/Potion Shop/Item 8"
+          },
+          {
+            "name": "Shooting Gallery - Reward",
+            "ref": "Market/Shooting Gallery/Reward"
+          },
+          {
+            "name": "Temple of Time Gossip Stones - Gossip Stone Big Fairies",
+            "ref": "Market/Temple of Time Gossip Stones/Gossip Stone Big Fairies"
+          },
+          {
+            "name": "Temple of Time Gossip Stones - Gossip Stone Fairies",
+            "ref": "Market/Temple of Time Gossip Stones/Gossip Stone Fairies"
+          },
+          {
+            "name": "Treasure Chest Game - Reward",
+            "ref": "Market/Treasure Chest Game/Reward"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1193,
+            "y": 373
+          }
+        ],
+        "name": "Sacred Forest Meadow",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Fairy Grotto - Fairy",
+            "ref": "Sacred Forest Meadow/Fairy Grotto/Fairy"
+          },
+          {
+            "name": "Maze Lower Gossip Stone - Big Fairy",
+            "ref": "Sacred Forest Meadow/Maze Lower Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Maze Lower Gossip Stone - Fairy",
+            "ref": "Sacred Forest Meadow/Maze Lower Gossip Stone/Fairy"
+          },
+          {
+            "name": "Maze Upper Gossip Stone - Big Fairy",
+            "ref": "Sacred Forest Meadow/Maze Upper Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Maze Upper Gossip Stone - Fairy",
+            "ref": "Sacred Forest Meadow/Maze Upper Gossip Stone/Fairy"
+          },
+          {
+            "name": "Near Forest Temple - Song from Saria",
+            "ref": "Sacred Forest Meadow/Near Forest Temple/Song from Saria"
+          },
+          {
+            "name": "Near Forest Temple - Song from Sheik in Forest",
+            "ref": "Sacred Forest Meadow/Near Forest Temple/Song from Sheik in Forest"
+          },
+          {
+            "name": "Saria Gossip Stone - Big Fairy",
+            "ref": "Sacred Forest Meadow/Saria Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Saria Gossip Stone - Fairy",
+            "ref": "Sacred Forest Meadow/Saria Gossip Stone/Fairy"
+          },
+          {
+            "name": "Storms Grotto - Beehive",
+            "ref": "Sacred Forest Meadow/Storms Grotto/Beehive"
+          },
+          {
+            "name": "Storms Grotto - Front Scrub",
+            "ref": "Sacred Forest Meadow/Storms Grotto/Front Scrub"
+          },
+          {
+            "name": "Storms Grotto - Rear Scrub",
+            "ref": "Sacred Forest Meadow/Storms Grotto/Rear Scrub"
+          },
+          {
+            "name": "Wall - Gold Skulltula",
+            "ref": "Sacred Forest Meadow/Wall/Gold Skulltula"
+          },
+          {
+            "name": "Wolfos Grotto - Chest",
+            "ref": "Sacred Forest Meadow/Wolfos Grotto/Chest"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 1172,
+            "y": 175
+          }
+        ],
+        "name": "Shadow Temple",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "After Ship Near Locked Door - Pot",
+            "ref": "Shadow Temple/After Ship Near Locked Door/Pot"
+          },
+          {
+            "name": "After Ship Pillar Bridge - Pot",
+            "ref": "Shadow Temple/After Ship Pillar Bridge/Pot"
+          },
+          {
+            "name": "After Ship Scarecrow Ledge - Heart",
+            "ref": "Shadow Temple/After Ship Scarecrow Ledge/Heart"
+          },
+          {
+            "name": "After Ship Song of Time Block Pillar - Heart",
+            "ref": "Shadow Temple/After Ship Song of Time Block Pillar/Heart"
+          },
+          {
+            "name": "After Wind Room - Enemy Chest",
+            "ref": "Shadow Temple/After Wind Room/Enemy Chest"
+          },
+          {
+            "name": "After Wind Room - Invisible Chest",
+            "ref": "Shadow Temple/After Wind Room/Invisible Chest"
+          },
+          {
+            "name": "After Wind Room - Pot",
+            "ref": "Shadow Temple/After Wind Room/Pot"
+          },
+          {
+            "name": "Beamos Room - Song of Storms Fairy",
+            "ref": "Shadow Temple/Beamos Room/Song of Storms Fairy"
+          },
+          {
+            "name": "Boss Room - Bongo Bongo",
+            "ref": "Shadow Temple/Boss Room/Bongo Bongo"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Shadow Temple/Boss Room/Heart Container"
+          },
+          {
+            "name": "Compass Room - Chest",
+            "ref": "Shadow Temple/Compass Room/Chest"
+          },
+          {
+            "name": "Early Silver Rupee Room - Chest",
+            "ref": "Shadow Temple/Early Silver Rupee Room/Chest"
+          },
+          {
+            "name": "Falling Spikes Room Behind Floor Spike - Pot",
+            "ref": "Shadow Temple/Falling Spikes Room Behind Floor Spike/Pot"
+          },
+          {
+            "name": "Falling Spikes Room Gold Skulltula - Gold Skulltula",
+            "ref": "Shadow Temple/Falling Spikes Room Gold Skulltula/Gold Skulltula"
+          },
+          {
+            "name": "Falling Spikes Room Lower Chest - Chest",
+            "ref": "Shadow Temple/Falling Spikes Room Lower Chest/Chest"
+          },
+          {
+            "name": "Falling Spikes Room Switch Chest - Chest",
+            "ref": "Shadow Temple/Falling Spikes Room Switch Chest/Chest"
+          },
+          {
+            "name": "Falling Spikes Room Switch Chest - Pot",
+            "ref": "Shadow Temple/Falling Spikes Room Switch Chest/Pot"
+          },
+          {
+            "name": "Falling Spikes Room Upper Chest - Chest",
+            "ref": "Shadow Temple/Falling Spikes Room Upper Chest/Chest"
+          },
+          {
+            "name": "Hover Boots Room - Chest",
+            "ref": "Shadow Temple/Hover Boots Room/Chest"
+          },
+          {
+            "name": "Invisible Blades Room Past Gate - Gold Skulltula",
+            "ref": "Shadow Temple/Invisible Blades Room Past Gate/Gold Skulltula"
+          },
+          {
+            "name": "Invisible Blades Room Past Gate - Invisible Chest",
+            "ref": "Shadow Temple/Invisible Blades Room Past Gate/Invisible Chest"
+          },
+          {
+            "name": "Invisible Blades Room Past Gate - Visible Chest",
+            "ref": "Shadow Temple/Invisible Blades Room Past Gate/Visible Chest"
+          },
+          {
+            "name": "Invisible Blades Room Song of Time Block - Heart",
+            "ref": "Shadow Temple/Invisible Blades Room Song of Time Block/Heart"
+          },
+          {
+            "name": "Invisible Floormaster Room - Chest",
+            "ref": "Shadow Temple/Invisible Floormaster Room/Chest"
+          },
+          {
+            "name": "Invisible Floormaster Room East Corner - Pot",
+            "ref": "Shadow Temple/Invisible Floormaster Room East Corner/Pot"
+          },
+          {
+            "name": "Invisible Floormaster Room West Corner - Pot",
+            "ref": "Shadow Temple/Invisible Floormaster Room West Corner/Pot"
+          },
+          {
+            "name": "Invisible Spikes Room - Chest",
+            "ref": "Shadow Temple/Invisible Spikes Room/Chest"
+          },
+          {
+            "name": "Map Room - Chest",
+            "ref": "Shadow Temple/Map Room/Chest"
+          },
+          {
+            "name": "Map Room - Pot",
+            "ref": "Shadow Temple/Map Room/Pot"
+          },
+          {
+            "name": "Moving Spike Walls Room Center - Pot",
+            "ref": "Shadow Temple/Moving Spike Walls Room Center/Pot"
+          },
+          {
+            "name": "Moving Spike Walls Room Left - Chest",
+            "ref": "Shadow Temple/Moving Spike Walls Room Left/Chest"
+          },
+          {
+            "name": "Moving Spike Walls Room Right - Boss Key Chest",
+            "ref": "Shadow Temple/Moving Spike Walls Room Right/Boss Key Chest"
+          },
+          {
+            "name": "Near Dead Hand - Pot",
+            "ref": "Shadow Temple/Near Dead Hand/Pot"
+          },
+          {
+            "name": "Pit Room Stalfos - Song of Storms Fairy",
+            "ref": "Shadow Temple/Pit Room Stalfos/Song of Storms Fairy"
+          },
+          {
+            "name": "Scarecrow Near Ship - Gold Skulltula",
+            "ref": "Shadow Temple/Scarecrow Near Ship/Gold Skulltula"
+          },
+          {
+            "name": "Scarecrow Near Ship - Heart",
+            "ref": "Shadow Temple/Scarecrow Near Ship/Heart"
+          },
+          {
+            "name": "Single Giant Pot Room - Freestanding Key",
+            "ref": "Shadow Temple/Single Giant Pot Room/Freestanding Key"
+          },
+          {
+            "name": "Single Giant Pot Room - Gold Skulltula",
+            "ref": "Shadow Temple/Single Giant Pot Room/Gold Skulltula"
+          },
+          {
+            "name": "Triple Giant Pot Room - Gold Skulltula",
+            "ref": "Shadow Temple/Triple Giant Pot Room/Gold Skulltula"
+          },
+          {
+            "name": "Whispering Walls East - Pot",
+            "ref": "Shadow Temple/Whispering Walls East/Pot"
+          },
+          {
+            "name": "Whispering Walls Southwest - Pot",
+            "ref": "Shadow Temple/Whispering Walls Southwest/Pot"
+          },
+          {
+            "name": "Wind Hint Room - Invisible Chest",
+            "ref": "Shadow Temple/Wind Hint Room/Invisible Chest"
+          },
+          {
+            "name": "Wind Hint Room - Sun's Song Fairy",
+            "ref": "Shadow Temple/Wind Hint Room/Sun's Song Fairy"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 49,
+            "y": 157
+          }
+        ],
+        "name": "Spirit Temple",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Adult Beamos Climb Platform - Heart",
+            "ref": "Spirit Temple/Adult Beamos Climb Platform/Heart"
+          },
+          {
+            "name": "After Boulder Room - Chest",
+            "ref": "Spirit Temple/After Boulder Room/Chest"
+          },
+          {
+            "name": "After Boulder Room - Sun's Song Fairy",
+            "ref": "Spirit Temple/After Boulder Room/Sun's Song Fairy"
+          },
+          {
+            "name": "After Sun Block Hallway - Pot",
+            "ref": "Spirit Temple/After Sun Block/Pot"
+          },
+          {
+            "name": "After Sun Block Above Door - Gold Skulltula",
+            "ref": "Spirit Temple/After Sun Block Above Door/Gold Skulltula"
+          },
+          {
+            "name": "Beamos Hall - Pot",
+            "ref": "Spirit Temple/Beamos Hall/Pot"
+          },
+          {
+            "name": "Before Early Child Climb - Small Crate",
+            "ref": "Spirit Temple/Before Early Child Climb/Small Crate"
+          },
+          {
+            "name": "Boss Key Room - Boss Key Chest",
+            "ref": "Spirit Temple/Boss Key Room/Boss Key Chest"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Spirit Temple/Boss Room/Heart Container"
+          },
+          {
+            "name": "Boss Room - Twinrova",
+            "ref": "Spirit Temple/Boss Room/Twinrova"
+          },
+          {
+            "name": "Boulder Room - Gold Skulltula",
+            "ref": "Spirit Temple/Boulder Room/Gold Skulltula"
+          },
+          {
+            "name": "Central Chamber East - Pot",
+            "ref": "Spirit Temple/Central Chamber East/Pot"
+          },
+          {
+            "name": "Central Chamber Map Chest - Chest",
+            "ref": "Spirit Temple/Central Chamber Map Chest/Chest"
+          },
+          {
+            "name": "Central Chamber Upper Hand - Lullaby Chest",
+            "ref": "Spirit Temple/Central Chamber Upper Hand/Lullaby Chest"
+          },
+          {
+            "name": "Central Chamber Upper Northeast - Chest",
+            "ref": "Spirit Temple/Central Chamber Upper Northeast/Chest"
+          },
+          {
+            "name": "Central Chamber Upper Northwest - Gold Skulltula",
+            "ref": "Spirit Temple/Central Chamber Upper Northwest/Gold Skulltula"
+          },
+          {
+            "name": "Central Chamber West - Pot",
+            "ref": "Spirit Temple/Central Chamber West/Pot"
+          },
+          {
+            "name": "Compass Room - Chest",
+            "ref": "Spirit Temple/Compass Room/Chest"
+          },
+          {
+            "name": "Early Child Anubis Room - Pot",
+            "ref": "Spirit Temple/Early Child Anubis Room/Pot"
+          },
+          {
+            "name": "Early Child Climb East - Chest",
+            "ref": "Spirit Temple/Early Child Climb East/Chest"
+          },
+          {
+            "name": "Early Child Climb North - Chest",
+            "ref": "Spirit Temple/Early Child Climb North/Chest"
+          },
+          {
+            "name": "Early Child Climb Wall - Gold Skulltula",
+            "ref": "Spirit Temple/Early Child Climb Wall/Gold Skulltula"
+          },
+          {
+            "name": "Early Child Climb Wall - Pot",
+            "ref": "Spirit Temple/Early Child Climb Wall/Pot"
+          },
+          {
+            "name": "Early Child Torches Room - Chest",
+            "ref": "Spirit Temple/Early Child Torches Room/Chest"
+          },
+          {
+            "name": "Early Child West Bridge Room - Chest",
+            "ref": "Spirit Temple/Early Child West Bridge Room/Chest"
+          },
+          {
+            "name": "First Mirror Room North - Chest",
+            "ref": "Spirit Temple/First Mirror Room North/Chest"
+          },
+          {
+            "name": "First Mirror Room South - Chest",
+            "ref": "Spirit Temple/First Mirror Room South/Chest"
+          },
+          {
+            "name": "Four Armos Room Under Sunlight - Sun's Song Fairy",
+            "ref": "Spirit Temple/Four Armos Room Under Sunlight/Sun's Song Fairy"
+          },
+          {
+            "name": "Hallway Before Mirror Shield - Invisible Chest",
+            "ref": "Spirit Temple/Hallway Before Mirror Shield/Invisible Chest"
+          },
+          {
+            "name": "Lobby East - Pot",
+            "ref": "Spirit Temple/Lobby East/Pot"
+          },
+          {
+            "name": "Lobby West - Pot",
+            "ref": "Spirit Temple/Lobby West/Pot"
+          },
+          {
+            "name": "Metal Fence - Gold Skulltula",
+            "ref": "Spirit Temple/Metal Fence/Gold Skulltula"
+          },
+          {
+            "name": "Mirror Puzzle Room - Chest",
+            "ref": "Spirit Temple/Mirror Puzzle Room/Chest"
+          },
+          {
+            "name": "Mirror Shield Chest - Chest",
+            "ref": "Spirit Temple/Mirror Shield Chest/Chest"
+          },
+          {
+            "name": "Near Four Armos Room - Chest",
+            "ref": "Spirit Temple/Near Four Armos Room/Chest"
+          },
+          {
+            "name": "Silver Gauntlets Chest - Chest",
+            "ref": "Spirit Temple/SIlver Gauntlets Chest/Chest"
+          },
+          {
+            "name": "Sun Block Room - Chest",
+            "ref": "Spirit Temple/Sun Block Room/Chest"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 837,
+            "y": 159
+          }
+        ],
+        "name": "Temple of Time",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Temple of Time - Gift from Rauru",
+            "ref": "Temple of Time/Temple of Time/Gift from Rauru"
+          },
+          {
+            "name": "Temple of Time - Light Arrow Cutscene",
+            "ref": "Temple of Time/Temple of Time/Light Arrow Cutscene"
+          },
+          {
+            "name": "Temple of Time - Master Sword",
+            "ref": "Temple of Time/Temple of Time/Master Sword"
+          },
+          {
+            "name": "Temple of Time - Sheik at Temple",
+            "ref": "Temple of Time/Temple of Time/Sheik at Temple"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+            "size": 32,
+            "x": 548,
+            "y": 736
+          }
+        ],
+        "name": "Water Temple",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Basement Block Puzzle - Pot",
+            "ref": "Water Temple/Basement Block Puzzle/Pot"
+          },
+          {
+            "name": "Before Torches Room - Pot",
+            "ref": "Water Temple/Before Torches Room/Pot"
+          },
+          {
+            "name": "Behind Gate - Gold Skulltula",
+            "ref": "Water Temple/Behind Gate/Gold Skulltula"
+          },
+          {
+            "name": "Behind Gate - Pot",
+            "ref": "Water Temple/Behind Gate/Pot"
+          },
+          {
+            "name": "Below Central Pillar (Raise Water) - Chest",
+            "ref": "Water Temple/Below Central Pillar (Raise Water)/Chest"
+          },
+          {
+            "name": "Boss Key Room - Boss Key Chest",
+            "ref": "Water Temple/Boss Key Room/Boss Key Chest"
+          },
+          {
+            "name": "Boss Key Room - Pot",
+            "ref": "Water Temple/Boss Key Room/Pot"
+          },
+          {
+            "name": "Boss Room - Heart Container",
+            "ref": "Water Temple/Boss Room/Heart Container"
+          },
+          {
+            "name": "Boss Room - Morpha",
+            "ref": "Water Temple/Boss Room/Morpha"
+          },
+          {
+            "name": "Central Bow Room - Chest",
+            "ref": "Water Temple/Central Bow Room/Chest"
+          },
+          {
+            "name": "Central Bow Room - Pot",
+            "ref": "Water Temple/Central Bow Room/Pot"
+          },
+          {
+            "name": "Central Level East - Pot",
+            "ref": "Water Temple/Central Level East/Pot"
+          },
+          {
+            "name": "Compass Room - Chest",
+            "ref": "Water Temple/Compass Room/Chest"
+          },
+          {
+            "name": "Compass Room - Pot",
+            "ref": "Water Temple/Compass Room/Pot"
+          },
+          {
+            "name": "Cracked Wall Room - Chest",
+            "ref": "Water Temple/Cracked Wall Room/Chest"
+          },
+          {
+            "name": "Dragon Room - Chest",
+            "ref": "Water Temple/Dragon Room/Chest"
+          },
+          {
+            "name": "Falling Platform Room - Gold Skulltula",
+            "ref": "Water Temple/Falling Platform Room/Gold Skulltula"
+          },
+          {
+            "name": "Like Like - Pot",
+            "ref": "Water Temple/Like Like/Pot"
+          },
+          {
+            "name": "Longshot Room - Chest",
+            "ref": "Water Temple/Longshot Room/Chest"
+          },
+          {
+            "name": "Map Room - Chest",
+            "ref": "Water Temple/Map Room/Chest"
+          },
+          {
+            "name": "Near Boss Key Room - Gold Skulltula",
+            "ref": "Water Temple/Near Boss Key Room/Gold Skulltula"
+          },
+          {
+            "name": "River End - Chest",
+            "ref": "Water Temple/River End/Chest"
+          },
+          {
+            "name": "River First Heart - Heart",
+            "ref": "Water Temple/River First Heart/Heart"
+          },
+          {
+            "name": "River Fourth Heart - Heart",
+            "ref": "Water Temple/River Fourth Heart/Heart"
+          },
+          {
+            "name": "River Pots - Pot",
+            "ref": "Water Temple/River Pots/Pot"
+          },
+          {
+            "name": "River Second Heart - Heart",
+            "ref": "Water Temple/River Second Heart/Heart"
+          },
+          {
+            "name": "River Third Heart - Gold Skulltula",
+            "ref": "Water Temple/River Third Heart/Gold Skulltula"
+          },
+          {
+            "name": "River Third Heart - Heart",
+            "ref": "Water Temple/River Third Heart/Heart"
+          },
+          {
+            "name": "Torches Room - Chest",
+            "ref": "Water Temple/Torches Room/Chest"
+          },
+          {
+            "name": "Upper Central Pillar - Gold Skulltula",
+            "ref": "Water Temple/Upper Central Pillar/Gold Skulltula"
+          },
+          {
+            "name": "Upper Level North - Pot",
+            "ref": "Water Temple/Upper Level North/Pot"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1412,
+            "y": 258
+          }
+        ],
+        "name": "Zora's Domain",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Behind King Zora - Beehive",
+            "ref": "Zora's Domain/Behind King Zora/Beehive"
+          },
+          {
+            "name": "Fairy Grotto - Fairy",
+            "ref": "Zora's Domain/Fairy Grotto/Fairy"
+          },
+          {
+            "name": "Frozen Waterfall Wall - Gold Skulltula",
+            "ref": "Zora's Domain/Frozen Waterfall Wall/Gold Skulltula"
+          },
+          {
+            "name": "Gossip Stone - Big Fairy",
+            "ref": "Zora's Domain/Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Gossip Stone - Fairy",
+            "ref": "Zora's Domain/Gossip Stone/Fairy"
+          },
+          {
+            "name": "In Front of King Zora Left - Beehive",
+            "ref": "Zora's Domain/In Front of King Zora Left/Beehive"
+          },
+          {
+            "name": "In Front of King Zora Right - Beehive",
+            "ref": "Zora's Domain/In Front of King Zora Right/Beehive"
+          },
+          {
+            "name": "King Zora - Thawed",
+            "ref": "Zora's Domain/King Zora/Thawed"
+          },
+          {
+            "name": "King Zora - Trade Prescription",
+            "ref": "Zora's Domain/King Zora/Trade Prescription"
+          },
+          {
+            "name": "Opposite of Shop - Pot",
+            "ref": "Zora's Domain/Opposite of Shop/Pot"
+          },
+          {
+            "name": "Shallow Water - Fish",
+            "ref": "Zora's Domain/Shallow Water/Fish"
+          },
+          {
+            "name": "Shop - Item 2",
+            "ref": "Zora's Domain/Shop/Item 2"
+          },
+          {
+            "name": "Shop - Item 3",
+            "ref": "Zora's Domain/Shop/Item 3"
+          },
+          {
+            "name": "Shop - Item 4",
+            "ref": "Zora's Domain/Shop/Item 4"
+          },
+          {
+            "name": "Shop - Item 5",
+            "ref": "Zora's Domain/Shop/Item 5"
+          },
+          {
+            "name": "Shop - Item 6",
+            "ref": "Zora's Domain/Shop/Item 6"
+          },
+          {
+            "name": "Shop - Item 7",
+            "ref": "Zora's Domain/Shop/Item 7"
+          },
+          {
+            "name": "Shop - Item 8",
+            "ref": "Zora's Domain/Shop/Item 8"
+          },
+          {
+            "name": "Waterfall - Bottom Chest",
+            "ref": "Zora's Domain/Waterfall/Bottom Chest"
+          },
+          {
+            "name": "Waterfall - Top Diving Minigame",
+            "ref": "Zora's Domain/Waterfall/Top Diving Minigame"
+          },
+          {
+            "name": "West of Shop - Pot",
+            "ref": "Zora's Domain/West of Shop/Pot"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1329,
+            "y": 184
+          }
+        ],
+        "name": "Zora's Fountain",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above the Log - Gold Skulltula",
+            "ref": "Zora's Fountain/Above the Log/Gold Skulltula"
+          },
+          {
+            "name": "Fairy Fountain Gossip Stone - Big Fairy",
+            "ref": "Zora's Fountain/Fairy Fountain Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Fairy Fountain Gossip Stone - Fairy",
+            "ref": "Zora's Fountain/Fairy Fountain Gossip Stone/Fairy"
+          },
+          {
+            "name": "Fairy Fountain Tree - Gold Skulltula",
+            "ref": "Zora's Fountain/Fairy Fountain Tree/Gold Skulltula"
+          },
+          {
+            "name": "Fairy Fountain Tree - Tree",
+            "ref": "Zora's Fountain/Fairy Fountain Tree/Tree"
+          },
+          {
+            "name": "Fountain Bottom Center - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Center/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Center - Piece of Heart",
+            "ref": "Zora's Fountain/Fountain Bottom Center/Piece of Heart"
+          },
+          {
+            "name": "Fountain Bottom North Middle - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom North Middle/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom North Outer - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom North Outer/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Northeast Middle - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Northeast Middle/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Northeast Outer - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Northeast Outer/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Northwest Middle - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Northwest Middle/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Northwest Outer - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Northwest Outer/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom South Middle - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom South Middle/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom South Outer - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom South Outer/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Southeast Middle - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Southeast Middle/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Southeast Outer - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Southeast Outer/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Southwest Middle - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Southwest Middle/Green Rupee"
+          },
+          {
+            "name": "Fountain Bottom Southwest Outer - Green Rupee",
+            "ref": "Zora's Fountain/Fountain Bottom Southwest Outer/Green Rupee"
+          },
+          {
+            "name": "Great Fairy Fountain - Reward",
+            "ref": "Zora's Fountain/Great Fairy Fountain/Reward"
+          },
+          {
+            "name": "Hidden Cave End - Gold Skulltula",
+            "ref": "Zora's Fountain/Hidden Cave End/Gold Skulltula"
+          },
+          {
+            "name": "Hidden Cave Start - Pot",
+            "ref": "Zora's Fountain/Hidden Cave Start/Pot"
+          },
+          {
+            "name": "Iceberg - Piece of Heart",
+            "ref": "Zora's Fountain/Iceberg/Piece of Heart"
+          },
+          {
+            "name": "Jabu Gossip Stone - Big Fairy",
+            "ref": "Zora's Fountain/Jabu Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Jabu Gossip Stone - Fairy",
+            "ref": "Zora's Fountain/Jabu Gossip Stone/Fairy"
+          },
+          {
+            "name": "Near Jabu Left - Pot",
+            "ref": "Zora's Fountain/Near Jabu Left/Pot"
+          },
+          {
+            "name": "Near Jabu Right - Pot",
+            "ref": "Zora's Fountain/Near Jabu Right/Pot"
+          }
+        ]
+      },
+      {
+        "map_locations": [
+          {
+            "map": "Overworld",
+
+            "x": 1143,
+            "y": 274
+          }
+        ],
+        "name": "Zora's River",
+        "overlay_background": "#80000000",
+        "sections": [
+          {
+            "name": "Above Bridge - Gold Skulltula",
+            "ref": "Zora's River/Above Bridge/Gold Skulltula"
+          },
+          {
+            "name": "Before Tree - Grass",
+            "ref": "Zora's River/Before Tree/Grass"
+          },
+          {
+            "name": "Beneath Domain - Red Rupee",
+            "ref": "Zora's River/Beneath Domain/Red Rupee"
+          },
+          {
+            "name": "Entrance Tree - Gold Skulltula",
+            "ref": "Zora's River/Entrance Tree/Gold Skulltula"
+          },
+          {
+            "name": "Entrance Tree - Tree",
+            "ref": "Zora's River/Entrance Tree/Tree"
+          },
+          {
+            "name": "Fairy Grotto - Fairy",
+            "ref": "Zora's River/Fairy Grotto/Fairy"
+          },
+          {
+            "name": "Frogs - Epona's Song",
+            "ref": "Zora's River/Frogs/Epona's Song"
+          },
+          {
+            "name": "Frogs - Ocarina Game",
+            "ref": "Zora's River/Frogs/Ocarina Game"
+          },
+          {
+            "name": "Frogs - Saria's Song",
+            "ref": "Zora's River/Frogs/Saria's Song"
+          },
+          {
+            "name": "Frogs - Song of Storms",
+            "ref": "Zora's River/Frogs/Song of Storms"
+          },
+          {
+            "name": "Frogs - Song of Time",
+            "ref": "Zora's River/Frogs/Song of Time"
+          },
+          {
+            "name": "Frogs - Sun's Song",
+            "ref": "Zora's River/Frogs/Sun's Song"
+          },
+          {
+            "name": "Frogs - Zelda's Lullaby",
+            "ref": "Zora's River/Frogs/Zelda's Lullaby"
+          },
+          {
+            "name": "Ladder Near Waterfall - Gold Skulltula",
+            "ref": "Zora's River/Ladder Near Waterfall/Gold Skulltula"
+          },
+          {
+            "name": "Ledge Near Zora's Domain - Piece of Heart",
+            "ref": "Zora's River/Ledge Near Zora's Domain/Piece of Heart"
+          },
+          {
+            "name": "Magic Bean Salesman - Bean Patch Fairy",
+            "ref": "Zora's River/Magic Bean Salesman/Bean Patch Fairy"
+          },
+          {
+            "name": "Magic Bean Salesman - Item",
+            "ref": "Zora's River/Magic Bean Salesman/Item"
+          },
+          {
+            "name": "Near Domain Gossip Stone - Big Fairy",
+            "ref": "Zora's River/Near Domain Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Near Domain Gossip Stone - Fairy",
+            "ref": "Zora's River/Near Domain Gossip Stone/Fairy"
+          },
+          {
+            "name": "Near Fairy Grotto Gossip Stone - Big Fairy",
+            "ref": "Zora's River/Near Fairy Grotto Gossip Stone/Big Fairy"
+          },
+          {
+            "name": "Near Fairy Grotto Gossip Stone - Fairy",
+            "ref": "Zora's River/Near Fairy Grotto Gossip Stone/Fairy"
+          },
+          {
+            "name": "Near Freestanding Piece of Heart - Grass",
+            "ref": "Zora's River/Near Freestanding Piece of Heart/Grass"
+          },
+          {
+            "name": "Open Grotto - Beehive",
+            "ref": "Zora's River/Open Grotto/Beehive"
+          },
+          {
+            "name": "Open Grotto - Chest",
+            "ref": "Zora's River/Open Grotto/Chest"
+          },
+          {
+            "name": "Open Grotto - Fish",
+            "ref": "Zora's River/Open Grotto/Fish"
+          },
+          {
+            "name": "Open Grotto - Gossip Stone Big Fairy",
+            "ref": "Zora's River/Open Grotto/Gossip Stone Big Fairy"
+          },
+          {
+            "name": "Open Grotto - Gossip Stone Fairy",
+            "ref": "Zora's River/Open Grotto/Gossip Stone Fairy"
+          },
+          {
+            "name": "Open Grotto - Grass",
+            "ref": "Zora's River/Open Grotto/Grass,Zora's River/Before Tree/Grass"
+          },
+          {
+            "name": "Pillar Near Fairy Grotto - Piece of Heart",
+            "ref": "Zora's River/Pillar Near Fairy Grotto/Piece of Heart"
+          },
+          {
+            "name": "Storms Grotto - Beehive",
+            "ref": "Zora's River/Storms Grotto/Beehive"
+          },
+          {
+            "name": "Storms Grotto - Front Scrub",
+            "ref": "Zora's River/Storms Grotto/Front Scrub"
+          },
+          {
+            "name": "Storms Grotto - Rear Scrub",
+            "ref": "Zora's River/Storms Grotto/Rear Scrub"
+          },
+          {
+            "name": "Wall Near Open Grotto - Gold Skulltula",
+            "ref": "Zora's River/Wall Near Open Grotto/Gold Skulltula"
+          }
+        ]
+      }
+    ],
+    "name": "Overworld",
+    "overlay_background": "#000000"
+  }
+]

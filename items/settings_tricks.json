@@ -1,0 +1,723 @@
+[
+  {
+    "name": "Visible Collision",
+    "type": "toggle",
+    "img": "",
+    "codes": "Visible Collision"
+  },
+  {
+    "name": "Grottos Without Agony",
+    "type": "toggle",
+    "img": "",
+    "codes": "Grottos Without Agony"
+  },
+  {
+    "name": "Fewer Tunic Requirements",
+    "type": "toggle",
+    "img": "",
+    "codes": "Fewer Tunic Requirements"
+  },
+  {
+    "name": "Rusted Switches",
+    "type": "toggle",
+    "img": "",
+    "codes": "Rusted Switches"
+  },
+  {
+    "name": "Flaming Chests",
+    "type": "toggle",
+    "img": "",
+    "codes": "Flaming Chests"
+  },
+  {
+    "name": "Damage Boost Simple",
+    "type": "toggle",
+    "img": "",
+    "codes": "Damage Boost Simple"
+  },
+  {
+    "name": "Hover Boost Simple",
+    "type": "toggle",
+    "img": "",
+    "codes": "Hover Boost Simple"
+  },
+  {
+    "name": "Bombchu Beehives",
+    "type": "toggle",
+    "img": "",
+    "codes": "Bombchu Beehives"
+  },
+  {
+    "name": "Blue Fire Mud Walls",
+    "type": "toggle",
+    "img": "",
+    "codes": "Blue Fire Mud Walls"
+  },
+  {
+    "name": "Open Underwater Chest",
+    "type": "toggle",
+    "img": "",
+    "codes": "Open Underwater Chest"
+  },
+  {
+    "name": "KF Adult GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "KF Adult GS"
+  },
+  { "name": "LW Bridge", "type": "toggle", "img": "", "codes": "LW Bridge" },
+  {
+    "name": "LW Mido Backflip",
+    "type": "toggle",
+    "img": "",
+    "codes": "LW Mido Backflip"
+  },
+  { "name": "LW GS Bean", "type": "toggle", "img": "", "codes": "LW GS Bean" },
+  {
+    "name": "HC Storms GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "HC Storms GS"
+  },
+  {
+    "name": "HF Big Poe Without Epona",
+    "type": "toggle",
+    "img": "",
+    "codes": "HF Big Poe Without Epona"
+  },
+  {
+    "name": "Kak Man On Roof",
+    "type": "toggle",
+    "img": "",
+    "codes": "Kak Man On Roof"
+  },
+  {
+    "name": "Kak Tower GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Kak Tower GS"
+  },
+  {
+    "name": "Kak Adult Windmill PoH",
+    "type": "toggle",
+    "img": "",
+    "codes": "Kak Adult Windmill PoH"
+  },
+  {
+    "name": "Kak Child Windmill PoH",
+    "type": "toggle",
+    "img": "",
+    "codes": "Kak Child Windmill PoH"
+  },
+  {
+    "name": "Kak Rooftop GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Kak Rooftop GS"
+  },
+  { "name": "GY PoH", "type": "toggle", "img": "", "codes": "GY PoH" },
+  {
+    "name": "GY Child Dampe Race PoH",
+    "type": "toggle",
+    "img": "",
+    "codes": "GY Child Dampe Race PoH"
+  },
+  {
+    "name": "GY Shadow Fire Arrows",
+    "type": "toggle",
+    "img": "",
+    "codes": "GY Shadow Fire Arrows"
+  },
+  {
+    "name": "DMT Soil GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Soil GS"
+  },
+  {
+    "name": "DMT Bombable",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Bombable"
+  },
+  {
+    "name": "DMT Hookshot Lower GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Hookshot Lower GS"
+  },
+  {
+    "name": "DMT Hovers Lower GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Hovers Lower GS"
+  },
+  {
+    "name": "DMT Bean Lower GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Bean Lower GS"
+  },
+  {
+    "name": "DMT JS Lower GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT JS Lower GS"
+  },
+  {
+    "name": "DMT Climb Hovers",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Climb Hovers"
+  },
+  {
+    "name": "DMT Upper GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMT Upper GS"
+  },
+  { "name": "GC Pot", "type": "toggle", "img": "", "codes": "GC Pot" },
+  {
+    "name": "GC Pot Strength",
+    "type": "toggle",
+    "img": "",
+    "codes": "GC Pot Strength"
+  },
+  {
+    "name": "GC Rolling Strength",
+    "type": "toggle",
+    "img": "",
+    "codes": "GC Rolling Strength"
+  },
+  {
+    "name": "GC Leftmost",
+    "type": "toggle",
+    "img": "",
+    "codes": "GC Leftmost"
+  },
+  { "name": "GC Grotto", "type": "toggle", "img": "", "codes": "GC Grotto" },
+  {
+    "name": "GC Link Goron Dins",
+    "type": "toggle",
+    "img": "",
+    "codes": "GC Link Goron Dins"
+  },
+  {
+    "name": "DMC Hover Bean PoH",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMC Hover Bean PoH"
+  },
+  {
+    "name": "DMC Bolero Jump",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMC Bolero Jump"
+  },
+  {
+    "name": "DMC Boulder JS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMC Boulder JS"
+  },
+  {
+    "name": "DMC Boulder Skip",
+    "type": "toggle",
+    "img": "",
+    "codes": "DMC Boulder Skip"
+  },
+  { "name": "ZR Lower", "type": "toggle", "img": "", "codes": "ZR Lower" },
+  { "name": "ZR Upper", "type": "toggle", "img": "", "codes": "ZR Upper" },
+  { "name": "ZR Hover", "type": "toggle", "img": "", "codes": "ZR Hover" },
+  { "name": "ZR Cucco", "type": "toggle", "img": "", "codes": "ZR Cucco" },
+  {
+    "name": "ZD King Zora Skip",
+    "type": "toggle",
+    "img": "",
+    "codes": "ZD King Zora Skip"
+  },
+  { "name": "ZD GS", "type": "toggle", "img": "", "codes": "ZD GS" },
+  {
+    "name": "ZF Great Fairy Without Explosives",
+    "type": "toggle",
+    "img": "",
+    "codes": "ZF Great Fairy Without Explosives"
+  },
+  {
+    "name": "LH Lab Wall GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "LH Lab Wall GS"
+  },
+  {
+    "name": "LH Lab Diving",
+    "type": "toggle",
+    "img": "",
+    "codes": "LH Lab Diving"
+  },
+  {
+    "name": "LH Water Hookshot",
+    "type": "toggle",
+    "img": "",
+    "codes": "LH Water Hookshot"
+  },
+  {
+    "name": "Pass Guards With Nothing",
+    "type": "toggle",
+    "img": "",
+    "codes": "Pass Guards With Nothing"
+  },
+  { "name": "GF Jump", "type": "toggle", "img": "", "codes": "GF Jump" },
+  {
+    "name": "GF Warrior With Difficult Weapon",
+    "type": "toggle",
+    "img": "",
+    "codes": "GF Warrior With Difficult Weapon"
+  },
+  {
+    "name": "GF Ledge Clip into GTG",
+    "type": "toggle",
+    "img": "",
+    "codes": "GF Ledge Clip into GTG"
+  },
+  {
+    "name": "HW Crossing",
+    "type": "toggle",
+    "img": "",
+    "codes": "HW Crossing"
+  },
+  { "name": "Lens HW", "type": "toggle", "img": "", "codes": "Lens HW" },
+  { "name": "HW Reverse", "type": "toggle", "img": "", "codes": "HW Reverse" },
+  {
+    "name": "Colossus GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Colossus GS"
+  },
+  {
+    "name": "Deku B1 Skip",
+    "type": "toggle",
+    "img": "",
+    "codes": "Deku B1 Skip"
+  },
+  {
+    "name": "Deku B1 Bow Webs",
+    "type": "toggle",
+    "img": "",
+    "codes": "Deku B1 Bow Webs"
+  },
+  {
+    "name": "Deku B1 Backflip Over Spiked Log",
+    "type": "toggle",
+    "img": "",
+    "codes": "Deku B1 Backflip Over Spiked Log"
+  },
+  {
+    "name": "DC Scarecrow GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DC Scarecrow GS"
+  },
+  {
+    "name": "DC Vines GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "DC Vines GS"
+  },
+  {
+    "name": "DC Stairs With Bow",
+    "type": "toggle",
+    "img": "",
+    "codes": "DC Stairs With Bow"
+  },
+  {
+    "name": "DC Slingshot Skip",
+    "type": "toggle",
+    "img": "",
+    "codes": "DC Slingshot Skip"
+  },
+  {
+    "name": "DC Scrub Room",
+    "type": "toggle",
+    "img": "",
+    "codes": "DC Scrub Room"
+  },
+  { "name": "DC Jump", "type": "toggle", "img": "", "codes": "DC Jump" },
+  {
+    "name": "DC Dodongo Chu",
+    "type": "toggle",
+    "img": "",
+    "codes": "DC Dodongo Chu"
+  },
+  {
+    "name": "Jabu Alcove Jump Dive",
+    "type": "toggle",
+    "img": "",
+    "codes": "Jabu Alcove Jump Dive"
+  },
+  {
+    "name": "Jabu Boss Hover",
+    "type": "toggle",
+    "img": "",
+    "codes": "Jabu Boss Hover"
+  },
+  {
+    "name": "Jabu Near Boss Ranged",
+    "type": "toggle",
+    "img": "",
+    "codes": "Jabu Near Boss Ranged"
+  },
+  {
+    "name": "Jabu Near Boss Explosives",
+    "type": "toggle",
+    "img": "",
+    "codes": "Jabu Near Boss Explosives"
+  },
+  { "name": "Lens BotW", "type": "toggle", "img": "", "codes": "Lens BotW" },
+  {
+    "name": "BotW Child Deadhand",
+    "type": "toggle",
+    "img": "",
+    "codes": "BotW Child Deadhand"
+  },
+  {
+    "name": "BotW Basement",
+    "type": "toggle",
+    "img": "",
+    "codes": "BotW Basement"
+  },
+  {
+    "name": "Forest First GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest First GS"
+  },
+  {
+    "name": "Forest Outdoors East GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest Outdoors East GS"
+  },
+  {
+    "name": "Forest Vines",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest Vines"
+  },
+  {
+    "name": "Forest Outdoors Ledge",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest Outdoors Ledge"
+  },
+  {
+    "name": "Forest Doorframe",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest Doorframe"
+  },
+  {
+    "name": "Forest Outside Backdoor",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest Outside Backdoor"
+  },
+  {
+    "name": "Forest Outdoors Hearts Boomerang",
+    "type": "toggle",
+    "img": "",
+    "codes": "Forest Outdoors Hearts Boomerang"
+  },
+  {
+    "name": "Fire Boss Door Jump",
+    "type": "toggle",
+    "img": "",
+    "codes": "Fire Boss Door Jump"
+  },
+  { "name": "Fire SoT", "type": "toggle", "img": "", "codes": "Fire SoT" },
+  {
+    "name": "Fire Strength",
+    "type": "toggle",
+    "img": "",
+    "codes": "Fire Strength"
+  },
+  {
+    "name": "Fire Scarecrow",
+    "type": "toggle",
+    "img": "",
+    "codes": "Fire Scarecrow"
+  },
+  {
+    "name": "Fire Flame Maze",
+    "type": "toggle",
+    "img": "",
+    "codes": "Fire Flame Maze"
+  },
+  {
+    "name": "Water Longshot Torch",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Longshot Torch"
+  },
+  {
+    "name": "Water Cracked Wall Hovers",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Cracked Wall Hovers"
+  },
+  {
+    "name": "Water Cracked Wall",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Cracked Wall"
+  },
+  {
+    "name": "Water BK Region",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water BK Region"
+  },
+  {
+    "name": "Water North Basement Ledge Jump",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water North Basement Ledge Jump"
+  },
+  {
+    "name": "Water BK Jump Dive",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water BK Jump Dive"
+  },
+  {
+    "name": "Water FW Central GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water FW Central GS"
+  },
+  {
+    "name": "Water Irons Central GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Irons Central GS"
+  },
+  {
+    "name": "Water Central Bow",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Central Bow"
+  },
+  {
+    "name": "Water Hookshot Falling Platform GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Hookshot Falling Platform GS"
+  },
+  {
+    "name": "Water Rang Falling Platform GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Rang Falling Platform GS"
+  },
+  {
+    "name": "Water River GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water River GS"
+  },
+  {
+    "name": "Water Dragon Jump Dive",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Dragon Jump Dive"
+  },
+  {
+    "name": "Water Adult Dragon",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Adult Dragon"
+  },
+  {
+    "name": "Water Child Dragon",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Child Dragon"
+  },
+  {
+    "name": "Water Morpha Without Hookshot",
+    "type": "toggle",
+    "img": "",
+    "codes": "Water Morpha Without Hookshot"
+  },
+  {
+    "name": "Lens Shadow",
+    "type": "toggle",
+    "img": "",
+    "codes": "Lens Shadow"
+  },
+  {
+    "name": "Lens Shadow Platform",
+    "type": "toggle",
+    "img": "",
+    "codes": "Lens Shadow Platform"
+  },
+  { "name": "Lens Bongo", "type": "toggle", "img": "", "codes": "Lens Bongo" },
+  {
+    "name": "Shadow Umbrella Hover",
+    "type": "toggle",
+    "img": "",
+    "codes": "Shadow Umbrella Hover"
+  },
+  {
+    "name": "Shadow Umbrella Clip",
+    "type": "toggle",
+    "img": "",
+    "codes": "Shadow Umbrella Clip"
+  },
+  {
+    "name": "Shadow Umbrella GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Shadow Umbrella GS"
+  },
+  {
+    "name": "Shadow Freestanding Key",
+    "type": "toggle",
+    "img": "",
+    "codes": "Shadow Freestanding Key"
+  },
+  {
+    "name": "Shadow Statue",
+    "type": "toggle",
+    "img": "",
+    "codes": "Shadow Statue"
+  },
+  {
+    "name": "Shadow Bongo",
+    "type": "toggle",
+    "img": "",
+    "codes": "Shadow Bongo"
+  },
+  {
+    "name": "Lens Spirit",
+    "type": "toggle",
+    "img": "",
+    "codes": "Lens Spirit"
+  },
+  {
+    "name": "Spirit Child Chu",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Child Chu"
+  },
+  {
+    "name": "Spirit Lobby GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Lobby GS"
+  },
+  {
+    "name": "Spirit Lower Adult Switch",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Lower Adult Switch"
+  },
+  {
+    "name": "Spirit Lobby Jump",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Lobby Jump"
+  },
+  {
+    "name": "Spirit Platform Hookshot",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Platform Hookshot"
+  },
+  {
+    "name": "Spirit Map Chest",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Map Chest"
+  },
+  {
+    "name": "Spirit Sun Chest",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Sun Chest"
+  },
+  {
+    "name": "Spirit Wall",
+    "type": "toggle",
+    "img": "",
+    "codes": "Spirit Wall"
+  },
+  {
+    "name": "Ice Block GS",
+    "type": "toggle",
+    "img": "",
+    "codes": "Ice Block GS"
+  },
+  { "name": "Lens GTG", "type": "toggle", "img": "", "codes": "Lens GTG" },
+  {
+    "name": "GTG Without Hookshot",
+    "type": "toggle",
+    "img": "",
+    "codes": "GTG Without Hookshot"
+  },
+  {
+    "name": "GTG Fake Wall",
+    "type": "toggle",
+    "img": "",
+    "codes": "GTG Fake Wall"
+  },
+  { "name": "Lens Ganon", "type": "toggle", "img": "", "codes": "Lens Ganon" },
+  {
+    "name": "Ganon Spirit Trial Hookshot",
+    "type": "toggle",
+    "img": "",
+    "codes": "Ganon Spirit Trial Hookshot"
+  },
+  {
+    "name": "Damage Boost",
+    "type": "toggle",
+    "img": "",
+    "codes": "Damage Boost"
+  },
+  {
+    "name": "Ground Jump",
+    "type": "toggle",
+    "img": "",
+    "codes": "Ground Jump"
+  },
+  {
+    "name": "Ground Jump Hard",
+    "type": "toggle",
+    "img": "",
+    "codes": "Ground Jump Hard"
+  },
+  {
+    "name": "Hookshot Extension",
+    "type": "toggle",
+    "img": "",
+    "codes": "Hookshot Extension"
+  },
+  {
+    "name": "Bottom of the Well Navi Dive",
+    "type": "toggle",
+    "img": "",
+    "codes": "Bottom of the Well Navi Dive"
+  },
+  {
+    "name": "Lost Wood Navi Dive",
+    "type": "toggle",
+    "img": "",
+    "codes": "Lost Wood Navi Dive"
+  },
+  {
+    "name": "Glitched Item",
+    "type": "toggle",
+    "img": "",
+    "codes": "Glitched Item"
+  }
+]

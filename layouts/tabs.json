@@ -1,0 +1,291 @@
+{
+  "tabbed_maps_horizontal": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "World Map",
+        "content": {
+          "type": "map",
+          "maps": ["Overworld"]
+        }
+      },
+      {
+        "title": "Overworld Areas",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Kokiri Forest",
+              "content": {
+                "type": "map",
+                "maps": ["Kokiri Forest"]
+              }
+            },
+            {
+              "title": "Lost Woods",
+              "content": {
+                "type": "map",
+                "maps": ["Lost Woods"]
+              }
+            },
+            {
+              "title": "SFM",
+              "content": {
+                "type": "map",
+                "maps": ["Sacred Forest Meadow"]
+              }
+            },
+            {
+              "title": "Hyrule Field",
+              "content": {
+                "type": "map",
+                "maps": ["Hyrule Field"]
+              }
+            },
+            {
+              "title": "Lon Lon Ranch",
+              "content": {
+                "type": "map",
+                "maps": ["Lon Lon Ranch"]
+              }
+            },
+            {
+              "title": "Market",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Main Area",
+                    "content": {
+                      "type": "map",
+                      "maps": ["Market"]
+                    }
+                  },
+                  {
+                    "title": "Temple of Time",
+                    "content": {
+                      "type": "map",
+                      "maps": ["Temple of Time"]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "Hyrule Castle",
+              "content": {
+                "type": "map",
+                "maps": ["Hyrule Castle"]
+              }
+            },
+            {
+              "title": "Ganon's Castle",
+              "content": {
+                "type": "map",
+                "maps": ["Outside Ganon's Castle"]
+              }
+            },
+            {
+              "title": "Kakariko",
+              "content": {
+                "type": "map",
+                "maps": ["Kakariko Village"]
+              }
+            },
+            {
+              "title": "Graveyard",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Main Area",
+                    "content": {
+                      "type": "map",
+                      "maps": ["Graveyard"]
+                    }
+                  },
+                  {
+                    "title": "Dampe Race",
+                    "content": {
+                      "type": "map",
+                      "maps": ["Dampe Race"]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "title": "DM Trail",
+              "content": {
+                "type": "map",
+                "maps": ["Death Mountain Trail"]
+              }
+            },
+            {
+              "title": "Goron City",
+              "content": {
+                "type": "map",
+                "maps": ["Goron City"]
+              }
+            },
+            {
+              "title": "DM Crater",
+              "content": {
+                "type": "map",
+                "maps": ["Death Mountain Crater"]
+              }
+            },
+            {
+              "title": "Lake Hylia",
+              "content": {
+                "type": "map",
+                "maps": ["Lake Hylia"]
+              }
+            },
+            {
+              "title": "Zora's River",
+              "content": {
+                "type": "map",
+                "maps": ["Zora's River"]
+              }
+            },
+            {
+              "title": "Zora's Domain",
+              "content": {
+                "type": "map",
+                "maps": ["Zora's Domain"]
+              }
+            },
+            {
+              "title": "Zora's Fountain",
+              "content": {
+                "type": "map",
+                "maps": ["Zora's Fountain"]
+              }
+            },
+            {
+              "title": "Gerudo Valley",
+              "content": {
+                "type": "map",
+                "maps": ["Gerudo Valley"]
+              }
+            },
+            {
+              "title": "Gerudo Fortress",
+              "content": {
+                "type": "map",
+                "maps": ["Gerudo Fortress"]
+              }
+            },
+            {
+              "title": "Wasteland",
+              "content": {
+                "type": "map",
+                "maps": ["Haunted Wasteland"]
+              }
+            },
+            {
+              "title": "Colossus",
+              "content": {
+                "type": "map",
+                "maps": ["Desert Colossus"]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "title": "Dungeons",
+        "content": {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Deku Tree",
+              "content": {
+                "type": "map",
+                "maps": ["Deku Tree"]
+              }
+            },
+            {
+              "title": "Dodongo's Cavern",
+              "content": {
+                "type": "map",
+                "maps": ["Dodongo's Cavern"]
+              }
+            },
+            {
+              "title": "Jabu Jabu's Belly",
+              "content": {
+                "type": "map",
+                "maps": ["Jabu Jabu's Belly"]
+              }
+            },
+            {
+              "title": "Forest Temple",
+              "content": {
+                "type": "map",
+                "maps": ["Forest Temple"]
+              }
+            },
+            {
+              "title": "Fire Temple",
+              "content": {
+                "type": "map",
+                "maps": ["Fire Temple"]
+              }
+            },
+            {
+              "title": "Water Temple",
+              "content": {
+                "type": "map",
+                "maps": ["Water Temple"]
+              }
+            },
+            {
+              "title": "Shadow Temple",
+              "content": {
+                "type": "map",
+                "maps": ["Shadow Temple"]
+              }
+            },
+            {
+              "title": "Spirit Temple",
+              "content": {
+                "type": "map",
+                "maps": ["Spirit Temple"]
+              }
+            },
+            {
+              "title": "Bottom of the Well",
+              "content": {
+                "type": "map",
+                "maps": ["Bottom of the Well"]
+              }
+            },
+            {
+              "title": "Ice Cavern",
+              "content": {
+                "type": "map",
+                "maps": ["Ice Cavern"]
+              }
+            },
+            {
+              "title": "Gerudo Training Ground",
+              "content": {
+                "type": "map",
+                "maps": ["Gerudo Training Ground"]
+              }
+            },
+            {
+              "title": "Ganon's Castle",
+              "content": {
+                "type": "map",
+                "maps": ["Ganon's Castle"]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

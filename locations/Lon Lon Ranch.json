@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Lon Lon Ranch",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Ranch Center",
+
+        "sections": [
+          {
+            "name": "Song from Malon",
+            "access_rules": ["^$REACHABLE|SONG_FROM_MALON"],
+            "visibility_rules": ["$AGE_CHECK|SONG_FROM_MALON"],
+            "chest_opened_img": "images/chest_images/eponas_song_opened.png",
+            "chest_unopened_img": "images/chest_images/eponas_song_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 330,
+            "y": 416
+          }
+        ]
+      },
+      {
+        "name": "Talon's House",
+
+        "sections": [
+          {
+            "name": "Chickens",
+            "access_rules": ["^$REACHABLE|LLR_TALONS_CHICKENS"],
+            "visibility_rules": ["$AGE_CHECK|LLR_TALONS_CHICKENS"],
+            "chest_opened_img": "images/chest_images/pocket_cucco_opened.png",
+            "chest_unopened_img": "images/chest_images/pocket_cucco_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 562,
+            "y": 68
+          }
+        ]
+      },
+      {
+        "name": "Tower",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|LLR_FREESTANDING_POH"],
+            "visibility_rules": ["$AGE_CHECK|LLR_FREESTANDING_POH"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Cow",
+            "access_rules": ["^$REACHABLE|LLR_TOWER_LEFT_COW"],
+            "visibility_rules": ["$OPTION_COWS,$AGE_CHECK|LLR_TOWER_LEFT_COW"],
+            "chest_opened_img": "images/chest_images/cow_opened.png",
+            "chest_unopened_img": "images/chest_images/cow_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 104,
+            "y": 697
+          }
+        ]
+      },
+      {
+        "name": "House Window",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LLR_GS_HOUSE_WINDOW"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LLR_GS_HOUSE_WINDOW"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 464,
+            "y": 133
+          }
+        ]
+      },
+      {
+        "name": "Gold Skulltula Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|LLR_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|LLR_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LLR_GS_TREE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LLR_GS_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          },
+          {
+            "name": "Crate Near Tree",
+            "access_rules": ["^$REACHABLE|LLR_NEAR_TREE_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|LLR_NEAR_TREE_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 499,
+            "y": 188
+          }
+        ]
+      },
+      {
+        "name": "Rain Shed",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|LLR_RAIN_SHED_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|LLR_RAIN_SHED_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LLR_GS_RAIN_SHED"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LLR_GS_RAIN_SHED"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 430,
+            "y": 524
+          }
+        ]
+      },
+      {
+        "name": "Back Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LLR_GS_BACK_WALL"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LLR_GS_BACK_WALL"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 33,
+            "y": 595
+          }
+        ]
+      },
+      {
+        "name": "Deku Scrub Grotto",
+
+        "sections": [
+          {
+            "name": "Left Scrub",
+            "access_rules": ["^$REACHABLE|LLR_DEKU_SCRUB_GROTTO_LEFT"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|LLR_DEKU_SCRUB_GROTTO_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Center Scrub",
+            "access_rules": ["^$REACHABLE|LLR_DEKU_SCRUB_GROTTO_CENTER"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|LLR_DEKU_SCRUB_GROTTO_CENTER"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Scrub",
+            "access_rules": ["^$REACHABLE|LLR_DEKU_SCRUB_GROTTO_RIGHT"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|LLR_DEKU_SCRUB_GROTTO_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|LLR_DEKU_SCRUB_GROTTO_BEEHIVE"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|LLR_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 570,
+            "y": 691
+          }
+        ]
+      },
+      {
+        "name": "Stables",
+
+        "sections": [
+          {
+            "name": "Cow",
+            "access_rules": ["^$REACHABLE|LLR_STABLES_LEFT_COW"],
+            "visibility_rules": [
+              "$OPTION_COWS,$AGE_CHECK|LLR_STABLES_LEFT_COW"
+            ],
+            "chest_opened_img": "images/chest_images/cow_opened.png",
+            "chest_unopened_img": "images/chest_images/cow_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 312,
+            "y": 131
+          }
+        ]
+      },
+      {
+        "name": "Front Wall",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|LLR_FRONT_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|LLR_FRONT_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 422,
+            "y": 70
+          }
+        ]
+      },
+      {
+        "name": "Talon's House 2F",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|LLR_TALONS_HOUSE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|LLR_TALONS_HOUSE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lon Lon Ranch",
+            "x": 562,
+            "y": 121
+          }
+        ]
+      }
+    ]
+  }
+]

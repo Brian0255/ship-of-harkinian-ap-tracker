@@ -1,0 +1,14 @@
+{
+  "settings_popup": {
+    "type": "tabbed",
+    "tabs": [
+      {
+        "title": "Main Settings",
+        "content": {
+          "type": "layout",
+          "key": "main_settings_tab"
+        }
+      }
+    ]
+  }
+}

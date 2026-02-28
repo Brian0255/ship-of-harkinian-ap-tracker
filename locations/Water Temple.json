@@ -1,0 +1,635 @@
+[
+  {
+    "name": "Water Temple",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#80000000",
+    "access_rules": [" "],
+    "children": [
+      {
+        "name": "Boss Room",
+
+        "access_rules": [" "],
+        "sections": [
+          {
+            "name": "Morpha",
+            "access_rules": ["^$REACHABLE|MORPHA"],
+            "visibility_rules": ["$AGE_CHECK|MORPHA"],
+            "chest_opened_img": "images/chest_images/boss_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Container",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_MORPHA_HEART_CONTAINER"],
+            "visibility_rules": [
+              "$AGE_CHECK|WATER_TEMPLE_MORPHA_HEART_CONTAINER"
+            ],
+            "chest_opened_img": "images/chest_images/heart_container_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_container_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 457,
+            "y": 197
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_COMPASS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_COMPASS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_NEAR_COMPASS_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_NEAR_COMPASS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 649,
+            "y": 421
+          }
+        ]
+      },
+      {
+        "name": "Map Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_MAP_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_MAP_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 659,
+            "y": 529
+          }
+        ]
+      },
+      {
+        "name": "Cracked Wall Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_CRACKED_WALL_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_CRACKED_WALL_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1030,
+            "y": 531
+          }
+        ]
+      },
+      {
+        "name": "Torches Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_TORCHES_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_TORCHES_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1432,
+            "y": 541
+          }
+        ]
+      },
+      {
+        "name": "Boss Key Room",
+
+        "sections": [
+          {
+            "name": "Boss Key Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_BOSS_KEY_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_BOSS_KEY_CHEST"],
+            "chest_opened_img": "images/chest_images/boss_chest_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_BOSS_KEY_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_BOSS_KEY_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1112,
+            "y": 186
+          }
+        ]
+      },
+      {
+        "name": "Upper Central Pillar",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_GS_CENTRAL_PILLAR"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_GS_CENTRAL_PILLAR"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 444,
+            "y": 475
+          }
+        ]
+      },
+      {
+        "name": "Below Central Pillar (Raise Water)",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_CENTRAL_PILLAR_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|WATER_TEMPLE_CENTRAL_PILLAR_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1398,
+            "y": 659
+          }
+        ]
+      },
+      {
+        "name": "Longshot Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_LONGSHOT_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_LONGSHOT_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 117,
+            "y": 53
+          }
+        ]
+      },
+      {
+        "name": "River First Heart",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_RIVER_HEART1"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_HEART1"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 798,
+            "y": 333
+          }
+        ]
+      },
+      {
+        "name": "River Second Heart",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_RIVER_HEART2"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_HEART2"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 827,
+            "y": 310
+          }
+        ]
+      },
+      {
+        "name": "River Third Heart",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_RIVER_HEART3"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_HEART3"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_GS_RIVER"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_GS_RIVER"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 847,
+            "y": 228
+          }
+        ]
+      },
+      {
+        "name": "River Fourth Heart",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_RIVER_HEART4"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_HEART4"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 886,
+            "y": 286
+          }
+        ]
+      },
+      {
+        "name": "River Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_RIVER_POT1"],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_POT1"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 866,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "River End",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_RIVER_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_RIVER_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 940,
+            "y": 318
+          }
+        ]
+      },
+      {
+        "name": "Dragon Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_DRAGON_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|WATER_TEMPLE_DRAGON_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1014,
+            "y": 294
+          }
+        ]
+      },
+      {
+        "name": "Behind Gate",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_BEHIND_GATE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_BEHIND_GATE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_GS_BEHIND_GATE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_GS_BEHIND_GATE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 997,
+            "y": 610
+          }
+        ]
+      },
+      {
+        "name": "Near Boss Key Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_GS_NEAR_BOSS_KEY_CHEST"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_GS_NEAR_BOSS_KEY_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1123,
+            "y": 261
+          }
+        ]
+      },
+      {
+        "name": "Falling Platform Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|WATER_TEMPLE_GS_FALLING_PLATFORM_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_GS_FALLING_PLATFORM_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 276,
+            "y": 462
+          }
+        ]
+      },
+      {
+        "name": "Central Level East",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_MAIN_LEVEL2_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_MAIN_LEVEL2_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 899,
+            "y": 495
+          }
+        ]
+      },
+      {
+        "name": "Upper Level North",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_MAIN_LEVEL1_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_MAIN_LEVEL1_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 457,
+            "y": 381
+          }
+        ]
+      },
+      {
+        "name": "Before Torches Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_TORCH_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_TORCH_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1388,
+            "y": 541
+          }
+        ]
+      },
+      {
+        "name": "Central Bow Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|WATER_TEMPLE_CENTRAL_BOW_TARGET_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|WATER_TEMPLE_CENTRAL_BOW_TARGET_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_CENTRAL_BOW_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_CENTRAL_BOW_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 938,
+            "y": 619
+          }
+        ]
+      },
+      {
+        "name": "Basement Block Puzzle",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|WATER_TEMPLE_BASEMENT_BLOCK_PUZZLE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_BASEMENT_BLOCK_PUZZLE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 1259,
+            "y": 78
+          }
+        ]
+      },
+      {
+        "name": "Like Like",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|WATER_TEMPLE_LIKE_LIKE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_LIKE_LIKE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Water Temple",
+            "x": 117,
+            "y": 333
+          }
+        ]
+      }
+    ]
+  }
+]

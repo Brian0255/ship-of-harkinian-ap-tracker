@@ -1,0 +1,281 @@
+[
+  {
+    "name": "Desert Colossus",
+       "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Sheik at Colossus",
+
+        "sections": [
+          {
+            "name": "Song",
+            "access_rules": [
+              "^$REACHABLE|SHEIK_AT_COLOSSUS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SHEIK_AT_COLOSSUS"
+            ],
+            "chest_opened_img": "images/chest_images/requiem_of_spirit_opened.png",
+            "chest_unopened_img": "images/chest_images/requiem_of_spirit_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 243,
+            "y": 423
+          }
+        ]
+      },
+      {
+        "name": "Great Fairy Fountain",
+
+        "sections": [
+          {
+            "name": "Reward",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_GREAT_FAIRY_REWARD"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|COLOSSUS_GREAT_FAIRY_REWARD"
+            ],
+            "chest_opened_img": "images/chest_images/great_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/great_fairy_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 656,
+            "y": 235
+          }
+        ]
+      },
+      {
+        "name": "Rock Structure",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|COLOSSUS_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 316,
+            "y": 421
+          }
+        ]
+      },
+      {
+        "name": "Bean Patch",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_BEAN_SPROUT_FAIRY1"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_BEAN_FAIRIES,$AGE_CHECK|COLOSSUS_BEAN_SPROUT_FAIRY1"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_GS_BEAN_PATCH"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|COLOSSUS_GS_BEAN_PATCH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 227,
+            "y": 458
+          }
+        ]
+      },
+      {
+        "name": "Tree",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_GS_TREE"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|COLOSSUS_GS_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 440,
+            "y": 704
+          }
+        ]
+      },
+      {
+        "name": "Hill",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_GS_HILL"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|COLOSSUS_GS_HILL"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 553,
+            "y": 359
+          }
+        ]
+      },
+      {
+        "name": "Deku Scrub Grotto",
+
+        "sections": [
+          {
+            "name": "Front Scrub",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_DEKU_SCRUB_GROTTO_FRONT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|COLOSSUS_DEKU_SCRUB_GROTTO_FRONT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Rear Scrub",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_DEKU_SCRUB_GROTTO_REAR"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|COLOSSUS_DEKU_SCRUB_GROTTO_REAR"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|COLOSSUS_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 393,
+            "y": 267
+          }
+        ]
+      },
+      {
+        "name": "Oasis Storms Fairies",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_OASIS_FAIRY1"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|COLOSSUS_OASIS_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 529,
+            "y": 659
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|COLOSSUS_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|COLOSSUS_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|COLOSSUS_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Desert Colossus",
+            "x": 153,
+            "y": 582
+          }
+        ]
+      }
+    ]
+  }
+]

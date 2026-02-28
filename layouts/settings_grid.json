@@ -1,0 +1,303 @@
+{
+  "main_settings_tab": {
+    "type": "array",
+    "margin": 0,
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "group",
+            "header": "Area Access",
+            "header_background": "#333333",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,10,10",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 205,
+                "rows": [
+                  ["setting_closed_forest"],
+                  ["setting_kakariko_gate"],
+                  ["setting_door_of_time"],
+                  ["setting_zoras_fountain"],
+                  ["setting_sleeping_waterfall"],
+                  ["setting_jabu_jabu"],
+                  ["setting_fortress_carpenters"],
+                  ["setting_lock_overworld_doors"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Quality of Life",
+            "header_background": "#333333",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,10,10",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 205,
+                "rows": [
+                  ["setting_skip_child_zelda"],
+                  ["setting_skip_epona_race"],
+                  ["setting_skip_ganons_trials"],
+                  ["setting_skip_scarecrows_song"],
+                  ["setting_complete_mask_quest"],
+                  ["setting_big_poe_target_count"],
+                  ["setting_skulls_sun_song"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Misc",
+            "header_background": "#333333",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,10,0",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 205,
+                "rows": [["setting_starting_age"]]
+              }
+            ]
+          }
+        ]
+      },
+
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "group",
+            "header": "Rainbow Bridge",
+            "header_background": "#333333",
+            "margin": "0,0,15,0",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,0,31",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 235,
+                "rows": [
+                  ["setting_rainbow_bridge"],
+                  ["setting_rainbow_bridge_greg_modifier"],
+                  ["setting_rainbow_bridge_stones_required"],
+                  ["setting_rainbow_bridge_medallions_required"],
+                  ["setting_rainbow_bridge_dungeon_rewards_required"],
+                  ["setting_rainbow_bridge_dungeons_required"],
+                  ["setting_rainbow_bridge_skull_tokens_required"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Ganon's Castle Boss Key",
+            "header_background": "#333333",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,15,0",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 235,
+                "rows": [
+                  ["setting_ganons_castle_boss_key"],
+                  ["setting_ganons_castle_boss_key_greg_modifier"],
+                  ["setting_ganons_castle_boss_key_stones_required"],
+                  ["setting_ganons_castle_boss_key_medallions_required"],
+                  ["setting_ganons_castle_boss_key_dungeon_rewards_required"],
+                  ["setting_ganons_castle_boss_key_dungeons_required"],
+                  ["setting_ganons_castle_boss_key_skull_tokens_required"],
+                  [""],
+                  [""],
+                  [""]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "array",
+        "orientation": "vertical",
+        "content": [
+          {
+            "type": "group",
+            "header": "Key Settings",
+            "header_background": "#333333",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,10,10",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 216,
+                "rows": [
+                  ["setting_small_key_shuffle"],
+                  ["setting_boss_key_shuffle"],
+                  ["setting_gerudo_fortress_key_shuffle"],
+                  ["setting_skeleton_key"]
+                ]
+              }
+            ]
+          },
+
+          {
+            "type": "group",
+            "header": "Item Settings",
+            "header_background": "#333333",
+            "margin": "0,0,0,0",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,10,10",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 215,
+                "rows": [
+                  ["setting_bombchu_bag"],
+                  ["setting_bombchu_drops"],
+                  ["setting_blue_fire_arrows"],
+                  ["setting_sunlight_arrows"],
+                  ["setting_rocs_feather"],
+                  ["setting_slingbow_break_beehives"]
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "header": "Goal",
+            "header_background": "#333333",
+            "content": [
+              {
+                "type": "itemgrid",
+                "margin": "0,0,10,0",
+                "item_margin": "0,2",
+                "h_alignment": "left",
+                "item_h_alignment": "left",
+                "item_v_alignment": "center",
+                "item_height": 17,
+                "item_width": 216,
+                "rows": [
+                  ["setting_triforce_hunt"],
+                  ["setting_triforce_hunt_pieces_required_percentage"],
+                  [""],
+                  [""],
+                  [""],
+                  [""]
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "header": "Shuffle Settings",
+        "header_background": "#333333",
+        "content": [
+          {
+            "type": "itemgrid",
+            "margin": "0,0,10,0",
+            "item_margin": "0,2",
+            "h_alignment": "left",
+            "item_h_alignment": "left",
+            "item_v_alignment": "center",
+            "item_height": 17,
+            "item_width": 185,
+            "rows": [
+              ["setting_shuffle_songs"],
+              ["setting_shuffle_ocarinas"],
+              ["setting_shuffle_ocarina_buttons"],
+              ["setting_shuffle_kokiri_sword"],
+              ["setting_shuffle_master_sword"],
+              ["setting_shuffle_childs_wallet"],
+              ["setting_shuffle_tycoon_wallet"],
+              ["setting_shuffle_swim"],
+              ["setting_shuffle_fishing_pole"],
+              ["setting_shuffle_deku_stick_bag"],
+              ["setting_shuffle_deku_nut_bag"],
+              ["setting_shuffle_weird_egg"],
+              ["setting_shuffle_adult_trade_items"],
+              ["setting_shuffle_gerudo_membership_card"],
+              ["setting_shuffle_shops"],
+              ["setting_shuffle_shops_item_amount"],
+              ["setting_shuffle_merchants"],
+              [""]
+            ]
+          }
+        ]
+      },
+      {
+        "type": "group",
+        "header_background": "#333333",
+        "content": [
+          {
+            "type": "itemgrid",
+            "margin": "0,0,0,0",
+            "item_margin": "0,2",
+            "h_alignment": "left",
+            "item_h_alignment": "left",
+            "item_v_alignment": "center",
+            "item_height": 17,
+            "item_width": 215,
+            "rows": [
+              ["setting_shuffle_scrubs"],
+              ["setting_shuffle_beehives"],
+              ["setting_shuffle_cows"],
+              ["setting_shuffle_pots"],
+              ["setting_shuffle_crates"],
+              ["setting_shuffle_grass"],
+              ["setting_shuffle_trees"],
+              ["setting_shuffle_fish"],
+              ["setting_shuffle_fountain_fairies"],
+              ["setting_shuffle_stone_fairies"],
+              ["setting_shuffle_bean_fairies"],
+              ["setting_shuffle_song_fairies"],
+              ["setting_shuffle_freestanding_items"],
+              ["setting_shuffle_frog_song_rupees"],
+              ["setting_shuffle_boss_souls"],
+              ["setting_shuffle_skull_tokens"],
+              ["setting_shuffle_100_gs_reward"],
+              [""]
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

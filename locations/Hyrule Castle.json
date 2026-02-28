@@ -1,0 +1,391 @@
+[
+  {
+    "name": "Hyrule Castle",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Meeting Zelda",
+
+        "sections": [
+          {
+            "name": "Song from Impa",
+            "access_rules": ["^$REACHABLE|SONG_FROM_IMPA"],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SONG_FROM_IMPA"
+            ],
+            "chest_opened_img": "images/chest_images/zeldas_lullaby_opened.png",
+            "chest_unopened_img": "images/chest_images/zeldas_lullaby_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Zelda's Letter",
+            "access_rules": ["^$REACHABLE|SONG_FROM_IMPA"],
+            "visibility_rules": [
+              "$OPTION_ZELDAS_LETTER_SHUFFLED,$AGE_CHECK|SONG_FROM_IMPA"
+            ],
+            "chest_opened_img": "images/chest_images/zeldas_letter_opened.png",
+            "chest_unopened_img": "images/chest_images/zeldas_letter_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 484,
+            "y": 57
+          }
+        ]
+      },
+      {
+        "name": "Malon",
+
+        "sections": [
+          {
+            "name": "Weird Egg",
+            "access_rules": ["^$REACHABLE|HC_MALON_EGG"],
+            "visibility_rules": [
+              "$OPTION_WEIRD_EGG_SHUFFLED,$AGE_CHECK|HC_MALON_EGG"
+            ],
+            "chest_opened_img": "images/chest_images/weird_egg_opened.png",
+            "chest_unopened_img": "images/chest_images/weird_egg_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 408,
+            "y": 631
+          }
+        ]
+      },
+      {
+        "name": "Great Fairy Fountain",
+
+        "sections": [
+          {
+            "name": "Reward",
+            "access_rules": ["^$REACHABLE|HC_GREAT_FAIRY_REWARD"],
+            "visibility_rules": ["$AGE_CHECK|HC_GREAT_FAIRY_REWARD"],
+            "chest_opened_img": "images/chest_images/great_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/great_fairy_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 844,
+            "y": 509
+          }
+        ]
+      },
+      {
+        "name": "Entrance Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_SKULLTULA_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HC_SKULLTULA_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|HC_GS_TREE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|HC_GS_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 384,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Storms Grotto",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|HC_STORMS_GROTTO_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|HC_STORMS_GROTTO_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": ["^$REACHABLE|HC_STORMS_GROTTO_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HC_STORMS_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|HC_STORMS_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HC_STORMS_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|HC_GS_STORMS_GROTTO"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|HC_GS_STORMS_GROTTO"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          },
+          {
+            "name": "Tree Near Grotto",
+            "access_rules": ["^$REACHABLE|HC_GROTTO_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HC_GROTTO_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Grass Near Grotto",
+            "access_rules": ["^$REACHABLE|HC_NEAR_STORMS_GROTTO_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HC_NEAR_STORMS_GROTTO_GRASS1"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 564,
+            "y": 246
+          }
+        ]
+      },
+      {
+        "name": "Malon Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|HC_MALON_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HC_MALON_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|HC_MALON_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HC_MALON_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 460,
+            "y": 653
+          }
+        ]
+      },
+      {
+        "name": "Rock Wall Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|HC_ROCK_WALL_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HC_ROCK_WALL_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|HC_ROCK_WALL_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HC_ROCK_WALL_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 226,
+            "y": 271
+          }
+        ]
+      },
+      {
+        "name": "Near Guards Tree 6",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_NEAR_GUARDS_TREE_6"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HC_NEAR_GUARDS_TREE_6"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 646,
+            "y": 442
+          }
+        ]
+      },
+      {
+        "name": "Near Guards Tree 1",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_NEAR_GUARDS_TREE_1"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HC_NEAR_GUARDS_TREE_1"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 602,
+            "y": 462
+          }
+        ]
+      },
+      {
+        "name": "Near Guards Tree 2",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_NEAR_GUARDS_TREE_2"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HC_NEAR_GUARDS_TREE_2"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 560,
+            "y": 431
+          }
+        ]
+      },
+      {
+        "name": "Near Guards Tree 3",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_NEAR_GUARDS_TREE_3"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HC_NEAR_GUARDS_TREE_3"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 540,
+            "y": 333
+          }
+        ]
+      },
+      {
+        "name": "Near Guards Tree 4",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_NEAR_GUARDS_TREE_4"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HC_NEAR_GUARDS_TREE_4"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 477,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Near Guards Tree 5",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HC_NEAR_GUARDS_TREE_5"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HC_NEAR_GUARDS_TREE_5"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Castle",
+            "x": 355,
+            "y": 335
+          }
+        ]
+      }
+    ]
+  }
+]

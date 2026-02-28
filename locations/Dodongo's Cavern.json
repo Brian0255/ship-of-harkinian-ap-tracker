@@ -1,0 +1,942 @@
+[
+  {
+    "name": "Dodongo's Cavern",
+        "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Boss Room",
+
+        "sections": [
+          {
+            "name": "King Dodongo",
+            "access_rules": [
+              "^$REACHABLE|KING_DODONGO"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|KING_DODONGO"
+            ],
+            "chest_opened_img": "images/chest_images/boss_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Container",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_KING_DODONGO_HEART_CONTAINER"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_KING_DODONGO_HEART_CONTAINER"
+            ],
+            "chest_opened_img": "images/chest_images/heart_container_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_container_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 982,
+            "y": 574
+          }
+        ]
+      },
+      {
+        "name": "Side Room Near Lower Lizalfos",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GS_SIDE_ROOM_NEAR_LOWER_LIZALFOS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_GS_SIDE_ROOM_NEAR_LOWER_LIZALFOS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 653,
+            "y": 808
+          }
+        ]
+      },
+      {
+        "name": "Scarecrow",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GS_SCARECROW"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_GS_SCARECROW"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 599,
+            "y": 634
+          }
+        ]
+      },
+      {
+        "name": "Alcove Above Stairs",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GS_ALCOVE_ABOVE_STAIRS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_GS_ALCOVE_ABOVE_STAIRS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 64,
+            "y": 22
+          }
+        ]
+      },
+      {
+        "name": "Vines Above Stairs",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GS_VINES_ABOVE_STAIRS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_GS_VINES_ABOVE_STAIRS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 59,
+            "y": 127
+          }
+        ]
+      },
+      {
+        "name": "Back Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GS_BACK_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_GS_BACK_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 1291,
+            "y": 456
+          }
+        ]
+      },
+      {
+        "name": "Back Room Before Tunnel",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BACK_ROOM_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_BACK_ROOM_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 1228,
+            "y": 590
+          }
+        ]
+      },
+      {
+        "name": "Back Room Tunnel",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BACK_ROOM_POT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_BACK_ROOM_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 1112,
+            "y": 572
+          }
+        ]
+      },
+      {
+        "name": "Side Room Near Dodongos",
+
+        "sections": [
+          {
+            "name": "Deku Scrub",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_DEKU_SCRUB_SIDE_ROOM_NEAR_DODONGOS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DODONGOS_CAVERN_DEKU_SCRUB_SIDE_ROOM_NEAR_DODONGOS"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 636,
+            "y": 315
+          }
+        ]
+      },
+      {
+        "name": "Lobby Deku Scrub",
+
+        "sections": [
+          {
+            "name": "Deku Scrub",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_DEKU_SCRUB_LOBBY"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DODONGOS_CAVERN_DEKU_SCRUB_LOBBY"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 193,
+            "y": 686
+          }
+        ]
+      },
+      {
+        "name": "Near Bomb Bag",
+
+        "sections": [
+          {
+            "name": "Left Scrub",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_DEKU_SCRUB_NEAR_BOMB_BAG_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DODONGOS_CAVERN_DEKU_SCRUB_NEAR_BOMB_BAG_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Scrub",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_DEKU_SCRUB_NEAR_BOMB_BAG_RIGHT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DODONGOS_CAVERN_DEKU_SCRUB_NEAR_BOMB_BAG_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 559,
+            "y": 59
+          }
+        ]
+      },
+      {
+        "name": "Lower Lizalfos North Platform",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_LIZALFOS_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_LIZALFOS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 781,
+            "y": 392
+          }
+        ]
+      },
+      {
+        "name": "Lower Lizalfos West Platform",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_LIZALFOS_POT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_LIZALFOS_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 665,
+            "y": 461
+          }
+        ]
+      },
+      {
+        "name": "Side Room First Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_SIDE_ROOM_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_SIDE_ROOM_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 542,
+            "y": 669
+          }
+        ]
+      },
+      {
+        "name": "Side Room Second Pots",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_SIDE_ROOM_POT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_SIDE_ROOM_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 656,
+            "y": 663
+          }
+        ]
+      },
+      {
+        "name": "Tunnel Before Lower Lizalfos",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_SIDE_ROOM_POT5"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_SIDE_ROOM_POT5"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 783,
+            "y": 604
+          }
+        ]
+      },
+      {
+        "name": "Torch Room East",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_TORCH_ROOM_POT2"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_TORCH_ROOM_POT2"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 601,
+            "y": 483
+          }
+        ]
+      },
+      {
+        "name": "Torch Room West",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_TORCH_ROOM_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_TORCH_ROOM_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 559,
+            "y": 482
+          }
+        ]
+      },
+      {
+        "name": "Torch Room South",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_TORCH_ROOM_POT4"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_TORCH_ROOM_POT4"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 558,
+            "y": 566
+          }
+        ]
+      },
+      {
+        "name": "Staircase East",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_STAIRCASE_POT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_STAIRCASE_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 117,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Staircase West",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_STAIRCASE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_STAIRCASE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 9,
+            "y": 50
+          }
+        ]
+      },
+      {
+        "name": "Blade Room South",
+
+        "sections": [
+          {
+            "name": "Bomb Flower Platform Chest",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BOMB_FLOWER_PLATFORM_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_BOMB_FLOWER_PLATFORM_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Behind Push Block",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BLADE_ROOM_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_BLADE_ROOM_HEART"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Pillar Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BLADE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_BLADE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 546,
+            "y": 238
+          }
+        ]
+      },
+      {
+        "name": "Lower Lizalfos Room Lavafall",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_LOWER_LIZALFOS_ROOM_LAVAFALL_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_LOWER_LIZALFOS_ROOM_LAVAFALL_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 875,
+            "y": 522
+          }
+        ]
+      },
+      {
+        "name": "Upper Lizalfos Room",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_UPPER_LIZALFOS_ROOM_LEFT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_UPPER_LIZALFOS_ROOM_LEFT_HEART"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 783,
+            "y": 30
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DODONGOS_CAVERN_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DODONGOS_CAVERN_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 444,
+            "y": 529
+          }
+        ]
+      },
+      {
+        "name": "First Bridge",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_FIRST_BRIDGE_GRASS"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_FIRST_BRIDGE_GRASS"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 220,
+            "y": 227
+          }
+        ]
+      },
+      {
+        "name": "Single Eye Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_SINGLE_EYE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_SINGLE_EYE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_SINGLE_EYE_GRASS"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_SINGLE_EYE_GRASS"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 702,
+            "y": 246
+          }
+        ]
+      },
+      {
+        "name": "Double Eye Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_DOUBLE_EYE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_DOUBLE_EYE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 712,
+            "y": 169
+          }
+        ]
+      },
+      {
+        "name": "Above Boss Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BOSS_ROOM_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_BOSS_ROOM_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 954,
+            "y": 709
+          }
+        ]
+      },
+      {
+        "name": "Before Boss Room",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BEFORE_BOSS_GRASS"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_BEFORE_BOSS_GRASS"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 1066,
+            "y": 744
+          }
+        ]
+      },
+      {
+        "name": "Lobby Map Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_MAP_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_MAP_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 195,
+            "y": 609
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_COMPASS_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_COMPASS_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 65,
+            "y": 691
+          }
+        ]
+      },
+      {
+        "name": "Bomb Bag Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BOMB_BAG_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_BOMB_BAG_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Lower Grass",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_BLADE_ROOM_GRASS"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DODONGOS_CAVERN_BLADE_ROOM_GRASS"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 525,
+            "y": 135
+          }
+        ]
+      },
+      {
+        "name": "End of Bridge",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DODONGOS_CAVERN_END_OF_BRIDGE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DODONGOS_CAVERN_END_OF_BRIDGE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dodongo's Cavern",
+            "x": 210,
+            "y": 87
+          }
+        ]
+      }
+    ]
+  }
+]

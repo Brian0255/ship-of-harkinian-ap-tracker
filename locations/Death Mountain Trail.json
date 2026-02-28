@@ -1,0 +1,544 @@
+[
+  {
+    "name": "Death Mountain Trail",
+       "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Above Dodongo's Cavern",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": [
+              "^$REACHABLE|DMT_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMT_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 185,
+            "y": 577
+          }
+        ]
+      },
+      {
+        "name": "Boulder Above Dodongo's Cavern",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DMT_GS_ABOVE_DODONGOS_CAVERN"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|DMT_GS_ABOVE_DODONGOS_CAVERN"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 228,
+            "y": 617
+          }
+        ],
+        "children": [
+          {
+            "name": "Boulder Above Dodongo's Cavern",
+
+            "sections": [
+              {
+                "name": "Gold Skulltula",
+                "ref": "Death Mountain Trail/Boulder Above Dodongo's Cavern/Gold Skulltula"
+              }
+            ],
+            "map_locations": [
+              {
+                "map": "Death Mountain Trail",
+                "x": 602,
+                "y": 713
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storms Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DMT_STORMS_GROTTO_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMT_STORMS_GROTTO_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|DMT_STORMS_GROTTO_BEEHIVE_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|DMT_STORMS_GROTTO_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DMT_STORMS_GROTTO_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|DMT_STORMS_GROTTO_GRASS1"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Fish",
+            "access_rules": [
+              "^$REACHABLE|DMT_STORMS_GROTTO_FISH"
+            ],
+            "visibility_rules": [
+              "$OPTION_FISH_OVERWORLD,$AGE_CHECK|DMT_STORMS_GROTTO_FISH"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_STORMS_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMT_STORMS_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_STORMS_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMT_STORMS_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 736,
+            "y": 643
+          }
+        ]
+      },
+      {
+        "name": "Biggoron",
+
+        "sections": [
+          {
+            "name": "Trade Broken Sword",
+            "access_rules": [
+              "^$REACHABLE|DMT_TRADE_BROKEN_SWORD"
+            ],
+            "visibility_rules": [
+              "$OPTION_ADULT_TRADE_SHUFFLE,$AGE_CHECK|DMT_TRADE_BROKEN_SWORD"
+            ],
+            "chest_opened_img": "images/chest_images/broken_gorons_sword_opened.png",
+            "chest_unopened_img": "images/chest_images/broken_gorons_sword_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Trade Eyedrops",
+            "access_rules": [
+              "^$REACHABLE|DMT_TRADE_EYEDROPS"
+            ],
+            "visibility_rules": [
+              "$OPTION_ADULT_TRADE_SHUFFLE,$AGE_CHECK|DMT_TRADE_EYEDROPS"
+            ],
+            "chest_opened_img": "images/chest_images/worlds_finest_eyedrops_opened.png",
+            "chest_unopened_img": "images/chest_images/worlds_finest_eyedrops_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Trade Claim Check",
+            "access_rules": [
+              "^$REACHABLE|DMT_TRADE_CLAIM_CHECK"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMT_TRADE_CLAIM_CHECK"
+            ],
+            "chest_opened_img": "images/chest_images/claim_check_opened.png",
+            "chest_unopened_img": "images/chest_images/claim_check_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 491,
+            "y": 98
+          }
+        ]
+      },
+      {
+        "name": "Great Fairy Fountain",
+
+        "sections": [
+          {
+            "name": "Reward",
+            "access_rules": [
+              "^$REACHABLE|DMT_GREAT_FAIRY_REWARD"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMT_GREAT_FAIRY_REWARD"
+            ],
+            "chest_opened_img": "images/chest_images/great_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/great_fairy_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 392,
+            "y": 32
+          }
+        ]
+      },
+      {
+        "name": "Near Kakariko",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DMT_GS_NEAR_KAK"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|DMT_GS_NEAR_KAK"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 131,
+            "y": 942
+          }
+        ]
+      },
+      {
+        "name": "Bean Patch",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_BEAN_SPROUT_FAIRY1"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_BEAN_FAIRIES,$AGE_CHECK|DMT_BEAN_SPROUT_FAIRY1"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DMT_GS_BEAN_PATCH"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|DMT_GS_BEAN_PATCH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 171,
+            "y": 638
+          }
+        ]
+      },
+      {
+        "name": "Falling Rocks Path",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DMT_GS_FALLING_ROCKS_PATH"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|DMT_GS_FALLING_ROCKS_PATH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 418,
+            "y": 249
+          }
+        ]
+      },
+      {
+        "name": "Cow Grotto",
+
+        "sections": [
+          {
+            "name": "Cow",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_COW "
+            ],
+            "visibility_rules": [
+              "$OPTION_COWS,$AGE_CHECK|DMT_COW_GROTTO_COW "
+            ],
+            "chest_opened_img": "images/chest_images/cow_opened.png",
+            "chest_unopened_img": "images/chest_images/cow_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_BEEHIVE"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|DMT_COW_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Green Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_RUPEE1"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMT_COW_GROTTO_RUPEE1"
+            ],
+            "item_count": 6
+          },
+          {
+            "name": "Red Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_RED_RUPEE"
+            ],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMT_COW_GROTTO_RED_RUPEE"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_LEFT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMT_COW_GROTTO_LEFT_HEART"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|DMT_COW_GROTTO_GRASS1"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Song of Storms Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_COW_GROTTO_SONG_OF_STORMS_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|DMT_COW_GROTTO_SONG_OF_STORMS_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 315,
+            "y": 706
+          }
+        ]
+      },
+      {
+        "name": "Red Rupee Boulder",
+
+        "sections": [
+          {
+            "name": "Red Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMT_RED_RUPEE_UNDER_BOULDER"
+            ],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMT_RED_RUPEE_UNDER_BOULDER"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Under Boulder Bombable Wall Chest",
+            "access_rules": [
+              "^$REACHABLE|DMT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 331,
+            "y": 744
+          }
+        ]
+      },
+      {
+        "name": "Blue Rupee Boulder",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMT_BLUE_RUPEE_UNDER_BOULDER"
+            ],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMT_BLUE_RUPEE_UNDER_BOULDER"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 256,
+            "y": 744
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMT_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMT_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 432,
+            "y": 122
+          }
+        ]
+      },
+      {
+        "name": "Flag",
+
+        "sections": [
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMT_FLAG_SUNS_SONG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|DMT_FLAG_SUNS_SONG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Trail",
+            "x": 303,
+            "y": 833
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,87 @@
+{
+  "shared_songs_and_medallions_horizontal": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0,10,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "0,0",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 42,
+        "item_width": 42,
+        "margin": "64,3,0,3",
+        "rows": [["kokiris_emerald", "gorons_ruby", "zoras_sapphire"]]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "0,0",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "margin": "0,0,0,4",
+        "item_height": 42,
+        "item_width": 42,
+        "rows": [
+          [
+            "forest_medallion",
+            "fire_medallion",
+            "water_medallion",
+            "shadow_medallion",
+            "spirit_medallion",
+            "light_medallion"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "2,0",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "margin": "-1,1,0,1",
+        "item_height": 38,
+        "item_width": 38,
+        "rows": [
+          [
+            "zeldas_lullaby",
+            "eponas_song",
+            "sarias_song",
+            "suns_song",
+            "song_of_time",
+            "song_of_storms"
+          ],
+          [
+            "minuet_of_forest",
+            "bolero_of_fire",
+            "serenade_of_water",
+            "requiem_of_spirit",
+            "nocturne_of_shadow",
+            "prelude_of_light"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 38,
+        "item_width": 38,
+        "margin": "17,0,0,0",
+        "rows": [
+          [
+            "ocarina_a_button",
+            "ocarina_cup_button",
+            "ocarina_cdown_button",
+            "ocarina_cleft_button",
+            "ocarina_cright_button"
+          ]
+        ]
+      }
+    ]
+  }
+}

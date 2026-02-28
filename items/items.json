@@ -1,0 +1,1833 @@
+[
+  {
+    "name": "Kakariko Potion Shop Key",
+    "type": "toggle",
+    "img": "images/items/kakariko_potion_shop_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "kakariko_potion_shop_key"
+  },
+  {
+    "name": "Skeleton Key",
+    "type": "toggle",
+    "img": "images/items/skeleton_key.png",
+    "codes": "skeleton_key"
+  },
+  {
+    "name": "Triforce Piece",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 100,
+    "img": "images/items/triforce_piece.png",
+    "overlay_align": "right",
+    "codes": "triforce_piece"
+  },
+  {
+    "name": "Weird Egg",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Weird Egg",
+        "img": "images/items/weird_egg.png",
+        "codes": "weird_egg"
+      },
+      {
+        "name": "Zelda's Letter",
+        "img": "images/items/zeldas_letter.png"
+      }
+    ],
+    "initial_stage_idx": 1
+  },
+    {
+    "name": "Masks",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Skull Mask",
+        "img": "images/items/skull_mask.png",
+        "codes": "child_masks"
+      },
+      {
+        "name": "Mask of Truth",
+        "img": "images/items/mask_of_truth.png"
+      }
+    ],
+    "initial_stage_idx": 1
+  },
+  {
+    "name": "Gold Skulltula Token",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "img": "images/items/gold_skulltula_token.png",
+    "max_quantity": 100,
+    "overlay_align": "right",
+    "codes": "gold_skulltula_token"
+  },
+  {
+    "name": "Bottle with Bugs",
+    "type": "toggle",
+    "img": "images/items/bottle_with_bugs.png",
+    "overlay_align": "right",
+    "codes": "bottle_with_bugs"
+  },
+  {
+    "name": "Light Medallion",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Light Medallion in Deku Tree",
+        "img": "images/items/light_medallion.png",
+        "codes": "light_medallion"
+      },
+      {
+        "name": "Light Medallion in Dodongo's Cavern",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion in Jabu-Jabu's Belly",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion in Forest Temple",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion in Fire Temple",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion in Water Temple",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion in Shadow Temple",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion in Spirit Temple",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion is Free",
+        "img": "images/items/light_medallion.png"
+      }
+    ]
+  },
+  {
+    "name": "Ganon's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "ganons_soul"
+  },
+  {
+    "name": "Great Deku Tree Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "great_deku_tree_map"
+  },
+  {
+    "name": "Dodongo's Cavern Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "dodongos_cavern_map"
+  },
+  {
+    "name": "Requiem of Spirit",
+    "type": "toggle",
+    "img": "images/items/requiem_of_spirit.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.77",
+    "codes": "requiem_of_spirit"
+  },
+  {
+    "name": "Guard House Key",
+    "type": "toggle",
+    "img": "images/items/guard_house_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "guard_house_key"
+  },
+  {
+    "name": "Broken Goron's Sword",
+    "type": "toggle",
+    "img": "images/items/broken_gorons_sword.png",
+    "initial_active_state": true,
+    "codes": "broken_gorons_sword"
+  },
+  {
+    "name": "Ganon's Castle Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "img": "images/items/small_key.png",
+    "max_quantity": 3,
+    "codes": "ganons_castle_small_key"
+  },
+  {
+    "name": "Megaton Hammer",
+    "type": "toggle",
+    "img": "images/items/megaton_hammer.png",
+    "codes": "megaton_hammer"
+  },
+  {
+    "name": "Magic Meter",
+    "type": "toggle",
+    "img": "images/items/progressive_magic_meter.png",
+    "codes": "progressive_magic_meter"
+  },
+  {
+    "name": "Arrows (5)",
+    "type": "toggle",
+    "codes": "arrows_5"
+  },
+  {
+    "name": "Fishing Hole Key",
+    "type": "toggle",
+    "img": "images/items/fishing_hole_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "fishing_hole_key"
+  },
+  {
+    "name": "Treasure Game Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 6,
+    "img": "images/items/small_key.png",
+    "codes": "treasure_game_small_key"
+  },
+  {
+    "name": "Deku Nuts (5)",
+    "type": "toggle",
+    "codes": "deku_nuts_5"
+  },
+  {
+    "name": "Ice Trap",
+    "type": "consumable",
+    "codes": "ice_trap"
+  },
+  {
+    "name": "Deku Stick (1)",
+    "type": "toggle",
+    "codes": "deku_stick_1"
+  },
+  {
+    "name": "Blue Rupee",
+    "type": "toggle",
+    "codes": "blue_rupee"
+  },
+  {
+    "name": "Sun's Song",
+    "type": "toggle",
+    "img": "images/items/suns_song.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.55",
+    "codes": "suns_song"
+  },
+  {
+    "name": "Spirit Temple Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 5,
+    "img": "images/items/small_key.png",
+    "codes": "spirit_temple_small_key"
+  },
+  {
+    "name": "Distant Scarecrow",
+    "type": "toggle",
+    "codes": "distant_scarecrow"
+  },
+  {
+    "name": "Stone of Agony",
+    "type": "toggle",
+    "img": "images/items/stone_of_agony.png",
+    "codes": "stone_of_agony"
+  },
+  {
+    "name": "Bombs (20)",
+    "type": "toggle",
+    "codes": "bombs_20"
+  },
+  {
+    "name": "Magic Bean",
+    "type": "toggle",
+    "img": "images/items/magic_bean.png",
+    "codes": "magic_bean_pack"
+  },
+  {
+    "name": "Fire Temple Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "fire_temple_key_ring"
+  },
+  {
+    "name": "Ocarina C Left Button",
+    "type": "toggle",
+    "img": "images/items/ocarina_cleft_button.png",
+    "initial_active_state": true,
+    "codes": "ocarina_cleft_button"
+  },
+  {
+    "name": "Cojiro",
+    "type": "toggle",
+    "img": "images/items/cojiro.png",
+    "initial_active_state": true,
+    "codes": "cojiro"
+  },
+  {
+    "name": "Forest Temple Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "forest_temple_key_ring"
+  },
+  {
+    "name": "Bottle with Milk",
+    "type": "toggle",
+    "codes": "bottle_with_milk"
+  },
+  {
+    "name": "Hylia Laboratory Key",
+    "type": "toggle",
+    "img": "images/items/hylia_laboratory_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "hylia_laboratory_key"
+  },
+  {
+    "name": "Bottle with Fish",
+    "type": "toggle",
+    "codes": "bottle_with_fish"
+  },
+  {
+    "name": "Fire Medallion",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Fire Medallion in Deku Tree",
+        "img": "images/items/fire_medallion.png",
+        "codes": "fire_medallion"
+      },
+      {
+        "name": "Fire Medallion in Dodongo's Cavern",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion in Jabu-Jabu's Belly",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion in Forest Temple",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion in Fire Temple",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion in Water Temple",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion in Shadow Temple",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion in Spirit Temple",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion is Free",
+        "img": "images/items/fire_medallion.png"
+      }
+    ]
+  },
+  {
+    "name": "Deku Nuts",
+    "type": "toggle",
+    "img": "images/items/progressive_nut_capacity.png",
+    "codes": "progressive_nut_capacity"
+  },
+  {
+    "name": "Din's Fire",
+    "type": "toggle",
+    "img": "images/items/dins_fire.png",
+    "codes": "dins_fire"
+  },
+  {
+    "name": "Recovery Heart",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "codes": "recovery_heart"
+  },
+  {
+    "name": "Bottom of the Well Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "bottom_of_the_well_map"
+  },
+  {
+    "name": "Shadow Medallion",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Shadow Medallion in Deku Tree",
+        "img": "images/items/shadow_medallion.png",
+        "codes": "shadow_medallion"
+      },
+      {
+        "name": "Shadow Medallion in Dodongo's Cavern",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion in Jabu-Jabu's Belly",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion in Forest Temple",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion in Fire Temple",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion in Water Temple",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion in Shadow Temple",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion in Spirit Temple",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion is Free",
+        "img": "images/items/shadow_medallion.png"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Temple Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "shadow_temple_compass"
+  },
+  {
+    "name": "Training Ground Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "training_ground_key_ring"
+  },
+  {
+    "name": "Morpha's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "morphas_soul"
+  },
+  {
+    "name": "Fairy Bow",
+    "type": "toggle",
+    "img": "images/items/progressive_bow.png",
+    "codes": "progressive_bow"
+  },
+  {
+    "name": "Bombs (5)",
+    "type": "toggle",
+    "codes": "bombs_5"
+  },
+  {
+    "name": "Volvagia's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "volvagias_soul"
+  },
+  {
+    "name": "Mirror Shield",
+    "type": "toggle",
+    "img": "images/items/mirror_shield.png",
+    "codes": "mirror_shield"
+  },
+  {
+    "name": "Gohma's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "gohmas_soul"
+  },
+  {
+    "name": "Gerudo Fortress Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "gerudo_fortress_key_ring"
+  },
+  {
+    "name": "Deku Sticks",
+    "type": "toggle",
+    "img": "images/items/progressive_stick_capacity.png",
+    "codes": "progressive_stick_capacity"
+  },
+  {
+    "name": "Skeleton Key",
+    "type": "toggle",
+    "img": "images/items/skeleton_key.png",
+    "codes": "skeleton_key"
+  },
+  {
+    "name": "Minuet of Forest",
+    "type": "toggle",
+    "img": "images/items/minuet_of_forest.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.54",
+    "codes": "minuet_of_forest"
+  },
+  {
+    "name": "Bottle with Blue Fire",
+    "type": "toggle",
+    "codes": "bottle_with_blue_fire"
+  },
+  {
+    "name": "Granny's Potion Shop Key",
+    "type": "toggle",
+    "img": "images/items/grannys_potion_shop_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "grannys_potion_shop_key"
+  },
+  {
+    "name": "Kakariko Shooting Gallery Key",
+    "type": "toggle",
+    "img": "images/items/kakariko_shooting_gallery_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "kakariko_shooting_gallery_key"
+  },
+  {
+    "name": "Forest Temple Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 5,
+    "img": "images/items/small_key.png",
+    "codes": "forest_temple_small_key"
+  },
+  {
+    "name": "Water Temple Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "water_temple_key_ring"
+  },
+  {
+    "name": "Kokiri's Emerald",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Kokiri's Emerald in Deku Tree",
+        "img": "images/items/kokiris_emerald.png",
+        "codes": "kokiris_emerald"
+      },
+      {
+        "name": "Kokiri's Emerald in Dodongo's Cavern",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald in Jabu-Jabu's Belly",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald in Forest Temple",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald in Fire Temple",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald in Water Temple",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald in Shadow Temple",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald in Spirit Temple",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Shadow Medallion is Free",
+        "img": "images/items/kokiris_emerald.png"
+      }
+    ]
+  },
+  {
+    "name": "Zelda's Letter",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/items/zeldas_letter.png",
+    "codes": "zeldas_letter"
+  },
+  {
+    "name": "Forest Temple Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "forest_temple_compass"
+  },
+  {
+    "name": "Bottle with Green Potion",
+    "type": "toggle",
+    "codes": "bottle_with_green_potion"
+  },
+  {
+    "name": "Gerudo Membership Card",
+    "type": "toggle",
+    "img": "images/items/gerudo_membership_card.png",
+    "codes": "gerudo_membership_card"
+  },
+  {
+    "name": "Water Temple Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "water_temple_map"
+  },
+  {
+    "name": "Spirit Temple Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "spirit_temple_key_ring"
+  },
+  {
+    "name": "Spirit Temple Boss Key",
+    "type": "toggle",
+    "img": "images/items/boss_key.png",
+    "codes": "spirit_temple_boss_key"
+  },
+  {
+    "name": "Phantom Ganon's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "phantom_ganons_soul"
+  },
+  {
+    "name": "Kokiri Sword",
+    "type": "toggle",
+    "img": "images/items/kokiri_sword.png",
+    "codes": "kokiri_sword"
+  },
+  {
+    "name": "Song of Storms",
+    "type": "toggle",
+    "img": "images/items/song_of_storms.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.56",
+    "codes": "song_of_storms"
+  },
+  {
+    "name": "Bomb Bag",
+    "type": "toggle",
+    "img": "images/items/progressive_bomb_bag.png",
+    "codes": "progressive_bomb_bag"
+  },
+  {
+    "name": "Forest Temple Boss Key",
+    "type": "toggle",
+    "img": "images/items/boss_key.png",
+    "codes": "forest_temple_boss_key"
+  },
+  {
+    "name": "Skulltula House Key",
+    "type": "toggle",
+    "img": "images/items/skulltula_house_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "skulltula_house_key"
+  },
+  {
+    "name": "Pocket Egg & Cucco",
+    "type": "toggle",
+    "img": "images/items/pocket_egg_cucco.png",
+    "initial_active_state": true,
+    "codes": "pocket_egg"
+  },
+  {
+    "name": "Nayru's Love",
+    "type": "toggle",
+    "img": "images/items/nayrus_love.png",
+    "codes": "nayrus_love"
+  },
+  {
+    "name": "Bottle with Red Potion",
+    "type": "toggle",
+    "codes": "bottle_with_red_potion"
+  },
+  {
+    "name": "Red Rupee",
+    "type": "toggle",
+    "codes": "red_rupee"
+  },
+  {
+    "name": "Song of Time",
+    "type": "toggle",
+    "img": "images/items/song_of_time.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.64",
+    "codes": "song_of_time"
+  },
+  {
+    "name": "Arrows (30)",
+    "type": "toggle",
+    "img": "images/items/arrows_30.png",
+    "codes": "arrows_30"
+  },
+  {
+    "name": "Fishing Pole",
+    "type": "toggle",
+    "img": "images/items/fishing_pole.png",
+    "initial_active_state": true,
+    "codes": "fishing_pole"
+  },
+  {
+    "name": "Progressive Scale",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Bronze Scale",
+        "img": "images/items/bronze_scale.png",
+        "codes": "progressive_scale"
+      },
+      {
+        "name": "Silver Scale",
+        "img": "images/items/silver_scale.png"
+      },
+      {
+        "name": "Golden Scale",
+        "img": "images/items/golden_scale.png"
+      }
+    ]
+  },
+  {
+    "name": "Progressive Ocarina",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Fairy Ocarina",
+        "img": "images/items/fairy_ocarina.png",
+        "codes": "progressive_ocarina"
+      },
+      {
+        "name": "Ocarina of Time",
+        "img": "images/items/ocarina_of_time.png"
+      }
+    ]
+  },
+  {
+    "name": "Goron's Ruby",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Goron's Ruby in Deku Tree",
+        "img": "images/items/gorons_ruby.png",
+        "codes": "gorons_ruby"
+      },
+      {
+        "name": "Goron's Ruby in Dodongo's Cavern",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby in Jabu-Jabu's Belly",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby in Forest Temple",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby in Fire Temple",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby in Water Temple",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby in Shadow Temple",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby in Spirit Temple",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Shadow Medallion is Free",
+        "img": "images/items/gorons_ruby.png"
+      }
+    ]
+  },
+  {
+    "name": "Ice Arrows",
+    "type": "toggle",
+    "img": "images/items/ice_arrow.png",
+    "codes": "ice_arrow"
+  },
+  {
+    "name": "Fairy Slingshot",
+    "type": "toggle",
+    "img": "images/items/progressive_slingshot.png",
+    "codes": "progressive_slingshot"
+  },
+  {
+    "name": "Claim Check",
+    "type": "toggle",
+    "img": "images/items/claim_check.png",
+    "codes": "claim_check"
+  },
+  {
+    "name": "Spirit Medallion",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Spirit Medallion in Deku Tree",
+        "img": "images/items/spirit_medallion.png",
+        "codes": "spirit_medallion"
+      },
+      {
+        "name": "Spirit Medallion in Dodongo's Cavern",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion in Jabu-Jabu's Belly",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion in Forest Temple",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion in Fire Temple",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion in Water Temple",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion in Shadow Temple",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion in Spirit Temple",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion is Free",
+        "img": "images/items/spirit_medallion.png"
+      }
+    ]
+  },
+  {
+    "name": "Shadow Temple Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "shadow_temple_key_ring"
+  },
+  {
+    "name": "Great Deku Tree Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "great_deku_tree_compass"
+  },
+  {
+    "name": "Richard's House Key",
+    "type": "toggle",
+    "img": "images/items/richards_house_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "richards_house_key"
+  },
+  {
+    "name": "Jabu-Jabu's Belly Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "jabu_jabus_belly_compass"
+  },
+  {
+    "name": "Gerudo Training Ground Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 9,
+    "img": "images/items/small_key.png",
+    "codes": "gerudo_training_ground_small_key"
+  },
+  {
+    "name": "Piece of Heart (WINNER)",
+    "type": "toggle",
+    "codes": "piece_of_heart_(winner)"
+  },
+  {
+    "name": "Bolero of Fire",
+    "type": "toggle",
+    "img": "images/items/bolero_of_fire.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|1.13",
+    "codes": "bolero_of_fire"
+  },
+  {
+    "name": "Shadow Temple Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 5,
+    "img": "images/items/small_key.png",
+    "codes": "shadow_temple_small_key"
+  },
+  {
+    "name": "Hylian Shield",
+    "type": "toggle",
+    "img": "images/items/hylian_shield.png",
+    "codes": "hylian_shield"
+  },
+  {
+    "name": "Nocturne of Shadow",
+    "type": "toggle",
+    "img": "images/items/nocturne_of_shadow.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.93",
+    "codes": "nocturne_of_shadow"
+  },
+  {
+    "name": "Zora's Sapphire",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Zora's Sapphire in Deku Tree",
+        "img": "images/items/zoras_sapphire.png",
+        "codes": "zoras_sapphire"
+      },
+      {
+        "name": "Zora's Sapphire in Dodongo's Cavern",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire in Jabu-Jabu's Belly",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire in Forest Temple",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire in Fire Temple",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire in Water Temple",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire in Shadow Temple",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire in Spirit Temple",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Shadow Medallion is Free",
+        "img": "images/items/zoras_sapphire.png"
+      }
+    ]
+  },
+  {
+    "name": "Treasure Game Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "treasure_game_key_ring"
+  },
+  {
+    "name": "Serenade of Water",
+    "type": "toggle",
+    "img": "images/items/serenade_of_water.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.89",
+    "codes": "serenade_of_water"
+  },
+  {
+    "name": "Farore's Wind",
+    "type": "toggle",
+    "img": "images/items/farores_wind.png",
+    "codes": "farores_wind"
+  },
+  {
+    "name": "Purple Rupee",
+    "type": "toggle",
+    "codes": "purple_rupee"
+  },
+  {
+    "name": "Ocarina A Button",
+    "type": "toggle",
+    "img": "images/items/ocarina_a_button.png",
+    "initial_active_state": true,
+    "codes": "ocarina_a_button"
+  },
+  {
+    "name": "Progressive Hookshot",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Hookshot",
+        "img": "images/items/hookshot.png",
+        "codes": "progressive_hookshot"
+      },
+      {
+        "name": "Longshot",
+        "img": "images/items/longshot.png"
+      }
+    ]
+  },
+  {
+    "name": "Arrows (10)",
+    "type": "toggle",
+    "codes": "arrows_10"
+  },
+  {
+    "name": "Ice Cavern Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "ice_cavern_compass"
+  },
+  {
+    "name": "Treasure Chest Game Building Key",
+    "type": "toggle",
+    "img": "images/items/treasure_chest_game_building_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "treasure_chest_game_building_key"
+  },
+  {
+    "name": "Back Tower Key",
+    "type": "toggle",
+    "img": "images/items/back_tower_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "back_tower_key"
+  },
+  {
+    "name": "Bottle with Blue Potion",
+    "type": "toggle",
+    "codes": "bottle_with_blue_potion"
+  },
+  {
+    "name": "Ocarina C Up Button",
+    "type": "toggle",
+    "img": "images/items/ocarina_cup_button.png",
+    "initial_active_state": true,
+    "codes": "ocarina_cup_button"
+  },
+  {
+    "name": "Roc's Feather",
+    "type": "toggle",
+    "img": "images/items/rocs_feather.png",
+    "codes": "rocs_feather"
+  },
+  {
+    "name": "Zora Tunic",
+    "type": "toggle",
+    "img": "images/items/zora_tunic.png",
+    "codes": "zora_tunic"
+  },
+  {
+    "name": "Talon's House Key",
+    "type": "toggle",
+    "img": "images/items/talons_house_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "talons_house_key"
+  },
+  {
+    "name": "Ocarina C Down Button",
+    "type": "toggle",
+    "img": "images/items/ocarina_cdown_button.png",
+    "initial_active_state": true,
+    "codes": "ocarina_cdown_button"
+  },
+  {
+    "name": "Green Rupee",
+    "type": "toggle",
+    "codes": "green_rupee"
+  },
+  {
+    "name": "Jabu-Jabu's Belly Map",
+    "type": "toggle",
+    "img": "images/items/jabu_jabus_belly_map.png",
+    "codes": "jabu_jabus_belly_map"
+  },
+  {
+    "name": "Fire Temple Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 8,
+    "img": "images/items/small_key.png",
+    "codes": "fire_temple_small_key"
+  },
+  {
+    "name": "Iron Boots",
+    "type": "toggle",
+    "img": "images/items/iron_boots.png",
+    "codes": "iron_boots"
+  },
+  {
+    "name": "Deku Seeds (30)",
+    "type": "toggle",
+    "codes": "deku_seeds_30"
+  },
+  {
+    "name": "Bottom of the Well Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "bottom_of_the_well_compass"
+  },
+  {
+    "name": "Fire Temple Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "fire_temple_compass"
+  },
+  {
+    "name": "Strength Upgrade",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Goron's Braclet",
+        "img": "images/items/gorons_bracelet.png",
+        "codes": "strength_upgrade"
+      },
+      {
+        "name": "Silver Gauntlets",
+        "img": "images/items/silver_gauntlets.png"
+      },
+      {
+        "name": "Golden Gauntlets",
+        "img": "images/items/gold_gauntlets.png"
+      }
+    ]
+  },
+  {
+    "name": "Impa's House Key",
+    "type": "toggle",
+    "img": "images/items/impas_house_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "impas_house_key"
+  },
+  {
+    "name": "Mask Shop Key",
+    "type": "toggle",
+    "img": "images/items/mask_shop_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "mask_shop_key"
+  },
+  {
+    "name": "Bombchus (5)",
+    "type": "toggle",
+    "codes": "bombchus_5"
+  },
+  {
+    "name": "Prelude of Light",
+    "type": "toggle",
+    "img": "images/items/prelude_of_light.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.59",
+    "codes": "prelude_of_light"
+  },
+  {
+    "name": "Forest Temple Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "forest_temple_map"
+  },
+  {
+    "name": "Piece of Heart",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 36,
+    "img": "images/items/piece_of_heart.png",
+    "codes": "piece_of_heart"
+  },
+  {
+    "name": "Bombs (10)",
+    "type": "toggle",
+    "codes": "bombs_10"
+  },
+  {
+    "name": "Water Temple Boss Key",
+    "type": "toggle",
+    "img": "images/items/boss_key.png",
+    "codes": "water_temple_boss_key"
+  },
+  {
+    "name": "Lens of Truth",
+    "type": "toggle",
+    "img": "images/items/lens_of_truth.png",
+    "codes": "lens_of_truth"
+  },
+  {
+    "name": "Gerudo Fortress Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 4,
+    "img": "images/items/small_key.png",
+    "codes": "gerudo_fortress_small_key"
+  },
+  {
+    "name": "Odd Mushroom",
+    "type": "toggle",
+    "img": "images/items/odd_mushroom.png",
+    "initial_active_state": true,
+    "codes": "odd_mushroom"
+  },
+  {
+    "name": "Zelda's Lullaby",
+    "type": "toggle",
+    "img": "images/items/zeldas_lullaby.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|.9",
+    "codes": "zeldas_lullaby"
+  },
+  {
+    "name": "Market Bazaar Key",
+    "type": "toggle",
+    "img": "images/items/market_bazaar_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "market_bazaar_key"
+  },
+  {
+    "name": "Spirit Temple Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "spirit_temple_map"
+  },
+  {
+    "name": "Water Temple Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "water_temple_compass"
+  },
+  {
+    "name": "Huge Rupee",
+    "type": "toggle",
+    "codes": "huge_rupee"
+  },
+  {
+    "name": "Epona's Song",
+    "type": "toggle",
+    "img": "images/items/eponas_song.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.68",
+    "codes": "eponas_song"
+  },
+  {
+    "name": "Deku Nuts (10)",
+    "type": "toggle",
+    "codes": "deku_nuts_10"
+  },
+  {
+    "name": "Ganon's Castle Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "ganons_castle_key_ring"
+  },
+  {
+    "name": "Windmill Key",
+    "type": "toggle",
+    "img": "images/items/windmill_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "windmill_key"
+  },
+  {
+    "name": "World's Finest Eyedrops",
+    "type": "toggle",
+    "img": "images/items/worlds_finest_eyedrops.png",
+    "initial_active_state": true,
+    "codes": "worlds_finest_eyedrops"
+  },
+  {
+    "name": "Magic Bean Pack",
+    "type": "toggle",
+    "codes": "m"
+  },
+  {
+    "name": "Bottle with Poe",
+    "type": "toggle",
+    "codes": "bottle_with_poe"
+  },
+  {
+    "name": "Heart Container",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 8,
+    "img": "images/items/heart_container.png",
+    "codes": "heart_container"
+  },
+  {
+    "name": "Boomerang",
+    "type": "toggle",
+    "img": "images/items/boomerang.png",
+    "codes": "boomerang"
+  },
+  {
+    "name": "Market Shooting Gallery Key",
+    "type": "toggle",
+    "img": "images/items/market_shooting_gallery_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "market_shooting_gallery_key"
+  },
+  {
+    "name": "Forest Medallion",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Forest Medallion in Deku Tree",
+        "img": "images/items/forest_medallion.png",
+        "codes": "forest_medallion"
+      },
+      {
+        "name": "Forest Medallion in Dodongo's Cavern",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion in Jabu-Jabu's Belly",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion in Forest Temple",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion in Fire Temple",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion in Water Temple",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion in Shadow Temple",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion in Spirit Temple",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion is Free",
+        "img": "images/items/forest_medallion.png"
+      }
+    ]
+  },
+  {
+    "name": "Bombchu Shop Key",
+    "type": "toggle",
+    "img": "images/items/bombchu_shop_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "bombchu_shop_key"
+  },
+  {
+    "name": "Bottle with Fairy",
+    "type": "toggle",
+    "codes": "bottle_with_fairy"
+  },
+  {
+    "name": "Barinade's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "barinades_soul"
+  },
+  {
+    "name": "Hover Boots",
+    "type": "toggle",
+    "img": "images/items/hover_boots.png",
+    "codes": "hover_boots"
+  },
+  {
+    "name": "Scarecrow",
+    "type": "toggle",
+    "codes": "scarecrow"
+  },
+  {
+    "name": "Bottle with Big Poe",
+    "type": "toggle",
+    "img": "images/items/bottle_with_big_poe.png",
+    "codes": "bottle_with_big_poe"
+  },
+  {
+    "name": "Fire Temple Boss Key",
+    "type": "toggle",
+    "img": "images/items/boss_key.png",
+    "codes": "fire_temple_boss_key"
+  },
+  {
+    "name": "Fire Temple Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "fire_temple_map"
+  },
+  {
+    "name": "Bottle",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "img": "images/items/empty_bottle.png",
+    "max_quantity": 4,
+    "codes": "empty_bottle"
+  },
+  {
+    "name": "Prescription",
+    "type": "toggle",
+    "img": "images/items/prescription.png",
+    "initial_active_state": true,
+    "codes": "prescription"
+  },
+  {
+    "name": "Spirit Temple Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "spirit_temple_compass"
+  },
+  {
+    "name": "Dodongos Cavern Compass",
+    "type": "toggle",
+    "img": "images/items/dungeon_compass.png",
+    "codes": "dodongos_cavern_compass"
+  },
+  {
+    "name": "Bottom of the Well Key Ring",
+    "type": "toggle",
+    "img": "images/items/key_ring.png",
+    "codes": "bottom_of_the_well_key_ring"
+  },
+  {
+    "name": "Water Medallion",
+    "type": "progressive_toggle",
+    "overlay_align": "center",
+    "stages": [
+      {
+        "name": "Water Medallion in Deku Tree",
+        "img": "images/items/water_medallion.png",
+        "codes": "water_medallion"
+      },
+      {
+        "name": "Water Medallion in Dodongo's Cavern",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion in Jabu-Jabu's Belly",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion in Forest Temple",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion in Fire Temple",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion in Water Temple",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion in Shadow Temple",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion in Spirit Temple",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion is Free",
+        "img": "images/items/water_medallion.png"
+      }
+    ]
+  },
+  {
+    "name": "Biggoron's Sword",
+    "type": "toggle",
+    "img": "images/items/biggorons_sword.png",
+    "codes": "biggorons_sword"
+  },
+  {
+    "name": "Deku Shield",
+    "type": "toggle",
+    "img": "images/items/deku_shield.png",
+    "codes": "deku_shield"
+  },
+  {
+    "name": "Odd Potion",
+    "type": "toggle",
+    "img": "images/items/odd_potion.png",
+    "initial_active_state": true,
+    "codes": "odd_potion"
+  },
+  {
+    "name": "Shadow Temple Boss Key",
+    "type": "toggle",
+    "img": "images/items/boss_key.png",
+    "codes": "shadow_temple_boss_key"
+  },
+  {
+    "name": "Double Defense",
+    "type": "toggle",
+    "img": "images/items/double_defense.png",
+    "codes": "double_defense"
+  },
+  {
+    "name": "Dampe's Hut Key",
+    "type": "toggle",
+    "img": "images/items/dampes_hut_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "dampes_hut_key"
+  },
+  {
+    "name": "Goron Tunic",
+    "type": "toggle",
+    "img": "images/items/goron_tunic.png",
+    "codes": "goron_tunic"
+  },
+  {
+    "name": "Bombchus (20)",
+    "type": "toggle",
+    "codes": "bombchus_20"
+  },
+  {
+    "name": "Bongo Bongo's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "bongo_bongos_soul"
+  },
+  {
+    "name": "Fire Arrows",
+    "type": "toggle",
+    "img": "images/items/fire_arrow.png",
+    "codes": "fire_arrow"
+  },
+  {
+    "name": "Poacher's Saw",
+    "type": "toggle",
+    "img": "images/items/poachers_saw.png",
+    "initial_active_state": true,
+    "codes": "poachers_saw"
+  },
+  {
+    "name": "Water Temple Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 6,
+    "img": "images/items/small_key.png",
+    "codes": "water_temple_small_key"
+  },
+  {
+    "name": "Ocarina C Right Button",
+    "type": "toggle",
+    "img": "images/items/ocarina_cright_button.png",
+    "initial_active_state": true,
+    "codes": "ocarina_cright_button"
+  },
+  {
+    "name": "Alley House Key",
+    "type": "toggle",
+    "img": "images/items/alley_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "alley_house_key"
+  },
+  {
+    "name": "Light Arrows",
+    "type": "toggle",
+    "img": "images/items/light_arrow.png",
+    "codes": "light_arrow"
+  },
+  {
+    "name": "Bombchus (10)",
+    "type": "toggle",
+    "codes": "bombchus_10"
+  },
+  {
+    "name": "Market Potion Shop Key",
+    "type": "toggle",
+    "img": "images/items/market_potion_shop_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "market_potion_shop_key"
+  },
+  {
+    "name": "Twinrova's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "twinrovas_soul"
+  },
+  {
+    "name": "Saria's Song",
+    "type": "toggle",
+    "img": "images/items/sarias_song.png",
+    "disabled_img_mods": "saturation|0|bt601,brightness|0.61",
+    "codes": "sarias_song"
+  },
+  {
+    "name": "King Dodongo's Soul",
+    "type": "toggle",
+    "img": "images/items/boss_soul.png",
+    "initial_active_state": true,
+    "codes": "king_dodongos_soul"
+  },
+  {
+    "name": "Boss's House Key",
+    "type": "toggle",
+    "img": "images/items/bosss_house_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "bosss_house_key"
+  },
+  {
+    "name": "Ganon's Castle Boss Key",
+    "type": "toggle",
+    "img": "images/items/boss_key.png",
+    "codes": "ganons_castle_boss_key"
+  },
+  {
+    "name": "Bombchu Bowling Alley Key",
+    "type": "toggle",
+    "img": "images/items/bombchu_bowling_alley_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "bombchu_bowling_alley_key"
+  },
+  {
+    "name": "Giant's Knife",
+    "type": "toggle",
+    "img": "images/items/giants_knife.png",
+    "codes": "giants_knife"
+  },
+  {
+    "name": "Shadow Temple Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "shadow_temple_map"
+  },
+  {
+    "name": "Bombchu Bag",
+    "type": "toggle",
+    "img": "images/items/bombchu_bag.png",
+    "codes": "bombchu_bag"
+  },
+  {
+    "name": "Progressive Wallet",
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Child Wallet",
+        "img": "images/items/child_wallet.png",
+        "codes": "progressive_wallet"
+      },
+      {
+        "name": "Adult Wallet",
+        "img": "images/items/adult_wallet.png"
+      },
+      {
+        "name": "Giant's Wallet",
+        "img": "images/items/giants_wallet.png"
+      },
+      {
+        "name": "Tycoon Wallet",
+        "img": "images/items/tycoon_wallet.png"
+      }
+    ],
+    "initial_stage_idx": 0
+  },
+  {
+    "name": "Master Sword",
+    "type": "toggle",
+    "img": "images/items/master_sword.png",
+    "initial_active_state": true,
+    "codes": "master_sword"
+  },
+  {
+    "name": "Stables Key",
+    "type": "toggle",
+    "img": "images/items/stables_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "stables_key"
+  },
+  {
+    "name": "Greg the Green Rupee",
+    "type": "toggle",
+    "img": "images/items/greg_the_green_rupee.png",
+    "codes": "greg_the_green_rupee"
+  },
+  {
+    "name": "Eyeball Frog",
+    "type": "toggle",
+    "img": "images/items/eyeball_frog.png",
+    "initial_active_state": true,
+    "codes": "eyeball_frog"
+  },
+  {
+    "name": "Kakariko Bazaar Key",
+    "type": "toggle",
+    "img": "images/items/kakariko_bazaar_key.png",
+    "img_mods": "overlay|images/items/overlay_overworld_key.png",
+    "initial_active_state": true,
+    "codes": "kakariko_bazaar_key"
+  },
+  {
+    "name": "Bottom of the Well Small Key",
+    "type": "consumable",
+    "overlay_background": "#000000",
+    "max_quantity": 3,
+    "img": "images/items/small_key.png",
+    "codes": "bottom_of_the_well_small_key"
+  },
+  {
+    "name": "Ice Cavern Map",
+    "type": "toggle",
+    "img": "images/items/dungeon_map.png",
+    "codes": "ice_cavern_map"
+  },
+  {
+    "name": "Bottle with Ruto's Letter",
+    "type": "toggle",
+    "img": "images/items/bottle_with_rutos_letter.png",
+    "codes": "bottle_with_rutos_letter"
+  },
+  {
+    "name": "Can Buy Goron Tunic",
+    "type": "toggle",
+    "codes": "buy_goron_tunic"
+  },
+  {
+    "name": "Can Buy Zora Tunic",
+    "type": "toggle",
+    "codes": "buy_zora_tunic"
+  },
+  {
+    "name": "Can Buy Deku Shield",
+    "type": "toggle",
+    "initial_active_state": true,
+    "codes": "buy_deku_shield"
+  },
+  {
+    "name": "Can Buy Hylian Shield",
+    "type": "toggle",
+    "codes": "buy_hylian_shield"
+  },
+  {
+    "name": "Can Buy Fairy's Spirit",
+    "type": "toggle",
+    "codes": "buy_fairys_spirit"
+  },
+  {
+    "name": "",
+    "type": "toggle",
+    "codes": "buy_bombchu_10"
+  },
+  {
+    "name": "",
+    "type": "toggle",
+    "codes": "buy_bombchu_20"
+  },
+  {
+    "name": "Can Buy Blue Fire",
+    "type": "toggle",
+    "codes": "buy_blue_fire"
+  },
+  {
+    "name": "Update",
+    "type": "toggle",
+    "codes": "update"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_DT"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_DC"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_JJB"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_FoT"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_FiT"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_WT"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_ShT"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_SpT"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_BotW"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_IC"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_GF"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_GTG"
+  },
+  {
+    "type": "static",
+    "overlay_align": "center",
+    "img": "images/items/dungeon_label.png",
+    "codes": "dungeon_label_GC"
+  }
+]

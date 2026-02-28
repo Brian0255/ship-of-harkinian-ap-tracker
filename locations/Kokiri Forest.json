@@ -1,0 +1,759 @@
+[
+  {
+    "name": "Kokiri Forest",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Mido's House",
+
+        "access_rules": [" "],
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|KF_MIDO_TOP_LEFT_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|KF_MIDO_TOP_LEFT_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 313,
+            "y": 314
+          }
+        ]
+      },
+      {
+        "name": "Kokiri Sword",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|KF_KOKIRI_SWORD_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|KF_KOKIRI_SWORD_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS_MAZE3"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS_MAZE3"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 346,
+            "y": 767
+          }
+        ]
+      },
+      {
+        "name": "Upper Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|KF_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|KF_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 293,
+            "y": 224
+          }
+        ]
+      },
+      {
+        "name": "Bean Patch",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|KF_BEAN_SPROUT_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_BEAN_FAIRIES,$AGE_CHECK|KF_BEAN_SPROUT_FAIRY1"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|KF_GS_BEAN_PATCH"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|KF_GS_BEAN_PATCH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 567,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "House of Twins",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|KF_TWINS_HOUSE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|KF_TWINS_HOUSE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|KF_GS_HOUSE_OF_TWINS"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|KF_GS_HOUSE_OF_TWINS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 552,
+            "y": 514
+          }
+        ]
+      },
+      {
+        "name": "Shop",
+
+        "sections": [
+          {
+            "name": "Item 1",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM1"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|1,$AGE_CHECK|KF_SHOP_ITEM1"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM2"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|2,$AGE_CHECK|KF_SHOP_ITEM2"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 3",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM3"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|3,$AGE_CHECK|KF_SHOP_ITEM3"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 4",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM4"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|4,$AGE_CHECK|KF_SHOP_ITEM4"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 5",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM5"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|5,$AGE_CHECK|KF_SHOP_ITEM5"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 6",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM6"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|6,$AGE_CHECK|KF_SHOP_ITEM6"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 7",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM7"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|7,$AGE_CHECK|KF_SHOP_ITEM7"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 8",
+            "access_rules": ["^$REACHABLE|KF_SHOP_ITEM8"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|8,$AGE_CHECK|KF_SHOP_ITEM8"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 516,
+            "y": 340
+          }
+        ]
+      },
+      {
+        "name": "Link's House",
+
+        "sections": [
+          {
+            "name": "Cow",
+            "access_rules": ["^$REACHABLE|KF_LINKS_HOUSE_COW"],
+            "visibility_rules": ["$OPTION_COWS,$AGE_CHECK|KF_LINKS_HOUSE_COW"],
+            "chest_opened_img": "images/chest_images/cow_opened.png",
+            "chest_unopened_img": "images/chest_images/cow_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|KF_LINKS_HOUSE_POT"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|KF_LINKS_HOUSE_POT"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 377,
+            "y": 611
+          }
+        ]
+      },
+      {
+        "name": "Know-It-All House",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|KF_BROTHERS_HOUSE_POT1"],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|KF_BROTHERS_HOUSE_POT1"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|KF_GS_KNOW_IT_ALL_HOUSE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|KF_GS_KNOW_IT_ALL_HOUSE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 197,
+            "y": 468
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze - First Rupee",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_BOULDER_MAZE_FIRST_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_BOULDER_MAZE_FIRST_RUPEE"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS_MAZE2"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS_MAZE2"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 228,
+            "y": 653
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze - Second Rupee",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_BOULDER_MAZE_SECOND_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_BOULDER_MAZE_SECOND_RUPEE"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS_MAZE2"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS_MAZE2"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 275,
+            "y": 707
+          }
+        ]
+      },
+      {
+        "name": "Bridge",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_BRIDGE_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_BRIDGE_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 382,
+            "y": 412
+          }
+        ]
+      },
+      {
+        "name": "Behind Mido's House",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "access_rules": [" "],
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_BEHIND_MIDOS_HOUSE_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_BEHIND_MIDOS_HOUSE_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 324,
+            "y": 289
+          }
+        ]
+      },
+      {
+        "name": "South Grass",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_SOUTH_GRASS_WEST_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_SOUTH_GRASS_WEST_RUPEE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 308,
+            "y": 443
+          }
+        ]
+      },
+      {
+        "name": "North Grass",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "access_rules": [" "],
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_NORTH_GRASS_WEST_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_NORTH_GRASS_WEST_RUPEE"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 393,
+            "y": 347
+          }
+        ]
+      },
+      {
+        "name": "Saria's House",
+
+        "sections": [
+          {
+            "name": "House Heart",
+            "access_rules": ["^$REACHABLE|KF_SARIAS_HOUSE_TOP_LEFT_HEART"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_SARIAS_HOUSE_TOP_LEFT_HEART"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Roof Heart",
+            "access_rules": ["^$REACHABLE|KF_SARIAS_ROOF_WEST_HEART"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_SARIAS_ROOF_WEST_HEART"
+            ],
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 462,
+            "y": 539
+          }
+        ]
+      },
+      {
+        "name": "Bean Platform",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|KF_BEAN_PLATFORM_RUPEE1"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_BEAN_PLATFORM_RUPEE1"
+            ],
+            "item_count": 6
+          },
+          {
+            "name": "Red Rupee",
+            "access_rules": ["^$REACHABLE|KF_BEAN_PLATFORM_RED_RUPEE"],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_BEAN_PLATFORM_RED_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 592,
+            "y": 325
+          }
+        ]
+      },
+      {
+        "name": "Deku Tree Left Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|KF_DEKU_TREE_LEFT_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_DEKU_TREE_LEFT_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|KF_DEKU_TREE_LEFT_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_DEKU_TREE_LEFT_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 977,
+            "y": 65
+          }
+        ]
+      },
+      {
+        "name": "Deku Tree Right Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|KF_DEKU_TREE_RIGHT_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_DEKU_TREE_RIGHT_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|KF_DEKU_TREE_RIGHT_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_DEKU_TREE_RIGHT_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 1123,
+            "y": 305
+          }
+        ]
+      },
+      {
+        "name": "Storms Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "visibility_rules": ["$AGE_CHECK|KF_STORMS_GROTTO_CHEST"],
+            "access_rules": ["^$REACHABLE|KF_STORMS_GROTTO_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|KF_STORMS_GROTTO_BEEHIVE_LEFT"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|KF_STORMS_GROTTO_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|KF_STORMS_GROTTO_GRASS1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_STORMS_GROTTO_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Fish",
+            "access_rules": ["^$REACHABLE|KF_STORMS_GROTTO_FISH"],
+            "visibility_rules": [
+              "$OPTION_FISH_OVERWORLD,$AGE_CHECK|KF_STORMS_GROTTO_FISH"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": ["^$REACHABLE|KF_STORMS_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_STORMS_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": ["^$REACHABLE|KF_STORMS_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|KF_STORMS_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 319,
+            "y": 224
+          }
+        ]
+      },
+      {
+        "name": "In Front of Saria's House",
+
+        "sections": [
+          {
+            "name": "Child Grass",
+            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Adult Grass",
+            "access_rules": ["^$REACHABLE|KF_ADULT_GRASS1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_ADULT_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 462,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "name": "Fences",
+
+        "sections": [
+          {
+            "name": "Child Grass",
+            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS5"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS5"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 8
+          },
+          {
+            "name": "Adult Grass",
+            "access_rules": ["^$REACHABLE|KF_ADULT_GRASS13"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_ADULT_GRASS13"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Kokiri Forest",
+            "x": 279,
+            "y": 523
+          }
+        ]
+      }
+    ]
+  }
+]

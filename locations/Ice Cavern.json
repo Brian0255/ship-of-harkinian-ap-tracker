@@ -1,0 +1,371 @@
+[
+  {
+    "name": "Ice Cavern",
+    "chest_unopened_img": "/images/items/close.png",
+    "chest_opened_img": "/images/items/open.png",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "White Wolfos Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_IRON_BOOTS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|ICE_CAVERN_IRON_BOOTS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Song from Sheik in Ice Cavern",
+            "access_rules": ["^$REACHABLE|SHEIK_IN_ICE_CAVERN"],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SHEIK_IN_ICE_CAVERN"
+            ],
+            "chest_opened_img": "images/chest_images/serenade_of_water_opened.png",
+            "chest_unopened_img": "images/chest_images/serenade_of_water_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 201,
+            "y": 823
+          }
+        ]
+      },
+      {
+        "name": "Map Room East Platform",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_MAP_ROOM_LEFT_HEART"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|ICE_CAVERN_MAP_ROOM_LEFT_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 695,
+            "y": 137
+          }
+        ]
+      },
+      {
+        "name": "Compass Room South",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_COMPASS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|ICE_CAVERN_COMPASS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 697,
+            "y": 757
+          }
+        ]
+      },
+      {
+        "name": "Compass Room North",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_FREESTANDING_POH"],
+            "visibility_rules": ["$AGE_CHECK|ICE_CAVERN_FREESTANDING_POH"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_GS_HEART_PIECE_ROOM"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|ICE_CAVERN_GS_HEART_PIECE_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 722,
+            "y": 636
+          }
+        ]
+      },
+      {
+        "name": "Map Room Frozen Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_MAP_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|ICE_CAVERN_MAP_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 499,
+            "y": 55
+          }
+        ]
+      },
+      {
+        "name": "Spinning Scythe Room Southwest",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_GS_SPINNING_SCYTHE_ROOM"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|ICE_CAVERN_GS_SPINNING_SCYTHE_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 438,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Push Block Room Southeast",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_GS_PUSH_BLOCK_ROOM"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|ICE_CAVERN_GS_PUSH_BLOCK_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 275,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "name": "First Hall",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_HALL_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|ICE_CAVERN_HALL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 394,
+            "y": 719
+          }
+        ]
+      },
+      {
+        "name": "Spinning Scythe Room Southeast",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_SPINNING_BLADE_POT2"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|ICE_CAVERN_SPINNING_BLADE_POT2"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 557,
+            "y": 584
+          }
+        ]
+      },
+      {
+        "name": "Spinning Scythe Room North",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_SPINNING_BLADE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|ICE_CAVERN_SPINNING_BLADE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 532,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "Near End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_NEAR_END_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|ICE_CAVERN_NEAR_END_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 124,
+            "y": 752
+          }
+        ]
+      },
+      {
+        "name": "Map Room Frozen Pot",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_FROZEN_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|ICE_CAVERN_FROZEN_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 518,
+            "y": 176
+          }
+        ]
+      },
+      {
+        "name": "Lobby",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_LOBBY_RUPEE"],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|ICE_CAVERN_LOBBY_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 416,
+            "y": 801
+          }
+        ]
+      },
+      {
+        "name": "Push Block Room Song of Time Block",
+
+        "sections": [
+          {
+            "name": "Red Rupee",
+            "access_rules": ["^$REACHABLE|ICE_CAVERN_SLIDING_BLOCK_ROOM_RUPEE1"],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|ICE_CAVERN_SLIDING_BLOCK_ROOM_RUPEE1"
+            ],
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 77,
+            "y": 465
+          }
+        ]
+      },
+      {
+        "name": "Rotating Spike Room",
+
+        "sections": [
+          {
+            "name": "Song of Storms Fairy",
+            "access_rules": [
+              "^$REACHABLE|ICE_CAVERN_ENTRANCE_SONG_OF_STORMS_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|ICE_CAVERN_ENTRANCE_SONG_OF_STORMS_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ice Cavern",
+            "x": 438,
+            "y": 879
+          }
+        ]
+      }
+    ]
+  }
+]

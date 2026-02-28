@@ -1,0 +1,907 @@
+[
+  {
+    "name": "Deku Tree",
+      "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Boss Room",
+
+        "sections": [
+          {
+            "name": "Queen Gohma",
+            "access_rules": [
+              "^$REACHABLE|QUEEN_GOHMA"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|QUEEN_GOHMA"
+            ],
+            "chest_opened_img": "images/chest_images/boss_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Container",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_HEART_CONTAINER"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_HEART_CONTAINER"
+            ],
+            "chest_opened_img": "images/chest_images/heart_container_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_container_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1189,
+            "y": 226
+          }
+        ]
+      },
+      {
+        "name": "Lobby Middle Map Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_MAP_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_MAP_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 389,
+            "y": 357
+          }
+        ]
+      },
+      {
+        "name": "Slingshot Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_SLINGSHOT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_SLINGSHOT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 59,
+            "y": 576
+          }
+        ]
+      },
+      {
+        "name": "Slingshot Room Side Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_SLINGSHOT_ROOM_SIDE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_SLINGSHOT_ROOM_SIDE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 113,
+            "y": 615
+          }
+        ]
+      },
+      {
+        "name": "Slingshot Room Northwest",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_SLINGSHOT_GRASS3"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_SLINGSHOT_GRASS3"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 82,
+            "y": 504
+          }
+        ]
+      },
+      {
+        "name": "Slingshot Room Southeast",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_SLINGSHOT_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_SLINGSHOT_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 131,
+            "y": 551
+          }
+        ]
+      },
+      {
+        "name": "Compass Room Side Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_COMPASS_ROOM_SIDE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_COMPASS_ROOM_SIDE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_GS_COMPASS_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DEKU_TREE_GS_COMPASS_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 121,
+            "y": 199
+          }
+        ]
+      },
+      {
+        "name": "Compass Room Compass Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_COMPASS_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_COMPASS_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 40,
+            "y": 109
+          }
+        ]
+      },
+      {
+        "name": "Compass Room West Ledge",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_COMPASS_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_COMPASS_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 43,
+            "y": 141
+          }
+        ]
+      },
+      {
+        "name": "Basement Torch",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_BASEMENT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DEKU_TREE_BASEMENT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1007,
+            "y": 352
+          }
+        ]
+      },
+      {
+        "name": "Basement Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_BASEMENT_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_BASEMENT_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1007,
+            "y": 436
+          }
+        ]
+      },
+      {
+        "name": "Basement Vines",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_GS_BASEMENT_VINES"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DEKU_TREE_GS_BASEMENT_VINES"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1017,
+            "y": 396
+          }
+        ]
+      },
+      {
+        "name": "Basement Gate",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_GS_BASEMENT_GATE"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DEKU_TREE_GS_BASEMENT_GATE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 943,
+            "y": 322
+          }
+        ]
+      },
+      {
+        "name": "Basement Back Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_GS_BASEMENT_BACK_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|DEKU_TREE_GS_BASEMENT_BACK_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 501,
+            "y": 328
+          }
+        ]
+      },
+      {
+        "name": "Lobby Middle Center",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_LOBBY_LOWER_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DEKU_TREE_LOBBY_LOWER_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 325,
+            "y": 506
+          }
+        ]
+      },
+      {
+        "name": "Lobby Upper",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_LOBBY_UPPER_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DEKU_TREE_LOBBY_UPPER_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 320,
+            "y": 136
+          }
+        ]
+      },
+      {
+        "name": "Final Room Water West",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_FINAL_ROOM_LEFT_FRONT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DEKU_TREE_FINAL_ROOM_LEFT_FRONT_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1280,
+            "y": 607
+          }
+        ]
+      },
+      {
+        "name": "Final Room Water Southwest",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_FINAL_ROOM_LEFT_BACK_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DEKU_TREE_FINAL_ROOM_LEFT_BACK_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1293,
+            "y": 632
+          }
+        ]
+      },
+      {
+        "name": "Final Room Water East",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_FINAL_ROOM_RIGHT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|DEKU_TREE_FINAL_ROOM_RIGHT_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1381,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Lobby Lower",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_LOBBY_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_LOBBY_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 406,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Lobby Middle North",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_LOBBY_GRASS4"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_LOBBY_GRASS4"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 347,
+            "y": 231
+          }
+        ]
+      },
+      {
+        "name": "Eye Switch Room Northwest",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_EYE_SWITCH_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_EYE_SWITCH_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 954,
+            "y": 554
+          }
+        ]
+      },
+      {
+        "name": "Eye Switch Room Northeast",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_EYE_SWITCH_GRASS3"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_EYE_SWITCH_GRASS3"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1010,
+            "y": 554
+          }
+        ]
+      },
+      {
+        "name": "Spike Roller Room",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_SPIKE_ROLLER_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_SPIKE_ROLLER_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 738,
+            "y": 568
+          }
+        ]
+      },
+      {
+        "name": "Torches Room",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_TORCHES_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_TORCHES_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 641,
+            "y": 561
+          }
+        ]
+      },
+      {
+        "name": "Larvae Room",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_LARVAE_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_LARVAE_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 614,
+            "y": 349
+          }
+        ]
+      },
+      {
+        "name": "Final Room East",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_BEFORE_BOSS_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_BEFORE_BOSS_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1400,
+            "y": 536
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 4",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS4"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS4"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1126,
+            "y": 366
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 3",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS3"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS3"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1084,
+            "y": 317
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 5",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS5"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS5"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1054,
+            "y": 269
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 6",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS6"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS6"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1049,
+            "y": 182
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 8",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS8"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS8"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1241,
+            "y": 99
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 7",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS7"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS7"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1310,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 2",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS4"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS4"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1317,
+            "y": 224
+          }
+        ]
+      },
+      {
+        "name": "Boss Room Grass 1",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Deku Tree",
+            "x": 1319,
+            "y": 280
+          }
+        ]
+      }
+    ]
+  }
+]

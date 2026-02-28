@@ -1,0 +1,883 @@
+[
+  {
+    "name": "Shadow Temple",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Boss Room",
+
+        "sections": [
+          {
+            "name": "Bongo Bongo",
+            "access_rules": ["^$REACHABLE|BONGO_BONGO"],
+            "visibility_rules": ["$AGE_CHECK|BONGO_BONGO"],
+            "chest_opened_img": "images/chest_images/boss_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Container",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_BONGO_BONGO_HEART_CONTAINER"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_BONGO_BONGO_HEART_CONTAINER"
+            ],
+            "chest_opened_img": "images/chest_images/heart_container_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_container_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 485,
+            "y": 578
+          }
+        ]
+      },
+      {
+        "name": "Map Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_MAP_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|SHADOW_TEMPLE_MAP_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_MAP_CHEST_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_MAP_CHEST_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 903,
+            "y": 79
+          }
+        ]
+      },
+      {
+        "name": "Hover Boots Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_HOVER_BOOTS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|SHADOW_TEMPLE_HOVER_BOOTS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 714,
+            "y": 126
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_COMPASS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|SHADOW_TEMPLE_COMPASS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1311,
+            "y": 248
+          }
+        ]
+      },
+      {
+        "name": "Early Silver Rupee Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_EARLY_SILVER_RUPEE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_EARLY_SILVER_RUPEE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1372,
+            "y": 89
+          }
+        ]
+      },
+      {
+        "name": "Invisible Blades Room Song of Time Block",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_INVISIBLE_BLADES_LEFT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_INVISIBLE_BLADES_LEFT_HEART"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1538,
+            "y": 406
+          }
+        ]
+      },
+      {
+        "name": "Invisible Blades Room Past Gate",
+
+        "sections": [
+          {
+            "name": "Visible Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_INVISIBLE_BLADES_VISIBLE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_INVISIBLE_BLADES_VISIBLE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Invisible Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_INVISIBLE_BLADES_INVISIBLE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_INVISIBLE_BLADES_INVISIBLE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_GS_LIKE_LIKE_ROOM"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_GS_LIKE_LIKE_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1562,
+            "y": 461
+          }
+        ]
+      },
+      {
+        "name": "Falling Spikes Room Gold Skulltula",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_GS_FALLING_SPIKES_ROOM"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_GS_FALLING_SPIKES_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1056,
+            "y": 651
+          }
+        ]
+      },
+      {
+        "name": "Falling Spikes Room Lower Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_FALLING_SPIKES_LOWER_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_FALLING_SPIKES_LOWER_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1027,
+            "y": 610
+          }
+        ]
+      },
+      {
+        "name": "Falling Spikes Room Upper Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_FALLING_SPIKES_UPPER_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_FALLING_SPIKES_UPPER_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1003,
+            "y": 651
+          }
+        ]
+      },
+      {
+        "name": "Falling Spikes Room Behind Floor Spike",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_FALLING_SPIKES_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_FALLING_SPIKES_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1052,
+            "y": 602
+          }
+        ]
+      },
+      {
+        "name": "Falling Spikes Room Switch Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_FALLING_SPIKES_SWITCH_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_FALLING_SPIKES_SWITCH_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_FALLING_SPIKES_POT3"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_FALLING_SPIKES_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1094,
+            "y": 610
+          }
+        ]
+      },
+      {
+        "name": "Invisible Spikes Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_INVISIBLE_SPIKES_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_INVISIBLE_SPIKES_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 848,
+            "y": 623
+          }
+        ]
+      },
+      {
+        "name": "Wind Hint Room",
+
+        "sections": [
+          {
+            "name": "Invisible Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_WIND_HINT_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|SHADOW_TEMPLE_WIND_HINT_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_WIND_HINT_SUNS_SONG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|SHADOW_TEMPLE_WIND_HINT_SUNS_SONG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1089,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "After Wind Room",
+
+        "sections": [
+          {
+            "name": "Enemy Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_AFTER_WIND_ENEMY_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_AFTER_WIND_ENEMY_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Invisible Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_AFTER_WIND_HIDDEN_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_AFTER_WIND_HIDDEN_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_AFTER_WIND_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_AFTER_WIND_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1036,
+            "y": 422
+          }
+        ]
+      },
+      {
+        "name": "Invisible Floormaster Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_INVISIBLE_FLOORMASTER_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_INVISIBLE_FLOORMASTER_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 182,
+            "y": 489
+          }
+        ]
+      },
+      {
+        "name": "Single Giant Pot Room",
+
+        "sections": [
+          {
+            "name": "Freestanding Key",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_FREESTANDING_KEY"],
+            "visibility_rules": ["$AGE_CHECK|SHADOW_TEMPLE_FREESTANDING_KEY"],
+            "chest_opened_img": "images/chest_images/freestanding_key_opened.png",
+            "chest_unopened_img": "images/chest_images/freestanding_key_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_GS_SINGLE_GIANT_POT"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_GS_SINGLE_GIANT_POT"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 751,
+            "y": 630
+          }
+        ]
+      },
+      {
+        "name": "Triple Giant Pot Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_GS_TRIPLE_GIANT_POT"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_GS_TRIPLE_GIANT_POT"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 29,
+            "y": 366
+          }
+        ]
+      },
+      {
+        "name": "Whispering Walls East",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_WHISPERING_WALLS_POT4"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_WHISPERING_WALLS_POT4"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 878,
+            "y": 147
+          }
+        ]
+      },
+      {
+        "name": "Whispering Walls Southwest",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_WHISPERING_WALLS_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_WHISPERING_WALLS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 828,
+            "y": 172
+          }
+        ]
+      },
+      {
+        "name": "Near Dead Hand",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_NEAR_DEAD_HAND_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_NEAR_DEAD_HAND_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 804,
+            "y": 132
+          }
+        ]
+      },
+      {
+        "name": "Moving Spike Walls Room Center",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_SPIKE_WALLS_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_SPIKE_WALLS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 182,
+            "y": 263
+          }
+        ]
+      },
+      {
+        "name": "Moving Spike Walls Room Left",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_SPIKE_WALLS_LEFT_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|SHADOW_TEMPLE_SPIKE_WALLS_LEFT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 149,
+            "y": 263
+          }
+        ]
+      },
+      {
+        "name": "Moving Spike Walls Room Right",
+
+        "sections": [
+          {
+            "name": "Boss Key Chest",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_BOSS_KEY_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|SHADOW_TEMPLE_BOSS_KEY_CHEST"],
+            "chest_opened_img": "images/chest_images/boss_chest_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 215,
+            "y": 263
+          }
+        ]
+      },
+      {
+        "name": "Invisible Floormaster Room West Corner",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_FLOORMASTER_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_FLOORMASTER_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 159,
+            "y": 447
+          }
+        ]
+      },
+      {
+        "name": "Invisible Floormaster Room East Corner",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_FLOORMASTER_POT2"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_FLOORMASTER_POT2"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 205,
+            "y": 447
+          }
+        ]
+      },
+      {
+        "name": "After Ship Pillar Bridge",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_AFTER_BOAT_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_AFTER_BOAT_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 378,
+            "y": 379
+          }
+        ]
+      },
+      {
+        "name": "After Ship Near Locked Door",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_AFTER_BOAT_POT3"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_AFTER_BOAT_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 336,
+            "y": 476
+          }
+        ]
+      },
+      {
+        "name": "Scarecrow Near Ship",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_SCARECROW_NEAR_SHIP_NORTH_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_SCARECROW_NEAR_SHIP_NORTH_HEART"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_GS_NEAR_SHIP"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_GS_NEAR_SHIP"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 994,
+            "y": 366
+          }
+        ]
+      },
+      {
+        "name": "After Ship Song of Time Block Pillar",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": ["^$REACHABLE|SHADOW_TEMPLE_AFTER_SHIP_LOWER_HEART"],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_AFTER_SHIP_LOWER_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 293,
+            "y": 459
+          }
+        ]
+      },
+      {
+        "name": "After Ship Scarecrow Ledge",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_AFTER_SHIP_UPPER_LEFT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|SHADOW_TEMPLE_AFTER_SHIP_UPPER_LEFT_HEART"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 261,
+            "y": 434
+          }
+        ]
+      },
+      {
+        "name": "Beamos Room",
+
+        "sections": [
+          {
+            "name": "Song of Storms Fairy",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_BEAMOS_SONG_OF_STORMS_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|SHADOW_TEMPLE_BEAMOS_SONG_OF_STORMS_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1312,
+            "y": 172
+          }
+        ]
+      },
+      {
+        "name": "Pit Room Stalfos",
+
+        "sections": [
+          {
+            "name": "Song of Storms Fairy",
+            "access_rules": [
+              "^$REACHABLE|SHADOW_TEMPLE_PIT_ROOM_SONG_OF_STORMS_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|SHADOW_TEMPLE_PIT_ROOM_SONG_OF_STORMS_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Shadow Temple",
+            "x": 1347,
+            "y": 578
+          }
+        ]
+      }
+    ]
+  }
+]

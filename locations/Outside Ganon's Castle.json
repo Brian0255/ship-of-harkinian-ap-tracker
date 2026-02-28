@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Outside Ganon's Castle",
+        "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Great Fairy Fountain",
+
+        "sections": [
+          {
+            "name": "Reward",
+            "access_rules": [
+              "^$REACHABLE|OGC_GREAT_FAIRY_REWARD"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|OGC_GREAT_FAIRY_REWARD"
+            ],
+            "chest_opened_img": "images/chest_images/great_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/great_fairy_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Outside Ganon's Castle",
+            "x": 832,
+            "y": 357
+          }
+        ]
+      },
+      {
+        "name": "Arch",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|HC_OGC_GS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|HC_OGC_GS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Outside Ganon's Castle",
+            "x": 575,
+            "y": 389
+          }
+        ]
+      }
+    ]
+  }
+]

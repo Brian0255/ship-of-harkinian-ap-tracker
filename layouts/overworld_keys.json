@@ -1,0 +1,36 @@
+{
+  "shared_overworld_keys": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0,10,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 38,
+        "item_width": 38,
+        "margin": "0,5,0,0",
+        "rows": [
+          [
+            "kakariko_shooting_gallery_key","kakariko_bazaar_key","kakariko_potion_shop_key","grannys_potion_shop_key","skulltula_house_key"
+          ],
+          [
+            "windmill_key","impas_house_key","guard_house_key","bosss_house_key","dampes_hut_key"
+          ],
+          [
+            "talons_house_key","stables_key","back_tower_key","hylia_laboratory_key","fishing_hole_key"
+          ],
+          [
+            "market_shooting_gallery_key","market_bazaar_key","market_potion_shop_key","mask_shop_key","bombchu_bowling_alley_key"
+          ],
+          [
+            "bombchu_shop_key","treasure_chest_game_building_key","richards_house_key","alley_house_key"
+          ]
+        ]
+      }
+    ]
+  }
+}

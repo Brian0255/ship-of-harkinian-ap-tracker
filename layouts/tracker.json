@@ -1,0 +1,87 @@
+{
+  "tracker_horizontal": {
+    "type": "container",
+    "background": "#00000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "margin": "0,0,0,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_item_grid_horizontal"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Songs and Medallions",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_songs_and_medallions_horizontal"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Dungeon Items",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_dungeon_items"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Overworld Keys",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_overworld_keys"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Map Tools",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_map_tools"
+              }
+            }
+          ]
+        },
+        {
+          "type": "dock",
+          "content": [
+            {
+              "type": "layout",
+              "key": "tabbed_maps_horizontal"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

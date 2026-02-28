@@ -1,0 +1,380 @@
+[
+  {
+    "name": "Zora's Domain",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Waterfall",
+
+        "sections": [
+          {
+            "name": "Top Diving Minigame",
+            "access_rules": ["^$REACHABLE|ZD_DIVING_MINIGAME"],
+            "visibility_rules": ["$AGE_CHECK|ZD_DIVING_MINIGAME"],
+            "chest_opened_img": "images/chest_images/silver_scale_opened.png",
+            "chest_unopened_img": "images/chest_images/silver_scale_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Bottom Chest",
+            "access_rules": ["^$REACHABLE|ZD_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|ZD_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 335,
+            "y": 422
+          }
+        ]
+      },
+      {
+        "name": "King Zora",
+
+        "sections": [
+          {
+            "name": "Thawed",
+            "access_rules": ["^$REACHABLE|ZD_KING_ZORA_THAWED"],
+            "visibility_rules": ["$AGE_CHECK|ZD_KING_ZORA_THAWED"],
+            "chest_opened_img": "images/chest_images/king_zora_opened.png",
+            "chest_unopened_img": "images/chest_images/king_zora_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Trade Prescription",
+            "access_rules": ["^$REACHABLE|ZD_TRADE_PRESCRIPTION"],
+            "visibility_rules": [
+              "$OPTION_ADULT_TRADE_SHUFFLE,$AGE_CHECK|ZD_TRADE_PRESCRIPTION"
+            ],
+            "chest_opened_img": "images/chest_images/prescription_opened.png",
+            "chest_unopened_img": "images/chest_images/prescription_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 520,
+            "y": 245
+          }
+        ]
+      },
+      {
+        "name": "Frozen Waterfall Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|ZD_GS_FROZEN_WATERFALL"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|ZD_GS_FROZEN_WATERFALL"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 369,
+            "y": 430
+          }
+        ]
+      },
+      {
+        "name": "Shop",
+
+        "sections": [
+          {
+            "name": "Item 1",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM1"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|1,$AGE_CHECK|ZD_SHOP_ITEM1"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM2"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|2,$AGE_CHECK|ZD_SHOP_ITEM2"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 3",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM3"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|3,$AGE_CHECK|ZD_SHOP_ITEM3"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 4",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM4"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|4,$AGE_CHECK|ZD_SHOP_ITEM4"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 5",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM5"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|5,$AGE_CHECK|ZD_SHOP_ITEM5"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 6",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM6"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|6,$AGE_CHECK|ZD_SHOP_ITEM6"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 7",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM7"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|7,$AGE_CHECK|ZD_SHOP_ITEM7"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 8",
+            "access_rules": ["^$REACHABLE|ZD_SHOP_ITEM8"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|8,$AGE_CHECK|ZD_SHOP_ITEM8"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 484,
+            "y": 687
+          }
+        ]
+      },
+      {
+        "name": "In Front of King Zora Right",
+
+        "sections": [
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|ZD_IN_FRONT_OF_KING_ZORA_BEEHIVE_RIGHT"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|ZD_IN_FRONT_OF_KING_ZORA_BEEHIVE_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 596,
+            "y": 297
+          }
+        ]
+      },
+      {
+        "name": "In Front of King Zora Left",
+
+        "sections": [
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|ZD_IN_FRONT_OF_KING_ZORA_BEEHIVE_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|ZD_IN_FRONT_OF_KING_ZORA_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 466,
+            "y": 344
+          }
+        ]
+      },
+      {
+        "name": "Behind King Zora",
+
+        "sections": [
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|ZD_BEHIND_KING_ZORA_BEEHIVE"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|ZD_BEHIND_KING_ZORA_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 543,
+            "y": 209
+          }
+        ]
+      },
+      {
+        "name": "Opposite of Shop",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ZD_NEAR_SHOP_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|ZD_NEAR_SHOP_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 524,
+            "y": 735
+          }
+        ]
+      },
+      {
+        "name": "West of Shop",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|ZD_NEAR_SHOP_POT3"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|ZD_NEAR_SHOP_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 428,
+            "y": 714
+          }
+        ]
+      },
+      {
+        "name": "Fairy Grotto",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|ZD_FAIRY_GROTTO_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|ZD_FAIRY_GROTTO_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 184,
+            "y": 537
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|ZD_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|ZD_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|ZD_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|ZD_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 520,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "name": "Shallow Water",
+
+        "sections": [
+          {
+            "name": "Fish",
+            "access_rules": ["^$REACHABLE|ZD_FISH1"],
+            "visibility_rules": ["$OPTION_FISH_OVERWORLD,$AGE_CHECK|ZD_FISH1"],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 5
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Zora's Domain",
+            "x": 581,
+            "y": 537
+          }
+        ]
+      }
+    ]
+  }
+]

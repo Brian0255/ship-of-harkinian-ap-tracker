@@ -1,0 +1,89 @@
+{
+  "shared_dungeon_items": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0,10,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "0,0",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 22,
+        "item_width": 41,
+        "margin": "2,0,0,7",
+        "rows": [
+          [
+            "dungeon_label_DT",
+            "dungeon_label_DC",
+            "dungeon_label_JJB",
+            "dungeon_label_FoT",
+            "dungeon_label_FiT",
+            "dungeon_label_WT",
+            "dungeon_label_ShT",
+            "dungeon_label_SpT",
+            "dungeon_label_BotW",
+            "dungeon_label_GF",
+            "dungeon_label_GTG",
+            "dungeon_label_GC"
+          ]
+        ]
+      },
+      {
+        "type": "itemgrid",
+        "item_margin": "3,2",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "margin": "0,0,0,0",
+        "item_height": 35,
+        "item_width": 35,
+        "rows": [
+          [
+            "",
+            "",
+            "",
+            "forest_temple_small_key",
+            "fire_temple_small_key",
+            "water_temple_small_key",
+            "shadow_temple_small_key",
+            "spirit_temple_small_key",
+            "bottom_of_the_well_small_key",
+            "gerudo_fortress_small_key",
+            "gerudo_training_ground_small_key",
+            "ganons_castle_small_key"
+          ],
+          [
+            "",
+            "",
+            "",
+            "forest_temple_boss_key",
+            "fire_temple_boss_key",
+            "water_temple_boss_key",
+            "shadow_temple_boss_key",
+            "spirit_temple_boss_key",
+            "",
+            "",
+            "gerudo_membership_card",
+            "ganons_castle_boss_key"
+          ],
+          [
+            "gohmas_soul",
+            "king_dodongos_soul",
+            "barinades_soul",
+            "phantom_ganons_soul",
+            "volvagias_soul",
+            "morphas_soul",
+            "bongo_bongos_soul",
+            "twinrovas_soul",
+            "",
+            "",
+            "",
+            "ganons_soul"
+          ]
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+[
+  {
+    "name": "Temple of Time",
+        "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Temple of Time",
+
+        "sections": [
+          {
+            "name": "Sheik at Temple",
+            "access_rules": [
+              "^$REACHABLE|SHEIK_AT_TEMPLE"
+            ],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SHEIK_AT_TEMPLE"
+            ],
+            "chest_opened_img": "images/chest_images/prelude_of_light_opened.png",
+            "chest_unopened_img": "images/chest_images/prelude_of_light_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gift from Rauru",
+            "access_rules": [
+              "^$REACHABLE|GIFT_FROM_RAURU"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GIFT_FROM_RAURU"
+            ],
+            "chest_opened_img": "images/chest_images/light_medallion_opened.png",
+            "chest_unopened_img": "images/chest_images/light_medallion_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Light Arrow Cutscene",
+            "access_rules": [
+              "^$REACHABLE|MARKET_TOT_LIGHT_ARROW_CUTSCENE"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|MARKET_TOT_LIGHT_ARROW_CUTSCENE"
+            ],
+            "chest_opened_img": "images/chest_images/light_arrow_opened.png",
+            "chest_unopened_img": "images/chest_images/light_arrow_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Master Sword",
+            "access_rules": [
+              "^$REACHABLE|MARKET_TOT_MASTER_SWORD"
+            ],
+            "visibility_rules": [
+              "$OPTION_MASTER_SWORD_SHUFFLED,$AGE_CHECK|MARKET_TOT_MASTER_SWORD"
+            ],
+            "chest_opened_img": "images/chest_images/master_sword_opened.png",
+            "chest_unopened_img": "images/chest_images/master_sword_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Temple of Time",
+            "x": 308,
+            "y": 303
+          }
+        ]
+      }
+    ]
+  }
+]

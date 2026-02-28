@@ -1,0 +1,781 @@
+[
+  {
+    "name": "Hyrule Field",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Ocarina of Time",
+
+        "sections": [
+          {
+            "name": "Song from Ocarina of Time",
+            "access_rules": ["^$REACHABLE|SONG_FROM_OCARINA_OF_TIME"],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SONG_FROM_OCARINA_OF_TIME"
+            ],
+            "chest_opened_img": "images/chest_images/song_of_time_opened.png",
+            "chest_unopened_img": "images/chest_images/song_of_time_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item",
+            "access_rules": ["^$REACHABLE|HF_OCARINA_OF_TIME_ITEM"],
+            "visibility_rules": [
+              "$OPTION_OCARINA_SHUFFLE,$AGE_CHECK|HF_OCARINA_OF_TIME_ITEM"
+            ],
+            "chest_opened_img": "images/chest_images/ocarina_of_time_opened.png",
+            "chest_unopened_img": "images/chest_images/ocarina_of_time_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 622,
+            "y": 117
+          }
+        ]
+      },
+      {
+        "name": "Near Market Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_GROTTO_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|HF_NEAR_MARKET_GROTTO_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_GROTTO_BEEHIVE_LEFT"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|HF_NEAR_MARKET_GROTTO_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_GROTTO_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_NEAR_MARKET_GROTTO_GRASS1"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Fish",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_GROTTO_FISH"],
+            "visibility_rules": [
+              "$OPTION_FISH_OVERWORLD,$AGE_CHECK|HF_NEAR_MARKET_GROTTO_FISH"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_NEAR_MARKET_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|HF_NEAR_MARKET_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_NEAR_MARKET_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Trees Near Grotto",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_TREE_1"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_NEAR_MARKET_TREE_1"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 526,
+            "y": 117
+          }
+        ]
+      },
+      {
+        "name": "Tektite Grotto",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|HF_TEKTITE_GROTTO_FREESTANDING_POH"],
+            "visibility_rules": [
+              "$AGE_CHECK|HF_TEKTITE_GROTTO_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Tree Near Grotto",
+            "access_rules": ["^$REACHABLE|HF_TEKTITE_GROTTO_TREE"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_TEKTITE_GROTTO_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 302,
+            "y": 235
+          }
+        ]
+      },
+      {
+        "name": "Southeast Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "visibility_rules": ["$AGE_CHECK|HF_SOUTHEAST_GROTTO_CHEST"],
+            "access_rules": ["^$REACHABLE|HF_SOUTHEAST_GROTTO_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|HF_SOUTHEAST_GROTTO_BEEHIVE_LEFT"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|HF_SOUTHEAST_GROTTO_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_SOUTHEAST_GROTTO_GRASS1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_SOUTHEAST_GROTTO_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 4
+          },
+          {
+            "name": "Fish",
+            "access_rules": ["^$REACHABLE|HF_SOUTHEAST_GROTTO_FISH"],
+            "visibility_rules": [
+              "$OPTION_FISH_OVERWORLD,$AGE_CHECK|HF_SOUTHEAST_GROTTO_FISH"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": [
+              "^$REACHABLE|HF_SOUTHEAST_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_SOUTHEAST_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|HF_SOUTHEAST_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_SOUTHEAST_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 591,
+            "y": 822
+          }
+        ]
+      },
+      {
+        "name": "Cow Grotto",
+
+        "sections": [
+          {
+            "name": "Cow",
+            "access_rules": ["^$REACHABLE|HF_COW_GROTTO_COW"],
+            "visibility_rules": ["$OPTION_COWS,$AGE_CHECK|HF_COW_GROTTO_COW"],
+            "chest_opened_img": "images/chest_images/cow_opened.png",
+            "chest_unopened_img": "images/chest_images/cow_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|HF_COW_GROTTO_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|HF_COW_GROTTO_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_COW_GROTTO_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_COW_GROTTO_GRASS1"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": ["^$REACHABLE|HF_COW_GROTTO_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_COW_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": ["^$REACHABLE|HF_COW_GROTTO_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_COW_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|HF_GS_COW_GROTTO"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|HF_GS_COW_GROTTO"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 126,
+            "y": 486
+          }
+        ]
+      },
+      {
+        "name": "Stone Bridge Tree Grotto",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|HF_GS_STONE_BRIDGE_TREE_GROTTO"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|HF_GS_STONE_BRIDGE_TREE_GROTTO"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Tree Near Grotto",
+            "access_rules": ["^$REACHABLE|HF_NEAR_KAK_SMALL_TREE"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_NEAR_KAK_SMALL_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 735,
+            "y": 57
+          }
+        ]
+      },
+      {
+        "name": "Deku Scrub Grotto",
+
+        "sections": [
+          {
+            "name": "Deku Scrub",
+            "access_rules": ["^$REACHABLE|HF_DEKU_SCRUB_GROTTO"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_ONE_TIME,$AGE_CHECK|HF_DEKU_SCRUB_GROTTO"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|HF_DEKU_SCRUB_GROTTO_BEEHIVE"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|HF_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Song of Storms Fairy",
+            "access_rules": ["^$REACHABLE|HF_FENCE_GROTTO_STORMS_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|HF_FENCE_GROTTO_STORMS_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 302,
+            "y": 911
+          }
+        ]
+      },
+      {
+        "name": "Open Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|HF_OPEN_GROTTO_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|HF_OPEN_GROTTO_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|HF_OPEN_GROTTO_BEEHIVE_LEFT"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|HF_OPEN_GROTTO_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_OPEN_GROTTO_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_OPEN_GROTTO_GRASS1"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Fish",
+            "access_rules": ["^$REACHABLE|HF_OPEN_GROTTO_FISH"],
+            "visibility_rules": [
+              "$OPTION_FISH_OVERWORLD,$AGE_CHECK|HF_OPEN_GROTTO_FISH"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": ["^$REACHABLE|HF_OPEN_GROTTO_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_OPEN_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|HF_OPEN_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|HF_OPEN_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Tree West of Open Grotto",
+            "access_rules": ["^$REACHABLE|HF_NEAR_LH_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_NEAR_LH_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 346,
+            "y": 909
+          }
+        ]
+      },
+      {
+        "name": "Fairy Grotto",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|HF_FAIRY_GROTTO_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|HF_FAIRY_GROTTO_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 333,
+            "y": 37
+          }
+        ]
+      },
+      {
+        "name": "Pond",
+
+        "sections": [
+          {
+            "name": "Song of Storms Fairy",
+            "access_rules": ["^$REACHABLE|HF_POND_SONG_OF_STORMS_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|HF_POND_SONG_OF_STORMS_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 926,
+            "y": 363
+          }
+        ]
+      },
+      {
+        "name": "Near Kokiri Forest Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_NEAR_KFGRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_NEAR_KFGRASS1"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 800,
+            "y": 524
+          }
+        ]
+      },
+      {
+        "name": "Near Market Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_NEAR_MARKET_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_NEAR_MARKET_GRASS1"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 662,
+            "y": 284
+          }
+        ]
+      },
+      {
+        "name": "South Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_SOUTH_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_SOUTH_GRASS1"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 580,
+            "y": 753
+          }
+        ]
+      },
+      {
+        "name": "Central Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|HF_CENTRAL_GRASS1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|HF_CENTRAL_GRASS1"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 546,
+            "y": 673
+          }
+        ]
+      },
+      {
+        "name": "Outside Lon Lon Ranch Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_NEAR_LLR_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_NEAR_LLR_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 488,
+            "y": 397
+          }
+        ]
+      },
+      {
+        "name": "Near Gerudo Valley Child Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_CHILD_NEAR_GV_TREE"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_CHILD_NEAR_GV_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 222,
+            "y": 591
+          }
+        ]
+      },
+      {
+        "name": "Near Gerudo Valley Adult Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_ADULT_NEAR_GV_TREE"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_ADULT_NEAR_GV_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 222,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Outside Zora's River Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_NEAR_ZR_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_NEAR_ZR_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 797,
+            "y": 324
+          }
+        ]
+      },
+      {
+        "name": "Outside Kakariko Tree",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_NEAR_KAK_TREE"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_NEAR_KAK_TREE"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 806,
+            "y": 124
+          }
+        ]
+      },
+      {
+        "name": "Northwest Trees",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_EAST_TREE_1"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_EAST_TREE_1"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 6
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 317,
+            "y": 84
+          }
+        ]
+      },
+      {
+        "name": "East Trees",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_EAST_TREE_1"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_EAST_TREE_1"],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 6
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 846,
+            "y": 489
+          }
+        ]
+      },
+      {
+        "name": "Southeast Trees",
+
+        "sections": [
+          {
+            "name": "Tree",
+            "access_rules": ["^$REACHABLE|HF_SOUTHEAST_TREE_1"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_SOUTHEAST_TREE_1"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 19
+          },
+          {
+            "name": "Child Tree",
+            "access_rules": ["^$REACHABLE|HF_CHILD_SOUTHEAST_TREE_1"],
+            "visibility_rules": [
+              "$OPTION_TREES,$AGE_CHECK|HF_CHILD_SOUTHEAST_TREE_1"
+            ],
+            "chest_opened_img": "images/chest_images/tree_opened.png",
+            "chest_unopened_img": "images/chest_images/tree_unopened.png",
+            "item_count": 6
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Hyrule Field",
+            "x": 677,
+            "y": 818
+          }
+        ]
+      }
+    ]
+  }
+]

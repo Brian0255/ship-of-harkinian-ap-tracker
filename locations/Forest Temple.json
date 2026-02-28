@@ -1,0 +1,644 @@
+[
+  {
+    "name": "Forest Temple",
+        "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Boss Room",
+
+        "sections": [
+          {
+            "name": "Phantom Ganon",
+            "access_rules": [
+              "^$REACHABLE|PHANTOM_GANON"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|PHANTOM_GANON"
+            ],
+            "chest_opened_img": "images/chest_images/boss_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Heart Container",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_PHANTOM_GANON_HEART_CONTAINER"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_PHANTOM_GANON_HEART_CONTAINER"
+            ],
+            "chest_opened_img": "images/chest_images/heart_container_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_container_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 645,
+            "y": 351
+          }
+        ]
+      },
+      {
+        "name": "First Room Upper Tree",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_FIRST_ROOM_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_FIRST_ROOM_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 320,
+            "y": 750
+          }
+        ]
+      },
+      {
+        "name": "First Room Right Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_GS_FIRST_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_GS_FIRST_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 379,
+            "y": 759
+          }
+        ]
+      },
+      {
+        "name": "First Stalfos Room",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_FIRST_STALFOS_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_FIRST_STALFOS_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_LOWER_STALFOS_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_LOWER_STALFOS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 346,
+            "y": 378
+          }
+        ]
+      },
+      {
+        "name": "Raised Island Courtyard",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_RAISED_ISLAND_COURTYARD_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_RAISED_ISLAND_COURTYARD_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_GS_RAISED_ISLAND_COURTYARD"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_GS_RAISED_ISLAND_COURTYARD"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 486,
+            "y": 438
+          }
+        ]
+      },
+      {
+        "name": "Map Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_MAP_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_MAP_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 344,
+            "y": 159
+          }
+        ]
+      },
+      {
+        "name": "Well Middle",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_WELL_EAST_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_WELL_EAST_HEART"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 511,
+            "y": 660
+          }
+        ]
+      },
+      {
+        "name": "Well East",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_WELL_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_WELL_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 607,
+            "y": 660
+          }
+        ]
+      },
+      {
+        "name": "Block Push Room Eye Switch",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_EYE_SWITCH_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_EYE_SWITCH_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 74,
+            "y": 569
+          }
+        ]
+      },
+      {
+        "name": "Boss Key Room",
+
+        "sections": [
+          {
+            "name": "Boss Key Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_BOSS_KEY_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_BOSS_KEY_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/boss_chest_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 179,
+            "y": 33
+          }
+        ]
+      },
+      {
+        "name": "Floormaster Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_FLOORMASTER_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_FLOORMASTER_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 138,
+            "y": 505
+          }
+        ]
+      },
+      {
+        "name": "Red Poe Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_RED_POE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_RED_POE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 289,
+            "y": 87
+          }
+        ]
+      },
+      {
+        "name": "Blue Poe Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_BLUE_POE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_BLUE_POE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_LOWER_STALFOS_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_LOWER_STALFOS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 405,
+            "y": 85
+          }
+        ]
+      },
+      {
+        "name": "Falling Ceiling Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_FALLING_CEILING_ROOM_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_FALLING_CEILING_ROOM_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 525,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "name": "Basement Chest Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_BASEMENT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_BASEMENT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_GS_BASEMENT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_GS_BASEMENT"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 599,
+            "y": 574
+          }
+        ]
+      },
+      {
+        "name": "Lobby North Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_GS_LOBBY"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_GS_LOBBY"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 378,
+            "y": 464
+          }
+        ]
+      },
+      {
+        "name": "Lobby Southeast",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_LOBBY_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_LOBBY_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 397,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Lobby Southwest",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_LOBBY_POT4"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_LOBBY_POT4"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 294,
+            "y": 603
+          }
+        ]
+      },
+      {
+        "name": "Level Island Courtyard",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_WEST_COURTYARD_RIGHT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_WEST_COURTYARD_RIGHT_HEART"
+            ],
+            "item_count": 2
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_GS_LEVEL_ISLAND_COURTYARD"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_GS_LEVEL_ISLAND_COURTYARD"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 222,
+            "y": 417
+          }
+        ]
+      },
+      {
+        "name": "Green Poe Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_GREEN_POE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_GREEN_POE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 492,
+            "y": 546
+          }
+        ]
+      },
+      {
+        "name": "Upper Stalfos Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_BOW_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|FOREST_TEMPLE_BOW_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_UPPER_STALFOS_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_UPPER_STALFOS_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 344,
+            "y": 106
+          }
+        ]
+      },
+      {
+        "name": "Frozen Eye Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|FOREST_TEMPLE_FROZEN_EYE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_FROZEN_EYE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Forest Temple",
+            "x": 555,
+            "y": 337
+          }
+        ]
+      }
+    ]
+  }
+]

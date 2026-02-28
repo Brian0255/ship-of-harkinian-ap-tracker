@@ -1,0 +1,521 @@
+[
+  {
+    "name": "Goron City",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Darunia Right Table",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GC_DARUNIA_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GC_DARUNIA_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 553,
+            "y": 108
+          }
+        ]
+      },
+      {
+        "name": "Darunia Left Table",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GC_DARUNIA_POT3"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GC_DARUNIA_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 553,
+            "y": 63
+          }
+        ]
+      },
+      {
+        "name": "Darunia",
+
+        "sections": [
+          {
+            "name": "Darunia's Joy",
+            "access_rules": ["^$REACHABLE|GC_DARUNIAS_JOY"],
+            "visibility_rules": ["$AGE_CHECK|GC_DARUNIAS_JOY"],
+            "chest_opened_img": "images/chest_images/darunia_opened.png",
+            "chest_unopened_img": "images/chest_images/darunia_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 503,
+            "y": 45
+          }
+        ]
+      },
+      {
+        "name": "Spinning Pot",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|GC_POT_FREESTANDING_POH"],
+            "visibility_rules": ["$AGE_CHECK|GC_POT_FREESTANDING_POH"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 475,
+            "y": 485
+          }
+        ]
+      },
+      {
+        "name": "Rolling Goron",
+
+        "sections": [
+          {
+            "name": "As Child",
+            "access_rules": ["^$REACHABLE|GC_ROLLING_GORON_AS_CHILD"],
+            "visibility_rules": ["$AGE_CHECK|GC_ROLLING_GORON_AS_CHILD"],
+            "chest_opened_img": "images/chest_images/rolling_goron_opened.png",
+            "chest_unopened_img": "images/chest_images/rolling_goron_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "As Adult",
+            "access_rules": ["^$REACHABLE|GC_ROLLING_GORON_AS_ADULT"],
+            "visibility_rules": ["$AGE_CHECK|GC_ROLLING_GORON_AS_ADULT"],
+            "chest_opened_img": "images/chest_images/rolling_goron_opened.png",
+            "chest_unopened_img": "images/chest_images/rolling_goron_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 357,
+            "y": 313
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Crate",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GC_MAZE_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GC_MAZE_CRATE"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|GC_GS_BOULDER_MAZE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|GC_GS_BOULDER_MAZE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 137,
+            "y": 78
+          }
+        ]
+      },
+      {
+        "name": "Center Platform",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|GC_GS_CENTER_PLATFORM"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|GC_GS_CENTER_PLATFORM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 475,
+            "y": 529
+          }
+        ]
+      },
+      {
+        "name": "Shop",
+
+        "sections": [
+          {
+            "name": "Item 1",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM1"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|1,$AGE_CHECK|GC_SHOP_ITEM1"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 2",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM2"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|2,$AGE_CHECK|GC_SHOP_ITEM2"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 3",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM3"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|3,$AGE_CHECK|GC_SHOP_ITEM3"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 4",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM4"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|4,$AGE_CHECK|GC_SHOP_ITEM4"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 5",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM5"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|5,$AGE_CHECK|GC_SHOP_ITEM5"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 6",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM6"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|6,$AGE_CHECK|GC_SHOP_ITEM6"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 7",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM7"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|7,$AGE_CHECK|GC_SHOP_ITEM7"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Item 8",
+            "access_rules": ["^$REACHABLE|GC_SHOP_ITEM8"],
+            "visibility_rules": [
+              "$SHOP_ITEM_ACTIVE|8,$AGE_CHECK|GC_SHOP_ITEM8"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 407,
+            "y": 481
+          }
+        ]
+      },
+      {
+        "name": "Open Grotto",
+
+        "sections": [
+          {
+            "name": "Left Scrub",
+            "access_rules": ["^$REACHABLE|GC_DEKU_SCRUB_GROTTO_LEFT"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GC_DEKU_SCRUB_GROTTO_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Center Scrub",
+            "access_rules": ["^$REACHABLE|GC_DEKU_SCRUB_GROTTO_CENTER"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GC_DEKU_SCRUB_GROTTO_CENTER"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Scrub",
+            "access_rules": ["^$REACHABLE|GC_DEKU_SCRUB_GROTTO_RIGHT"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GC_DEKU_SCRUB_GROTTO_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|GC_GROTTO_BEEHIVE"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|GC_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 804,
+            "y": 122
+          }
+        ]
+      },
+      {
+        "name": "Medigoron",
+
+        "sections": [
+          {
+            "name": "Item",
+            "access_rules": ["^$REACHABLE|GC_MEDIGORON"],
+            "visibility_rules": [
+              "$OPTION_NON_BEANS_MERCHANTS,$AGE_CHECK|GC_MEDIGORON"
+            ],
+            "chest_opened_img": "images/chest_images/sold_out_opened.png",
+            "chest_unopened_img": "images/chest_images/shop_item_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 235,
+            "y": 884
+          }
+        ]
+      },
+      {
+        "name": "Medigoron Table",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GC_MEDIGORON_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GC_MEDIGORON_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 265,
+            "y": 841
+          }
+        ]
+      },
+      {
+        "name": "Lower Staircase",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GC_LOWER_STAIRCASE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GC_LOWER_STAIRCASE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 453,
+            "y": 625
+          }
+        ]
+      },
+      {
+        "name": "Upper Staircase",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GC_UPPER_STAIRCASE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GC_UPPER_STAIRCASE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 117,
+            "y": 503
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Center Chest",
+            "access_rules": ["^$REACHABLE|GC_MAZE_CENTER_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|GC_MAZE_CENTER_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Chest",
+            "access_rules": ["^$REACHABLE|GC_MAZE_RIGHT_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|GC_MAZE_RIGHT_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": ["^$REACHABLE|GC_MAZE_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GC_MAZE_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": ["^$REACHABLE|GC_MAZE_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GC_MAZE_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 98,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Boulder Maze Left",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|GC_MAZE_LEFT_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|GC_MAZE_LEFT_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 19,
+            "y": 95
+          }
+        ]
+      },
+      {
+        "name": "Medigoron Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|GC_MEDIGORON_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GC_MEDIGORON_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|GC_MEDIGORON_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GC_MEDIGORON_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Goron City",
+            "x": 213,
+            "y": 932
+          }
+        ]
+      }
+    ]
+  }
+]

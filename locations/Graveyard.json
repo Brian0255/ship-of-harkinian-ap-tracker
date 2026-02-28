@@ -1,0 +1,565 @@
+[
+  {
+    "name": "Graveyard",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Royal Family's Tomb Torch Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_ROYAL_FAMILYS_TOMB_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|GRAVEYARD_ROYAL_FAMILYS_TOMB_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 445,
+            "y": 115
+          }
+        ]
+      },
+      {
+        "name": "Royal Family's Tomb End",
+
+        "sections": [
+          {
+            "name": "Song",
+            "access_rules": ["^$REACHABLE|SONG_FROM_ROYAL_FAMILYS_TOMB"],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SONG_FROM_ROYAL_FAMILYS_TOMB"
+            ],
+            "chest_opened_img": "images/chest_images/suns_song_opened.png",
+            "chest_unopened_img": "images/chest_images/suns_song_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 1230,
+            "y": 115
+          }
+        ]
+      },
+      {
+        "name": "Shield Grave",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_SHIELD_GRAVE_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|GRAVEYARD_SHIELD_GRAVE_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Fountain Fairy",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_SHIELD_GRAVE_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|GRAVEYARD_SHIELD_GRAVE_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 384,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Heart Piece Grave",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_HEART_PIECE_GRAVE_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|GRAVEYARD_HEART_PIECE_GRAVE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 534,
+            "y": 518
+          }
+        ]
+      },
+      {
+        "name": "Piece of Heart Crate",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_FREESTANDING_POH"],
+            "visibility_rules": ["$AGE_CHECK|GRAVEYARD_FREESTANDING_POH"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_FREESTANDING_POH_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GRAVEYARD_FREESTANDING_POH_CRATE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 174,
+            "y": 313
+          }
+        ]
+      },
+      {
+        "name": "Dampe Gravedigging Tour",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "access_rules": [" "],
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPE_GRAVEDIGGING_TOUR"],
+            "visibility_rules": [
+              "$AGE_CHECK|GRAVEYARD_DAMPE_GRAVEDIGGING_TOUR"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 344,
+            "y": 442
+          }
+        ]
+      },
+      {
+        "name": "Bean Patch",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_BEAN_SPROUT_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_BEAN_FAIRIES,$AGE_CHECK|GRAVEYARD_BEAN_SPROUT_FAIRY1"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_GS_BEAN_PATCH"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|GRAVEYARD_GS_BEAN_PATCH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 274,
+            "y": 316
+          }
+        ]
+      },
+      {
+        "name": "Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_GS_WALL"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|GRAVEYARD_GS_WALL"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 533,
+            "y": 654
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Entrance South",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_POT4"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_POT4"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 167,
+            "y": 142
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Entrance North",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 167,
+            "y": 34
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 1",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE1"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE1"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 410,
+            "y": 179
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 2",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE2"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE2"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 501,
+            "y": 208
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 3",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE3"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE3"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 830,
+            "y": 254
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 4",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE4"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE4"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 982,
+            "y": 217
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 5",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE5"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE5"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 1011,
+            "y": 399
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 6",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE6"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE6"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 794,
+            "y": 582
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 7",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE7"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE7"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 613,
+            "y": 622
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Rupee 8",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_DAMPES_GRAVE_RUPEE8"],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|GRAVEYARD_DAMPES_GRAVE_RUPEE8"
+            ],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 483,
+            "y": 408
+          }
+        ]
+      },
+      {
+        "name": "Dampe Race Finish",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_HOOKSHOT_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|GRAVEYARD_HOOKSHOT_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Piece of Heart (Finish In Under 1 Minute)",
+            "access_rules": [
+              "^$REACHABLE|GRAVEYARD_DAMPE_RACE_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GRAVEYARD_DAMPE_RACE_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Dampe Race",
+            "x": 150,
+            "y": 686
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GRAVEYARD_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GRAVEYARD_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 872,
+            "y": 397
+          }
+        ]
+      },
+      {
+        "name": "Royal Family's Tomb Torch Room North",
+
+        "sections": [
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": [
+              "^$REACHABLE|GRAVEYARD_ROYAL_FAMILYS_TOMB_SUNS_SONG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|GRAVEYARD_ROYAL_FAMILYS_TOMB_SUNS_SONG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 442,
+            "y": 49
+          }
+        ]
+      },
+      {
+        "name": "Near Entrance",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|GRAVEYARD_GRASS_1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|GRAVEYARD_GRASS_1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Graveyard",
+            "x": 157,
+            "y": 626
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,713 @@
+[
+  {
+    "name": "Bottom of the Well",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Front Left Fake Wall",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_FRONT_LEFT_FAKE_WALL_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_FRONT_LEFT_FAKE_WALL_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 487,
+            "y": 339
+          }
+        ]
+      },
+      {
+        "name": "Front Center Bombable Mound",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_FRONT_CENTER_BOMBABLE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_FRONT_CENTER_BOMBABLE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 538,
+            "y": 332
+          }
+        ]
+      },
+      {
+        "name": "Back Left Bombable Mound",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_BACK_LEFT_BOMBABLE_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_BACK_LEFT_BOMBABLE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 345,
+            "y": 49
+          }
+        ]
+      },
+      {
+        "name": "Underwater Left",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_RIGHT_BOTTOM_FAKE_WALL_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_RIGHT_BOTTOM_FAKE_WALL_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 287,
+            "y": 219
+          }
+        ]
+      },
+      {
+        "name": "Coffin Room Back Left Coffin",
+
+        "sections": [
+          {
+            "name": "Freestanding Key",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_FREESTANDING_KEY"],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_FREESTANDING_KEY"
+            ],
+            "chest_opened_img": "images/chest_images/freestanding_key_opened.png",
+            "chest_unopened_img": "images/chest_images/freestanding_key_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 72,
+            "y": 245
+          }
+        ]
+      },
+      {
+        "name": "Coffin Room Front Left Coffin",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_COFFIN_ROOM_FRONT_LEFT_HEART"
+            ],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_COFFIN_ROOM_FRONT_LEFT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 159,
+            "y": 245
+          }
+        ]
+      },
+      {
+        "name": "Coffin Room Middle Right Coffin",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_COFFIN_ROOM_MIDDLE_RIGHT_HEART"
+            ],
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_COFFIN_ROOM_MIDDLE_RIGHT_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 115,
+            "y": 191
+          }
+        ]
+      },
+      {
+        "name": "Compass Room",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_COMPASS_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|BOTTOM_OF_THE_WELL_COMPASS_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 515,
+            "y": 290
+          }
+        ]
+      },
+      {
+        "name": "Center Skulltula",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_CENTER_SKULLTULA_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_CENTER_SKULLTULA_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 654,
+            "y": 290
+          }
+        ]
+      },
+      {
+        "name": "Right Bottom Fake Wall",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_RIGHT_BOTTOM_FAKE_WALL_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_RIGHT_BOTTOM_FAKE_WALL_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 683,
+            "y": 341
+          }
+        ]
+      },
+      {
+        "name": "Fire Keese Room Southeast",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_FIRE_KEESE_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_FIRE_KEESE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 835,
+            "y": 181
+          }
+        ]
+      },
+      {
+        "name": "Fire Keese Room Northwest",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_FIRE_KEESE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_FIRE_KEESE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 773,
+            "y": 98
+          }
+        ]
+      },
+      {
+        "name": "Like Like",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_LIKE_LIKE_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_LIKE_LIKE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_GS_LIKE_LIKE_CAGE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_GS_LIKE_LIKE_CAGE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 824,
+            "y": 219
+          }
+        ]
+      },
+      {
+        "name": "Underwater Front",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_UNDERWATER_FRONT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_UNDERWATER_FRONT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 564,
+            "y": 430
+          }
+        ]
+      },
+      {
+        "name": "Dead Hand Room Lens of Truth Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_LENS_OF_TRUTH_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_LENS_OF_TRUTH_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 862,
+            "y": 426
+          }
+        ]
+      },
+      {
+        "name": "Dead Hand Room Invisible Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_INVISIBLE_CHEST"],
+            "visibility_rules": [
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_INVISIBLE_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 926,
+            "y": 426
+          }
+        ]
+      },
+      {
+        "name": "West Inner Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_GS_WEST_INNER_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_GS_WEST_INNER_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 513,
+            "y": 102
+          }
+        ]
+      },
+      {
+        "name": "East Inner Room",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_GS_EAST_INNER_ROOM"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_GS_EAST_INNER_ROOM"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 607,
+            "y": 115
+          }
+        ]
+      },
+      {
+        "name": "Basement North Tunnel End",
+
+        "sections": [
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_SUNS_SONG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_SUNS_SONG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1037,
+            "y": 488
+          }
+        ]
+      },
+      {
+        "name": "Basement North Tunnel Near End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_POT4"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_POT4"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 5
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1026,
+            "y": 541
+          }
+        ]
+      },
+      {
+        "name": "Basement North Tunnel Middle",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_POT5"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_POT5"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 5
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 962,
+            "y": 575
+          }
+        ]
+      },
+      {
+        "name": "Basement North Tunnel Front",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_POT2"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_POT2"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 892,
+            "y": 688
+          }
+        ]
+      },
+      {
+        "name": "Map Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_MAP_CHEST"],
+            "visibility_rules": ["$AGE_CHECK|BOTTOM_OF_THE_WELL_MAP_CHEST"],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 1043,
+            "y": 838
+          }
+        ]
+      },
+      {
+        "name": "Basement Before Rocks",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_GRASS1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 769,
+            "y": 678
+          }
+        ]
+      },
+      {
+        "name": "Basement Behind Rocks",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_BEHIND_ROCKS_GRASS1"
+            ],
+            "visibility_rules": [
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_BEHIND_ROCKS_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 9
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 700,
+            "y": 552
+          }
+        ]
+      },
+      {
+        "name": "Left Side",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_LEFT_SIDE_POT1"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_LEFT_SIDE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 374,
+            "y": 381
+          }
+        ]
+      },
+      {
+        "name": "Near Entrance",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_NEAR_ENTRANCE_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_NEAR_ENTRANCE_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 583,
+            "y": 464
+          }
+        ]
+      },
+      {
+        "name": "Lullaby Statue Pool",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": ["^$REACHABLE|BOTTOM_OF_THE_WELL_UNDERWATER_POT"],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_UNDERWATER_POT"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 583,
+            "y": 21
+          }
+        ]
+      },
+      {
+        "name": "Basement Platform",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": [
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_BASEMENT_PLATFORM_LEFT_RUPEE"
+            ],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|BOTTOM_OF_THE_WELL_BASEMENT_PLATFORM_LEFT_RUPEE"
+            ],
+            "item_count": 5
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Bottom of the Well",
+            "x": 903,
+            "y": 659
+          }
+        ]
+      }
+    ]
+  }
+]

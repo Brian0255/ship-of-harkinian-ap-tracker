@@ -1,0 +1,538 @@
+[
+  {
+    "name": "Death Mountain Crater",
+       "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Sheik in Crater",
+
+        "sections": [
+          {
+            "name": "Song",
+            "access_rules": [
+              "^$REACHABLE|SHEIK_IN_CRATER"
+            ],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SHEIK_IN_CRATER"
+            ],
+            "chest_opened_img": "images/chest_images/bolero_of_fire_opened.png",
+            "chest_unopened_img": "images/chest_images/bolero_of_fire_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 344,
+            "y": 274
+          }
+        ]
+      },
+      {
+        "name": "Volcano",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": [
+              "^$REACHABLE|DMC_VOLCANO_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMC_VOLCANO_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 308,
+            "y": 391
+          }
+        ]
+      },
+      {
+        "name": "Wall",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": [
+              "^$REACHABLE|DMC_WALL_FREESTANDING_POH"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMC_WALL_FREESTANDING_POH"
+            ],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 497,
+            "y": 634
+          }
+        ]
+      },
+      {
+        "name": "Upper Boulder Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|DMC_UPPER_GROTTO_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMC_UPPER_GROTTO_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|DMC_UPPER_GROTTO_BEEHIVE_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|DMC_UPPER_GROTTO_BEEHIVE_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 2
+          },
+          {
+            "name": "Grass",
+            "access_rules": [
+              "^$REACHABLE|DMC_UPPER_GROTTO_GRASS1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|DMC_UPPER_GROTTO_GRASS1"
+            ],
+            "item_count": 4
+          },
+          {
+            "name": "Fish",
+            "access_rules": [
+              "^$REACHABLE|DMC_UPPER_GROTTO_FISH"
+            ],
+            "visibility_rules": [
+              "$OPTION_FISH_OVERWORLD,$AGE_CHECK|DMC_UPPER_GROTTO_FISH"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMC_UPPER_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMC_UPPER_GROTTO_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gossip Stone Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMC_UPPER_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMC_UPPER_GROTTO_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 500,
+            "y": 797
+          }
+        ]
+      },
+      {
+        "name": "Great Fairy Fountain",
+
+        "sections": [
+          {
+            "name": "Reward",
+            "access_rules": [
+              "^$REACHABLE|DMC_GREAT_FAIRY_REWARD"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|DMC_GREAT_FAIRY_REWARD"
+            ],
+            "chest_opened_img": "images/chest_images/great_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/great_fairy_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 136,
+            "y": 608
+          }
+        ]
+      },
+      {
+        "name": "Upper Crate",
+
+        "sections": [
+          {
+            "name": "Crate",
+            "access_rules": [
+              "^$REACHABLE|DMC_CRATE"
+            ],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|DMC_CRATE"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DMC_GS_CRATE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|DMC_GS_CRATE"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 255,
+            "y": 827
+          }
+        ]
+      },
+      {
+        "name": "Bean Patch",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMC_BEAN_SPROUT_FAIRY1"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_BEAN_FAIRIES,$AGE_CHECK|DMC_BEAN_SPROUT_FAIRY1"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|DMC_GS_BEAN_PATCH"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|DMC_GS_BEAN_PATCH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 459,
+            "y": 319
+          }
+        ]
+      },
+      {
+        "name": "Upper Deku Scrub",
+
+        "sections": [
+          {
+            "name": "Deku Scrub",
+            "access_rules": [
+              "^$REACHABLE|DMC_DEKU_SCRUB"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DMC_DEKU_SCRUB"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 278,
+            "y": 655
+          }
+        ]
+      },
+      {
+        "name": "Hammer Grotto",
+
+        "sections": [
+          {
+            "name": "Left Scrub",
+            "access_rules": [
+              "^$REACHABLE|DMC_DEKU_SCRUB_GROTTO_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DMC_DEKU_SCRUB_GROTTO_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Center Scrub",
+            "access_rules": [
+              "^$REACHABLE|DMC_DEKU_SCRUB_GROTTO_CENTER"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DMC_DEKU_SCRUB_GROTTO_CENTER"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Scrub",
+            "access_rules": [
+              "^$REACHABLE|DMC_DEKU_SCRUB_GROTTO_RIGHT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|DMC_DEKU_SCRUB_GROTTO_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|DMC_HAMMER_GROTTO_BEEHIVE"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|DMC_HAMMER_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 70,
+            "y": 244
+          }
+        ]
+      },
+      {
+        "name": "Goron City Exit Left",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DMC_NEAR_GCPOT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|DMC_NEAR_GCPOT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 102,
+            "y": 393
+          }
+        ]
+      },
+      {
+        "name": "Goron City Exit Right",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|DMC_NEAR_GCPOT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|DMC_NEAR_GCPOT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 87,
+            "y": 323
+          }
+        ]
+      },
+      {
+        "name": "Near Warp Platform",
+
+        "sections": [
+          {
+            "name": "Red Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMC_NEAR_WARP_PLATFORM_RED_RUPEE"
+            ],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMC_NEAR_WARP_PLATFORM_RED_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 655,
+            "y": 182
+          }
+        ]
+      },
+      {
+        "name": "Middle Platform",
+
+        "sections": [
+          {
+            "name": "Blue Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMC_MIDDLE_PLATFORM_BLUE_RUPEE1"
+            ],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMC_MIDDLE_PLATFORM_BLUE_RUPEE1"
+            ],
+            "item_count": 6
+          },
+          {
+            "name": "Red Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMC_MIDDLE_PLATFORM_RED_RUPEE"
+            ],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMC_MIDDLE_PLATFORM_RED_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 768,
+            "y": 312
+          }
+        ]
+      },
+      {
+        "name": "Distant Platform",
+
+        "sections": [
+          {
+            "name": "Green Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMC_DISTANT_PLATFORM_RUPEE1"
+            ],
+            "chest_opened_img": "images/chest_images/blupee_opened.png",
+            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMC_DISTANT_PLATFORM_RUPEE1"
+            ],
+            "item_count": 6
+          },
+          {
+            "name": "Red Rupee",
+            "access_rules": [
+              "^$REACHABLE|DMC_DISTANT_PLATFORM_RED_RUPEE"
+            ],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMC_DISTANT_PLATFORM_RED_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 768,
+            "y": 468
+          }
+        ]
+      },
+      {
+        "name": "Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMC_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMC_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|DMC_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|DMC_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Death Mountain Crater",
+            "x": 810,
+            "y": 770
+          }
+        ]
+      }
+    ]
+  }
+]

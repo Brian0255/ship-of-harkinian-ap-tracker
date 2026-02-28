@@ -1,0 +1,285 @@
+[
+  {
+    "name": "Sacred Forest Meadow",
+        "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Near Forest Temple",
+
+        "sections": [
+          {
+            "name": "Song from Saria",
+            "access_rules": [
+              "^$REACHABLE|SONG_FROM_SARIA"
+            ],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SONG_FROM_SARIA"
+            ],
+            "chest_opened_img": "images/chest_images/sarias_song_opened.png",
+            "chest_unopened_img": "images/chest_images/sarias_song_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Song from Sheik in Forest",
+            "access_rules": [
+              "^$REACHABLE|SHEIK_IN_FOREST"
+            ],
+            "visibility_rules": [
+              "$OPTION_SONG_SHUFFLE,$AGE_CHECK|SHEIK_IN_FOREST"
+            ],
+            "chest_opened_img": "images/chest_images/minuet_of_forest_opened.png",
+            "chest_unopened_img": "images/chest_images/minuet_of_forest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 524,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "name": "Wolfos Grotto",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|SFM_WOLFOS_GROTTO_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|SFM_WOLFOS_GROTTO_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 162,
+            "y": 624
+          }
+        ]
+      },
+      {
+        "name": "Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [
+              "^$REACHABLE|SFM_GS"
+            ],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|SFM_GS"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 330,
+            "y": 228
+          }
+        ]
+      },
+      {
+        "name": "Storms Grotto",
+
+        "sections": [
+          {
+            "name": "Front Scrub",
+            "access_rules": [
+              "^$REACHABLE|SFM_DEKU_SCRUB_GROTTO_FRONT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|SFM_DEKU_SCRUB_GROTTO_FRONT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Rear Scrub",
+            "access_rules": [
+              "^$REACHABLE|SFM_DEKU_SCRUB_GROTTO_REAR"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|SFM_DEKU_SCRUB_GROTTO_REAR"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": [
+              "^$REACHABLE|SFM_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|SFM_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 604,
+            "y": 278
+          }
+        ]
+      },
+      {
+        "name": "Fairy Grotto",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_FAIRY_GROTTO_FAIRY1"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|SFM_FAIRY_GROTTO_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 222,
+            "y": 218
+          }
+        ]
+      },
+      {
+        "name": "Maze Lower Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_MAZE_LOWER_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|SFM_MAZE_LOWER_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_MAZE_LOWER_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|SFM_MAZE_LOWER_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 258,
+            "y": 497
+          }
+        ]
+      },
+      {
+        "name": "Maze Upper Gossip Stone",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_MAZE_UPPER_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|SFM_MAZE_UPPER_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_MAZE_UPPER_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|SFM_MAZE_UPPER_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 125,
+            "y": 344
+          }
+        ]
+      },
+      {
+        "name": "Saria Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_SARIA_GOSSIP_STONE_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|SFM_SARIA_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": [
+              "^$REACHABLE|SFM_SARIA_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|SFM_SARIA_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Sacred Forest Meadow",
+            "x": 441,
+            "y": 274
+          }
+        ]
+      }
+    ]
+  }
+]

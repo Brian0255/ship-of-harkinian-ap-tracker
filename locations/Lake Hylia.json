@@ -1,0 +1,564 @@
+[
+  {
+    "name": "Lake Hylia",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Near Zora's Domain Shortcut",
+
+        "sections": [
+          {
+            "name": "Underwater Item",
+            "access_rules": ["^$REACHABLE|LH_UNDERWATER_ITEM"],
+            "visibility_rules": ["$AGE_CHECK|LH_UNDERWATER_ITEM"],
+            "chest_opened_img": "images/chest_images/bottle_with_rutos_letter_opened.png",
+            "chest_unopened_img": "images/chest_images/bottle_with_rutos_letter_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Underwater Front Green Rupee",
+            "access_rules": ["^$REACHABLE|LH_UNDERWATER_FRONT_RUPEE"],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|LH_UNDERWATER_FRONT_RUPEE"
+            ],
+            "item_count": 1
+          },
+                    {
+            "name": "Underwater Middle Green Rupee",
+            "access_rules": ["^$REACHABLE|LH_UNDERWATER_MIDDLE_RUPEE"],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|LH_UNDERWATER_MIDDLE_RUPEE"
+            ],
+            "item_count": 1
+          },
+                    {
+            "name": "Underwater Back Green Rupee",
+            "access_rules": ["^$REACHABLE|LH_UNDERWATER_BACK_RUPEE"],
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|LH_UNDERWATER_BACK_RUPEE"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 467,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "name": "Fishing Hole",
+
+        "sections": [
+          {
+            "name": "Child Fishing",
+            "access_rules": ["^$REACHABLE|LH_CHILD_FISHING"],
+            "visibility_rules": ["$AGE_CHECK|LH_CHILD_FISHING"],
+            "chest_opened_img": "images/chest_images/fishing_pole_opened.png",
+            "chest_unopened_img": "images/chest_images/fishing_pole_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Child Pond Fish",
+            "access_rules": ["^$REACHABLE|LH_CHILD_POND_FISH1"],
+            "visibility_rules": [
+              "$OPTION_FISH_POND,$AGE_CHECK|LH_CHILD_POND_FISH1"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 15
+          },
+          {
+            "name": "Adult Fishing",
+            "access_rules": ["^$REACHABLE|LH_ADULT_FISHING"],
+            "visibility_rules": ["$AGE_CHECK|LH_ADULT_FISHING"],
+            "chest_opened_img": "images/chest_images/fishing_pole_opened.png",
+            "chest_unopened_img": "images/chest_images/fishing_pole_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Adult Pond Fish",
+            "access_rules": ["^$REACHABLE|LH_ADULT_POND_FISH1"],
+            "visibility_rules": [
+              "$OPTION_FISH_POND,$AGE_CHECK|LH_ADULT_POND_FISH1"
+            ],
+            "chest_opened_img": "images/chest_images/fish_opened.png",
+            "chest_unopened_img": "images/chest_images/fish_unopened.png",
+            "item_count": 15
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 798,
+            "y": 324
+          }
+        ]
+      },
+      {
+        "name": "Laboratory",
+
+        "sections": [
+          {
+            "name": "Dive Piece of Heart",
+            "access_rules": ["^$REACHABLE|LH_LAB_DIVE"],
+            "visibility_rules": ["$AGE_CHECK|LH_LAB_DIVE"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Trade Eyeball Frog",
+            "access_rules": ["^$REACHABLE|LH_LAB_TRADE_EYEBALL_FROG"],
+            "visibility_rules": [
+              "$OPTION_ADULT_TRADE_SHUFFLE,$AGE_CHECK|LH_LAB_TRADE_EYEBALL_FROG"
+            ],
+            "chest_opened_img": "images/chest_images/eyeball_frog_opened.png",
+            "chest_unopened_img": "images/chest_images/eyeball_frog_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Underwater Red Rupee",
+            "access_rules": ["^$REACHABLE|LH_LAB_FRONT_RUPEE"],
+            "chest_opened_img": "images/chest_images/red_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/red_rupee_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|LH_LAB_FRONT_RUPEE"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Crate",
+            "access_rules": ["^$REACHABLE|LH_LAB_CRATE"],
+            "chest_opened_img": "images/chest_images/crate_opened.png",
+            "chest_unopened_img": "images/chest_images/crate_unopened.png",
+            "visibility_rules": [
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|LH_LAB_CRATE"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula in Crate",
+            "access_rules": ["^$REACHABLE|LH_GS_LAB_CRATE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LH_GS_LAB_CRATE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 154,
+            "y": 107
+          }
+        ]
+      },
+      {
+        "name": "Lab Roof",
+
+        "sections": [
+          {
+            "name": "Piece of Heart",
+            "access_rules": ["^$REACHABLE|LH_FREESTANDING_POH"],
+            "visibility_rules": ["$AGE_CHECK|LH_FREESTANDING_POH"],
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 267,
+            "y": 338
+          }
+        ]
+      },
+      {
+        "name": "Small Island",
+
+        "sections": [
+          {
+            "name": "Shoot the Sun",
+            "access_rules": ["^$REACHABLE|LH_SUN"],
+            "chest_opened_img": "images/chest_images/fire_arrow_opened.png",
+            "chest_unopened_img": "images/chest_images/fire_arrow_unopened.png",
+            "visibility_rules": ["$AGE_CHECK|LH_SUN"],
+            "item_count": 1
+          },
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": ["^$REACHABLE|LH_ISLAND_SUNS_SONG_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|LH_ISLAND_SUNS_SONG_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LH_GS_SMALL_ISLAND"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LH_GS_SMALL_ISLAND"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 669,
+            "y": 743
+          }
+        ]
+      },
+      {
+        "name": "Bean Patch",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|LH_BEAN_SPROUT_FAIRY1"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_BEAN_FAIRIES,$AGE_CHECK|LH_BEAN_SPROUT_FAIRY1"
+            ],
+            "item_count": 3
+          },
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LH_GS_BEAN_PATCH"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LH_GS_BEAN_PATCH"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 258,
+            "y": 292
+          }
+        ]
+      },
+      {
+        "name": "Lab Wall",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LH_GS_LAB_WALL"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LH_GS_LAB_WALL"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 222,
+            "y": 344
+          }
+        ]
+      },
+      {
+        "name": "Tree",
+
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": ["^$REACHABLE|LH_GS_TREE"],
+            "visibility_rules": [
+              "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LH_GS_TREE"
+            ],
+            "chest_opened_img": "images/chest_images/gs_opened.png",
+            "chest_unopened_img": "images/chest_images/gs_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|LH_WARP_PAD_GRASS_1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_WARP_PAD_GRASS_1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 500,
+            "y": 772
+          }
+        ]
+      },
+      {
+        "name": "Deku Scrub Grotto",
+
+        "sections": [
+          {
+            "name": "Left Scrub",
+            "access_rules": ["^$REACHABLE|LH_DEKU_SCRUB_GROTTO_LEFT"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|LH_DEKU_SCRUB_GROTTO_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Center Scrub",
+            "access_rules": ["^$REACHABLE|LH_DEKU_SCRUB_GROTTO_CENTER"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|LH_DEKU_SCRUB_GROTTO_CENTER"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Scrub",
+            "access_rules": ["^$REACHABLE|LH_DEKU_SCRUB_GROTTO_RIGHT"],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|LH_DEKU_SCRUB_GROTTO_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Beehive",
+            "access_rules": ["^$REACHABLE|LH_DEKU_SCRUB_GROTTO_BEEHIVE"],
+            "visibility_rules": [
+              "$OPTION_BEEHIVES,$AGE_CHECK|LH_DEKU_SCRUB_GROTTO_BEEHIVE"
+            ],
+            "chest_opened_img": "images/chest_images/beehive_opened.png",
+            "chest_unopened_img": "images/chest_images/beehive_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 203,
+            "y": 596
+          }
+        ]
+      },
+      {
+        "name": "Lab Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|LH_LAB_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|LH_LAB_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|LH_LAB_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|LH_LAB_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 125,
+            "y": 239
+          }
+        ]
+      },
+      {
+        "name": "Southeast Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|LH_SOUTHEAST_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|LH_SOUTHEAST_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|LH_SOUTHEAST_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|LH_SOUTHEAST_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 802,
+            "y": 875
+          }
+        ]
+      },
+      {
+        "name": "Southwest Gossip Stone",
+
+        "sections": [
+          {
+            "name": "Fairy",
+            "access_rules": ["^$REACHABLE|LH_SOUTHWEST_GOSSIP_STONE_FAIRY"],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|LH_SOUTHWEST_GOSSIP_STONE_FAIRY"
+            ],
+            "item_count": 1
+          },
+          {
+            "name": "Big Fairy",
+            "access_rules": ["^$REACHABLE|LH_SOUTHWEST_GOSSIP_STONE_BIG_FAIRY"],
+            "chest_opened_img": "images/chest_images/big_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/big_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|LH_SOUTHWEST_GOSSIP_STONE_BIG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 128,
+            "y": 828
+          }
+        ]
+      },
+      {
+        "name": "Southwest Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|LH_GRASS_25"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_GRASS_25"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 301,
+            "y": 216
+          }
+        ]
+      },
+      {
+        "name": "East Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|LH_GRASS_1"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_GRASS_1"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 371,
+            "y": 185
+          }
+        ]
+      },
+      {
+        "name": "North Grass",
+
+        "sections": [
+          {
+            "name": "Grass",
+            "access_rules": ["^$REACHABLE|LH_GRASS_12"],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_GRASS_12"
+            ],
+            "item_count": 12
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 323,
+            "y": 154
+          }
+        ]
+      },
+      {
+        "name": "Near Scarecrows",
+
+        "sections": [
+          {
+            "name": "Child Grass",
+            "access_rules": ["^$REACHABLE|LH_WARP_PAD_GRASS_1"],
+            "visibility_rules": [
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_WARP_PAD_GRASS_1"
+            ],
+            "chest_opened_img": "images/chest_images/grass_opened.png",
+            "chest_unopened_img": "images/chest_images/grass_unopened.png",
+            "item_count": 4
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Lake Hylia",
+            "x": 563,
+            "y": 196
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,85 @@
+{
+  "shared_item_grid_horizontal": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0,10,0",
+    "content": [
+      {
+        "type": "itemgrid",
+        "item_margin": "2,2",
+        "h_alignment": "left",
+        "item_h_alignment": "center",
+        "item_v_alignment": "center",
+        "item_height": 38,
+        "item_width": 38,
+        "rows": [
+          [
+            "progressive_stick_capacity",
+            "progressive_nut_capacity",
+            "progressive_bomb_bag",
+            "progressive_bow",
+            "fire_arrow",
+            "dins_fire",
+            "kokiri_sword",
+            "master_sword",
+            "biggorons_sword",
+            "stone_of_agony",
+            "piece_of_heart"
+          ],
+          [
+            "progressive_slingshot",
+            "progressive_ocarina",
+            "bombchu_bag",
+            "progressive_hookshot",
+            "ice_arrow",
+            "farores_wind",
+            "deku_shield",
+            "hylian_shield",
+            "mirror_shield",
+            "fishing_pole",
+            "heart_container"
+          ],
+          [
+            "boomerang",
+            "lens_of_truth",
+            "magic_bean_pack",
+            "megaton_hammer",
+            "light_arrow",
+            "nayrus_love",
+            "strength_upgrade",
+            "goron_tunic",
+            "zora_tunic",
+            "greg_the_green_rupee",
+            "triforce_piece"
+          ],
+          [
+            "weird_egg",
+            "empty_bottle",
+            "bottle_with_rutos_letter",
+            "bottle_with_big_poe",
+            "progressive_wallet",
+            "progressive_magic_meter",
+            "progressive_scale",
+            "iron_boots",
+            "hover_boots",
+            "skeleton_key",
+            "gold_skulltula_token"
+          ],
+          [
+            "child_masks",
+            "pocket_egg",
+            "cojiro",
+            "odd_mushroom",
+            "odd_potion",
+            "poachers_saw",
+            "broken_gorons_sword",
+            "prescription",
+            "eyeball_frog",
+            "worlds_finest_eyedrops",
+            "claim_check"
+          ]
+        ]
+      }
+    ]
+  }
+}

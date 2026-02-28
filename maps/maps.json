@@ -1,0 +1,230 @@
+[
+    {
+        "name": "Bottom of the Well",
+        "location_size": 26,
+        "location_border_thickness": 2,
+        "img": "images/maps/Bottom of the Well.jpg"
+    },
+    {
+        "name": "Death Mountain Crater",
+        "location_size": 29,
+        "location_border_thickness": 3,
+        "img": "images/maps/Death Mountain Crater.jpg"
+    },
+    {
+        "name": "Death Mountain Trail",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/Death Mountain Trail.jpg"
+    },
+    {
+        "name": "Deku Tree",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Deku Tree.jpg"
+    },
+    {
+        "name": "Desert Colossus",
+        "location_size": 27,
+        "location_border_thickness": 3,
+        "img": "images/maps/Desert Colossus.jpg"
+    },
+    {
+        "name": "Dodongo's Cavern",
+        "location_size": 25,
+        "location_border_thickness": 3,
+        "img": "images/maps/Dodongo's Cavern.jpg"
+    },
+    {
+        "name": "Fire Temple",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/Fire Temple.jpg"
+    },
+    {
+        "name": "Forest Temple",
+        "location_size": 23,
+        "location_border_thickness": 2,
+        "img": "images/maps/Forest Temple.jpg"
+    },
+    {
+        "name": "Ganon's Castle",
+        "location_size": 25,
+        "location_border_thickness": 3,
+        "img": "images/maps/Ganon's Castle.jpg"
+    },
+    {
+        "name": "Gerudo Fortress",
+        "location_size": 25,
+        "location_border_thickness": 2,
+        "img": "images/maps/Gerudo Fortress.jpg"
+    },
+    {
+        "name": "Gerudo Training Ground",
+        "location_size": 29,
+        "location_border_thickness": 3,
+        "img": "images/maps/Gerudo Training Ground.jpg"
+    },
+    {
+        "name": "Gerudo Valley",
+        "location_size": 27,
+        "location_border_thickness": 3,
+        "img": "images/maps/Gerudo Valley.jpg"
+    },
+    {
+        "name": "Gift from Rauru",
+        "location_size": 13,
+        "location_border_thickness": 1,
+        "img": "images/maps/Gift from Rauru.jpg"
+    },
+    {
+        "name": "Goron City",
+        "location_size": 29,
+        "location_border_thickness": 3,
+        "img": "images/maps/Goron City.jpg"
+    },
+    {
+        "name": "Graveyard",
+        "location_size": 25,
+        "location_border_thickness": 2,
+        "img": "images/maps/Graveyard.jpg"
+    },
+    {
+        "name": "Haunted Wasteland",
+        "location_size": 27,
+        "location_border_thickness": 3,
+        "img": "images/maps/Haunted Wasteland.jpg"
+    },
+    {
+        "name": "Hyrule Castle",
+        "location_size": 28,
+        "location_border_thickness": 3,
+        "img": "images/maps/Hyrule Castle.jpg"
+    },
+    {
+        "name": "Hyrule Field",
+        "location_size": 29,
+        "location_border_thickness": 3,
+        "img": "images/maps/Hyrule Field.jpg"
+    },
+    {
+        "name": "Ice Cavern",
+        "location_size": 35,
+        "location_border_thickness": 3,
+        "img": "images/maps/Ice Cavern.jpg"
+    },
+    {
+        "name": "Jabu Jabu's Belly",
+        "location_size": 30,
+        "location_border_thickness": 3,
+        "img": "images/maps/Jabu Jabu's Belly.jpg"
+    },
+    {
+        "name": "Kakariko Village",
+        "location_size": 25,
+        "location_border_thickness": 2,
+        "img": "images/maps/Kakariko Village.jpg"
+    },
+        {
+        "name": "Dampe Race",
+        "location_size": 28,
+        "location_border_thickness": 3,
+        "img": "images/maps/Dampe Race.jpg"
+    },
+    {
+        "name": "Kokiri Forest",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Kokiri Forest.jpg"
+    },
+    {
+        "name": "Lake Hylia",
+        "location_size": 26,
+        "location_border_thickness": 3,
+        "img": "images/maps/Lake Hylia.jpg"
+    },
+    {
+        "name": "Links Pocket",
+        "location_size": 13,
+        "location_border_thickness": 1,
+        "img": "images/maps/Links Pocket.jpg"
+    },
+    {
+        "name": "Lon Lon Ranch",
+        "location_size": 26,
+        "location_border_thickness": 2,
+        "img": "images/maps/Lon Lon Ranch.jpg"
+    },
+    {
+        "name": "Lost Woods",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Lost Woods.jpg"
+    },
+    {
+        "name": "Market",
+        "location_size": 28,
+        "location_border_thickness": 2,
+        "img": "images/maps/Market.jpg"
+    },
+    {
+        "name": "Outside Ganon's Castle",
+        "location_size": 29,
+        "location_border_thickness": 3,
+        "img": "images/maps/Outside Ganon's Castle.jpg"
+    },
+        {
+        "name": "Overworld",
+        "location_size": 24,
+        "location_border_thickness": 3,
+        "img": "images/maps/Overworld.jpg"
+    },
+    {
+        "name": "Sacred Forest Meadow",
+        "location_size": 24,
+        "location_border_thickness": 2,
+        "img": "images/maps/Sacred Forest Meadow.jpg"
+    },
+    {
+        "name": "Shadow Temple",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Shadow Temple.jpg"
+    },
+    {
+        "name": "Spirit Temple",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Spirit Temple.jpg"
+    },
+    {
+        "name": "Temple of Time",
+        "location_size": 28,
+        "location_border_thickness": 2,
+        "img": "images/maps/Temple of Time.jpg"
+    },
+    {
+        "name": "Water Temple",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Water Temple.jpg"
+    },
+    {
+        "name": "Zora's Domain",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Zora's Domain.jpg"
+    },
+    {
+        "name": "Zora's Fountain",
+        "location_size": 27,
+        "location_border_thickness": 3,
+        "img": "images/maps/Zora's Fountain.jpg"
+    },
+    {
+        "name": "Zora's River",
+        "location_size": 22,
+        "location_border_thickness": 2,
+        "img": "images/maps/Zora's River.jpg"
+    }
+]

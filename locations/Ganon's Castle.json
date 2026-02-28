@@ -1,0 +1,741 @@
+[
+  {
+    "name": "Ganon's Castle",
+    "overlay_background": "#80000000",
+    "children": [
+      {
+        "name": "Forest Trial First Room",
+
+        "sections": [
+          {
+            "name": "Clear Enemies Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_FOREST_TRIAL_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_FOREST_TRIAL_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 649,
+            "y": 656
+          }
+        ]
+      },
+      {
+        "name": "Forest Trial End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_WATER_TRIAL_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_WATER_TRIAL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 749,
+            "y": 828
+          }
+        ]
+      },
+      {
+        "name": "Water Trial Left",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_WATER_TRIAL_LEFT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_WATER_TRIAL_LEFT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 804,
+            "y": 441
+          }
+        ]
+      },
+      {
+        "name": "Water Trial Right",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_WATER_TRIAL_RIGHT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_WATER_TRIAL_RIGHT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 804,
+            "y": 502
+          }
+        ]
+      },
+      {
+        "name": "Water Trial Push Block Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_WATER_TRIAL_POT3"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_WATER_TRIAL_POT3"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 903,
+            "y": 514
+          }
+        ]
+      },
+      {
+        "name": "Water Trial End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_WATER_TRIAL_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_WATER_TRIAL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 997,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Shadow Trial Front",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_FRONT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_FRONT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 605,
+            "y": 267
+          }
+        ]
+      },
+      {
+        "name": "Shadow Trial Like Like",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 680,
+            "y": 228
+          }
+        ]
+      },
+      {
+        "name": "Shadow Trial End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_POT2"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_POT2"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 771,
+            "y": 72
+          }
+        ]
+      },
+      {
+        "name": "Shadow Trial Golden Gauntlets Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_GOLDEN_GAUNTLETS_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_GOLDEN_GAUNTLETS_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 722,
+            "y": 194
+          }
+        ]
+      },
+      {
+        "name": "Shadow Trial Ice Bridge",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_HEART1"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_HEART1"
+            ],
+            "item_count": 3
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 733,
+            "y": 138
+          }
+        ]
+      },
+      {
+        "name": "Light Trial First Room",
+        "sections": [
+          {
+            "name": "Visible Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_LIGHT_TRIAL_FIRST_LEFT_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_FIRST_LEFT_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 6
+          },
+          {
+            "name": "Invisible Enemies Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_LIGHT_TRIAL_INVISIBLE_ENEMIES_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_INVISIBLE_ENEMIES_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 337,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Light Trial Lullaby Chest",
+
+        "sections": [
+          {
+            "name": "Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_LIGHT_TRIAL_LULLABY_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_LULLABY_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 276,
+            "y": 458
+          }
+        ]
+      },
+      {
+        "name": "Light Trial Boulder Room",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_LIGHT_TRIAL_BOULDER_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_BOULDER_POT1"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 213,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Light Trial End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_LIGHT_TRIAL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_POT1"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 53,
+            "y": 472
+          }
+        ]
+      },
+      {
+        "name": "Spirit Trial Heart",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 476,
+            "y": 654
+          }
+        ]
+      },
+      {
+        "name": "Spirit Trial Beamos",
+
+        "sections": [
+          {
+            "name": "Sun's Song Fairy",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_BEAMOS_SUNS_SONG_FAIRY"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FAIRY_SPOTS,$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_BEAMOS_SUNS_SONG_FAIRY"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 437,
+            "y": 655
+          }
+        ]
+      },
+      {
+        "name": "Spirit Trial Crystal Switch Room Before Door",
+
+        "sections": [
+          {
+            "name": "Clear Enemies Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_CRYSTAL_SWITCH_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_CRYSTAL_SWITCH_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 342,
+            "y": 648
+          }
+        ]
+      },
+      {
+        "name": "Spirit Trial Crystal Switch Room After Door",
+
+        "sections": [
+          {
+            "name": "Invisible Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_CRYSTAL_SWITCH_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_CRYSTAL_SWITCH_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/chest_opened.png",
+            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 313,
+            "y": 695
+          }
+        ]
+      },
+      {
+        "name": "Spirit Trial End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_POT1"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 374,
+            "y": 764
+          }
+        ]
+      },
+      {
+        "name": "Boss Key Room",
+
+        "sections": [
+          {
+            "name": "Boss Key Chest",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_TOWER_BOSS_KEY_CHEST"
+            ],
+            "visibility_rules": [
+              "$AGE_CHECK|GANONS_CASTLE_TOWER_BOSS_KEY_CHEST"
+            ],
+            "chest_opened_img": "images/chest_images/boss_chest_opened.png",
+            "chest_unopened_img": "images/chest_images/boss_chest_unopened.png",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 1166,
+            "y": 566
+          }
+        ]
+      },
+      {
+        "name": "Broken Structure",
+        "chest_unopened_img": "/images/items/close.png",
+        "chest_opened_img": "/images/items/open.png",
+
+        "access_rules": [
+          " "
+        ],
+        "sections": [
+          {
+            "name": "Gold Skulltula",
+            "access_rules": [],
+            "visibility_rules": [],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 1157,
+            "y": 941
+          }
+        ]
+      },
+      {
+        "name": "Invisible Deku Scrub Room",
+
+        "sections": [
+          {
+            "name": "Left Scrub",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_DEKU_SCRUB_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GANONS_CASTLE_DEKU_SCRUB_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Center-Left Scrub",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_DEKU_SCRUB_CENTER_LEFT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GANONS_CASTLE_DEKU_SCRUB_CENTER_LEFT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Center-Right Scrub",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_DEKU_SCRUB_CENTER_RIGHT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GANONS_CASTLE_DEKU_SCRUB_CENTER_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Right Scrub",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_DEKU_SCRUB_RIGHT"
+            ],
+            "visibility_rules": [
+              "$OPTION_SCRUBS_NON_ONE_TIME,$AGE_CHECK|GANONS_CASTLE_DEKU_SCRUB_RIGHT"
+            ],
+            "chest_opened_img": "images/chest_images/deku_scrub_opened.png",
+            "chest_unopened_img": "images/chest_images/deku_scrub_unopened.png",
+            "item_count": 1
+          },
+          {
+            "name": "Fairy",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_SCRUBS_FAIRY1"
+            ],
+            "chest_opened_img": "images/chest_images/small_fairy_opened.png",
+            "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
+            "visibility_rules": [
+              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GANONS_CASTLE_SCRUBS_FAIRY1"
+            ],
+            "item_count": 8
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 543,
+            "y": 590
+          }
+        ]
+      },
+      {
+        "name": "Fire Trial End",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_FIRE_TRIAL_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "visibility_rules": [
+              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_FIRE_TRIAL_POT1"
+            ],
+            "item_count": 2
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 291,
+            "y": 82
+          }
+        ]
+      },
+      {
+        "name": "Fire Trial Heart",
+
+        "sections": [
+          {
+            "name": "Heart",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_FIRE_TRIAL_HEART"
+            ],
+            "chest_opened_img": "images/chest_images/heart_opened.png",
+            "chest_unopened_img": "images/chest_images/heart_unopened.png",
+            "visibility_rules": [
+              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_FIRE_TRIAL_HEART"
+            ],
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 334,
+            "y": 187
+          }
+        ]
+      },
+      {
+        "name": "Ganon's Room Lower Northwest",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_GANONS_TOWER_POT1"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_GANONS_TOWER_POT1"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 9
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 1125,
+            "y": 265
+          }
+        ]
+      },
+      {
+        "name": "Ganon's Room Lower Northeast",
+
+        "sections": [
+          {
+            "name": "Pot",
+            "access_rules": [
+              "^$REACHABLE|GANONS_CASTLE_GANONS_TOWER_POT10"
+            ],
+            "visibility_rules": [
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_GANONS_TOWER_POT10"
+            ],
+            "chest_opened_img": "images/chest_images/pot_opened.png",
+            "chest_unopened_img": "images/chest_images/pot_unopened.png",
+            "item_count": 9
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "Ganon's Castle",
+            "x": 1206,
+            "y": 265
+          }
+        ]
+      }
+    ]
+  }
+]
