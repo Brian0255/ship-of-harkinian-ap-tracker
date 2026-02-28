@@ -1265,7 +1265,7 @@
     "name": "Heart Container",
     "type": "consumable",
     "overlay_background": "#000000",
-    "max_quantity": 8,
+    "max_quantity": 7,
     "img": "images/items/heart_container.png",
     "codes": "heart_container"
   },
