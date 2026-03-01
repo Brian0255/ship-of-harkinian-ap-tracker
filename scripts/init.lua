@@ -198,6 +198,7 @@ local function on_state_changed()
 end
 
 local function on_special_bottle_changed(bottle_code)
+    --[[
     local obj = Tracker:FindObjectForCode(bottle_code)
     local total_bottles = Tracker:FindObjectForCode("empty_bottle")
     if obj == nil or total_bottles == nil then
@@ -208,6 +209,7 @@ local function on_special_bottle_changed(bottle_code)
         add = 1
     end
     total_bottles.AcquiredCount = total_bottles.AcquiredCount + add
+    --]]
 end
 
 local function on_gerudo_card_related_changed()
