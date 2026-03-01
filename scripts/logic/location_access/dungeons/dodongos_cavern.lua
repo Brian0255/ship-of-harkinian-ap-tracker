@@ -89,7 +89,7 @@ local function set_region_rules(world)
             {
                 Locations.DODONGOS_CAVERN_DEKU_SCRUB_LOBBY,
                 function(bundle)
-                    return LogicHelpers.can_stun_deku(bundle) or LogicHelpers.has_item(Items.GORONS_BRACELET, bundle)
+                    return (LogicHelpers.can_stun_deku(bundle) or LogicHelpers.has_item(Items.GORONS_BRACELET, bundle))
                     and LogicHelpers.can_afford_item("scrub_prices",Locations.DODONGOS_CAVERN_DEKU_SCRUB_LOBBY,bundle)
                 end
             },
