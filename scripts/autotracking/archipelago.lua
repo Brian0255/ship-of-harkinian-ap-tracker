@@ -125,6 +125,8 @@ local medallion_ids = {
 	[132] = true
 }
 
+local current_map_info = nil
+
 CUR_INDEX = -1
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
@@ -132,17 +134,31 @@ GLOBAL_ITEMS = {}
 -- gets the data storage key for hints for the current player
 -- returns nil when not connected to AP
 function getHintDataStorageKey()
-	if
-		AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or
-			Archipelago.PlayerNumber == nil or
-			Archipelago.PlayerNumber == -1
-	 then
-		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-			print("Tried to call getHintDataStorageKey while not connect to AP server")
-		end
-		return nil
-	end
-	return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+    if
+        AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or
+        Archipelago.PlayerNumber == nil or
+        Archipelago.PlayerNumber == -1
+    then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print("Tried to call getHintDataStorageKey while not connect to AP server")
+        end
+        return nil
+    end
+    return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+end
+
+function getSceneDataStorageKey()
+    if
+        AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or
+        Archipelago.PlayerNumber == nil or
+        Archipelago.PlayerNumber == -1
+    then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print("Tried to call getHintDataStorageKey while not connect to AP server")
+        end
+        return nil
+    end
+    return string.format("oot_soh_scene_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
 end
 
 -- resets an item to its initial state
@@ -311,16 +327,16 @@ function onClear(slot_data)
 	-- add snes interface functions here
 	end
 	-- setup data storage tracking for hint tracking
-	local data_strorage_keys = {}
+	local data_storage_keys = {}
 	if PopVersion >= "0.32.0" then
-		data_strorage_keys = {getHintDataStorageKey()}
+		data_storage_keys = {getHintDataStorageKey(),getSceneDataStorageKey()}
 	end
 	-- subscribes to the data storage keys for updates
 	-- triggers callback in the SetNotify handler on update
-	Archipelago:SetNotify(data_strorage_keys)
+	Archipelago:SetNotify(data_storage_keys)
 	-- gets the current value for the data storage keys
 	-- triggers callback in the Retrieved handler when result is received
-	Archipelago:Get(data_strorage_keys)
+	Archipelago:Get(data_storage_keys)
 	Tracker.BulkUpdate = false
 end
 
@@ -432,21 +448,48 @@ end
 
 -- called when a bounce message is received
 function onBounce(json)
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-		print(string.format("called onBounce: %s", dump_table(json)))
-	end
-	-- your code goes here
+    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+        print(string.format("called onBounce: %s", dump_table(json)))
+    end
+    print("bounce!")
+end
+
+
+local function onSceneUpdate(old_scene, new_scene)
+	print(old_scene, new_scene)
+    if new_scene == old_scene or not SceneToMap[new_scene] then
+        return
+    end
+    local map_info = SceneToMap[new_scene]
+    print(old_scene, Scenes.GRAVEYARD)
+	print(new_scene, Scenes.WINDMILL_AND_DAMPES_GRAVE)
+    if new_scene == Scenes.WINDMILL_AND_DAMPES_GRAVE and old_scene == Scenes.GRAVEYARD then
+		print("CHANGE IT BACK")
+        map_info = UIMaps.DAMPE_RACE
+    end
+    if map_info == current_map_info then
+        return
+    end
+	print("new")
+    for _, tab in ipairs(map_info.parent_tab_chain) do
+        Tracker:UiHint("ActivateTab", tab)
+    end
+    Tracker:UiHint("ActivateTab", map_info.tab_name)
+	current_map_info = map_info
 end
 
 -- called whenever Archipelago:Get returns data from the data storage or
 -- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
 -- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
 function onDataStorageUpdate(key, value, oldValue)
-	--if you plan to only use the hints key, you can remove this if
-	if key == getHintDataStorageKey() then
-		onHintsUpdate(value)
-	end
+    --if you plan to only use the hints key, you can remove this if
+    if key == getHintDataStorageKey() then
+        onHintsUpdate(value)
+    elseif key == getSceneDataStorageKey() then
+		onSceneUpdate(oldValue, value)
+    end
 end
+
 
 -- called whenever the hints key in data storage updated
 -- NOTE: this should correctly handle having multiple mapped locations in a section.
@@ -559,4 +602,4 @@ end
 Archipelago:AddRetrievedHandler("retrieved handler", onDataStorageUpdate)
 Archipelago:AddSetReplyHandler("set reply handler", onDataStorageUpdate)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
--- Archipelago:AddBouncedHandler("bounce handler", onBounce)
+Archipelago:AddBouncedHandler("bounce handler", onBounce)
