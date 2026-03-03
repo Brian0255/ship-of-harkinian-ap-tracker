@@ -451,7 +451,6 @@ function onBounce(json)
     if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
         print(string.format("called onBounce: %s", dump_table(json)))
     end
-    print("bounce!")
 end
 
 
