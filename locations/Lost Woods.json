@@ -274,7 +274,7 @@
           },
           {
             "name": "Gold Skulltula",
-            "access_rules": ["^$REACHABLE|LW_GS_ABOVE_THEATER"],
+            "access_rules": ["^$REACHABLE|LW_GS_BEAN_PATCH_NEAR_THEATER"],
             "visibility_rules": [
               "$OPTION_SKULLS_OVERWORLD,$AGE_CHECK|LW_GS_ABOVE_THEATER"
             ],
