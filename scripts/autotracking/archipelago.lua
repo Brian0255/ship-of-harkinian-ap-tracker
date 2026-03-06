@@ -140,7 +140,7 @@ function getHintDataStorageKey()
         Archipelago.PlayerNumber == -1
     then
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print("Tried to call getHintDataStorageKey while not connect to AP server")
+            print("Tried to call getHintDataStorageKey while not connected to AP server")
         end
         return nil
     end
@@ -154,7 +154,7 @@ function getSceneDataStorageKey()
         Archipelago.PlayerNumber == -1
     then
         if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print("Tried to call getHintDataStorageKey while not connect to AP server")
+            print("Tried to call getSceneDataStorageKey while not connected to AP server")
         end
         return nil
     end
@@ -455,21 +455,16 @@ end
 
 
 local function onSceneUpdate(old_scene, new_scene)
-	print(old_scene, new_scene)
     if new_scene == old_scene or not SceneToMap[new_scene] then
         return
     end
     local map_info = SceneToMap[new_scene]
-    print(old_scene, Scenes.GRAVEYARD)
-	print(new_scene, Scenes.WINDMILL_AND_DAMPES_GRAVE)
     if new_scene == Scenes.WINDMILL_AND_DAMPES_GRAVE and old_scene == Scenes.GRAVEYARD then
-		print("CHANGE IT BACK")
         map_info = UIMaps.DAMPE_RACE
     end
     if map_info == current_map_info then
         return
     end
-	print("new")
     for _, tab in ipairs(map_info.parent_tab_chain) do
         Tracker:UiHint("ActivateTab", tab)
     end
