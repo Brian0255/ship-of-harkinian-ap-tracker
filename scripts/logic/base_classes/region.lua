@@ -63,9 +63,6 @@ function Region:can_reach(state)
 end
 
 function Region:_add_location(location)
-    if self.world.regions.location_cache[location.name] then
-        print("Duplicate location name: " .. location.name)
-    end
     table.insert(self.locations, location)
     self.world.regions.location_cache[location.name] = location
 end

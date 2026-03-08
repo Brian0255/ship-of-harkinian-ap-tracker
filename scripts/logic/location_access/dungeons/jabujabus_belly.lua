@@ -190,14 +190,6 @@ local function set_region_rules(world)
                     return LogicHelpers.hookshot_or_boomerang(bundle)
                 end
             },
-            --[[error
-            {
-                Locations.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM,
-                function(bundle)
-                    return LogicHelpers.hookshot_or_boomerang(bundle)
-                end
-            },
-            --]]
             {
                 Locations.JABU_JABUS_BELLY_TWO_OCTOROK_POT1,
                 function(bundle)
@@ -338,21 +330,6 @@ local function set_region_rules(world)
     )
 
     --Jabu Jabu's Belly Water Switch Room South
-    --Locations
-
-    --[[error
-    LogicHelpers.add_locations(
-        Regions.JABU_JABUS_BELLY_WATER_SWITCH_ROOM_SOUTH,
-        world,
-        {
-            {
-                Locations.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM,
-                function(bundle)
-                    return LogicHelpers.hookshot_or_boomerang(bundle)
-                end
-            }
-        }
-    )--]]
     --Connections
     LogicHelpers.connect_regions(
         Regions.JABU_JABUS_BELLY_WATER_SWITCH_ROOM_SOUTH,

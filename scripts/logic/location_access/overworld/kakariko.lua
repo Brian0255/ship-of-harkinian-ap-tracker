@@ -525,21 +525,6 @@ local function set_region_rules(world)
     )
 
     --Kak Watchtower
-    --Locations
-    --[[
-    LogicHelpers.add_locations(
-        Regions.KAK_WATCHTOWER,
-        world,
-        {
-            {
-                Locations.KAK_GS_WATCHTOWER,
-                function(bundle)
-                    return LogicHelpers.is_child(bundle) and LogicHelpers.can_use(Items.DINS_FIRE, bundle) and
-                        LogicHelpers.can_get_nighttime_gs(bundle)
-                end
-            }
-        }
-    )--]]
     --Connections
     LogicHelpers.connect_regions(
         Regions.KAK_WATCHTOWER,

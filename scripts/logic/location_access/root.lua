@@ -32,20 +32,6 @@ local function set_region_rules(world)
             }
         }
     )
---[[
-    LogicHelpers.add_locations(
-        Regions.ROOT_EXITS,
-        world,
-        {
-            {
-                Locations.LINKS_POCKET,
-                function(bundle)
-                    return true
-                end
-            }
-        }
-    )
---]]
     LogicHelpers.add_events(
         Regions.ROOT,
         world,
