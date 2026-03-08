@@ -542,9 +542,9 @@
         "sections": [
           {
             "name": "Child Grass",
-            "access_rules": ["^$REACHABLE|LH_WARP_PAD_GRASS_1"],
+            "access_rules": ["^$REACHABLE|LH_CHILD_GRASS_1"],
             "visibility_rules": [
-              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_WARP_PAD_GRASS_1"
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|LH_CHILD_GRASS_1"
             ],
             "chest_opened_img": "images/chest_images/grass_opened.png",
             "chest_unopened_img": "images/chest_images/grass_unopened.png",
