@@ -32,7 +32,7 @@ local function set_region_rules(world)
             }
         }
     )
-
+--[[
     LogicHelpers.add_locations(
         Regions.ROOT_EXITS,
         world,
@@ -45,7 +45,7 @@ local function set_region_rules(world)
             }
         }
     )
-
+--]]
     LogicHelpers.add_events(
         Regions.ROOT,
         world,

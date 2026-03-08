@@ -121,17 +121,6 @@ local function set_region_rules(world)
                 end
             },
             {
-                Locations.ZD_GS_FROZEN_WATERFALL,
-                function(bundle)
-                    return LogicHelpers.is_adult(bundle) and
-                        (LogicHelpers.hookshot_or_boomerang(bundle) or
-                            LogicHelpers.can_use_any({Items.FAIRY_SLINGSHOT, Items.FAIRY_BOW}, bundle) or
-                            (LogicHelpers.can_do_trick(Tricks.ZD_GS, bundle) and
-                                LogicHelpers.can_jump_slash_except_hammer(bundle))) and
-                        LogicHelpers.can_get_nighttime_gs(bundle)
-                end
-            },
-            {
                 Locations.ZD_FISH1,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and LogicHelpers.has_bottle(bundle)

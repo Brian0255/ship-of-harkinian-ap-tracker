@@ -252,12 +252,6 @@ local function set_region_rules(world)
             Items.DINS_FIRE, bundle) or (LogicHelpers.can_use(Items.STICKS, bundle) and LogicHelpers.can_do_trick(Tricks.BOTW_BASEMENT, bundle)) end},
     })
 
-    --Bottom of the Well Useful Bomb Flowers
-    --Locations
-   LogicHelpers.add_locations(Regions.BOTTOM_OF_THE_WELL_BASEMENT_USEFUL_BOMB_FLOWERS, world, {
-        {Locations.BOTTOM_OF_THE_WELL_MAP_CHEST,
-         function(bundle) return LogicHelpers.has_item(Items.GORONS_BRACELET, bundle) end},
-    })
     --Connections
    LogicHelpers.connect_regions(Regions.BOTTOM_OF_THE_WELL_BASEMENT_USEFUL_BOMB_FLOWERS, world, {
         {Regions.BOTTOM_OF_THE_WELL_BASEMENT,
