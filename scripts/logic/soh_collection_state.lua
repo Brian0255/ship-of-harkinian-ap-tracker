@@ -146,19 +146,6 @@ function SoHCollectionState:_soh_can_reach_as_age(region, age)
     return (self._soh_age == age)
 end
 
-function SoHCollectionState:_sweep_for_events()
-    for _, age in pairs({Ages.CHILD, Ages.ADULT}) do
-        local reachable = (age == Ages.CHILD) and self._soh_child_reachable_regions or self._soh_adult_reachable_regions
-        for region, _ in pairs(reachable) do
-            for _, event in pairs(region.events) do
-                if not self.event_items[event.event_item] and event:can_reach(self) then
-                    self.event_items[event.event_item] = true
-                end
-            end
-        end
-    end
-end
-
 function SoHCollectionState:count(item)
     if self.has_all_items then
         return 200
