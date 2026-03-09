@@ -72,8 +72,8 @@ local function set_region_rules(world)
     })
        LogicHelpers.connect_regions(Regions.HYRULE_CASTLE_GROUNDS, world, {
             {Regions.HC_GARDEN,
-             function(bundle) return world:get_option("skip_child_zelda") == false and LogicHelpers.can_use(Items.WEIRD_EGG, bundle) or
-              LogicHelpers.can_do_trick(Tricks.DAMAGE_BOOST_SIMPLE, bundle) and LogicHelpers.has_explosives(bundle) and LogicHelpers.can_jump_slash(bundle) end},
+             function(bundle) return (world:get_option("skip_child_zelda") == false and LogicHelpers.can_use(Items.WEIRD_EGG, bundle)) or
+              (LogicHelpers.can_do_trick(Tricks.DAMAGE_BOOST_SIMPLE, bundle) and LogicHelpers.has_explosives(bundle) and LogicHelpers.can_jump_slash(bundle)) end},
         })
 
 
