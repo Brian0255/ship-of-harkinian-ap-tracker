@@ -85,10 +85,10 @@
           {
             "name": "Chest",
             "access_rules": [
-              "^$REACHABLE|BOTTOM_OF_THE_WELL_RIGHT_BOTTOM_FAKE_WALL_CHEST"
+              "^$REACHABLE|BOTTOM_OF_THE_WELL_UNDERWATER_LEFT_CHEST"
             ],
             "visibility_rules": [
-              "$AGE_CHECK|BOTTOM_OF_THE_WELL_RIGHT_BOTTOM_FAKE_WALL_CHEST"
+              "$AGE_CHECK|BOTTOM_OF_THE_WELL_UNDERWATER_LEFT_CHEST"
             ],
             "chest_opened_img": "images/chest_images/chest_opened.png",
             "chest_unopened_img": "images/chest_images/chest_unopened.png",
