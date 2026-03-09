@@ -19,9 +19,9 @@
           },
           {
             "name": "Zelda's Letter",
-            "access_rules": ["^$REACHABLE|SONG_FROM_IMPA"],
+            "access_rules": ["^$REACHABLE|HC_ZELDAS_LETTER"],
             "visibility_rules": [
-              "$OPTION_ZELDAS_LETTER_SHUFFLED,$AGE_CHECK|SONG_FROM_IMPA"
+              "$OPTION_ZELDAS_LETTER_SHUFFLED,$AGE_CHECK|HC_ZELDAS_LETTER"
             ],
             "chest_opened_img": "images/chest_images/zeldas_letter_opened.png",
             "chest_unopened_img": "images/chest_images/zeldas_letter_unopened.png",

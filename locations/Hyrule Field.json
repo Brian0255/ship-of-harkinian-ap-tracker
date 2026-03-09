@@ -707,8 +707,8 @@
         "sections": [
           {
             "name": "Tree",
-            "access_rules": ["^$REACHABLE|HF_EAST_TREE_1"],
-            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_EAST_TREE_1"],
+            "access_rules": ["^$REACHABLE|HF_NORTHWEST_TREE_1"],
+            "visibility_rules": ["$OPTION_TREES,$AGE_CHECK|HF_NORTHWEST_TREE_1"],
             "chest_opened_img": "images/chest_images/tree_opened.png",
             "chest_unopened_img": "images/chest_images/tree_unopened.png",
             "item_count": 6

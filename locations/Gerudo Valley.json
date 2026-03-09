@@ -22,12 +22,12 @@
           {
             "name": "Crate",
             "access_rules": [
-              "^$REACHABLE|GV_CRATE_FREESTANDING_POH"
+              "^$REACHABLE|GV_FREESTANDING_POH_CRATE"
             ],
             "chest_opened_img": "images/chest_images/crate_opened.png",
             "chest_unopened_img": "images/chest_images/crate_unopened.png",
             "visibility_rules": [
-              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GV_CRATE_FREESTANDING_POH"
+              "$OPTION_CRATES_OVERWORLD,$AGE_CHECK|GV_FREESTANDING_POH_CRATE"
             ],
             "item_count": 1
           }

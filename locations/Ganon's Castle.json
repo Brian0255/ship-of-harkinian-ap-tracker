@@ -35,10 +35,10 @@
           {
             "name": "Pot",
             "access_rules": [
-              "^$REACHABLE|GANONS_CASTLE_WATER_TRIAL_POT1"
+              "^$REACHABLE|GANONS_CASTLE_FOREST_TRIAL_POT1"
             ],
             "visibility_rules": [
-              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_WATER_TRIAL_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_FOREST_TRIAL_POT1"
             ],
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
@@ -471,10 +471,10 @@
           {
             "name": "Invisible Chest",
             "access_rules": [
-              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_CRYSTAL_SWITCH_CHEST"
+              "^$REACHABLE|GANONS_CASTLE_SPIRIT_TRIAL_INVISIBLE_CHEST"
             ],
             "visibility_rules": [
-              "$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_CRYSTAL_SWITCH_CHEST"
+              "$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_INVISIBLE_CHEST"
             ],
             "chest_opened_img": "images/chest_images/chest_opened.png",
             "chest_unopened_img": "images/chest_images/chest_unopened.png",
