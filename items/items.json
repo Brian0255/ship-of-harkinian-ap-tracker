@@ -8,12 +8,6 @@
     "codes": "kakariko_potion_shop_key"
   },
   {
-    "name": "Skeleton Key",
-    "type": "toggle",
-    "img": "images/items/skeleton_key.png",
-    "codes": "skeleton_key"
-  },
-  {
     "name": "Triforce Piece",
     "type": "consumable",
     "overlay_background": "#000000",
@@ -558,7 +552,7 @@
         "img": "images/items/kokiris_emerald.png"
       },
       {
-        "name": "Shadow Medallion is Free",
+        "name": "Kokiri's Emerald is Free",
         "img": "images/items/kokiris_emerald.png"
       }
     ]
@@ -761,7 +755,7 @@
         "img": "images/items/gorons_ruby.png"
       },
       {
-        "name": "Shadow Medallion is Free",
+        "name": "Goron's Ruby is Free",
         "img": "images/items/gorons_ruby.png"
       }
     ]
@@ -823,7 +817,7 @@
         "img": "images/items/spirit_medallion.png"
       },
       {
-        "name": "Shadow Medallion is Free",
+        "name": "Spirit Medallion is Free",
         "img": "images/items/spirit_medallion.png"
       }
     ]
@@ -934,7 +928,7 @@
         "img": "images/items/zoras_sapphire.png"
       },
       {
-        "name": "Shadow Medallion is Free",
+        "name": "Zora's Sapphire is Free",
         "img": "images/items/zoras_sapphire.png"
       }
     ]
