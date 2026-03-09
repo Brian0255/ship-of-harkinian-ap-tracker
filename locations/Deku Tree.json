@@ -859,10 +859,10 @@
           {
             "name": "Grass",
             "access_rules": [
-              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS4"
+              "^$REACHABLE|DEKU_TREE_QUEEN_GOHMA_GRASS2"
             ],
             "visibility_rules": [
-              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS4"
+              "$OPTION_GRASS_DUNGEON,$AGE_CHECK|DEKU_TREE_QUEEN_GOHMA_GRASS2"
             ],
             "chest_opened_img": "images/chest_images/grass_opened.png",
             "chest_unopened_img": "images/chest_images/grass_unopened.png",

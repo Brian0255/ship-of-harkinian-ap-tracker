@@ -540,30 +540,6 @@
         ]
       },
       {
-        "name": "Broken Structure",
-        "chest_unopened_img": "/images/items/close.png",
-        "chest_opened_img": "/images/items/open.png",
-
-        "access_rules": [
-          " "
-        ],
-        "sections": [
-          {
-            "name": "Gold Skulltula",
-            "access_rules": [],
-            "visibility_rules": [],
-            "item_count": 1
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Ganon's Castle",
-            "x": 1157,
-            "y": 941
-          }
-        ]
-      },
-      {
         "name": "Invisible Deku Scrub Room",
 
         "sections": [

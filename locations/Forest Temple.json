@@ -360,10 +360,10 @@
           {
             "name": "Pot",
             "access_rules": [
-              "^$REACHABLE|FOREST_TEMPLE_LOWER_STALFOS_POT1"
+              "^$REACHABLE|FOREST_TEMPLE_BLUE_POE_POT1"
             ],
             "visibility_rules": [
-              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_LOWER_STALFOS_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|FOREST_TEMPLE_BLUE_POE_POT1"
             ],
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",

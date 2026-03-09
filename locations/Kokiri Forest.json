@@ -329,11 +329,11 @@
           },
           {
             "name": "Grass",
-            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS_MAZE2"],
+            "access_rules": ["^$REACHABLE|KF_CHILD_GRASS_MAZE1"],
             "chest_opened_img": "images/chest_images/grass_opened.png",
             "chest_unopened_img": "images/chest_images/grass_unopened.png",
             "visibility_rules": [
-              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS_MAZE2"
+              "$OPTION_GRASS_OVERWORLD,$AGE_CHECK|KF_CHILD_GRASS_MAZE1"
             ],
             "item_count": 1
           }
