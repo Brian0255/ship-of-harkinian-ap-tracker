@@ -1281,12 +1281,11 @@ end
 
 function LogicHelpers.can_build_rainbow_bridge(bundle)
     local world = bundle[3]
-
     local greg_reward = 0
     if
         LogicHelpers.has_item(Items.GREG_THE_GREEN_RUPEE, bundle) and
-            world:get_option("rainbow_bridge_greg_modifier") == Options.BRIDGE_GREG_MODIFER_REWARD
-     then
+        world:get_option("rainbow_bridge_greg_modifier") == Options.BRIDGE_GREG_MODIFIER_REWARD
+    then
         greg_reward = 1
     end
 
