@@ -351,7 +351,7 @@
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
             "visibility_rules": [
-              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_BOULDER_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_BOULDER_POT1"
             ],
             "item_count": 1
           }
@@ -376,7 +376,7 @@
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
             "visibility_rules": [
-              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_LIGHT_TRIAL_POT1"
             ],
             "item_count": 2
           }
@@ -501,7 +501,7 @@
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
             "visibility_rules": [
-              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SPIRIT_TRIAL_POT1"
             ],
             "item_count": 2
           }
@@ -624,7 +624,7 @@
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
             "visibility_rules": [
-              "$OPTION_POTS_OVERWORLD,$AGE_CHECK|GANONS_CASTLE_FIRE_TRIAL_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_FIRE_TRIAL_POT1"
             ],
             "item_count": 2
           }
