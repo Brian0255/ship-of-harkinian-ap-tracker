@@ -1228,7 +1228,7 @@
         "overlay_background": "#80000000",
         "sections": [
           {
-            "name": "1 Torch Cell - Carpenter",
+            "name": "1 Torch Cell - Carpenter Key",
             "ref": "Gerudo Fortress/1 Torch Cell/Carpenter Key"
           },
           {
@@ -1256,7 +1256,7 @@
             "ref": "Gerudo Fortress/Break Room Table/Pot"
           },
           {
-            "name": "Dead End Cell - Carpenter",
+            "name": "Dead End Cell - Carpenter Key",
             "ref": "Gerudo Fortress/Dead End Cell/Carpenter Key"
           },
           {
@@ -1264,7 +1264,7 @@
             "ref": "Gerudo Fortress/Dead End Cell Crate/Crate"
           },
           {
-            "name": "Double Cell - Carpenter",
+            "name": "Double Cell - Carpenter Key",
             "ref": "Gerudo Fortress/Double Cell/Carpenter Key"
           },
           {
@@ -1344,7 +1344,7 @@
             "ref": "Gerudo Fortress/Outskirts/Crate"
           },
           {
-            "name": "Steep Slope Cell - Carpenter",
+            "name": "Steep Slope Cell - Carpenter Key",
             "ref": "Gerudo Fortress/Steep Slope Cell/Carpenter Key"
           },
           {
