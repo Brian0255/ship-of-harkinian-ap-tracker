@@ -210,10 +210,10 @@
           {
             "name": "Pot",
             "access_rules": [
-              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_POT2"
+              "^$REACHABLE|GANONS_CASTLE_SHADOW_TRIAL_POT3"
             ],
             "visibility_rules": [
-              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_POT2"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|GANONS_CASTLE_SHADOW_TRIAL_POT3"
             ],
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
