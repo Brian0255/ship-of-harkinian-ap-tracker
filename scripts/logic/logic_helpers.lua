@@ -72,7 +72,8 @@ local no_rules_bottles = {
     [Items.BOTTLE_WITH_FAIRY] = true,
     [Items.BOTTLE_WITH_FISH] = true,
     [Items.BOTTLE_WITH_BLUE_FIRE] = true,
-    [Items.BOTTLE_WITH_BUGS] = true
+    [Items.BOTTLE_WITH_BUGS] = true,
+    [Items.BOTTLE_WITH_POE] = true
 }
 
 local other_bottles = {
