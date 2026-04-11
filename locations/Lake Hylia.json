@@ -25,7 +25,7 @@
             ],
             "item_count": 1
           },
-                    {
+          {
             "name": "Underwater Middle Green Rupee",
             "access_rules": ["^$REACHABLE|LH_UNDERWATER_MIDDLE_RUPEE"],
             "chest_opened_img": "images/chest_images/green_rupee_opened.png",
@@ -35,7 +35,7 @@
             ],
             "item_count": 1
           },
-                    {
+          {
             "name": "Underwater Back Green Rupee",
             "access_rules": ["^$REACHABLE|LH_UNDERWATER_BACK_RUPEE"],
             "chest_opened_img": "images/chest_images/green_rupee_opened.png",

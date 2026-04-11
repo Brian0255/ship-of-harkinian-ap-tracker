@@ -2932,12 +2932,20 @@
             "ref": "Lake Hylia/Near Scarecrows/Child Grass"
           },
           {
-            "name": "Near Zora's Domain Shortcut - Underwater Green Rupee",
-            "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Green Rupee"
-          },
-          {
             "name": "Near Zora's Domain Shortcut - Underwater Item",
             "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Item"
+          },
+          {
+            "name": "Near Zora's Domain Shortcut - Underwater Front Green Rupee",
+            "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Front Green Rupee"
+          },
+          {
+            "name": "Near Zora's Domain Shortcut - Underwater Middle Green Rupee",
+            "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Middle Green Rupee"
+          },
+          {
+            "name": "Near Zora's Domain Shortcut - Underwater Back Green Rupee",
+            "ref": "Lake Hylia/Near Zora's Domain Shortcut/Underwater Back Green Rupee"
           },
           {
             "name": "North Grass - Grass",
