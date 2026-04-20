@@ -208,7 +208,10 @@ function incrementItem(item_code, item_type, multiplier)
 			obj.Active = true
 		elseif item_type == "progressive" or item_type == "progressive_toggle" then
 			if obj.Active then
-				obj.CurrentStage = obj.CurrentStage + 1
+                obj.CurrentStage = obj.CurrentStage + 1
+				if multiplier ~= 1 then
+					obj.CurrentStage = multiplier
+				end
 			else
 				obj.Active = true
 			end
