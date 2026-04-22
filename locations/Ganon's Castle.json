@@ -599,7 +599,7 @@
             "chest_opened_img": "images/chest_images/small_fairy_opened.png",
             "chest_unopened_img": "images/chest_images/small_fairy_unopened.png",
             "visibility_rules": [
-              "$OPTION_STONE_FAIRIES,$AGE_CHECK|GANONS_CASTLE_SCRUBS_FAIRY1"
+              "$OPTION_FOUNTAIN_FAIRIES,$AGE_CHECK|GANONS_CASTLE_SCRUBS_FAIRY1"
             ],
             "item_count": 8
           }
