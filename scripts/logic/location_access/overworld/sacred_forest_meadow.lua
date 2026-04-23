@@ -221,7 +221,7 @@ local function set_region_rules(world)
                 Locations.SFM_DEKU_SCRUB_GROTTO_REAR,
                 function(bundle)
                     return LogicHelpers.can_stun_deku(bundle) and
-                    LogicHelpers.can_afford_item("scrub_prices", Locations.ZR_DEKU_SCRUB_GROTTO_REAR,bundle)
+                    LogicHelpers.can_afford_item("scrub_prices", Locations.SFM_DEKU_SCRUB_GROTTO_REAR,bundle)
                 end
             },
             {
