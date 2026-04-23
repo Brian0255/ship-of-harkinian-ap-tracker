@@ -21,6 +21,15 @@ local LocalEvents = {
     GANONS_CASTLE_LIGHT_TRIAL_CLEARED = "Ganon's Castle Light Trial Cleared"
 }
 
+local trial_mapping = {
+    [GanonsTrials.FOREST_TRIAL] = LocalEvents.GANONS_CASTLE_FOREST_TRIAL_CLEARED,
+    [GanonsTrials.FIRE_TRIAL] = LocalEvents.GANONS_CASTLE_FIRE_TRIAL_CLEARED,
+    [GanonsTrials.WATER_TRIAL] = LocalEvents.GANONS_CASTLE_WATER_TRIAL_CLEARED,
+    [GanonsTrials.SHADOW_TRIAL] = LocalEvents.GANONS_CASTLE_SHADOW_TRIAL_CLEARED,
+    [GanonsTrials.SPIRIT_TRIAL] = LocalEvents.GANONS_CASTLE_SPIRIT_TRIAL_CLEARED,
+    [GanonsTrials.LIGHT_TRIAL] = LocalEvents.GANONS_CASTLE_LIGHT_TRIAL_CLEARED
+}
+
 local function set_region_rules(world)
     --Ganon's Castle Entryway
     --Connections
@@ -28,12 +37,18 @@ local function set_region_rules(world)
         Regions.GANONS_CASTLE_ENTRYWAY,
         world,
         {
-            {Regions.GANONS_CASTLE_LOBBY, function(bundle)
+            {
+                Regions.GANONS_CASTLE_LOBBY,
+                function(bundle)
                     return true
-                end},
-            {Regions.CASTLE_GROUNDS_FROM_GANONS_CASTLE, function(bundle)
+                end
+            },
+            {
+                Regions.CASTLE_GROUNDS_FROM_GANONS_CASTLE,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -43,33 +58,61 @@ local function set_region_rules(world)
         Regions.GANONS_CASTLE_LOBBY,
         world,
         {
-            {Regions.GANONS_CASTLE_ENTRYWAY, function(bundle)
+            {
+                Regions.GANONS_CASTLE_ENTRYWAY,
+                function(bundle)
                     return true
-                end},
-            {Regions.GANONS_CASTLE_FOREST_TRIAL, function(bundle)
-                    return true
-                end},
-            {Regions.GANONS_CASTLE_FIRE_TRIAL, function(bundle)
-                    return true
-                end},
-            {Regions.GANONS_CASTLE_WATER_TRIAL, function(bundle)
-                    return true
-                end},
-            {Regions.GANONS_CASTLE_SHADOW_TRIAL, function(bundle)
-                    return true
-                end},
-            {Regions.GANONS_CASTLE_SPIRIT_TRIAL, function(bundle)
-                    return true
-                end},
+                end
+            },
+            {
+                Regions.GANONS_CASTLE_FOREST_TRIAL,
+                function(bundle)
+                    return not world:get_option("medallion_locked_trials") or
+                        LogicHelpers.has_item(Items.FOREST_MEDALLION, bundle)
+                end
+            },
+            {
+                Regions.GANONS_CASTLE_FIRE_TRIAL,
+                function(bundle)
+                    return not world:get_option("medallion_locked_trials") or
+                        LogicHelpers.has_item(Items.FIRE_MEDALLION, bundle)
+                end
+            },
+            {
+                Regions.GANONS_CASTLE_WATER_TRIAL,
+                function(bundle)
+                    return not world:get_option("medallion_locked_trials") or
+                        LogicHelpers.has_item(Items.WATER_MEDALLION, bundle)
+                end
+            },
+            {
+                Regions.GANONS_CASTLE_SHADOW_TRIAL,
+                function(bundle)
+                    return not world:get_option("medallion_locked_trials") or
+                        LogicHelpers.has_item(Items.SHADOW_MEDALLION, bundle)
+                end
+            },
+            {
+                Regions.GANONS_CASTLE_SPIRIT_TRIAL,
+                function(bundle)
+                    return not world:get_option("medallion_locked_trials") or
+                        LogicHelpers.has_item(Items.SPIRIT_MEDALLION, bundle)
+                end
+            },
             {
                 Regions.GANONS_CASTLE_LIGHT_TRIAL,
                 function(bundle)
-                    return LogicHelpers.can_use(Items.GOLDEN_GAUNTLETS, bundle)
+                    return LogicHelpers.can_use(Items.GOLDEN_GAUNTLETS, bundle) and
+                        (not world:get_option("medallion_locked_trials") or
+                            LogicHelpers.has_item(Items.LIGHT_MEDALLION, bundle))
                 end
             },
-            {Regions.GANONS_TOWER_ENTRYWAY, function(bundle)
+            {
+                Regions.GANONS_TOWER_ENTRYWAY,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.GANONS_CASTLE_DEKU_SCRUBS,
                 function(bundle)
@@ -103,55 +146,79 @@ local function set_region_rules(world)
             {
                 Locations.GANONS_CASTLE_DEKU_SCRUB_CENTER_LEFT,
                 function(bundle)
-                    return LogicHelpers.can_stun_deku(bundle)
-                    and LogicHelpers.can_afford_item("scrub_prices",Locations.GANONS_CASTLE_DEKU_SCRUB_CENTER_LEFT,bundle)
+                    return LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.GANONS_CASTLE_DEKU_SCRUB_CENTER_LEFT, bundle)
                 end
             },
             {
                 Locations.GANONS_CASTLE_DEKU_SCRUB_CENTER_RIGHT,
                 function(bundle)
-                    return LogicHelpers.can_stun_deku(bundle)
-                    and LogicHelpers.can_afford_item("scrub_prices",Locations.GANONS_CASTLE_DEKU_SCRUB_CENTER_RIGHT,bundle)
+                    return LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.GANONS_CASTLE_DEKU_SCRUB_CENTER_RIGHT, bundle)
                 end
             },
             {
                 Locations.GANONS_CASTLE_DEKU_SCRUB_RIGHT,
                 function(bundle)
-                    return LogicHelpers.can_stun_deku(bundle)
-                    and LogicHelpers.can_afford_item("scrub_prices",Locations.GANONS_CASTLE_DEKU_SCRUB_RIGHT,bundle)
+                    return LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.GANONS_CASTLE_DEKU_SCRUB_RIGHT, bundle)
                 end
             },
             {
                 Locations.GANONS_CASTLE_DEKU_SCRUB_LEFT,
                 function(bundle)
-                    return LogicHelpers.can_stun_deku(bundle)
-                    and LogicHelpers.can_afford_item("scrub_prices",Locations.GANONS_CASTLE_DEKU_SCRUB_LEFT,bundle)
+                    return LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.GANONS_CASTLE_DEKU_SCRUB_LEFT, bundle)
                 end
             },
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY1, function(bundle)
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY1,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY2, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY2,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY3, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY3,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY4, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY4,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY5, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY5,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY6, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY6,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY7, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY7,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_SCRUBS_FAIRY8, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_SCRUBS_FAIRY8,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -287,12 +354,18 @@ local function set_region_rules(world)
         Regions.GANONS_CASTLE_WATER_TRIAL,
         world,
         {
-            {Locations.GANONS_CASTLE_WATER_TRIAL_LEFT_CHEST, function(bundle)
+            {
+                Locations.GANONS_CASTLE_WATER_TRIAL_LEFT_CHEST,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_WATER_TRIAL_RIGHT_CHEST, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_WATER_TRIAL_RIGHT_CHEST,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Locations.GANONS_CASTLE_WATER_TRIAL_POT1,
                 function(bundle)
@@ -504,9 +577,9 @@ local function set_region_rules(world)
                         LogicHelpers.can_use(Items.HOOKSHOT, bundle)) and
                         (LogicHelpers.can_use(Items.BOMBCHUS_5, bundle) or
                             (LogicHelpers.can_do_trick(Tricks.HOOKSHOT_EXTENSION, bundle) and
-                                (LogicHelpers.can_use_any({Items.FAIRY_BOW, Items.FAIRY_SLINGSHOT}, bundle))) and
+                                (LogicHelpers.can_use_any({Items.FAIRY_BOW, Items.FAIRY_SLINGSHOT}, bundle)))) and
                                 (LogicHelpers.can_do_trick(Tricks.LENS_GANON, bundle) or
-                                    LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle)))
+                                    LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle))
                 end
             },
             {
@@ -545,9 +618,12 @@ local function set_region_rules(world)
                     return LogicHelpers.can_use(Items.SUNS_SONG, bundle)
                 end
             },
-            {Locations.GANONS_CASTLE_SPIRIT_TRIAL_HEART, function(bundle)
+            {
+                Locations.GANONS_CASTLE_SPIRIT_TRIAL_HEART,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -576,24 +652,42 @@ local function set_region_rules(world)
         Regions.GANONS_CASTLE_LIGHT_TRIAL,
         world,
         {
-            {Locations.GANONS_CASTLE_LIGHT_TRIAL_FIRST_LEFT_CHEST, function(bundle)
+            {
+                Locations.GANONS_CASTLE_LIGHT_TRIAL_FIRST_LEFT_CHEST,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_LIGHT_TRIAL_SECOND_LEFT_CHEST, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_LIGHT_TRIAL_SECOND_LEFT_CHEST,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_LIGHT_TRIAL_THIRD_LEFT_CHEST, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_LIGHT_TRIAL_THIRD_LEFT_CHEST,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_LIGHT_TRIAL_FIRST_RIGHT_CHEST, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_LIGHT_TRIAL_FIRST_RIGHT_CHEST,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_LIGHT_TRIAL_SECOND_RIGHT_CHEST, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_LIGHT_TRIAL_SECOND_RIGHT_CHEST,
+                function(bundle)
                     return true
-                end},
-            {Locations.GANONS_CASTLE_LIGHT_TRIAL_THIRD_RIGHT_CHEST, function(bundle)
+                end
+            },
+            {
+                Locations.GANONS_CASTLE_LIGHT_TRIAL_THIRD_RIGHT_CHEST,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Locations.GANONS_CASTLE_LIGHT_TRIAL_INVISIBLE_ENEMIES_CHEST,
                 function(bundle)
@@ -646,19 +740,25 @@ local function set_region_rules(world)
         Regions.GANONS_TOWER_ENTRYWAY,
         world,
         {
-            {Regions.GANONS_CASTLE_LOBBY, function(bundle)
+            {
+                Regions.GANONS_CASTLE_LOBBY,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.GANONS_TOWER_FLOOR_1,
                 function(bundle)
-                    return (((LogicHelpers.has_item(LocalEvents.GANONS_CASTLE_FOREST_TRIAL_CLEARED, bundle)) and
-                        (LogicHelpers.has_item(LocalEvents.GANONS_CASTLE_FIRE_TRIAL_CLEARED, bundle)) and
-                        (LogicHelpers.has_item(LocalEvents.GANONS_CASTLE_WATER_TRIAL_CLEARED, bundle)) and
-                        (LogicHelpers.has_item(LocalEvents.GANONS_CASTLE_SHADOW_TRIAL_CLEARED, bundle)) and
-                        (LogicHelpers.has_item(LocalEvents.GANONS_CASTLE_SPIRIT_TRIAL_CLEARED, bundle)) and
-                        (LogicHelpers.has_item(LocalEvents.GANONS_CASTLE_LIGHT_TRIAL_CLEARED, bundle))) or
-                        world:get_option("skip_ganons_trials"))
+                    --skip ganon's trials was removed, backwards compatibility check
+                    if world:get_option("ganons_trials") == Options.GANONS_TRIALS_SKIP or world:get_option("skip_ganons_trials") then
+                        return true
+                    end
+                    for _, trial in pairs(world.ganons_trials) do
+                        if not LogicHelpers.has_item(trial_mapping[trial], bundle) then
+                            return false
+                        end
+                    end
+                    return true
                 end
             }
         }
@@ -861,9 +961,12 @@ local function set_region_rules(world)
         Regions.GANONS_TOWER_BEFORE_GANONDORFS_LAIR,
         world,
         {
-            {Regions.GANONS_TOWER_FLOOR_3, function(bundle)
+            {
+                Regions.GANONS_TOWER_FLOOR_3,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.GANONDORFS_LAIR,
                 function(bundle)
@@ -894,9 +997,12 @@ local function set_region_rules(world)
         Regions.GANONS_CASTLE_ESCAPE,
         world,
         {
-            {Regions.GANONS_ARENA, function(bundle)
+            {
+                Regions.GANONS_ARENA,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
