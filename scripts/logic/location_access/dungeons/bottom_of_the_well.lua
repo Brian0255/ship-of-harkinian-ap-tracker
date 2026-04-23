@@ -113,12 +113,12 @@ local function set_region_rules(world)
         {Locations.BOTTOM_OF_THE_WELL_FIRE_KEESE_CHEST, function(bundle) return LogicHelpers.can_do_trick(
             Tricks.LENS_BOTW, bundle) or LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle) end},
         {Locations.BOTTOM_OF_THE_WELL_FIRE_KEESE_POT1, function(bundle) return LogicHelpers.can_break_pots(bundle)
-         and LogicHelpers.can_do_trick(Tricks.LENS_BOTW, bundle) or LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle) end},
+         and (LogicHelpers.can_do_trick(Tricks.LENS_BOTW, bundle) or LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle)) end},
     })
     --Connections
    LogicHelpers.connect_regions(Regions.BOTTOM_OF_THE_WELL_KEESE_BEAMOS_ROOM, world, {
         {Regions.BOTTOM_OF_THE_WELL_PERIMETER, function(bundle) return LogicHelpers.is_child(bundle) and LogicHelpers.small_keys(Items.BOTTOM_OF_THE_WELL_SMALL_KEY,
-         3, bundle) and LogicHelpers.can_do_trick(Tricks.LENS_BOTW, bundle) or LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle) end},
+         3, bundle) and (LogicHelpers.can_do_trick(Tricks.LENS_BOTW, bundle) or LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle)) end},
         {Regions.BOTTOM_OF_THE_WELL_LIKE_LIKE_CAGE, function(bundle) return LogicHelpers.can_do_trick(
             Tricks.LENS_BOTW, bundle) or LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle) end},
         {Regions.BOTTOM_OF_THE_WELL_BASEMENT_USEFUL_BOMB_FLOWERS, function(bundle) return LogicHelpers.can_do_trick(
