@@ -3839,7 +3839,7 @@ _G.TokenCounts = {
     TOTAL = 100
 }
 
-_G.KeyShuffleLocations = {
+_G.DungeonLocations = {
     DEKU_TREE = 0,
     DODONGOS_CAVERN = 1,
     JABU_JABUS_BELLY = 2,
@@ -3854,6 +3854,15 @@ _G.KeyShuffleLocations = {
     GANONS_CASTLE = 11,
     ANY_DUNGEON = 12,
     OVERWORLD = 13
+}
+
+_G.GanonsTrials = {
+    FOREST_TRIAL = "Forest Trial",
+    FIRE_TRIAL = "Fire Trial",
+    WATER_TRIAL = "Water Trial",
+    SHADOW_TRIAL = "Shadow Trial",
+    SPIRIT_TRIAL = "Spirit Trial",
+    LIGHT_TRIAL = "Light Trial",
 }
 
 _G.Options = {
@@ -3968,7 +3977,12 @@ _G.Options = {
     INFINITE_UPGRADES_PROGRESSIVE = 1,
     INFINITE_UPGRADES_CONDENSED_PROGRESSIVE = 2,
     STARTING_AGE_CHILD = 0,
-    STARTING_AGE_ADULT = 1
+    STARTING_AGE_ADULT = 1,
+    START_OCARINA_OFF = 0,
+    START_OCARINA_FAIRY_OCARINA = 1,
+    START_OCARINA_OOT = 2,
+    GANONS_TRIALS_SKIP = 0,
+    GANONS_TRIALS_SET_NUMBER = 1
 }
 
 _G.UITabs = {
