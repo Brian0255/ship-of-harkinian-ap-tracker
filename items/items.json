@@ -1727,12 +1727,12 @@
     "codes": "buy_fairys_spirit"
   },
   {
-    "name": "",
+    "name": "Can Buy 10 Bombchus",
     "type": "toggle",
     "codes": "buy_bombchu_10"
   },
   {
-    "name": "",
+    "name": "Can Buy 20 Bombchus",
     "type": "toggle",
     "codes": "buy_bombchu_20"
   },
@@ -1740,6 +1740,31 @@
     "name": "Can Buy Blue Fire",
     "type": "toggle",
     "codes": "buy_blue_fire"
+  },
+    {
+    "name": "Can Buy Bugs",
+    "type": "toggle",
+    "codes": "buy_bottle_bug"
+  },
+    {
+    "name": "Can Buy Poe",
+    "type": "toggle",
+    "codes": "buy_poe"
+  },
+    {
+    "name": "Can Buy Fish",
+    "type": "toggle",
+    "codes": "buy_fish"
+  },
+    {
+    "name": "Can Buy Blue Potion",
+    "type": "toggle",
+    "codes": "buy_blue_potion"
+  },
+      {
+    "name": "Can Buy Green Potion",
+    "type": "toggle",
+    "codes": "buy_green_potion"
   },
   {
     "name": "Update",
