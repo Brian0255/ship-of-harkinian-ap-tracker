@@ -26,8 +26,12 @@ function World.new()
     self.triforce_pieces_required = 0
     self.vanilla_progressive_skulltula_count = 0
     self.randomized_progressive_skulltula_count = 0
+    self.archipelago_seed = 0
     self.apworld_version = 0
-    self.ice_trap_filler_replacement = ""
+    self.vanilla_shop_item_to_location = {}
+    self.required_trials = {}
+    self.hintable_items = {}
+    self.static_hints = {}
 
     return self
 end
@@ -80,11 +84,19 @@ function World:apply_slot_data(slot_data)
     self.vanilla_progressive_skulltula_count = slot_data["vanilla_progressive_skulltula_count"]
     self.randomized_progressive_skulltula_count = slot_data["randomized_progressive_skulltula_count"]
     self.tricks_in_logic = slot_data["tricks_in_logic"]
+    self.required_trials = slot_data["required_trials"]
+    self.hintable_items = slot_data["hintable_items"]
+    self.static_hints = slot_data["static_hints"]
+    self.archipelago_seed = slot_data["archipelago_seed"]
+
     for _, trick in pairs(self.tricks_in_logic) do
         local obj = Tracker:FindObjectForCode(trick)
         if obj ~= nil then
             obj.Active = true
         end
+    end
+    for location, item in pairs(self.shop_vanilla_items) do
+        self.vanilla_shop_item_to_location[item] = location
     end
 end
 
