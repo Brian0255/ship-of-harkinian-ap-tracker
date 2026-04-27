@@ -242,15 +242,13 @@ end
 
 function LogicHelpers.add_events(parent_region, world, events)
     for _, event in pairs(events) do
-        local event_location = event[1]
+        local event_name = event[1]
         local event_item = event[2]
         local event_rule = event[3] or function(bundle)
                 return true
             end
-        world:get_region(parent_region):add_event_locations({event_location}, SoHLocation)
-        world:get_location(event_location).access_rule = rule_wrapper.wrap(parent_region, event_rule, world)
-        world:get_location(event_location):set_event_item(event_item)
-        world.complete_event_item_list[event_item] = true
+        local wrapped_rule = rule_wrapper.wrap(parent_region, event_rule, world)
+        world:get_region(parent_region):add_event(event_name, event_item, wrapped_rule, SoHLocation)
     end
 end
 
@@ -308,7 +306,11 @@ function LogicHelpers.can_use_any(names, bundle)
     return false
 end
 
-function LogicHelpers.has_item(item, bundle, count)
+local has_item_cache = {}
+
+--This very hot function uses a cache to save tens of thousands of Lua instructions for expensive reachability updates
+--Probably worth it when the limit is 600k
+function LogicHelpers.has_item_helper(item, bundle, count)
     count = count or 1
     local state = bundle[1]
     local world = bundle[3]
@@ -325,19 +327,16 @@ function LogicHelpers.has_item(item, bundle, count)
         return state:has_all({Events.CAN_FARM_NUTS, Items.DEKU_NUT_BAG})
     end
 
-    --AP checks for Can Buy Beans event but I think it's less confusing from a tracker POV to omit that
     if item == Items.MAGIC_BEAN then
-        return state:has_any({Items.MAGIC_BEAN_PACK})
+        return state:has_any({Items.MAGIC_BEAN_PACK, Events.CAN_BUY_BEANS})
     end
 
     if item == Items.DEKU_SHIELD then
-        --normally checks Items.CAN_BUY_DEKU_SHIELD but for a tracker it makes more sense to just directly check the shield
-        return state:has(Items.DEKU_SHIELD)
+        return state:has(Items.BUY_DEKU_SHIELD)
     end
 
     if item == Items.HYLIAN_SHIELD then
-        --same as deku shield
-        return state:has(Items.HYLIAN_SHIELD)
+        return state:has(Items.BUY_HYLIAN_SHIELD)
     end
 
     if item == Items.GORON_TUNIC then
@@ -398,6 +397,23 @@ function LogicHelpers.has_item(item, bundle, count)
     end
 
     return state:has(item, count)
+end
+
+function LogicHelpers.has_item(item, bundle, count)
+    count = count or 1
+    if count == 1 then
+        if has_item_cache[item] ~= nil then
+            return has_item_cache[item]
+        end
+        local result = LogicHelpers.has_item_helper(item, bundle, count)
+        has_item_cache[item] = result
+        return result
+    end
+    return LogicHelpers.has_item_helper(item, bundle, count)
+end
+
+function LogicHelpers.clear_cache()
+    has_item_cache = {}
 end
 
 function LogicHelpers.merchant_shuffled(location_name, bundle)
