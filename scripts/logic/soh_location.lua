@@ -19,8 +19,8 @@ local setting_stage_to_ages = {
     [ShowChecks.BOTH] = {Ages.CHILD, Ages.ADULT}
 }
 
-function SoHLocation.new(name, parent_region, access_rule, item)
-    local self = setmetatable(Location(name, parent_region, access_rule, item), SoHLocation)
+function SoHLocation.new(name, parent_region, access_rule)
+    local self = setmetatable(Location(name, parent_region, access_rule), SoHLocation)
     return self
 end
 
