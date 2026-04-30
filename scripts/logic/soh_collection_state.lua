@@ -33,7 +33,25 @@ local progressive_item_map = {
     [Items.DEKU_STICK_BAG] = {item = Items.PROGRESSIVE_STICK_CAPACITY, count = 1},
     [Items.DEKU_NUT_BAG] = {item = Items.PROGRESSIVE_NUT_CAPACITY, count = 1},
     [Items.WEIRD_EGG] = {item = Items.WEIRD_EGG, count = 1},
-    [Items.ZELDAS_LETTER] = {item = Items.WEIRD_EGG, count = 2}
+    [Items.ZELDAS_LETTER] = {item = Items.WEIRD_EGG, count = 2},
+    [Items.MAGIC_SINGLE] = {item = Items.PROGRESSIVE_MAGIC_METER, count = 1},
+    [Items.MAGIC_DOUBLE] = {item = Items.PROGRESSIVE_MAGIC_METER, count = 2}
+}
+
+local vanilla_shop_items = {
+    [Items.DEKU_SHIELD] = {slot_data_name = "Buy Deku Shield", is_tunic_or_shield = true},
+    [Items.HYLIAN_SHIELD] = {slot_data_name = "Buy Hylian Shield", is_tunic_or_shield = true},
+    ["goron_tunic_composite"] = {slot_data_name = "Buy Goron Tunic", is_tunic_or_shield = true},
+    [Items.ZORA_TUNIC] = {slot_data_name = "Buy Zora Tunic", is_tunic_or_shield = true},
+    [Items.BUY_BLUE_POTION] = {slot_data_name = "Buy Blue Potion"},
+    [Items.BUY_FISH] = {slot_data_name = "Buy Fish"},
+    [Items.BUY_POE] = {slot_data_name = "Buy Poe"},
+    [Items.BUY_BOMBCHUS10] = {slot_data_name = "Buy Bombchu (10)"},
+    [Items.BUY_BOMBCHUS20] = {slot_data_name = "Buy Bombchu (20)"},
+    [Items.BUY_GREEN_POTION] = {slot_data_name = "Buy Green Potion"},
+    [Items.BUY_BOTTLE_BUG] = {slot_data_name = "Buy Bottle Bug"},
+    [Items.BUY_FAIRYS_SPIRIT] = {slot_data_name = "Buy Fairy's Spirit"},
+    [Items.BUY_BLUE_FIRE] = {slot_data_name = "Buy Blue Fire"}
 }
 
 function SoHCollectionState.new(world)
@@ -53,10 +71,15 @@ function SoHCollectionState.new(world)
 
     self.event_items = {}
 
+    self.disable_invalidating = false
+
     return self
 end
 
 function SoHCollectionState:_soh_invalidate()
+    if self.disable_invalidating then
+        return
+    end
     self._soh_child_reachable_regions = {}
     self._soh_adult_reachable_regions = {}
     self._soh_child_blocked_regions = {}
@@ -78,12 +101,87 @@ function SoHCollectionState:_collect_events(region)
     return total
 end
 
+function SoHCollectionState:_handle_vanilla_shop_items()
+    --disable_invalidating is for the bad loop here:
+    --you get a deku shield from this, which triggers the watch before the loop finishes, which invalidates the region graph
+    --then the loop continues, location.can_reach is called again, the region graph rebuilds
+    --since there is no pause here we can easily hit the instruction limit if we don't stop the loop with this
+    self.disable_invalidating = true
+    local change = false
+    for item_name, data in pairs(vanilla_shop_items) do
+        local slot_data_name = data.slot_data_name
+        local possible_locations = self.world.vanilla_shop_item_to_location[slot_data_name] or {}
+        local active = false
+        for _, location_name in pairs(possible_locations) do
+            local location = self.world:get_location(location_name)
+            if location and location:can_reach(self) then
+                active = true
+                break
+            end
+        end
+        local obj = Tracker:FindObjectForCode(item_name)
+        if obj ~= nil then
+            if data.is_tunic_or_shield then
+                --some messy looking jank here to make it so tunics still respond to left click toggling when being shop tracked
+                if obj.CurrentStage == 0 or obj.CurrentStage == 3 then
+                    local stage = active and 3 or 0
+                    if obj.CurrentStage ~= stage then
+                        obj.CurrentStage = stage
+                        change = true
+                    end
+                end
+            else
+                if active ~= obj.Active then
+                    obj.Active = active
+                    change = true
+                end
+            end
+        end
+    end
+    self.disable_invalidating = false
+    if change then
+        self:_soh_invalidate()
+    end
+end
+
+function SoHCollectionState:_handle_event_based_items()
+    local mapping = {
+        {
+            option_function = function()
+                return not self.world:get_option("shuffle_deku_stick_bag")
+            end,
+            event = Events.CAN_FARM_STICKS,
+            item = Items.PROGRESSIVE_STICK_CAPACITY
+        },
+        {
+            option_function = function()
+                return not self.world:get_option("shuffle_deku_nut_bag")
+            end,
+            event = Events.CAN_FARM_NUTS,
+            item = Items.PROGRESSIVE_NUT_CAPACITY
+        },
+        {
+            option_function = function()
+                return self.world:get_option("shuffle_merchants") == Options.MERCHANTS_OFF or
+                    self.world:get_option("shuffle_merchants") == Options.MERCHANTS_ALL_BUT_BEANS
+            end,
+            event = Events.CAN_BUY_BEANS,
+            item = Items.MAGIC_BEAN_PACK
+        }
+    }
+    for _, entry in pairs(mapping) do
+        if entry.option_function() and self.event_items[entry.event] then
+            Tracker:FindObjectForCode(entry.item).Active = self.event_items[entry.event]
+        end
+    end
+end
+
 function SoHCollectionState:_soh_update_age_reachable_regions()
     self._soh_stale = false
     local collected_events = 0
     repeat
-
         collected_events = 0
+        LogicHelpers.clear_cache()
         for _, age in pairs({Ages.CHILD, Ages.ADULT}) do
             self._soh_age = age
             local start = self.world:get_region(Regions.ROOT)
@@ -134,6 +232,8 @@ function SoHCollectionState:_soh_update_age_reachable_regions()
             end
         end
     until collected_events == 0
+    self:_handle_event_based_items()
+    self:_handle_vanilla_shop_items()
 end
 
 function SoHCollectionState:_soh_can_reach_as_age(region, age)
@@ -226,7 +326,7 @@ function SoHCollectionState:get_heart_count()
     if self.has_all_items then
         return 200
     end
-    local count = 3 + self:count(Items.HEART_CONTAINER)
+    local count = self.world:get_option("starting_hearts") + self:count(Items.HEART_CONTAINER)
     local pieces = self:count(Items.PIECE_OF_HEART) + self:count(Items.PIECE_OF_HEART_WINNER)
     return count + (pieces // 4)
 end
