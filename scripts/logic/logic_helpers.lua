@@ -267,7 +267,7 @@ function LogicHelpers.can_use(item, bundle)
             return false
         end
 
-        if data[item].item_type == ItemType.MAGIC and not LogicHelpers.has_item(Items.PROGRESSIVE_MAGIC_METER, bundle) then
+        if data[item].item_type == ItemType.MAGIC and not LogicHelpers.has_item(Items.MAGIC_SINGLE, bundle) then
             return false
         end
 
