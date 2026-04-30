@@ -96,7 +96,20 @@ function World:apply_slot_data(slot_data)
         end
     end
     for location, item in pairs(self.shop_vanilla_items) do
-        self.vanilla_shop_item_to_location[item] = location
+        if self.vanilla_shop_item_to_location[item] == nil then
+            self.vanilla_shop_item_to_location[item] = {}
+        end
+        table.insert(self.vanilla_shop_item_to_location[item], location)
+    end
+end
+
+function World:onClear()
+    self.vanilla_shop_item_to_location = {}
+    for _, trick in pairs(self.tricks_in_logic) do
+        local obj = Tracker:FindObjectForCode(trick)
+        if obj ~= nil then
+            obj.Active = false
+        end
     end
 end
 
