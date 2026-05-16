@@ -342,7 +342,7 @@
             "chest_opened_img": "images/chest_images/pot_opened.png",
             "chest_unopened_img": "images/chest_images/pot_unopened.png",
             "visibility_rules": [
-              "$OPTION_FREESTANDING_ITEMS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_POT1"
+              "$OPTION_POTS_DUNGEON,$AGE_CHECK|WATER_TEMPLE_RIVER_POT1"
             ],
             "item_count": 2
           }
