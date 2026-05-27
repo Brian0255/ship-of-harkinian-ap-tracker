@@ -16,6 +16,9 @@ function RegionManager.new()
     self.location_cache = {}
     self.child_only_locations = {}
     self.adult_only_locations = {}
+    self.child_only_sequence_break_locations = {}
+    self.adult_only_sequence_break_locations = {}
+    self.event_containing_regions = {}
 
     return self
 end
