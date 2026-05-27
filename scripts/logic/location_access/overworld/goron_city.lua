@@ -149,11 +149,7 @@ local function set_region_rules(world)
             {
                 Locations.GC_MEDIGORON,
                 function(bundle)
-                    local can_afford = LogicHelpers.has_item(Items.ADULT_WALLET, bundle)
-                    if LogicHelpers.merchant_shuffled(Locations.GC_MEDIGORON, bundle) then
-                        can_afford = LogicHelpers.can_afford_item("merchant_prices",Locations.GC_MEDIGORON,bundle)
-                    end
-                    return LogicHelpers.is_adult(bundle) and can_afford and
+                    return LogicHelpers.is_adult(bundle) and LogicHelpers.can_afford_item("merchant_prices",Locations.GC_MEDIGORON,bundle) and
                         (LogicHelpers.can_break_mud_walls(bundle) or LogicHelpers.has_item(Items.GORONS_BRACELET, bundle))
                 end
             },

@@ -198,12 +198,8 @@ local function set_region_rules(world)
             {
                 Locations.ZR_MAGIC_BEAN_SALESMAN,
                 function(bundle)
-                    local shuffled = LogicHelpers.merchant_shuffled(Locations.ZR_MAGIC_BEAN_SALESMAN, bundle)
-                    if not shuffled then
-                        return LogicHelpers.is_child(bundle) and LogicHelpers.has_item(Items.CHILD_WALLET, bundle)
-                    else
-                        return LogicHelpers.can_afford_item("merchant_prices", Locations.ZR_MAGIC_BEAN_SALESMAN, bundle)
-                    end
+                    return LogicHelpers.is_child(bundle) and
+                    LogicHelpers.can_afford_item("merchant_prices", Locations.ZR_MAGIC_BEAN_SALESMAN, bundle)
                 end
             },
             {

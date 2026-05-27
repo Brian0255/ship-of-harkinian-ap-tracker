@@ -672,37 +672,37 @@ local function set_region_rules(world)
             {
                 Locations.KAK_10_GOLD_SKULLTULA_REWARD,
                 function(bundle)
-                    return LogicHelpers.has_item(Items.GOLD_SKULLTULA_TOKEN, bundle, 10)
+                    return LogicHelpers.get_gs_count(bundle) >= 10
                 end
             },
             {
                 Locations.KAK_20_GOLD_SKULLTULA_REWARD,
                 function(bundle)
-                    return LogicHelpers.has_item(Items.GOLD_SKULLTULA_TOKEN, bundle, 20)
+                    return LogicHelpers.get_gs_count(bundle) >= 20
                 end
             },
             {
                 Locations.KAK_30_GOLD_SKULLTULA_REWARD,
                 function(bundle)
-                    return LogicHelpers.has_item(Items.GOLD_SKULLTULA_TOKEN, bundle, 30)
+                    return LogicHelpers.get_gs_count(bundle) >= 30
                 end
             },
             {
                 Locations.KAK_40_GOLD_SKULLTULA_REWARD,
                 function(bundle)
-                    return LogicHelpers.has_item(Items.GOLD_SKULLTULA_TOKEN, bundle, 40)
+                    return LogicHelpers.get_gs_count(bundle) >= 40
                 end
             },
             {
                 Locations.KAK_50_GOLD_SKULLTULA_REWARD,
                 function(bundle)
-                    return LogicHelpers.has_item(Items.GOLD_SKULLTULA_TOKEN, bundle, 50)
+                    return LogicHelpers.get_gs_count(bundle) >= 50
                 end
             },
             {
                 Locations.KAK_100_GOLD_SKULLTULA_REWARD,
                 function(bundle)
-                    return LogicHelpers.has_item(Items.GOLD_SKULLTULA_TOKEN, bundle, 100)
+                    return LogicHelpers.get_gs_count(bundle) >= 100
                 end
             }
         }
@@ -1062,13 +1062,9 @@ local function set_region_rules(world)
             {
                 Locations.KAK_GRANNYS_SHOP,
                 function(bundle)
-                    local shuffled = LogicHelpers.merchant_shuffled(Locations.KAK_GRANNYS_SHOP, bundle)
-                    local can_afford = LogicHelpers.can_use(Items.ADULT_WALLET, bundle)
-                    if shuffled then
-                        can_afford = LogicHelpers.can_afford_item("merchant_prices", Locations.KAK_GRANNYS_SHOP, bundle)
-                    end
-                    return LogicHelpers.is_adult(bundle) and can_afford and
-                        (LogicHelpers.can_use(Items.ODD_MUSHROOM, bundle)) and
+                    return LogicHelpers.is_adult(bundle) and
+                        LogicHelpers.can_afford_item("merchant_prices", Locations.KAK_GRANNYS_SHOP, bundle) and
+                        LogicHelpers.can_use(Items.ODD_MUSHROOM, bundle) and
                         LogicHelpers.trade_quest_step(Items.ODD_MUSHROOM, bundle)
                 end
             }

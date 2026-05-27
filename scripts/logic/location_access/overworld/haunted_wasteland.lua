@@ -91,11 +91,8 @@ local function set_region_rules(world)
             {
                 Locations.WASTELAND_CARPET_SALESMAN,
                 function(bundle)
-                    local shuffled = LogicHelpers.merchant_shuffled(Locations.WASTELAND_CARPET_SALESMAN, bundle)
-                    return (not shuffled and LogicHelpers.has_item(Items.ADULT_WALLET, bundle) and
-                        (LogicHelpers.can_jump_slash(bundle) or LogicHelpers.can_use(Items.HOVER_BOOTS, bundle))) or
-                        (shuffled and
-                            LogicHelpers.can_afford_item("merchant_prices", Locations.WASTELAND_CARPET_SALESMAN, bundle))
+                    return LogicHelpers.can_afford_item("merchant_prices", Locations.WASTELAND_CARPET_SALESMAN, bundle) and
+                        (LogicHelpers.can_jump_slash(bundle) or LogicHelpers.can_use(Items.HOVER_BOOTS, bundle))
                 end
             },
             {
