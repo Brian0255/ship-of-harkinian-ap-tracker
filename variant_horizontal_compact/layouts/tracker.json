@@ -1,0 +1,116 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#00000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "content": {
+                "type": "tabbed",
+                "h_alignment": "left",
+                "tabs": [
+                  {
+                    "title": "Equipment, Songs and Medallions",
+                    "content": {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "content": [
+                        {
+                          "type": "array",
+                          "margin": "0,6,0,0",
+                          "content": [
+                            {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "shared_item_grid_horizontal"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "array",
+                          "margin": "0,6,0,0",
+                          "content": [
+                            {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "shared_songs_and_medallions_horizontal"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Dungeon Items and Overworld Keys",
+                    "content": {
+                      "type": "array",
+                      "orientation": "horizontal",
+                      "content": [
+                        {
+                          "type": "array",
+                          "margin": "0,8,0,0",
+                          "content": [
+                            {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "shared_dungeon_items"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "array",
+                          "margin": "0,6,0,0",
+                          "content": [
+                            {
+                              "type": "layout",
+                              "h_alignment": "center",
+                              "v_alignment": "center",
+                              "key": "shared_overworld_keys"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "type": "group",
+              "header": "Map Tools",
+              "dock": "left",
+              "margin": "0,0,3,0",
+              "content": {
+                "type": "layout",
+                "h_alignment": "center",
+                "v_alignment": "center",
+                "key": "shared_map_tools"
+              }
+            }
+          ]
+        },
+        {
+          "type": "dock",
+          "content": [
+            {
+              "type": "layout",
+              "key": "main_maps"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
