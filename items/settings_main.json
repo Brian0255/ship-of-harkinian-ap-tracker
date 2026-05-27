@@ -1063,11 +1063,12 @@
     "codes": "setting_shuffle_100_gs_reward"
   },
   {
-    "name": "Enable All Tricks and Glitches",
+    "name": "Enable All Tricks",
     "type": "toggle",
-    "img": "images/settings/all_tricks_and_glitches_true.png",
+    "img": "images/settings/enable_all_tricks_true.png",
     "disabled_img_mods": "",
-    "disabled_img": "images/settings/all_tricks_and_glitches_false.png",
+    "disabled_img": "images/settings/enable_all_tricks_false.png",
+    "initial_active_state": false,
     "codes": "setting_enable_all_tricks"
   },
   {
@@ -1100,6 +1101,47 @@
     ],
     "initial_stage_idx": 2,
     "loop": true
+  },
+    {
+    "name": "Show Out of Logic Checks",
+    "type": "toggle",
+    "initial_active_state": true,
+    "img": "images/settings/show_out_of_logic_true.png",
+    "disabled_img": "images/settings/show_out_of_logic_false.png",
+    "disabled_img_mods": "@disabled|false",
+    "codes": "setting_show_out_of_logic_checks"
+  },
+
+  {
+    "name": "Split Map",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Split Map: Off",
+        "img": "images/settings/split_map_on_normal.png",
+        "img_mods": "@disabled",
+        "codes": "setting_split_map"
+      },
+      {
+        "name": "Split Map: On",
+        "img": "images/settings/split_map_on_normal.png"
+      },
+      {
+        "name": "Split Map: On (Reversed)",
+        "img": "images/settings/split_map_on_reverse.png"
+      }
+    ],
+    "initial_stage_idx": 0,
+    "loop": true
+  },
+
+        {
+    "name": "Auto Tab",
+    "type": "toggle",
+    "img": "images/settings/auto_tab.png",
+    "initial_active_state": true,
+    "codes": "setting_auto_tab"
   },
 
   {
@@ -1217,5 +1259,393 @@
     "type": "toggle",
     "initial_active_state": false,
     "codes": "setting_full_wallets"
+  },
+  {
+    "name": "Ganon's Trials",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Ganon's Trials: Skip",
+        "img": "images/settings/ganons_trials_skip.png",
+        "codes": "setting_ganons_trials"
+      },
+      {
+        "name": "Ganon's Trials: Set Number",
+        "img": "images/settings/ganons_trials_set_number.png"
+      }
+    ],
+    "initial_stage_idx": 0,
+    "loop": true
+  },
+  {
+    "name": "Ganon's Trials Count",
+    "type": "consumable",
+    "min_quantity": 0,
+    "max_quantity": 6,
+    "initial_quantity": 6,
+    "img": "images/settings/ganons_trials_count.png",
+    "codes": "setting_ganons_trials_count"
+  },
+  {
+    "name": "Start with the Master Sword",
+    "type": "toggle",
+    "img": "images/settings/master_sword_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/master_sword_false.png",
+    "codes": "setting_start_with_master_sword"
+  },
+  {
+    "name": "Start with the Kokiri Sword",
+    "type": "toggle",
+    "img": "images/settings/kokiri_sword_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/kokiri_sword_false.png",
+    "codes": "setting_start_with_kokiri_sword"
+  },
+  {
+    "name": "Start with Ocarina",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Start with Ocarina: Off",
+        "img": "images/settings/ocarina_off.png",
+        "codes": "setting_start_with_ocarina"
+      },
+      {
+        "name": "Start with Ocarina: Fairy Ocarina",
+        "img": "images/settings/ocarina_fairy_ocarina.png"
+      },
+      {
+        "name": "Start with Ocarina: Ocarina of Time",
+        "img": "images/settings/ocarina_ocarina_of_time.png"
+      }
+    ],
+    "initial_stage_idx": 0,
+    "loop": true
+  },
+  {
+    "name": "Start with Link's Pocket",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Start with Link's Pocket: Dungeon Reward",
+        "codes": "setting_start_with_links_pocket"
+      },
+      {
+        "name": "Start with Link's Pocket: Advancement"
+      },
+      {
+        "name": "Start with Link's Pocket: Anything"
+      },
+      {
+        "name": "Start with Link's Pocket: Nothing"
+      }
+    ],
+    "initial_stage_idx": 0,
+    "loop": true
+  },
+    {
+    "name": "Hint Clarity",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Hint Clarity: Obscure",
+        "codes": "setting_hint_clarity"
+      },
+      {
+        "name": "Hint Clarity: Ambiguous"
+      },
+      {
+        "name": "Hint Clarity: Clear"
+      }
+    ],
+    "initial_stage_idx": 2,
+    "loop": true
+  },
+  {
+    "name": "Start with Magic Beans",
+    "type": "toggle",
+    "img": "images/settings/magic_beans_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/magic_beans_false.png",
+    "codes": "setting_start_with_magic_beans"
+  },
+  {
+    "name": "Start with Zelda's Lullaby",
+    "type": "toggle",
+    "img": "images/settings/zeldas_lullaby_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/zeldas_lullaby_false.png",
+    "codes": "setting_start_with_zeldas_lullaby"
+  },
+  {
+    "name": "Start with Epona's Song",
+    "type": "toggle",
+    "img": "images/settings/eponas_song_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/eponas_song_false.png",
+    "codes": "setting_start_with_eponas_song"
+  },
+  {
+    "name": "Start with Saria's Song",
+    "type": "toggle",
+    "img": "images/settings/sarias_song_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/sarias_song_false.png",
+    "codes": "setting_start_with_sarias_song"
+  },
+  {
+    "name": "Start with Sun's Song",
+    "type": "toggle",
+    "img": "images/settings/suns_song_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/suns_song_false.png",
+    "codes": "setting_start_with_suns_song"
+  },
+  {
+    "name": "Start with Song of Time",
+    "type": "toggle",
+    "img": "images/settings/song_of_time_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/song_of_time_false.png",
+    "codes": "setting_start_with_song_of_time"
+  },
+  {
+    "name": "Start with Song of Storms",
+    "type": "toggle",
+    "img": "images/settings/song_of_storms_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/song_of_storms_false.png",
+    "codes": "setting_start_with_song_of_storms"
+  },
+  {
+    "name": "Start with Minuet of Forest",
+    "type": "toggle",
+    "img": "images/settings/minuet_of_forest_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/minuet_of_forest_false.png",
+    "codes": "setting_start_with_minuet"
+  },
+  {
+    "name": "Start with Bolero of Fire",
+    "type": "toggle",
+    "img": "images/settings/bolero_of_fire_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/bolero_of_fire_false.png",
+    "codes": "setting_start_with_bolero"
+  },
+  {
+    "name": "Start with Serenade of Water",
+    "type": "toggle",
+    "img": "images/settings/serenade_of_water_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/serenade_of_water_false.png",
+    "codes": "setting_start_with_serenade"
+  },
+  {
+    "name": "Start with Requiem of Spirit",
+    "type": "toggle",
+    "img": "images/settings/requiem_of_spirit_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/requiem_of_spirit_false.png",
+    "codes": "setting_start_with_requiem"
+  },
+  {
+    "name": "Start with Nocturne of Shadow",
+    "type": "toggle",
+    "img": "images/settings/nocturne_of_shadow_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/nocturne_of_shadow_false.png",
+    "codes": "setting_start_with_nocturne"
+  },
+  {
+    "name": "Start with Prelude of Light",
+    "type": "toggle",
+    "img": "images/settings/prelude_of_light_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/prelude_of_light_false.png",
+    "codes": "setting_start_with_prelude"
+  },
+  {
+    "name": "Start with Nut Ammo",
+    "type": "toggle",
+    "codes": "setting_start_with_nut_ammo"
+  },
+  {
+    "name": "Start with Stick Ammo",
+    "type": "toggle",
+    "codes": "setting_start_with_stick_ammo"
+  },
+  {
+    "name": "Start with Deku Shield",
+    "type": "toggle",
+    "codes": "setting_start_with_deku_shield"
+  },
+  {
+    "name": "Medallion Locked Trials",
+    "type": "toggle",
+    "img": "images/settings/medallion_locked_trials_true.png",
+    "disabled_img_mods": "",
+    "disabled_img": "images/settings/medallion_locked_trials_false.png",
+    "codes": "setting_medallion_locked_trials"
+  },
+  {
+    "name": "Starting Hearts",
+    "type": "consumable",
+    "min_quantity": 1,
+    "max_quantity": 20,
+    "initial_quantity": 3,
+    "img": "images/settings/starting_hearts.png",
+    "codes": "setting_starting_hearts"
+  },
+  {
+    "name": "Ice Trap Count",
+    "type": "consumable",
+    "min_quantity": 0,
+    "max_quantity": 100,
+    "initial_quantity": 6,
+    "codes": "setting_ice_trap_count"
+  },
+  {
+    "name": "Ice Trap Filler Replacement",
+    "type": "consumable",
+    "min_quantity": 0,
+    "max_quantity": 100,
+    "initial_quantity": 0,
+    "codes": "setting_ice_trap_filler_replacement"
+  },
+  {
+    "name": "ToT Altar Hint",
+    "type": "toggle",
+    "codes": "setting_tot_altar_hint"
+  },
+  {
+    "name": "Ganondorf Hint",
+    "type": "toggle",
+    "codes": "setting_ganondorf_hint"
+  },
+  {
+    "name": "Sheik Light Arrow Hint",
+    "type": "toggle",
+    "codes": "setting_sheik_la_hint"
+  },
+  {
+    "name": "Boss Key Hint",
+    "type": "toggle",
+    "codes": "setting_boss_key_hint"
+  },
+  {
+    "name": "Dampe's Diary Hint",
+    "type": "toggle",
+    "codes": "setting_dampe_diary_hint"
+  },
+  {
+    "name": "Greg the Green Rupee Hint",
+    "type": "toggle",
+    "codes": "setting_greg_hint"
+  },
+  {
+    "name": "Saria's Hint",
+    "type": "toggle",
+    "codes": "setting_saria_hint"
+  },
+  {
+    "name": "Mido's Hint",
+    "type": "toggle",
+    "codes": "setting_mido_hint"
+  },
+  {
+    "name": "Frog Ocarina Game Hint",
+    "type": "toggle",
+    "codes": "setting_frog_game_hint"
+  },
+  {
+    "name": "Ocarina of Time Hint",
+    "type": "toggle",
+    "codes": "setting_ocarina_of_time_hint"
+  },
+  {
+    "name": "Biggoron's Hint",
+    "type": "toggle",
+    "codes": "setting_big_goron_hint"
+  },
+  {
+    "name": "Big Poes Hint",
+    "type": "toggle",
+    "codes": "setting_big_poe_hint"
+  },
+  {
+    "name": "Chickens Hint",
+    "type": "toggle",
+    "codes": "setting_chicken_hint"
+  },
+  {
+    "name": "Malon's Hint",
+    "type": "toggle",
+    "codes": "setting_malon_hint"
+  },
+  {
+    "name": "Horseback Archery Hint",
+    "type": "toggle",
+    "codes": "setting_horseback_archery_hint"
+  },
+  {
+    "name": "Fishing Pole Hint",
+    "type": "toggle",
+    "codes": "setting_fishing_pole_hint"
+  },
+  {
+    "name": "Warp Song Hint",
+    "type": "toggle",
+    "codes": "setting_warp_song_hint"
+  },
+  {
+    "name": "Scrub Hint Text",
+    "type": "toggle",
+    "codes": "setting_scrub_hints"
+  },
+  {
+    "name": "Merchant Hint Text",
+    "type": "toggle",
+    "codes": "setting_merchant_hints"
+  },
+  {
+    "name": "10 GS Hint",
+    "type": "toggle",
+    "codes": "setting_gs_10_hint"
+  },
+  {
+    "name": "20 GS Hint",
+    "type": "toggle",
+    "codes": "setting_gs_20_hint"
+  },
+  {
+    "name": "30 GS Hint",
+    "type": "toggle",
+    "codes": "setting_gs_30_hint"
+  },
+  {
+    "name": "40 GS Hint",
+    "type": "toggle",
+    "codes": "setting_gs_40_hint"
+  },
+  {
+    "name": "50 GS Hint",
+    "type": "toggle",
+    "codes": "setting_gs_50_hint"
+  },
+  {
+    "name": "100 GS Hint",
+    "type": "toggle",
+    "codes": "setting_gs_100_hint"
+  },
+  {
+    "name": "Mask Shop Hint",
+    "type": "toggle",
+    "codes": "setting_mask_shop_hint"
   }
 ]
