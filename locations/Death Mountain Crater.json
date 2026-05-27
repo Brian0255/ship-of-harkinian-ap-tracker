@@ -468,8 +468,8 @@
             "access_rules": [
               "^$REACHABLE|DMC_DISTANT_PLATFORM_RUPEE1"
             ],
-            "chest_opened_img": "images/chest_images/blupee_opened.png",
-            "chest_unopened_img": "images/chest_images/blupee_unopened.png",
+            "chest_opened_img": "images/chest_images/green_rupee_opened.png",
+            "chest_unopened_img": "images/chest_images/green_rupee_unopened.png",
             "visibility_rules": [
               "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|DMC_DISTANT_PLATFORM_RUPEE1"
             ],
