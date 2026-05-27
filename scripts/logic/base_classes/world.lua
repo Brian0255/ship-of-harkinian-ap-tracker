@@ -1,4 +1,5 @@
 local RegionManager = require("scripts/logic/base_classes/region_manager")
+local SoHLocation = require("scripts/logic/soh_location")
 
 local World = {}
 World.__index = World
@@ -75,6 +76,31 @@ function World:get_option(option_key)
     end
 end
 
+function World:is_token_type_vanilla(token_type)
+    local token_option = self:get_option("shuffle_skull_tokens")
+    if token_type == TokenTypes.OVERWORLD then
+        return token_option == Options.TOKEN_SHUFFLE_OFF or token_option == Options.TOKEN_SHUFFLE_DUNGEON
+    elseif token_type == TokenTypes.DUNGEON then
+        return token_option == Options.TOKEN_SHUFFLE_OFF or token_option == Options.TOKEN_SHUFFLE_OVERWORLD
+    end
+end
+
+local slot_data_to_vanilla_shop_item = {
+    ["Buy Deku Shield"] = Items.DEKU_SHIELD,
+    ["Buy Hylian Shield"] = Items.HYLIAN_SHIELD,
+    ["Buy Goron Tunic"] = Items.GORON_TUNIC,
+    ["Buy Zora Tunic"] = Items.ZORA_TUNIC,
+    ["Buy Blue Potion"] = Items.BUY_BLUE_POTION,
+    ["Buy Fish"] = Items.BUY_FISH,
+    ["Buy Poe"] = Items.BUY_POE,
+    ["Buy Bombchu (10)"] = Items.BUY_BOMBCHUS10,
+    ["Buy Bombchu (20)"] = Items.BUY_BOMBCHUS20,
+    ["Buy Green Potion"] = Items.BUY_GREEN_POTION,
+    ["Buy Bottle Bug"] = Items.BUY_BOTTLE_BUG,
+    ["Buy Fairy's Spirit"] = Items.BUY_FAIRYS_SPIRIT,
+    ["Buy Blue Fire"] = Items.BUY_BLUE_FIRE
+}
+
 function World:apply_slot_data(slot_data)
     self.shop_prices = slot_data["shop_prices"]
     self.shop_vanilla_items = slot_data["shop_vanilla_items"]
@@ -93,36 +119,68 @@ function World:apply_slot_data(slot_data)
         local obj = Tracker:FindObjectForCode(trick)
         if obj ~= nil then
             obj.Active = true
+            SOH_COLLECTION_STATE:on_item_changed(trick)
         end
     end
+    self:_compute_child_adult_only_regions(SOH_COLLECTION_STATE)
+
     for location, item in pairs(self.shop_vanilla_items) do
-        if self.vanilla_shop_item_to_location[item] == nil then
-            self.vanilla_shop_item_to_location[item] = {}
+        if slot_data_to_vanilla_shop_item[item] then
+            item = slot_data_to_vanilla_shop_item[item]
+            local loc = self:get_location(location)
+            if loc then
+                loc.parent_region:add_event(location, item, loc.access_rule, SoHLocation)
+            else
+                print(location)
+            end
         end
-        table.insert(self.vanilla_shop_item_to_location[item], location)
     end
 end
 
 function World:onClear()
-    self.vanilla_shop_item_to_location = {}
     for _, trick in pairs(self.tricks_in_logic) do
         local obj = Tracker:FindObjectForCode(trick)
         if obj ~= nil then
             obj.Active = false
+            SOH_COLLECTION_STATE:on_item_changed(trick)
+        end
+    end
+    for location_name, item in pairs(self.shop_vanilla_items) do
+        if slot_data_to_vanilla_shop_item[item] then
+            item = slot_data_to_vanilla_shop_item[item]
+            local location = self:get_location(location_name)
+            if location then
+                local region = location.parent_region
+                location:remove_event_item()
+                self.complete_event_item_list[item] = nil
+                region.events[location_name] = nil
+                if next(region.events) == nil then
+                    self.regions.event_containing_regions[region.name] = nil
+                end
+            end
         end
     end
 end
 
 function World:_compute_child_adult_only_regions(state)
+    self.regions.child_only_locations = {}
+    self.regions.adult_only_locations = {}
+    self.regions.child_only_sequence_break_locations = {}
+    self.regions.adult_only_sequence_break_locations = {}
     state.has_all_items = true
     state:_soh_invalidate()
     for name, location in pairs(self.regions.location_cache) do
-        local c = location:can_reach(state, {Ages.CHILD})
-        local a = location:can_reach(state, {Ages.ADULT})
-        if c and not a then
+        local c = location:can_reach(state, { Ages.CHILD })
+        local a = location:can_reach(state, { Ages.ADULT })
+        if c == ACCESS_NORMAL and a < ACCESS_NORMAL then
             self.regions.child_only_locations[name] = true
-        elseif a and not c then
+        elseif a == ACCESS_NORMAL and c < ACCESS_NORMAL then
             self.regions.adult_only_locations[name] = true
+        end
+        if c > ACCESS_NONE and a == ACCESS_NONE then
+            self.regions.child_only_sequence_break_locations[name] = true
+        elseif a > ACCESS_NONE and c == ACCESS_NONE then
+            self.regions.adult_only_sequence_break_locations[name] = true
         end
     end
     state.has_all_items = false
