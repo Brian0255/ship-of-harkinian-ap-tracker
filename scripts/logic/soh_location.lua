@@ -27,15 +27,13 @@ end
 -- override
 function SoHLocation:can_reach(state, ages)
     local stored_age = state._soh_age
+    local best = ACCESS_NONE
     for _, age in ipairs(ages or setting_stage_to_ages[SETTING_SHOW_CHECKS]) do
         state._soh_age = age
-        if Location.can_reach(self, state) then
-            state._soh_age = stored_age
-            return true
-        end
+        best = math.max(best, Location.can_reach(self, state))
     end
     state._soh_age = stored_age
-    return false
+    return best
 end
 
 return SoHLocation
