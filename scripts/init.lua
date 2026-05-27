@@ -6,14 +6,6 @@ require("scripts/utils")
 require("scripts/logic/enums")
 require("scripts/logic/logic_helpers")
 
-local SoHCollectionState = require("scripts/logic/soh_collection_state")
-local SoHRegion = require("scripts/logic/soh_region")
-local World = require("scripts/logic/base_classes/world")
-local world = World()
-
-SoHRegion:create_regions_and_locations(world)
-SOH_COLLECTION_STATE = SoHCollectionState(world)
-
 -- Maps
 if Tracker.ActiveVariantUID == "maps-u" then
     Tracker:AddMaps("maps/maps-u.json")
@@ -75,7 +67,15 @@ Tracker:AddLayouts("layouts/overworld_keys.json")
 Tracker:AddLayouts("layouts/map_tools.json")
 Tracker:AddLayouts("layouts/tabs.json")
 Tracker:AddLayouts("layouts/tracker.json")
+Tracker:AddLayouts("layouts/main_map_variations/single_map.json")
 --Tracker:AddLayouts("layouts/broadcast.json")
+
+local SoHCollectionState = require("scripts/logic/soh_collection_state")
+local SoHRegion = require("scripts/logic/soh_region")
+local World = require("scripts/logic/base_classes/world")
+local world = World()
+SoHRegion:create_regions_and_locations(world)
+SOH_COLLECTION_STATE = SoHCollectionState(world)
 
 local text = {"DT", "DC", "JJB", "FoT", "FiT", "WT", "ShT", "SpT", "Free"}
 
@@ -138,38 +138,11 @@ local dungeon_label_to_text = {
     dungeon_label_GC = "GC"
 }
 
-local child_trade_affecting = {
-    ["setting_complete_mask_quest"] = true,
-    ["setting_skip_child_zelda"] = true,
-    [Items.WEIRD_EGG] = true,
-    [Items.KOKIRIS_EMERALD] = true,
-    [Items.GORONS_RUBY] = true,
-    [Items.ZORAS_SAPPHIRE] = true,
-    [Items.SARIAS_SONG] = true,
-    [Items.PROGRESSIVE_OCARINA] = true,
-    [Items.PROGRESSIVE_WALLET] = true,
-    [Items.MASK_SHOP_KEY] = true
+local split_map_stage_to_layout = {
+    [0] = "single_map",
+    [1] = "double_map_overworld_left",
+    [2] = "double_map_overworld_right"
 }
-
-local function on_child_trade_related_item_changed()
-    --stateChanged runs first, no reason to call Invalidate and double call the most expensive function potentially
-    SOH_COLLECTION_STATE:_soh_update_age_reachable_regions()
-    local masks = Tracker:FindObjectForCode("child_masks")
-    if masks == nil then
-        return
-    end
-    ---@cast masks JsonItem
-    if SOH_COLLECTION_STATE.event_items[Events.CAN_BORROW_MASK_OF_TRUTH] then
-        masks.CurrentStage = 2
-        masks.Active = true
-    elseif SOH_COLLECTION_STATE.event_items[Events.CAN_BORROW_SKULL_MASK] then
-        masks.CurrentStage = 1
-        masks.Active = true
-    else
-        masks.CurrentStage = 0
-        masks.Active = false
-    end
-end
 
 local function init_overlay_text(code, initial_text, font_size)
     local obj = Tracker:FindObjectForCode(code)
@@ -193,23 +166,23 @@ end
 
 init_overlay_text("progressive_hookshot")
 
-local function on_state_changed()
-    SOH_COLLECTION_STATE:_soh_invalidate()
+local function on_state_changed(item_code)
+    item_code = item_code:match("^[^,]+")
+    SOH_COLLECTION_STATE:on_item_changed(item_code)
+    if TrickCodeToTrick[item_code] and Tracker.BulkUpdate == false then
+        --tricks can affect what we should display for child/adult only checks, recompute
+        world:_compute_child_adult_only_regions(SOH_COLLECTION_STATE)
+    end
+    if not SOH_COLLECTION_STATE.disable_invalidating then
+        SOH_COLLECTION_STATE:_soh_invalidate()
+    end
 end
 
-local function on_special_bottle_changed(bottle_code)
-    --[[
-    local obj = Tracker:FindObjectForCode(bottle_code)
-    local total_bottles = Tracker:FindObjectForCode("empty_bottle")
-    if obj == nil or total_bottles == nil then
-        return
-    end
-    local add = -1
-    if obj.Active then
-        add = 1
-    end
-    total_bottles.AcquiredCount = total_bottles.AcquiredCount + add
-    --]]
+local function on_split_map_toggled(split_map_code)
+    local stage = Tracker:FindObjectForCode(split_map_code).CurrentStage
+    local layout = split_map_stage_to_layout[stage]
+    local path = string.format("layouts/main_map_variations/%s.json", layout)
+    Tracker:AddLayouts(path)
 end
 
 local function on_gerudo_card_related_changed()
@@ -234,15 +207,14 @@ local function on_show_checks_changed(code)
 end
 
 ScriptHost:AddWatchForCode("state changed", "*", on_state_changed)
-ScriptHost:AddWatchForCode("rutos letter changed", "bottle_with_rutos_letter", on_special_bottle_changed)
-ScriptHost:AddWatchForCode("big poe changed", "bottle_with_big_poe", on_special_bottle_changed)
 ScriptHost:AddWatchForCode("hookshot changed", "progressive_hookshot", on_hookshot_changed)
 ScriptHost:AddWatchForCode("show checks changed", "setting_show_checks", on_show_checks_changed)
-ScriptHost:AddWatchForCode("gerudo card shuffle changed", "setting_shuffle_gerudo_membership_card", on_gerudo_card_related_changed)
+ScriptHost:AddWatchForCode(
+    "gerudo card shuffle changed",
+    "setting_shuffle_gerudo_membership_card",
+    on_gerudo_card_related_changed
+)
 ScriptHost:AddWatchForCode("carpenter setting changed", "setting_fortress_carpenters", on_gerudo_card_related_changed)
-
-for key, _ in pairs(child_trade_affecting) do
-    ScriptHost:AddWatchForCode(key .. " for child trade changed", key, on_child_trade_related_item_changed)
-end
+ScriptHost:AddWatchForCode("split map setting toggled", "setting_split_map", on_split_map_toggled)
 
 world:_compute_child_adult_only_regions(SOH_COLLECTION_STATE)
