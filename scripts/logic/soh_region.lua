@@ -21,18 +21,21 @@ end
 
 -- override
 function SoHRegion:can_reach(state)
-
     if state._soh_stale then
         local stored_age = state._soh_age
         state:_soh_update_age_reachable_regions()
         state._soh_age = stored_age
     end
     if state._soh_age == "child" then
-        return state._soh_child_reachable_regions[self] or false
+        return state._soh_child_reachable_regions[self] or ACCESS_NONE
     elseif state._soh_age == "adult" then
-        return state._soh_adult_reachable_regions[self] or false
+        return state._soh_adult_reachable_regions[self] or ACCESS_NONE
     else
-        return state._soh_child_reachable_regions[self] or state._soh_adult_reachable_regions[self] or false
+        --return maximum accessibility between child & adult
+        --e.g. if something is sequence breakable as child but accessible as adult, return accessible
+        local c = state._soh_child_reachable_regions[self] or ACCESS_NONE
+        local a = state._soh_adult_reachable_regions[self] or ACCESS_NONE
+        return math.max(a,c)
     end
 end
 
