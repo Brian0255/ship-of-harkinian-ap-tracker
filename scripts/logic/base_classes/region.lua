@@ -76,9 +76,10 @@ end
 function Region:add_event(event_name, event_item, event_rule, location_class)
     local event_location = location_class(event_name, self, event_rule)
     event_location:set_event_item(event_item)
-    table.insert(self.events, event_location)
+    self.events[event_name] = event_location
     self.world.regions.location_cache[event_name] = event_location
     self.world.complete_event_item_list[event_item] = true
+    self.world.regions.event_containing_regions[self.name] = self
 end
 
 function Region:connect(connecting_region, name, rule)
