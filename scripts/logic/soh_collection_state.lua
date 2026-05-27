@@ -41,7 +41,7 @@ local progressive_item_map = {
 local vanilla_shop_items = {
     [Items.DEKU_SHIELD] = {slot_data_name = "Buy Deku Shield", is_tunic_or_shield = true},
     [Items.HYLIAN_SHIELD] = {slot_data_name = "Buy Hylian Shield", is_tunic_or_shield = true},
-    ["goron_tunic_composite"] = {slot_data_name = "Buy Goron Tunic", is_tunic_or_shield = true},
+    [Items.GORON_TUNIC] = {slot_data_name = "Buy Goron Tunic", is_tunic_or_shield = true},
     [Items.ZORA_TUNIC] = {slot_data_name = "Buy Zora Tunic", is_tunic_or_shield = true},
     [Items.BUY_BLUE_POTION] = {slot_data_name = "Buy Blue Potion"},
     [Items.BUY_FISH] = {slot_data_name = "Buy Fish"},
@@ -54,6 +54,13 @@ local vanilla_shop_items = {
     [Items.BUY_BLUE_FIRE] = {slot_data_name = "Buy Blue Fire"}
 }
 
+function SoHCollectionState:set_glitched_state(glitched)
+    local value = glitched and 1 or 0
+    self._current_item_count_cache = not glitched and self._in_logic_item_count_cache or self._glitched_item_count_cache
+    self._current_item_count_cache[Items.GLITCHED] = value
+    self.is_glitched = glitched
+end
+
 function SoHCollectionState.new(world)
     local self = {}
     setmetatable(self, SoHCollectionState)
@@ -62,18 +69,75 @@ function SoHCollectionState.new(world)
 
     self.has_all_items = false
 
+    self._in_logic_item_count_cache = {}
+    self._glitched_item_count_cache = {}
+
+    self.is_glitched = false
+
+    self._current_item_count_cache = self._in_logic_item_count_cache
+
     self._soh_stale = true
     self._soh_child_reachable_regions = {}
     self._soh_adult_reachable_regions = {}
     self._soh_child_blocked_regions = {}
     self._soh_adult_blocked_regions = {}
+    self._soh_child_event_regions = {}
+    self._soh_adult_event_regions = {}
     self._soh_age = Ages.NULL
+
+    self._soh_age_region_tables = {}
 
     self.event_items = {}
 
     self.disable_invalidating = false
 
+    self.event_based_item_mapping = {
+        [Events.CAN_FARM_STICKS] = {
+            option_function = function()
+                return not self.world:get_option("shuffle_deku_stick_bag")
+            end,
+            item = Items.PROGRESSIVE_STICK_CAPACITY
+        },
+        [Events.CAN_FARM_NUTS] = {
+            option_function = function()
+                return not self.world:get_option("shuffle_deku_nut_bag")
+            end,
+            item = Items.PROGRESSIVE_NUT_CAPACITY
+        },
+        [Events.CAN_BUY_BEANS] = {
+            option_function = function()
+                return (self.world:get_option("shuffle_merchants") == Options.MERCHANTS_OFF or
+                    self.world:get_option("shuffle_merchants") == Options.MERCHANTS_ALL_BUT_BEANS) and
+                    (not self.world:get_option("start_with_magic_beans"))
+            end,
+            item = Items.MAGIC_BEAN_PACK
+        }
+    }
+
+    self.token_types_unshuffled = {
+        [TokenTypes.DUNGEON] = false,
+        [TokenTypes.OVERWORLD] = false
+    }
+    self.vanilla_skulltulas_in_logic = 0
+    self.vanilla_skulltulas_out_of_logic = 0
+
+    self:_init_event_item_cache()
+
     return self
+end
+
+function SoHCollectionState:_init_event_item_cache()
+    for event_item, _ in pairs(self.world.complete_event_item_list) do
+        self._current_item_count_cache[event_item] = 0
+    end
+end
+
+function SoHCollectionState:_clear_event_items()
+    for event_item, _ in pairs(self.event_items) do
+        self._in_logic_item_count_cache[event_item] = 0
+        self._glitched_item_count_cache[event_item] = 0
+    end
+    self.event_items = {}
 end
 
 function SoHCollectionState:_soh_invalidate()
@@ -84,8 +148,24 @@ function SoHCollectionState:_soh_invalidate()
     self._soh_adult_reachable_regions = {}
     self._soh_child_blocked_regions = {}
     self._soh_adult_blocked_regions = {}
+    self._soh_child_event_regions = {}
+    self._soh_adult_event_regions = {}
+    self._soh_age_region_tables = {
+        [Ages.CHILD] = {
+            reachable = self._soh_child_reachable_regions,
+            blocked = self._soh_child_blocked_regions,
+            event_regions = self._soh_child_event_regions
+        },
+        [Ages.ADULT] = {
+            reachable = self._soh_adult_reachable_regions,
+            blocked = self._soh_adult_blocked_regions,
+            event_regions = self._soh_adult_event_regions
+        }
+    }
+    self:_clear_event_items()
+    self.vanilla_skulltulas_in_logic = 0
+    self.vanilla_skulltulas_out_of_logic = 0
     self._soh_stale = true
-    self.event_items = {}
 end
 
 function SoHCollectionState:_collect_events(region)
@@ -95,145 +175,172 @@ function SoHCollectionState:_collect_events(region)
             if event.access_rule(self) then
                 total = total + 1
                 self.event_items[event.event_item] = true
+                self._current_item_count_cache[event.event_item] = 1
+                if self.event_based_item_mapping[event.event_item] then
+                    local entry = self.event_based_item_mapping[event.event_item]
+                    if entry.option_function() then
+                        self._current_item_count_cache[entry.item] = 1
+                    end
+                end
             end
         end
     end
     return total
 end
 
-function SoHCollectionState:_handle_vanilla_shop_items()
-    --disable_invalidating is for the bad loop here:
-    --you get a deku shield from this, which triggers the watch before the loop finishes, which invalidates the region graph
-    --then the loop continues, location.can_reach is called again, the region graph rebuilds
-    --since there is no pause here we can easily hit the instruction limit if we don't stop the loop with this
-    self.disable_invalidating = true
-    local change = false
-    for item_name, data in pairs(vanilla_shop_items) do
-        local slot_data_name = data.slot_data_name
-        local possible_locations = self.world.vanilla_shop_item_to_location[slot_data_name] or {}
-        local active = false
-        for _, location_name in pairs(possible_locations) do
-            local location = self.world:get_location(location_name)
-            if location and location:can_reach(self) then
-                active = true
-                break
-            end
-        end
-        local obj = Tracker:FindObjectForCode(item_name)
-        if obj ~= nil then
-            if data.is_tunic_or_shield then
-                --some messy looking jank here to make it so tunics still respond to left click toggling when being shop tracked
-                if obj.CurrentStage == 0 or obj.CurrentStage == 3 then
-                    local stage = active and 3 or 0
-                    if obj.CurrentStage ~= stage then
-                        obj.CurrentStage = stage
-                        change = true
-                    end
-                end
-            else
-                if active ~= obj.Active then
-                    obj.Active = active
-                    change = true
-                end
-            end
-        end
-    end
-    self.disable_invalidating = false
-    if change then
-        self:_soh_invalidate()
-    end
-end
+local shields_tunics = {
+    Items.DEKU_SHIELD,
+    Items.HYLIAN_SHIELD,
+    Items.GORON_TUNIC,
+    Items.ZORA_TUNIC
+}
 
-function SoHCollectionState:_handle_event_based_items()
-    local mapping = {
-        {
-            option_function = function()
-                return not self.world:get_option("shuffle_deku_stick_bag")
-            end,
-            event = Events.CAN_FARM_STICKS,
-            item = Items.PROGRESSIVE_STICK_CAPACITY
-        },
-        {
-            option_function = function()
-                return not self.world:get_option("shuffle_deku_nut_bag")
-            end,
-            event = Events.CAN_FARM_NUTS,
-            item = Items.PROGRESSIVE_NUT_CAPACITY
-        },
-        {
-            option_function = function()
-                return self.world:get_option("shuffle_merchants") == Options.MERCHANTS_OFF or
-                    self.world:get_option("shuffle_merchants") == Options.MERCHANTS_ALL_BUT_BEANS
-            end,
-            event = Events.CAN_BUY_BEANS,
-            item = Items.MAGIC_BEAN_PACK
-        }
-    }
-    for _, entry in pairs(mapping) do
-        if entry.option_function() and self.event_items[entry.event] then
-            Tracker:FindObjectForCode(entry.item).Active = self.event_items[entry.event]
+function SoHCollectionState:_update_event_based_items(activate_linked_item)
+    for event, data in pairs(self.event_based_item_mapping) do
+        if data.option_function() then
+            local event_on = self.event_items[event]
+            self._current_item_count_cache[data.item] = event_on and 1 or 0
+            if activate_linked_item then
+                Tracker:FindObjectForCode(data.item).Active = event_on
+            end
+        end
+    end
+    for _, item in pairs(shields_tunics) do
+        local can_buy = self.event_items[item] == true
+        local current_stage = self._current_item_count_cache[item]
+        local new_stage = current_stage
+        if new_stage ~= 1 or can_buy then
+            new_stage = can_buy and 2 or 0
+        end
+        self._current_item_count_cache[item] = new_stage
+        if activate_linked_item then
+            Tracker:FindObjectForCode(item).CurrentStage = new_stage
         end
     end
 end
 
-function SoHCollectionState:_soh_update_age_reachable_regions()
-    self._soh_stale = false
+function SoHCollectionState:_run_BFS_pass(glitched)
     local collected_events = 0
-    repeat
-        collected_events = 0
-        LogicHelpers.clear_cache()
-        for _, age in pairs({Ages.CHILD, Ages.ADULT}) do
-            self._soh_age = age
-            local start = self.world:get_region(Regions.ROOT)
-            local reachable, blocked
-            if age == Ages.CHILD then
-                reachable = self._soh_child_reachable_regions
-                blocked = self._soh_child_blocked_regions
-            else
-                reachable = self._soh_adult_reachable_regions
-                blocked = self._soh_adult_blocked_regions
-            end
+    local shop_change = false
 
-            local queue = Deque()
-            for region, is_blocked in pairs(blocked) do
-                if is_blocked then
-                    queue:append(region)
-                end
+    for _, age in pairs({Ages.CHILD, Ages.ADULT}) do
+        self._soh_age = age
+        local age_region_tables = self._soh_age_region_tables[age]
+        local reachable, blocked, event_regions =
+            age_region_tables.reachable,
+            age_region_tables.blocked,
+            age_region_tables.event_regions
+
+        local queue = Deque()
+        for region, is_blocked in pairs(blocked) do
+            if is_blocked then
+                queue:append(region)
             end
-            --init on first call
+        end
+
+        -- init on first call for non-glitched pass
+        if not glitched then
+            local start = self.world:get_region(Regions.ROOT)
             if not reachable[start] then
-                reachable[start] = true
+                reachable[start] = ACCESS_NORMAL
                 self:_collect_events(start)
                 for _, exit in pairs(start.exits) do
                     blocked[exit] = true
                 end
                 queue:extend(start.exits)
             end
+        end
 
-            while not queue:is_empty() do
-                local connection = queue:pop_front()
-                local new_region = connection.connected_region
-                if new_region ~= nil then
-                    if reachable[new_region] then
-                        blocked[connection] = nil
-                    elseif connection:can_reach(self) then
-                        reachable[new_region] = true
-                        blocked[connection] = nil
-                        for _, exit in pairs(new_region.exits) do
-                            blocked[exit] = true
-                        end
-                        queue:extend(new_region.exits)
+        while not queue:is_empty() do
+            local connection = queue:pop_front()
+            local new_region = connection.connected_region
+            if new_region ~= nil then
+                if reachable[new_region] and reachable[new_region] > ACCESS_NONE then
+                    blocked[connection] = nil
+                elseif connection:can_reach(self) > ACCESS_NONE then
+                    reachable[new_region] = glitched and ACCESS_SEQUENCEBREAK or ACCESS_NORMAL
+                    blocked[connection] = nil
+                    for _, exit in pairs(new_region.exits) do
+                        blocked[exit] = true
                     end
+                    if self.world.regions.event_containing_regions[new_region.name] then
+                        event_regions[new_region.name] = new_region
+                    end
+                    queue:extend(new_region.exits)
                 end
             end
+        end
 
-            for region, _ in pairs(reachable) do
-                collected_events = collected_events + self:_collect_events(region)
+        for _, region in pairs(event_regions) do
+            collected_events = collected_events + self:_collect_events(region)
+        end
+    end
+
+    return collected_events, shop_change
+end
+
+function SoHCollectionState:_update_vanilla_skulltula_counts()
+    self.token_types_unshuffled[TokenTypes.OVERWORLD] = self.world:is_token_type_vanilla(TokenTypes.OVERWORLD)
+    self.token_types_unshuffled[TokenTypes.DUNGEON] = self.world:is_token_type_vanilla(TokenTypes.DUNGEON)
+    for location_name, token_type in pairs(VanillaSkulltulaMapping) do
+        local location = self.world:get_location(location_name)
+        if self.token_types_unshuffled[token_type] and location then
+            local access = location:can_reach(self, { Ages.CHILD, Ages.ADULT })
+            if access == ACCESS_NORMAL then
+                self.vanilla_skulltulas_in_logic = self.vanilla_skulltulas_in_logic + 1
+            elseif access == ACCESS_SEQUENCEBREAK then
+                self.vanilla_skulltulas_out_of_logic = self.vanilla_skulltulas_out_of_logic + 1
             end
         end
-    until collected_events == 0
-    self:_handle_event_based_items()
-    self:_handle_vanilla_shop_items()
+    end
+end
+
+function SoHCollectionState:_update_masks()
+    local masks = Tracker:FindObjectForCode("child_masks")
+    if masks == nil then
+        return
+    end
+    local stage = 0
+    if self.event_items[Events.CAN_BORROW_MASK_OF_TRUTH] then
+        stage = 2
+    elseif self.event_items[Events.CAN_BORROW_SKULL_MASK] then
+        stage = 1
+    end
+    masks.CurrentStage = stage
+end
+
+function SoHCollectionState:_soh_update_age_reachable_regions()
+    self:set_glitched_state(false)
+    self._soh_stale = false
+    self.disable_invalidating = true
+    --clear out event/shop based items so the BFS can update them from a fresh state
+    --otherwise the edge case where the linked item gets removed in the BFS loop is very bad
+    self:_update_event_based_items()
+
+    local collected_events = 0
+    local shop_change = false
+    repeat
+        collected_events, shop_change = self:_run_BFS_pass(false)
+    until collected_events == 0 and not shop_change
+
+    self:_update_event_based_items(true)
+    self:_update_masks()
+
+    self._glitched_item_count_cache = {}
+    for k, v in pairs(self._in_logic_item_count_cache) do
+        self._glitched_item_count_cache[k] = v
+    end
+
+    self:set_glitched_state(true)
+
+    repeat
+        collected_events, shop_change = self:_run_BFS_pass(true)
+    until collected_events == 0 and not shop_change
+
+    self:set_glitched_state(false)
+    self:_update_vanilla_skulltula_counts()
+
+    self.disable_invalidating = false
 end
 
 function SoHCollectionState:_soh_can_reach_as_age(region, age)
@@ -246,31 +353,44 @@ function SoHCollectionState:_soh_can_reach_as_age(region, age)
     return (self._soh_age == age)
 end
 
-function SoHCollectionState:count(item)
-    if self.has_all_items then
-        return 200
-    end
-    local bool_to_count = {[true] = 1, [false] = 0}
-    if self.world.complete_event_item_list[item] then
-        return bool_to_count[self.event_items[item]] or 0
-    end
+local bool_to_count = {[true] = 1, [false] = 0}
+
+function SoHCollectionState:on_item_changed(item, force_count)
     local obj = Tracker:FindObjectForCode(item)
+    local count = 0
     if not obj then
         return 0
     end
     if obj.Type == "consumable" then
-        return obj.AcquiredCount
+        count = obj.AcquiredCount
     elseif obj.Type == "progressive" then
-        return obj.CurrentStage
+        count = obj.CurrentStage
     elseif obj.Type == "progressive_toggle" then
-        return Tracker:ProviderCountForCode(item)
+        count = Tracker:ProviderCountForCode(item)
     elseif obj.Type == "toggle" then
-        return bool_to_count[obj.Active]
+        count = bool_to_count[obj.Active]
     elseif obj.Type == "static" then
-        return 1
+        count = 1
     else
-        return bool_to_count[obj.Active]
+        count = bool_to_count[obj.Active]
     end
+    self._current_item_count_cache[item] = force_count or count
+end
+
+local has_all_items_override = {}
+for k, _ in pairs(TrickCodeToTrick) do
+    has_all_items_override[k] = true
+end
+has_all_items_override[Items.GLITCHED] = true
+
+function SoHCollectionState:count(item)
+    if self.has_all_items and not has_all_items_override[item] then
+        return 200
+    end
+    if self._current_item_count_cache[item] == nil then
+        self:on_item_changed(item)
+    end
+    return self._current_item_count_cache[item] or 0
 end
 
 function SoHCollectionState:has_all(items)
@@ -300,6 +420,8 @@ function SoHCollectionState:has(item, amount)
     return self:count(item) >= amount
 end
 
+--just a note, this does not work with has_all_items for child/adult only calcs
+--not used in the code base anywhere, but something to keep in mind
 function SoHCollectionState:count_group(item_name_group)
     local total_count = 0
     for _, item in pairs(item_name_group) do
@@ -309,9 +431,6 @@ function SoHCollectionState:count_group(item_name_group)
 end
 
 function SoHCollectionState:count_group_unique(item_name_group)
-    if self.has_all_items then
-        return 200
-    end
     local total_count = 0
     for _, item in pairs(item_name_group) do
         local count = self:count(item)
