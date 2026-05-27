@@ -64,8 +64,8 @@
           {
             "name": "Reward",
             "access_rules": ["^$REACHABLE|MARKET_TREASURE_CHEST_GAME_REWARD"],
-            "chest_opened_img": "images/chest_images/chest_opened.png",
-            "chest_unopened_img": "images/chest_images/chest_unopened.png",
+            "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
+            "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",
             "visibility_rules": [
               "$AGE_CHECK|MARKET_TREASURE_CHEST_GAME_REWARD"
             ],
@@ -495,7 +495,7 @@
 
         "sections": [
           {
-            "name": "Piece of Heart",
+            "name": "Reward",
             "access_rules": ["^$REACHABLE|MARKET_LOST_DOG"],
             "chest_opened_img": "images/chest_images/piece_of_heart_opened.png",
             "chest_unopened_img": "images/chest_images/piece_of_heart_unopened.png",

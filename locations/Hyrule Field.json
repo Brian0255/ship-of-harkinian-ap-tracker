@@ -312,7 +312,7 @@
             "item_count": 1
           },
           {
-            "name": "Tree Near Grotto",
+            "name": "Tree",
             "access_rules": ["^$REACHABLE|HF_NEAR_KAK_SMALL_TREE"],
             "visibility_rules": [
               "$OPTION_TREES,$AGE_CHECK|HF_NEAR_KAK_SMALL_TREE"

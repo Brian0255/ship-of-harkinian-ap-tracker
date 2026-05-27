@@ -146,7 +146,7 @@
             "item_count": 1
           },
           {
-            "name": "Cow Near Bean Patch",
+            "name": "Cow",
             "access_rules": [
               "^$REACHABLE|GV_COW"
             ],
@@ -158,7 +158,7 @@
             "item_count": 1
           },
           {
-            "name": "Crate Near Bean Patch",
+            "name": "Crate",
             "access_rules": [
               "^$REACHABLE|GV_NEAR_COW_CRATE"
             ],
