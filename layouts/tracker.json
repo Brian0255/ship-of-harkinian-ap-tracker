@@ -1,5 +1,5 @@
 {
-  "tracker_horizontal": {
+  "tracker_default": {
     "type": "container",
     "background": "#00000000",
     "content": {
@@ -77,7 +77,7 @@
           "content": [
             {
               "type": "layout",
-              "key": "tabbed_maps_horizontal"
+              "key": "main_maps"
             }
           ]
         }

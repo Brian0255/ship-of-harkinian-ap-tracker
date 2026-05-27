@@ -1,0 +1,31 @@
+{
+  "main_maps": {
+    "type": "array",
+    "orientation": "horizontal",
+    "content": [
+      {
+        "type": "map",
+        "maps": ["Overworld"]
+      },
+      {
+        "type": "tabbed",
+        "tabs": [
+          {
+            "title": "Overworld Areas",
+            "content": {
+              "type": "layout",
+              "key": "overworld_areas_tab"
+            }
+          },
+          {
+            "title": "Dungeons",
+            "content": {
+              "type": "layout",
+              "key": "dungeons_tab"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
