@@ -19,9 +19,12 @@ local function set_region_rules(world)
                         (LogicHelpers.can_use(Items.HOVER_BOOTS, bundle) or LogicHelpers.can_use(Items.HOOKSHOT, bundle))
                 end
             },
-            {Regions.GRAVEYARD_WARP_PAD_REGION, function(bundle)
+            {
+                Regions.GRAVEYARD_WARP_PAD_REGION,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -112,9 +115,12 @@ local function set_region_rules(world)
         Regions.SHADOW_TEMPLE_BEGINNING,
         world,
         {
-            {Regions.SHADOW_TEMPLE_ENTRYWAY, function(bundle)
+            {
+                Regions.SHADOW_TEMPLE_ENTRYWAY,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.SHADOW_TEMPLE_FIRST_BEAMOS,
                 function(bundle)
@@ -162,9 +168,12 @@ local function set_region_rules(world)
                         LogicHelpers.small_keys(Items.SHADOW_TEMPLE_SMALL_KEY, 1, bundle)
                 end
             },
-            {Regions.SHADOW_TEMPLE_BEYOND_BOAT, function(bundle)
+            {
+                Regions.SHADOW_TEMPLE_BEYOND_BOAT,
+                function(bundle)
                     return false
-                end}
+                end
+            }
         }
     )
 
@@ -186,9 +195,12 @@ local function set_region_rules(world)
                     return LogicHelpers.can_jump_slash_except_hammer(bundle)
                 end
             },
-            {Locations.SHADOW_TEMPLE_FALLING_SPIKES_LOWER_CHEST, function(bundle)
+            {
+                Locations.SHADOW_TEMPLE_FALLING_SPIKES_LOWER_CHEST,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Locations.SHADOW_TEMPLE_FALLING_SPIKES_UPPER_CHEST,
                 function(bundle)
@@ -252,8 +264,8 @@ local function set_region_rules(world)
                     return LogicHelpers.small_keys(Items.SHADOW_TEMPLE_SMALL_KEY, 2, bundle) and
                         ((LogicHelpers.can_do_trick(Tricks.LENS_SHADOW_PLATFORM, bundle) and
                             LogicHelpers.can_do_trick(Tricks.LENS_SHADOW, bundle)) or
-                            LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle) and
-                                LogicHelpers.can_use(Items.HOOKSHOT, bundle))
+                            LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle)) and
+                        LogicHelpers.can_use(Items.HOOKSHOT, bundle)
                 end
             },
             {
@@ -336,9 +348,12 @@ local function set_region_rules(world)
         Regions.SHADOW_TEMPLE_WIND_TUNNEL,
         world,
         {
-            {Locations.SHADOW_TEMPLE_WIND_HINT_CHEST, function(bundle)
+            {
+                Locations.SHADOW_TEMPLE_WIND_HINT_CHEST,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Locations.SHADOW_TEMPLE_AFTER_WIND_ENEMY_CHEST,
                 function(bundle)
@@ -539,9 +554,12 @@ local function set_region_rules(world)
         Regions.SHADOW_TEMPLE_BOSS_ENTRYWAY,
         world,
         {
-            {Regions.SHADOW_TEMPLE_BEYOND_BOAT, function(bundle)
+            {
+                Regions.SHADOW_TEMPLE_BEYOND_BOAT,
+                function(bundle)
                     return false
-                end},
+                end
+            },
             {
                 Regions.SHADOW_TEMPLE_BOSS_ROOM,
                 function(bundle)
@@ -590,9 +608,12 @@ local function set_region_rules(world)
         Regions.SHADOW_TEMPLE_BOSS_ROOM,
         world,
         {
-            {Regions.SHADOW_TEMPLE_BOSS_ENTRYWAY, function(bundle)
+            {
+                Regions.SHADOW_TEMPLE_BOSS_ENTRYWAY,
+                function(bundle)
                     return false
-                end},
+                end
+            },
             {
                 Regions.GRAVEYARD_WARP_PAD_REGION,
                 function(bundle)
