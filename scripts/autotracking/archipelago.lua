@@ -18,6 +18,24 @@ if Highlight then
 	}
 end
 
+local start_with_settings_mapping = {
+	["setting_start_with_master_sword"] = Items.MASTER_SWORD,
+	["setting_start_with_kokiri_sword"] = Items.KOKIRI_SWORD,
+	["setting_start_with_magic_beans"] = Items.MAGIC_BEAN_PACK,
+	["setting_start_with_zeldas_lullaby"] = Items.ZELDAS_LULLABY,
+	["setting_start_with_eponas_song"] = Items.EPONAS_SONG,
+	["setting_start_with_sarias_song"] = Items.SARIAS_SONG,
+	["setting_start_with_suns_song"] = Items.SUNS_SONG,
+	["setting_start_with_song_of_time"] = Items.SONG_OF_TIME,
+	["setting_start_with_song_of_storms"] = Items.SONG_OF_STORMS,
+	["setting_start_with_minuet"] = Items.MINUET_OF_FOREST,
+	["setting_start_with_bolero"] = Items.BOLERO_OF_FIRE,
+	["setting_start_with_serenade"] = Items.SERENADE_OF_WATER,
+	["setting_start_with_requiem"] = Items.REQUIEM_OF_SPIRIT,
+	["setting_start_with_nocturne"] = Items.NOCTURNE_OF_SHADOW,
+	["setting_start_with_prelude"] = Items.PRELUDE_OF_LIGHT
+}
+
 local item_affecting_settings_mapping = {
 	["setting_skip_child_zelda"] = {
 		items = {Items.WEIRD_EGG},
@@ -98,6 +116,14 @@ local item_affecting_settings_mapping = {
 				item.Active = true
 			end
 		end
+	},
+	["setting_start_with_ocarina"] = {
+		items = {Items.PROGRESSIVE_OCARINA},
+		func = function(code, item, setting)
+			if code ~= Items.CLAIM_CHECK and not setting.Active then
+				item.CurrentStage = setting.CurrentStage
+			end
+		end
 	}
 }
 
@@ -131,34 +157,82 @@ CUR_INDEX = -1
 LOCAL_ITEMS = {}
 GLOBAL_ITEMS = {}
 
--- gets the data storage key for hints for the current player
--- returns nil when not connected to AP
-function getHintDataStorageKey()
-    if
-        AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or
-        Archipelago.PlayerNumber == nil or
-        Archipelago.PlayerNumber == -1
-    then
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print("Tried to call getHintDataStorageKey while not connected to AP server")
-        end
-        return nil
-    end
-    return string.format("_read_hints_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+local function on_scene_update(old_scene, new_scene)
+	if not Tracker:FindObjectForCode("setting_auto_tab").Active then
+		return
+	end
+	if new_scene == old_scene or not SceneToMap[new_scene] then
+		return
+	end
+	local map_info = SceneToMap[new_scene]
+	--funny edge case with hyrule field loading on title screen
+	if new_scene == Scenes.WINDMILL_AND_DAMPES_GRAVE and (old_scene == Scenes.GRAVEYARD or old_scene == Scenes.HYRULE_FIELD) then
+		map_info = UIMaps.DAMPE_RACE
+	end
+	if map_info == current_map_info then
+		return
+	end
+	for _, tab in ipairs(map_info.parent_tab_chain) do
+		Tracker:UiHint("ActivateTab", tab)
+	end
+	Tracker:UiHint("ActivateTab", map_info.tab_name)
+	current_map_info = map_info
 end
 
-function getSceneDataStorageKey()
-    if
-        AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or
-        Archipelago.PlayerNumber == nil or
-        Archipelago.PlayerNumber == -1
-    then
-        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-            print("Tried to call getSceneDataStorageKey while not connected to AP server")
-        end
-        return nil
-    end
-    return string.format("oot_soh_scene_%s_%s", Archipelago.TeamNumber, Archipelago.PlayerNumber)
+-- called whenever the hints key in data storage updated
+-- NOTE: this should correctly handle having multiple mapped locations in a section.
+--       if you only map sections 1 to 1 you can simplfy this. for an example see
+--       https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/scripts/autotracking/archipelago.lua
+local function on_hints_update(_, new_hints)
+	-- Highlight is only supported since version 0.32.0
+	if PopVersion < "0.32.0" or not AUTOTRACKER_ENABLE_LOCATIONS_TRACKING then
+		return
+	end
+	local player_number = Archipelago.PlayerNumber
+	-- get all new highlight values per section
+	local sections_to_update = {}
+	for _, hint in ipairs(new_hints) do
+		-- we only care about hints in our world
+		if hint.finding_player == player_number then
+			updateHint(hint, sections_to_update)
+		end
+	end
+	-- update the sections
+	for location_code, highlight_code in pairs(sections_to_update) do
+		-- find the location object
+		local obj = Tracker:FindObjectForCode(location_code)
+		-- check if we got the location and if it supports Highlight
+		if obj and obj.Highlight then
+			obj.Highlight = highlight_code
+		end
+	end
+end
+
+local DataStorageKeys = {
+	READ_HINTS = {
+		short_key = "_read_hints",
+		on_update = on_hints_update
+	},
+	SCENE = {
+		short_key = "oot_soh_scene",
+		on_update = on_scene_update
+	}
+}
+
+local data_storage = {}
+
+local function get_full_data_storage_key(short_key)
+	if
+		AutoTracker:GetConnectionState("AP") ~= 3 or Archipelago.TeamNumber == nil or Archipelago.TeamNumber == -1 or
+			Archipelago.PlayerNumber == nil or
+			Archipelago.PlayerNumber == -1
+	 then
+		if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+			print("Tried to call get_full_data_storage_key while not connected to AP server")
+		end
+		return nil
+	end
+	return string.format("%s_%s_%s", short_key, Archipelago.TeamNumber, Archipelago.PlayerNumber)
 end
 
 -- resets an item to its initial state
@@ -208,15 +282,15 @@ function incrementItem(item_code, item_type, multiplier)
 			obj.Active = true
 		elseif item_type == "progressive" or item_type == "progressive_toggle" then
 			if obj.Active then
-                obj.CurrentStage = obj.CurrentStage + 1
-				if multiplier ~= 1 then
+				obj.CurrentStage = obj.CurrentStage + 1
+				if multiplier ~= nil then
 					obj.CurrentStage = multiplier
 				end
 			else
 				obj.Active = true
 			end
 		elseif item_type == "consumable" then
-			obj.AcquiredCount = obj.AcquiredCount + obj.Increment * multiplier
+			obj.AcquiredCount = obj.AcquiredCount + obj.Increment * (multiplier or 1)
 		elseif item_type == "custom" then
 			-- your code for your custom lua items goes here
 		elseif item_type == "static" and AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
@@ -258,6 +332,14 @@ function apply_slot_data(slot_data)
 						local item = Tracker:FindObjectForCode(item_code)
 						info.func(item_code, item, setting)
 					end
+				elseif start_with_settings_mapping[setting_code] then
+					local item_code = start_with_settings_mapping[setting_code]
+					if item_code ~= Items.MASTER_SWORD then
+						Tracker:FindObjectForCode(item_code).Active = setting.Active
+					else
+						Tracker:FindObjectForCode(item_code).Active =
+							setting.Active and Tracker:FindObjectForCode("setting_shuffle_master_sword").Active == false
+					end
 				end
 			end
 		end
@@ -268,7 +350,9 @@ end
 function onClear(slot_data)
 	-- use bulk update to pause logic updates until we are done resetting all items/locations
 	Tracker.BulkUpdate = true
-	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+	SOH_COLLECTION_STATE.world:onClear()
+	current_map_info = {}
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP or true then
 		print(string.format("called onClear, slot_data:\n%s", dump_table(slot_data)))
 	end
 	CUR_INDEX = -1
@@ -320,7 +404,6 @@ function onClear(slot_data)
 			end
 		end
 	end
-	--print(dump_table(slot_data))
 	apply_slot_data(slot_data)
 	SOH_COLLECTION_STATE.world:apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
@@ -332,7 +415,14 @@ function onClear(slot_data)
 	-- setup data storage tracking for hint tracking
 	local data_storage_keys = {}
 	if PopVersion >= "0.32.0" then
-		data_storage_keys = {getHintDataStorageKey(),getSceneDataStorageKey()}
+        for _, entry in pairs(DataStorageKeys) do
+            local full_key = get_full_data_storage_key(entry.short_key)
+			if full_key then
+				data_storage[full_key] = entry.on_update
+				--data_storage_functions[full_key] = entry.on_update
+				table.insert(data_storage_keys, full_key)
+			end
+		end
 	end
 	-- subscribes to the data storage keys for updates
 	-- triggers callback in the SetNotify handler on update
@@ -341,6 +431,7 @@ function onClear(slot_data)
 	-- triggers callback in the Retrieved handler when result is received
 	Archipelago:Get(data_storage_keys)
 	Tracker.BulkUpdate = false
+	SOH_COLLECTION_STATE:_soh_invalidate()
 end
 
 -- called when an item gets collected
@@ -367,7 +458,7 @@ function onItem(index, item_id, item_name, player_number)
 		if item_table then
 			local item_code = item_table[1]
 			local item_type = item_table[2]
-			local multiplier = item_table[3] or 1
+			local multiplier = item_table[3]
 			if item_code then
 				incrementItem(item_code, item_type, multiplier)
 				-- keep track which items we touch are local and which are global
@@ -451,70 +542,19 @@ end
 
 -- called when a bounce message is received
 function onBounce(json)
-    if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-        print(string.format("called onBounce: %s", dump_table(json)))
-    end
+	if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+		print(string.format("called onBounce: %s", dump_table(json)))
+	end
 end
 
-
-local function onSceneUpdate(old_scene, new_scene)
-    if new_scene == old_scene or not SceneToMap[new_scene] then
+local function on_data_storage_update(key, new_value, old_value)
+    if not data_storage[key] then
+        if AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("on_data_storage_update: received update for unknown key %s", key))
+        end
         return
     end
-    local map_info = SceneToMap[new_scene]
-    if new_scene == Scenes.WINDMILL_AND_DAMPES_GRAVE and old_scene == Scenes.GRAVEYARD then
-        map_info = UIMaps.DAMPE_RACE
-    end
-    if map_info == current_map_info then
-        return
-    end
-    for _, tab in ipairs(map_info.parent_tab_chain) do
-        Tracker:UiHint("ActivateTab", tab)
-    end
-    Tracker:UiHint("ActivateTab", map_info.tab_name)
-	current_map_info = map_info
-end
-
--- called whenever Archipelago:Get returns data from the data storage or
--- whenever a subscribed to (via Archipelago:SetNotify) key in data storgae is updated
--- oldValue might be nil (always nil for "_read" prefixed keys and via retrieved handler (from Archipelago:Get))
-function onDataStorageUpdate(key, value, oldValue)
-    --if you plan to only use the hints key, you can remove this if
-    if key == getHintDataStorageKey() then
-        onHintsUpdate(value)
-    elseif key == getSceneDataStorageKey() then
-		onSceneUpdate(oldValue, value)
-    end
-end
-
-
--- called whenever the hints key in data storage updated
--- NOTE: this should correctly handle having multiple mapped locations in a section.
---       if you only map sections 1 to 1 you can simplfy this. for an example see
---       https://github.com/Cyb3RGER/sm_ap_tracker/blob/main/scripts/autotracking/archipelago.lua
-function onHintsUpdate(hints)
-	-- Highlight is only supported since version 0.32.0
-	if PopVersion < "0.32.0" or not AUTOTRACKER_ENABLE_LOCATIONS_TRACKING then
-		return
-	end
-	local player_number = Archipelago.PlayerNumber
-	-- get all new highlight values per section
-	local sections_to_update = {}
-	for _, hint in ipairs(hints) do
-		-- we only care about hints in our world
-		if hint.finding_player == player_number then
-			updateHint(hint, sections_to_update)
-		end
-	end
-	-- update the sections
-	for location_code, highlight_code in pairs(sections_to_update) do
-		-- find the location object
-		local obj = Tracker:FindObjectForCode(location_code)
-		-- check if we got the location and if it supports Highlight
-		if obj and obj.Highlight then
-			obj.Highlight = highlight_code
-		end
-	end
+	data_storage[key](old_value, new_value)
 end
 
 function check_if_medallion_hint(hint)
@@ -596,7 +636,7 @@ end
 if AUTOTRACKER_ENABLE_LOCATIONS_TRACKING then
 	Archipelago:AddLocationHandler("location handler", onLocation)
 end
-Archipelago:AddRetrievedHandler("retrieved handler", onDataStorageUpdate)
-Archipelago:AddSetReplyHandler("set reply handler", onDataStorageUpdate)
+Archipelago:AddRetrievedHandler("retrieved handler", on_data_storage_update)
+Archipelago:AddSetReplyHandler("set reply handler", on_data_storage_update)
 -- Archipelago:AddScoutHandler("scout handler", onScout)
 Archipelago:AddBouncedHandler("bounce handler", onBounce)
