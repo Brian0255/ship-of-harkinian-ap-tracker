@@ -5,8 +5,8 @@
   "package_uid": "ship_of_harkinian_ap",
   "author": "OnlySpaghettiCode",
   "variants": {
-    "Map Tracker": {
-      "display_name": "Map Tracker",
+    "map_tracker_horizontal": {
+      "display_name": "Map Tracker - Horizontal",
       "flags": ["ap"]
     }
   },
