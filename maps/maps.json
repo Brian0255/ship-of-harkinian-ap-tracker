@@ -2,7 +2,7 @@
     {
         "name": "Bottom of the Well",
         "location_size": 26,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Bottom of the Well.jpg"
     },
     {
@@ -20,7 +20,7 @@
     {
         "name": "Deku Tree",
         "location_size": 22,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Deku Tree.jpg"
     },
     {
@@ -38,13 +38,13 @@
     {
         "name": "Fire Temple",
         "location_size": 24,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Fire Temple.jpg"
     },
     {
         "name": "Forest Temple",
         "location_size": 23,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Forest Temple.jpg"
     },
     {
@@ -56,7 +56,7 @@
     {
         "name": "Gerudo Fortress",
         "location_size": 25,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Gerudo Fortress.jpg"
     },
     {
@@ -85,8 +85,8 @@
     },
     {
         "name": "Graveyard",
-        "location_size": 25,
-        "location_border_thickness": 2,
+        "location_size": 24,
+        "location_border_thickness": 3,
         "img": "images/maps/Graveyard.jpg"
     },
     {
@@ -116,13 +116,13 @@
     {
         "name": "Jabu Jabu's Belly",
         "location_size": 30,
-        "location_border_thickness": 3,
+        "location_border_thickness": 4,
         "img": "images/maps/Jabu Jabu's Belly.jpg"
     },
     {
         "name": "Kakariko Village",
         "location_size": 25,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Kakariko Village.jpg"
     },
         {
@@ -134,7 +134,7 @@
     {
         "name": "Kokiri Forest",
         "location_size": 22,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Kokiri Forest.jpg"
     },
     {
@@ -164,7 +164,7 @@
     {
         "name": "Market",
         "location_size": 28,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Market.jpg"
     },
     {
@@ -182,31 +182,31 @@
     {
         "name": "Sacred Forest Meadow",
         "location_size": 24,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Sacred Forest Meadow.jpg"
     },
     {
         "name": "Shadow Temple",
-        "location_size": 22,
-        "location_border_thickness": 2,
+        "location_size": 21,
+        "location_border_thickness": 3,
         "img": "images/maps/Shadow Temple.jpg"
     },
     {
         "name": "Spirit Temple",
-        "location_size": 22,
-        "location_border_thickness": 2,
+        "location_size": 21,
+        "location_border_thickness": 3,
         "img": "images/maps/Spirit Temple.jpg"
     },
     {
         "name": "Temple of Time",
         "location_size": 28,
-        "location_border_thickness": 2,
+        "location_border_thickness": 3,
         "img": "images/maps/Temple of Time.jpg"
     },
     {
         "name": "Water Temple",
-        "location_size": 22,
-        "location_border_thickness": 2,
+        "location_size": 21,
+        "location_border_thickness": 3,
         "img": "images/maps/Water Temple.jpg"
     },
     {
@@ -223,8 +223,8 @@
     },
     {
         "name": "Zora's River",
-        "location_size": 22,
-        "location_border_thickness": 2,
+        "location_size": 24,
+        "location_border_thickness": 3,
         "img": "images/maps/Zora's River.jpg"
     }
 ]
