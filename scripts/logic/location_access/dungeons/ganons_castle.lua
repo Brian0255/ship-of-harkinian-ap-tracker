@@ -578,8 +578,8 @@ local function set_region_rules(world)
                         (LogicHelpers.can_use(Items.BOMBCHUS_5, bundle) or
                             (LogicHelpers.can_do_trick(Tricks.HOOKSHOT_EXTENSION, bundle) and
                                 (LogicHelpers.can_use_any({Items.FAIRY_BOW, Items.FAIRY_SLINGSHOT}, bundle)))) and
-                                (LogicHelpers.can_do_trick(Tricks.LENS_GANON, bundle) or
-                                    LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle))
+                        (LogicHelpers.can_do_trick(Tricks.LENS_GANON, bundle) or
+                            LogicHelpers.can_use(Items.LENS_OF_TRUTH, bundle))
                 end
             },
             {
@@ -750,10 +750,10 @@ local function set_region_rules(world)
                 Regions.GANONS_TOWER_FLOOR_1,
                 function(bundle)
                     --skip ganon's trials was removed, backwards compatibility check
-                    if world:get_option("ganons_trials") == Options.GANONS_TRIALS_SKIP or world:get_option("skip_ganons_trials") then
+                    if world:get_option("ganons_trials") == Options.GANONS_TRIALS_SKIP then
                         return true
                     end
-                    for _, trial in pairs(world.ganons_trials) do
+                    for _, trial in pairs(world.required_trials) do
                         if not LogicHelpers.has_item(trial_mapping[trial], bundle) then
                             return false
                         end
@@ -1008,6 +1008,7 @@ local function set_region_rules(world)
 
     --Ganon's Arena
     --Events
+    --[[
     LogicHelpers.add_events(
         Regions.GANONS_ARENA,
         world,
@@ -1017,6 +1018,21 @@ local function set_region_rules(world)
                 Events.GAME_COMPLETED,
                 function(bundle)
                     return world:get_option("triforce_hunt") == false and LogicHelpers.can_kill_enemy(bundle, Enemies.GANON)
+                end
+            }
+        }
+    )
+    --]]
+
+    --not in AP world, add the location like this instead for an easy goal square on the map
+    LogicHelpers.add_locations(
+        Regions.GANONS_ARENA,
+        world,
+        {
+            {
+                Locations.GANON,
+                function(bundle)
+                    return LogicHelpers.can_kill_enemy(bundle, Enemies.GANON)
                 end
             }
         }
