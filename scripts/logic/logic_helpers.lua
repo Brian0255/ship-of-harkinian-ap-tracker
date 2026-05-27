@@ -252,12 +252,35 @@ function LogicHelpers.add_events(parent_region, world, events)
     end
 end
 
+local can_use_arrow_function = function(bundle)
+    return LogicHelpers.can_use(Items.FAIRY_BOW, bundle)
+end
+local can_use_bombchu_function = function(bundle)
+    return LogicHelpers.bombchu_refill(bundle)
+end
+local can_use_function_mapping = {
+    [Items.FIRE_ARROW] = can_use_arrow_function,
+    [Items.ICE_ARROW] = can_use_arrow_function,
+    [Items.LIGHT_ARROW] = can_use_arrow_function,
+    [Items.BOMBCHU_BAG] = can_use_bombchu_function,
+    [Items.BOMBCHUS_5] = can_use_bombchu_function,
+    [Items.BOMBCHUS_10] = can_use_bombchu_function,
+    [Items.BOMBCHUS_20] = can_use_bombchu_function,
+    [Items.FISHING_POLE] = function(bundle)
+        return LogicHelpers.has_item(Items.CHILD_WALLET, bundle)
+    end,
+    [Items.EPONA] = function(bundle)
+        return LogicHelpers.is_adult(bundle) and LogicHelpers.can_use(Items.EPONAS_SONG, bundle)
+    end
+}
+
 function LogicHelpers.can_use(item, bundle)
     if not LogicHelpers.has_item(item, bundle) then
         return false
     end
 
     local data = ItemData.item_data_table
+
     if data[item] then
         if data[item].adult_only and not LogicHelpers.is_adult(bundle) then
             return false
@@ -267,7 +290,7 @@ function LogicHelpers.can_use(item, bundle)
             return false
         end
 
-        if data[item].item_type == ItemType.MAGIC and not LogicHelpers.has_item(Items.MAGIC_SINGLE, bundle) then
+        if data[item].item_type == ItemType.MAGIC and not LogicHelpers.has_item(Items.PROGRESSIVE_MAGIC_METER, bundle) then
             return false
         end
 
@@ -276,22 +299,8 @@ function LogicHelpers.can_use(item, bundle)
         end
     end
 
-    local arrow_types = {[Items.FIRE_ARROW] = true, [Items.ICE_ARROW] = true, [Items.LIGHT_ARROW] = true}
-
-    if arrow_types[item] then
-        return LogicHelpers.can_use(Items.FAIRY_BOW, bundle)
-    end
-
-    if bombchu_sources[item] then
-        return LogicHelpers.bombchu_refill(bundle)
-    end
-
-    if item == Items.FISHING_POLE then
-        return LogicHelpers.has_item(Items.CHILD_WALLET, bundle)
-    end
-
-    if item == Items.EPONA then
-        return LogicHelpers.is_adult(bundle) and LogicHelpers.can_use(Items.EPONAS_SONG, bundle)
+    if can_use_function_mapping[item] then
+        return can_use_function_mapping[item](bundle)
     end
 
     return true
@@ -306,114 +315,110 @@ function LogicHelpers.can_use_any(names, bundle)
     return false
 end
 
-local has_item_cache = {}
-
---This very hot function uses a cache to save tens of thousands of Lua instructions for expensive reachability updates
---Probably worth it when the limit is 600k
-function LogicHelpers.has_item_helper(item, bundle, count)
-    count = count or 1
-    local state = bundle[1]
-    local world = bundle[3]
-
-    if item == Items.STICKS then
-        return state:has_all({Events.CAN_FARM_STICKS, Items.DEKU_STICK_BAG})
-    end
-
-    if bombchu_sources[item] then
-        return LogicHelpers.bombchus_enabled(bundle)
-    end
-
-    if item == Items.NUTS then
-        return state:has_all({Events.CAN_FARM_NUTS, Items.DEKU_NUT_BAG})
-    end
-
-    if item == Items.MAGIC_BEAN then
-        return state:has_any({Items.MAGIC_BEAN_PACK, Events.CAN_BUY_BEANS})
-    end
-
-    if item == Items.DEKU_SHIELD then
-        return state:has(Items.BUY_DEKU_SHIELD)
-    end
-
-    if item == Items.HYLIAN_SHIELD then
-        return state:has(Items.BUY_HYLIAN_SHIELD)
-    end
-
-    if item == Items.GORON_TUNIC then
-        return state:has_any({Items.BUY_GORON_TUNIC, Items.GORON_TUNIC})
-    end
-
-    if item == Items.ZORA_TUNIC then
-        return state:has_any({Items.BUY_ZORA_TUNIC, Items.ZORA_TUNIC})
-    end
-
-    if item == Items.SCARECROW then
-        return LogicHelpers.scarecrows_song(bundle) and LogicHelpers.can_use(Items.HOOKSHOT, bundle)
-    end
-
-    if item == Items.DISTANT_SCARECROW then
-        return LogicHelpers.scarecrows_song(bundle) and LogicHelpers.can_use(Items.LONGSHOT, bundle)
-    end
-
-    if item == Items.FISHING_POLE then
-        return (not world:get_option("shuffle_fishing_pole") or state:has(Items.FISHING_POLE))
-    end
-
-    if item == Items.EPONA then
-        return state:has(Events.FREED_EPONA)
-    end
-
-    if adult_trade_items[item] then
-        return not world:get_option("shuffle_adult_trade_items") or state:has(item)
-    end
-
-    if item == Items.BOTTLE_WITH_BLUE_FIRE then
-        return LogicHelpers.has_bottle(bundle) and (state:has(Events.CAN_ACCESS_BLUE_FIRE) or state:has(Items.BUY_BLUE_FIRE))
-    end
-
-    if item == Items.BOTTLE_WITH_BLUE_POTION then
-        return LogicHelpers.has_bottle(bundle) and state:has(Items.BUY_BLUE_POTION)
-    end
-
-    if item == Items.BOTTLE_WITH_BUGS then
-        return LogicHelpers.has_bottle(bundle) and (state:has(Events.CAN_ACCESS_BUGS) or state:has(Items.BUY_BOTTLE_BUG))
-    end
-
-    if item == Items.BOTTLE_WITH_FAIRY then
-        return LogicHelpers.has_bottle(bundle) and
-            (state:has(Events.CAN_ACCESS_FAIRIES) or state:has(Items.BUY_FAIRYS_SPIRIT))
-    end
-
-    if item == Items.BOTTLE_WITH_FISH then
-        return LogicHelpers.has_bottle(bundle) and (state:has(Events.CAN_ACCESS_FISH) or state:has(Items.BUY_FISH))
-    end
-
-    if item == Items.BOTTLE_WITH_GREEN_POTION then
-        return LogicHelpers.has_bottle(bundle) and state:has(Items.BUY_GREEN_POTION)
-    end
-
-    if other_bottles[item] then
-        return LogicHelpers.has_bottle(bundle)
-    end
-
-    return state:has(item, count)
+local bombchu_function = function(item, bundle, count)
+    return LogicHelpers.bombchus_enabled(bundle)
 end
+local adult_trade_function = function(item, bundle, count)
+    return not bundle[3]:get_option("shuffle_adult_trade_items") or bundle[1]:has(item)
+end
+local other_bottles_function = function(item, bundle, count)
+    return LogicHelpers.has_bottle(bundle)
+end
+
+local has_item_function_mapping = {
+    [Items.STICKS] = function(item, bundle, count)
+        return bundle[1]:has_all({Events.CAN_FARM_STICKS, Items.DEKU_STICK_BAG})
+    end,
+    [Items.BOMBCHU_BAG] = bombchu_function,
+    [Items.BOMBCHUS_5] = bombchu_function,
+    [Items.BOMBCHUS_10] = bombchu_function,
+    [Items.BOMBCHUS_20] = bombchu_function,
+    [Items.NUTS] = function(item, bundle, count)
+        return bundle[1]:has_all({Events.CAN_FARM_NUTS, Items.DEKU_NUT_BAG})
+    end,
+    [Items.MAGIC_BEAN] = function(item, bundle, count)
+        return bundle[1]:has_any({Items.MAGIC_BEAN_PACK, Events.CAN_BUY_BEANS})
+    end,
+    [Items.SCARECROW] = function(item, bundle, count)
+        return LogicHelpers.scarecrows_song(bundle) and LogicHelpers.can_use(Items.HOOKSHOT, bundle)
+    end,
+    [Items.DISTANT_SCARECROW] = function(item, bundle, count)
+        return LogicHelpers.scarecrows_song(bundle) and LogicHelpers.can_use(Items.LONGSHOT, bundle)
+    end,
+    [Items.FISHING_POLE] = function(item, bundle, count)
+        return (not bundle[3]:get_option("shuffle_fishing_pole") or bundle[1]:has(Items.FISHING_POLE))
+    end,
+    [Items.EPONA] = function(item, bundle, count)
+        return bundle[1]:has(Events.FREED_EPONA)
+    end,
+    [Items.BROKEN_GORONS_SWORD] = adult_trade_function,
+    [Items.COJIRO] = adult_trade_function,
+    [Items.EYEBALL_FROG] = adult_trade_function,
+    [Items.ODD_MUSHROOM] = adult_trade_function,
+    [Items.ODD_POTION] = adult_trade_function,
+    [Items.POACHERS_SAW] = adult_trade_function,
+    [Items.POCKET_EGG] = adult_trade_function,
+    [Items.PRESCRIPTION] = adult_trade_function,
+    [Items.WORLDS_FINEST_EYEDROPS] = adult_trade_function,
+    [Items.BOTTLE_WITH_BLUE_FIRE] = function(item, bundle, count)
+        return LogicHelpers.has_bottle(bundle) and
+            (bundle[1]:has(Events.CAN_ACCESS_BLUE_FIRE) or bundle[1]:has(Items.BUY_BLUE_FIRE))
+    end,
+    [Items.BOTTLE_WITH_BLUE_POTION] = function(item, bundle, count)
+        return LogicHelpers.has_bottle(bundle) and bundle[1]:has(Items.BUY_BLUE_POTION)
+    end,
+    [Items.BOTTLE_WITH_BUGS] = function(item, bundle, count)
+        return LogicHelpers.has_bottle(bundle) and
+            (bundle[1]:has(Events.CAN_ACCESS_BUGS) or bundle[1]:has(Items.BUY_BOTTLE_BUG))
+    end,
+    [Items.BOTTLE_WITH_FAIRY] = function(item, bundle, count)
+        return LogicHelpers.has_bottle(bundle) and
+            (bundle[1]:has(Events.CAN_ACCESS_FAIRIES) or bundle[1]:has(Items.BUY_FAIRYS_SPIRIT))
+    end,
+    [Items.BOTTLE_WITH_FISH] = function(item, bundle, count)
+        return LogicHelpers.has_bottle(bundle) and (bundle[1]:has(Events.CAN_ACCESS_FISH) or bundle[1]:has(Items.BUY_FISH))
+    end,
+    [Items.BOTTLE_WITH_GREEN_POTION] = function(item, bundle, count)
+        return LogicHelpers.has_bottle(bundle) and bundle[1]:has(Items.BUY_GREEN_POTION)
+    end,
+    [Items.BOTTLE_WITH_MILK] = other_bottles_function,
+    [Items.BOTTLE_WITH_POE] = other_bottles_function,
+    [Items.BOTTLE_WITH_RED_POTION] = other_bottles_function,
+    [Items.EMPTY_BOTTLE] = other_bottles_function
+}
 
 function LogicHelpers.has_item(item, bundle, count)
     count = count or 1
+    if has_item_function_mapping[item] then
+        return has_item_function_mapping[item](item, bundle, count)
+    end
+    local state = bundle[1]
+    return state:has(item, count)
+end
+
+LogicHelpers.has_item_cache = {}
+
+function LogicHelpers.has_item_h(item, bundle, count)
+    count = count or 1
     if count == 1 then
-        if has_item_cache[item] ~= nil then
-            return has_item_cache[item]
+        if LogicHelpers.has_item_cache[item] ~= nil then
+            return LogicHelpers.has_item_cache[item]
         end
         local result = LogicHelpers.has_item_helper(item, bundle, count)
-        has_item_cache[item] = result
+        LogicHelpers.has_item_cache[item] = result
         return result
     end
     return LogicHelpers.has_item_helper(item, bundle, count)
+    --]]
 end
 
-function LogicHelpers.clear_cache()
-    has_item_cache = {}
+--mostly for events
+function LogicHelpers.update_has_item_cache(item, value)
+    LogicHelpers.has_item_cache[item] = value
+end
+
+function LogicHelpers.clear_cache(exclude_glitched)
+    LogicHelpers.has_item_cache = exclude_glitched and {[Items.GLITCHED] = LogicHelpers.has_item_cache[Items.GLITCHED]} or {}
 end
 
 function LogicHelpers.merchant_shuffled(location_name, bundle)
@@ -429,11 +434,14 @@ function LogicHelpers.merchant_shuffled(location_name, bundle)
     end
 end
 
-function LogicHelpers.can_afford_item(item_group, item, bundle)
-    if bundle[3][item_group] == nil then
-        return false
+function LogicHelpers.can_afford_item(shop_group, item, bundle)
+    local world = bundle[3]
+    --scrub_prices and merchant_prices tables were merged into shop_prices in 1.3.0
+    --for backwards compabitility, if the item key exists in shop_prices, use that instead of the supplied shop_group
+    if not world[shop_group] then
+        shop_group = "shop_prices"
     end
-    local price = bundle[3][item_group][item]
+    local price = world[shop_group][item]
     price = price or 0
     return LogicHelpers.can_afford_price(price, bundle)
 end
@@ -626,7 +634,7 @@ end
 function LogicHelpers.can_do_trick(trick, bundle)
     local state = bundle[1]
     local world = bundle[3]
-    if trick == nil or state.has_all_items then
+    if trick == nil then
         return false
     end
     return world:get_option("enable_all_tricks") or state:has(trick) or LogicHelpers.has_item(Items.GLITCHED, bundle)
@@ -1301,8 +1309,8 @@ function LogicHelpers.can_build_rainbow_bridge(bundle)
     local greg_reward = 0
     if
         LogicHelpers.has_item(Items.GREG_THE_GREEN_RUPEE, bundle) and
-        world:get_option("rainbow_bridge_greg_modifier") == Options.BRIDGE_GREG_MODIFIER_REWARD
-    then
+            world:get_option("rainbow_bridge_greg_modifier") == Options.BRIDGE_GREG_MODIFIER_REWARD
+     then
         greg_reward = 1
     end
 
@@ -1345,7 +1353,8 @@ end
 
 function LogicHelpers.get_gs_count(bundle)
     local state = bundle[1]
-    return state:count(Items.GOLD_SKULLTULA_TOKEN)
+    local glitched_count = LogicHelpers.has_item(Items.GLITCHED, bundle) and state.vanilla_skulltulas_out_of_logic or 0
+    return state:count(Items.GOLD_SKULLTULA_TOKEN) + state.vanilla_skulltulas_in_logic + glitched_count
 end
 
 function LogicHelpers.can_trigger_lacs(bundle)
@@ -1408,6 +1417,13 @@ end
 
 function LogicHelpers.can_ground_jump(bundle, has_bomb_flower)
     has_bomb_flower = has_bomb_flower or false
+    if has_bomb_flower then
+        return LogicHelpers.can_do_trick(Tricks.GROUND_JUMP, bundle) and LogicHelpers.can_standing_shield(bundle) and
+            (LogicHelpers.can_use(Items.BOMB_BAG, bundle) or LogicHelpers.has_item(Items.GORONS_BRACELET, bundle))
+    else
+        return (LogicHelpers.can_do_trick(Tricks.GROUND_JUMP, bundle) and LogicHelpers.can_standing_shield(bundle) and
+            LogicHelpers.can_use(Items.BOMB_BAG, bundle))
+    end
 end
 
 function LogicHelpers.can_clear_stalagmite(bundle)
@@ -1421,10 +1437,11 @@ function REACHABLE(location_name)
         print(string.format("Could not find location with name: %s", location_name))
         return
     end
-    if location:can_reach(SOH_COLLECTION_STATE) then
-        return ACCESS_NORMAL
+    local access = location:can_reach(SOH_COLLECTION_STATE)
+    if access == ACCESS_SEQUENCEBREAK and Tracker:FindObjectForCode("setting_show_out_of_logic_checks").Active == false then
+        return ACCESS_NONE
     end
-    return ACCESS_NONE
+    return access
 end
 
 function OPTION_OCARINA_SHUFFLE()
@@ -1589,15 +1606,30 @@ function OPTION_CARPENTERS_NOT_FREE()
     return SOH_COLLECTION_STATE.world:get_option("fortress_carpenters") ~= Options.CARPENTERS_FREE
 end
 
+function OPTION_GANON_GOAL()
+    return SOH_COLLECTION_STATE.world:get_option("triforce_hunt") == false
+end
+
 function AGE_CHECK(location_name)
     local child_only = SOH_COLLECTION_STATE.world.regions.child_only_locations
     local adult_only = SOH_COLLECTION_STATE.world.regions.adult_only_locations
+    local child_only_sequence_break = SOH_COLLECTION_STATE.world.regions.child_only_sequence_break_locations
+    local adult_only_sequence_break = SOH_COLLECTION_STATE.world.regions.adult_only_sequence_break_locations
+    local show_out_of_logic = Tracker:FindObjectForCode("setting_show_out_of_logic_checks").Active
     local actual_name = Locations[location_name]
-    if child_only[actual_name] and SETTING_SHOW_CHECKS == ShowChecks.ADULT then
-        return false
+    if SETTING_SHOW_CHECKS == ShowChecks.CHILD then
+        if not show_out_of_logic and adult_only[actual_name] then
+            return false
+        elseif show_out_of_logic and adult_only_sequence_break[actual_name] then
+            return false
+        end
     end
-    if adult_only[actual_name] and SETTING_SHOW_CHECKS == ShowChecks.CHILD then
-        return false
+    if SETTING_SHOW_CHECKS == ShowChecks.ADULT then
+        if not show_out_of_logic and child_only[actual_name] then
+            return false
+        elseif show_out_of_logic and child_only_sequence_break[actual_name] then
+            return false
+        end
     end
     return true
 end
