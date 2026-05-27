@@ -32,7 +32,7 @@
     ],
     "initial_stage_idx": 1
   },
-    {
+  {
     "name": "Masks",
     "type": "progressive",
     "stages": [
@@ -242,7 +242,7 @@
     "codes": "bombs_20"
   },
   {
-    "name": "Magic Bean",
+    "name": "Magic Beans",
     "type": "toggle",
     "img": "images/items/magic_bean.png",
     "codes": "magic_bean_pack"
@@ -878,9 +878,20 @@
   },
   {
     "name": "Hylian Shield",
-    "type": "toggle",
-    "img": "images/items/hylian_shield.png",
-    "codes": "hylian_shield"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Hylian Shield",
+        "img": "images/items/hylian_shield_item_only.png",
+        "disabled_img": "images/items/hylian_shield_off.png",
+        "disabled_img_mods": "@disabled|false",
+        "codes": "hylian_shield"
+      },
+      {
+        "name": "Can Buy Hylian Shield",
+        "img": "images/items/hylian_shield_buyable.png"
+      }
+    ]
   },
   {
     "name": "Nocturne of Shadow",
@@ -1026,9 +1037,20 @@
   },
   {
     "name": "Zora Tunic",
-    "type": "toggle",
-    "img": "images/items/zora_tunic.png",
-    "codes": "zora_tunic"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Zora Tunic",
+        "img": "images/items/zora_tunic_item_only.png",
+        "disabled_img": "images/items/zora_tunic_off.png",
+        "disabled_img_mods": "@disabled|false",
+        "codes": "zora_tunic"
+      },
+      {
+        "name": "Can Buy Zora Tunic",
+        "img": "images/items/zora_tunic_buyable.png"
+      }
+    ]
   },
   {
     "name": "Talon's House Key",
@@ -1059,7 +1081,7 @@
   {
     "name": "Fire Temple Small Key",
     "type": "consumable",
-    "overlay_background": "#000000",
+    "overlay_background": "#00000000",
     "max_quantity": 8,
     "img": "images/items/small_key.png",
     "codes": "fire_temple_small_key"
@@ -1455,9 +1477,20 @@
   },
   {
     "name": "Deku Shield",
-    "type": "toggle",
-    "img": "images/items/deku_shield.png",
-    "codes": "deku_shield"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Deku Shield",
+        "img": "images/items/deku_shield_item_only.png",
+        "disabled_img": "images/items/deku_shield_off.png",
+        "disabled_img_mods": "@disabled|false",
+        "codes": "deku_shield"
+      },
+      {
+        "name": "Can Buy Deku Shield",
+        "img": "images/items/deku_shield_buyable.png"
+      }
+    ]
   },
   {
     "name": "Odd Potion",
@@ -1488,9 +1521,20 @@
   },
   {
     "name": "Goron Tunic",
-    "type": "toggle",
-    "img": "images/items/goron_tunic.png",
-    "codes": "goron_tunic"
+    "type": "progressive",
+    "stages": [
+      {
+        "name": "Goron Tunic",
+        "img": "images/items/goron_tunic_item_only.png",
+        "disabled_img": "images/items/goron_tunic_off.png",
+        "disabled_img_mods": "@disabled|false",
+        "codes": "goron_tunic"
+      },
+      {
+        "name": "Can Buy Goron Tunic",
+        "img": "images/items/goron_tunic_buyable.png"
+      }
+    ]
   },
   {
     "name": "Bombchus (20)",
@@ -1741,27 +1785,27 @@
     "type": "toggle",
     "codes": "buy_blue_fire"
   },
-    {
+  {
     "name": "Can Buy Bugs",
     "type": "toggle",
     "codes": "buy_bottle_bug"
   },
-    {
+  {
     "name": "Can Buy Poe",
     "type": "toggle",
     "codes": "buy_poe"
   },
-    {
+  {
     "name": "Can Buy Fish",
     "type": "toggle",
     "codes": "buy_fish"
   },
-    {
+  {
     "name": "Can Buy Blue Potion",
     "type": "toggle",
     "codes": "buy_blue_potion"
   },
-      {
+  {
     "name": "Can Buy Green Potion",
     "type": "toggle",
     "codes": "buy_green_potion"
