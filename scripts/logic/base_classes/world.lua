@@ -130,8 +130,6 @@ function World:apply_slot_data(slot_data)
             local loc = self:get_location(location)
             if loc then
                 loc.parent_region:add_event(location, item, loc.access_rule, SoHLocation)
-            else
-                print(location)
             end
         end
     end

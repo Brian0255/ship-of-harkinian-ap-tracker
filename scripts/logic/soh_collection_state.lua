@@ -38,22 +38,6 @@ local progressive_item_map = {
     [Items.MAGIC_DOUBLE] = {item = Items.PROGRESSIVE_MAGIC_METER, count = 2}
 }
 
-local vanilla_shop_items = {
-    [Items.DEKU_SHIELD] = {slot_data_name = "Buy Deku Shield", is_tunic_or_shield = true},
-    [Items.HYLIAN_SHIELD] = {slot_data_name = "Buy Hylian Shield", is_tunic_or_shield = true},
-    [Items.GORON_TUNIC] = {slot_data_name = "Buy Goron Tunic", is_tunic_or_shield = true},
-    [Items.ZORA_TUNIC] = {slot_data_name = "Buy Zora Tunic", is_tunic_or_shield = true},
-    [Items.BUY_BLUE_POTION] = {slot_data_name = "Buy Blue Potion"},
-    [Items.BUY_FISH] = {slot_data_name = "Buy Fish"},
-    [Items.BUY_POE] = {slot_data_name = "Buy Poe"},
-    [Items.BUY_BOMBCHUS10] = {slot_data_name = "Buy Bombchu (10)"},
-    [Items.BUY_BOMBCHUS20] = {slot_data_name = "Buy Bombchu (20)"},
-    [Items.BUY_GREEN_POTION] = {slot_data_name = "Buy Green Potion"},
-    [Items.BUY_BOTTLE_BUG] = {slot_data_name = "Buy Bottle Bug"},
-    [Items.BUY_FAIRYS_SPIRIT] = {slot_data_name = "Buy Fairy's Spirit"},
-    [Items.BUY_BLUE_FIRE] = {slot_data_name = "Buy Blue Fire"}
-}
-
 function SoHCollectionState:set_glitched_state(glitched)
     local value = glitched and 1 or 0
     self._current_item_count_cache = not glitched and self._in_logic_item_count_cache or self._glitched_item_count_cache
