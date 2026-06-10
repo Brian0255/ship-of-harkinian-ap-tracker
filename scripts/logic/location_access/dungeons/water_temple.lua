@@ -128,7 +128,7 @@ local function set_region_rules(world)
                     return ((LogicHelpers.has_item(LocalEvents.WATER_LEVEL_LOW, bundle) or
                         LogicHelpers.has_item(LocalEvents.WATER_LEVEL_MIDDLE, bundle) or
                         (LogicHelpers.can_use(Items.IRON_BOOTS, bundle) and LogicHelpers.water_timer(bundle) >= 16)) and
-                        LogicHelpers.can_use(Items.LONGSHOT, bundle))
+                        LogicHelpers.can_use(Items.HOOKSHOT, bundle))
                 end
             },
             {
