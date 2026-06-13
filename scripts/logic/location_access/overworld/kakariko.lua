@@ -117,6 +117,16 @@ local function set_region_rules(world)
                 end
             },
             {
+                Locations.KAK_GS_WATCHTOWER,
+                function(bundle)
+                    return LogicHelpers.is_child(bundle) and
+                        (LogicHelpers.can_kill_enemy(bundle, Enemies.GOLD_SKULLTULA, EnemyDistance.LONGSHOT) or
+                            (LogicHelpers.can_do_trick(Tricks.KAK_TOWER_GS, bundle) and
+                                LogicHelpers.can_jump_slash_except_hammer(bundle))) and
+                        LogicHelpers.can_get_nighttime_gs(bundle)
+                end
+            },
+            {
                 Locations.KAK_NEAR_POTION_SHOP_POT1,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and LogicHelpers.can_break_pots(bundle)
@@ -454,16 +464,6 @@ local function set_region_rules(world)
                 function(bundle)
                     return LogicHelpers.is_adult(bundle) or LogicHelpers.at_day(bundle)
                 end
-            },
-            {
-                Regions.KAK_WATCHTOWER_GS_REGION,
-                function(bundle)
-                    return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.can_kill_enemy(bundle, Enemies.GOLD_SKULLTULA, EnemyDistance.LONGSHOT) or
-                            (LogicHelpers.can_do_trick(Tricks.KAK_TOWER_GS, bundle) and
-                                LogicHelpers.can_jump_slash_except_hammer(bundle))) and
-                        LogicHelpers.can_get_nighttime_gs(bundle)
-                end
             }
         }
     )
@@ -524,21 +524,6 @@ local function set_region_rules(world)
         }
     )
 
-    -- Kak Watchtower GS Region
-    -- Locations
-    LogicHelpers.add_locations(
-        Regions.KAK_WATCHTOWER_GS_REGION,
-        world,
-        {
-            {
-                Locations.KAK_GS_WATCHTOWER,
-                function(bundle)
-                    return true
-                end
-            }
-        }
-    )
-
     --Kak Watchtower
     --Connections
     LogicHelpers.connect_regions(
@@ -555,13 +540,6 @@ local function set_region_rules(world)
                 Regions.KAK_ROOFTOP,
                 function(bundle)
                     return LogicHelpers.can_do_trick(Tricks.KAK_MAN_ON_ROOF, bundle) and LogicHelpers.is_child(bundle)
-                end
-            },
-            {
-                Regions.KAK_WATCHTOWER_GS_REGION,
-                function(bundle)
-                    return LogicHelpers.is_child(bundle) and LogicHelpers.can_use(Items.DINS_FIRE, bundle) and
-                        LogicHelpers.can_get_nighttime_gs(bundle)
                 end
             }
         }
