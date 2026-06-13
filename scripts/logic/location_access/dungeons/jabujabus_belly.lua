@@ -27,12 +27,18 @@ local function set_region_rules(world)
         world,
         {
             --TODO: Add vanilla/MQ check
-            {Regions.JABU_JABUS_BELLY_BEGINNING, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_BEGINNING,
+                function(bundle)
                     return true
-                end},
-            {Regions.ZORAS_FOUNTAIN, function(bundle)
+                end
+            },
+            {
+                Regions.ZORAS_FOUNTAIN,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -42,12 +48,18 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_BEGINNING,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_ENTRYWAY, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_ENTRYWAY,
+                function(bundle)
                     return true
-                end},
-            {Regions.JABU_JABUS_BELLY_MAIN, function(bundle)
+                end
+            },
+            {
+                Regions.JABU_JABUS_BELLY_MAIN,
+                function(bundle)
                     return LogicHelpers.can_use_projectile(bundle)
-                end}
+                end
+            }
         }
     )
 
@@ -79,8 +91,8 @@ local function set_region_rules(world)
                         (LogicHelpers.is_child(bundle) or LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or
                             LogicHelpers.can_do_trick(Tricks.JABU_ALCOVE_JUMP_DIVE, bundle) or
                             LogicHelpers.can_use(Items.IRON_BOOTS, bundle)) and
-                            LogicHelpers.can_stun_deku(bundle)
-                        and LogicHelpers.can_afford_item("scrub_prices",Locations.JABU_JABUS_BELLY_DEKU_SCRUB,bundle)
+                        LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.JABU_JABUS_BELLY_DEKU_SCRUB, bundle)
                 end
             },
             {
@@ -114,12 +126,18 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_MAIN,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_BEGINNING, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_BEGINNING,
+                function(bundle)
                     return true
-                end},
-            {Regions.JABU_JABUS_BELLY_B1_NORTH, function(bundle)
+                end
+            },
+            {
+                Regions.JABU_JABUS_BELLY_B1_NORTH,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.JABU_JABUS_BELLY_COMPASS_ROOM,
                 function(bundle)
@@ -150,6 +168,21 @@ local function set_region_rules(world)
                     return LogicHelpers.has_item(LocalEvents.JABU_JABUS_BELLY_LOWERED_PATH_ACTIVATED, bundle) or
                         (LogicHelpers.can_do_trick(Tricks.JABU_BOSS_HOVER, bundle) and
                             LogicHelpers.can_use(Items.HOVER_BOOTS, bundle))
+                end
+            }
+        }
+    )
+
+    -- Jabu Jabu's GS Water Switch Room Region
+    -- Locations
+    LogicHelpers.add_locations(
+        Regions.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM_REGION,
+        world,
+        {
+            {
+                Locations.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM,
+                function(bundle)
+                    return true
                 end
             }
         }
@@ -242,9 +275,12 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_B1_NORTH,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_MAIN, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_MAIN,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.JABU_JABUS_BELLY_WATER_SWITCH_ROOM_LEDGE,
                 function(bundle)
@@ -260,6 +296,12 @@ local function set_region_rules(world)
             },
             {
                 Regions.JABU_JABUS_BELLY_LOBBY_BASEMENT_UPPER_GS,
+                function(bundle)
+                    return LogicHelpers.hookshot_or_boomerang(bundle)
+                end
+            },
+            {
+                Regions.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM_REGION,
                 function(bundle)
                     return LogicHelpers.hookshot_or_boomerang(bundle)
                 end
@@ -288,14 +330,6 @@ local function set_region_rules(world)
         world,
         {
             {
-                Locations.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM,
-                function(bundle)
-                    return LogicHelpers.has_item(Items.BRONZE_SCALE, bundle) or
-                        (LogicHelpers.is_adult(bundle) and LogicHelpers.can_use(Items.HOVER_BOOTS, bundle)) or
-                        LogicHelpers.can_kill_enemy(bundle, Enemies.GOLD_SKULLTULA, EnemyDistance.BOMB_THROW)
-                end
-            },
-            {
                 Locations.JABU_JABUS_BELLY_BASEMENT_POT1,
                 function(bundle)
                     return LogicHelpers.can_break_pots(bundle)
@@ -320,12 +354,26 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_WATER_SWITCH_ROOM_LEDGE,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_B1_NORTH, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_B1_NORTH,
+                function(bundle)
                     return true
-                end},
-            {Regions.JABU_JABUS_BELLY_WATER_SWITCH_ROOM_SOUTH, function(bundle)
+                end
+            },
+            {
+                Regions.JABU_JABUS_BELLY_WATER_SWITCH_ROOM_SOUTH,
+                function(bundle)
                     return true
-                end}
+                end
+            },
+            {
+                Regions.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM_REGION,
+                function(bundle)
+                    return LogicHelpers.has_item(Items.BRONZE_SCALE, bundle) or
+                        (LogicHelpers.is_adult(bundle) and LogicHelpers.can_use(Items.HOVER_BOOTS, bundle)) or
+                        LogicHelpers.can_kill_enemy(bundle, Enemies.GOLD_SKULLTULA, EnemyDistance.BOMB_THROW)
+                end
+            }
         }
     )
 
@@ -348,9 +396,18 @@ local function set_region_rules(world)
                         LogicHelpers.can_use(Items.HOVER_BOOTS, bundle)
                 end
             },
-            {Regions.JABU_JABUS_BELLY_MAIN, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_MAIN,
+                function(bundle)
                     return LogicHelpers.can_use_projectile(bundle)
-                end}
+                end
+            },
+            {
+                Regions.JABU_JABUS_BELLY_GS_WATER_SWITCH_ROOM_REGION,
+                function(bundle)
+                    return LogicHelpers.hookshot_or_boomerang(bundle)
+                end
+            }
         }
     )
 
@@ -446,9 +503,12 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_BIGOCTO_LEDGE,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_B1_NORTH, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_B1_NORTH,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.JABU_JABUS_BELLY_ABOVE_BIGOCTO,
                 function(bundle)
@@ -472,9 +532,12 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_LOBBY_BASEMENT_UPPER_GS,
         world,
         {
-            {Locations.JABU_JABUS_BELLY_GS_LOBBY_BASEMENT_UPPER, function(bundle)
+            {
+                Locations.JABU_JABUS_BELLY_GS_LOBBY_BASEMENT_UPPER,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -558,9 +621,12 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_LIFT_UPPER,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_MAIN, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_MAIN,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -583,9 +649,12 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_NEAR_BOSS_ROOM,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_MAIN, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_MAIN,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.JABU_JABUS_BELLY_BOSS_ENTRYWAY,
                 function(bundle)
@@ -609,9 +678,12 @@ local function set_region_rules(world)
         Regions.JABU_JABUS_BELLY_BOSS_ENTRYWAY,
         world,
         {
-            {Regions.JABU_JABUS_BELLY_BOSS_ROOM, function(bundle)
+            {
+                Regions.JABU_JABUS_BELLY_BOSS_ROOM,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
