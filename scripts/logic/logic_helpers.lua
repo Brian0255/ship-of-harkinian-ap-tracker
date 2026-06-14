@@ -1623,8 +1623,7 @@ function AGE_CHECK(location_name)
         elseif show_out_of_logic and adult_only_sequence_break[actual_name] then
             return false
         end
-    end
-    if SETTING_SHOW_CHECKS == ShowChecks.ADULT then
+    elseif SETTING_SHOW_CHECKS == ShowChecks.ADULT then
         if not show_out_of_logic and child_only[actual_name] then
             return false
         elseif show_out_of_logic and child_only_sequence_break[actual_name] then

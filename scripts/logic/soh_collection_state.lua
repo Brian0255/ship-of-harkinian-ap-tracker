@@ -350,7 +350,7 @@ function SoHCollectionState:on_item_changed(item, force_count)
     elseif obj.Type == "progressive" then
         count = obj.CurrentStage
     elseif obj.Type == "progressive_toggle" then
-        count = Tracker:ProviderCountForCode(item)
+        count = bool_to_count[obj.Active]
     elseif obj.Type == "toggle" then
         count = bool_to_count[obj.Active]
     elseif obj.Type == "static" then
