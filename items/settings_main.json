@@ -1102,7 +1102,7 @@
     "initial_stage_idx": 2,
     "loop": true
   },
-    {
+  {
     "name": "Show Out of Logic Checks",
     "type": "toggle",
     "initial_active_state": true,
@@ -1136,7 +1136,7 @@
     "loop": true
   },
 
-        {
+  {
     "name": "Auto Tab",
     "type": "toggle",
     "img": "images/settings/auto_tab.png",
@@ -1347,7 +1347,7 @@
     "initial_stage_idx": 0,
     "loop": true
   },
-    {
+  {
     "name": "Hint Clarity",
     "type": "progressive",
     "allow_disabled": false,
@@ -1364,6 +1364,28 @@
       }
     ],
     "initial_stage_idx": 2,
+    "loop": true
+  },
+  {
+    "name": "Gossip Stone Hints",
+    "type": "progressive",
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "Gossip Stone Hints: None",
+        "codes": "setting_gossip_stone_hints"
+      },
+      {
+        "name": "Gossip Stone Hints: Need Nothing"
+      },
+      {
+        "name": "Gossip Stone Hints: Need Truth"
+      },
+      {
+        "name": "Gossip Stone Hints: Need Stone"
+      }
+    ],
+    "initial_stage_idx": 1,
     "loop": true
   },
   {
