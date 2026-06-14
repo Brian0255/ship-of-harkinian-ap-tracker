@@ -438,13 +438,13 @@ local function set_region_rules(world)
             {
                 Locations.BOTTOM_OF_THE_WELL_COFFIN_ROOM_FRONT_LEFT_HEART,
                 function(bundle)
-                    return true
+                    return LogicHelpers.has_fire_source_with_torch(bundle) or LogicHelpers.can_use(Items.FAIRY_BOW, bundle)
                 end
             },
             {
                 Locations.BOTTOM_OF_THE_WELL_COFFIN_ROOM_MIDDLE_RIGHT_HEART,
                 function(bundle)
-                    return LogicHelpers.has_fire_source_with_torch(bundle) or LogicHelpers.can_use(Items.FAIRY_BOW, bundle)
+                    return true
                 end
             }
         }
