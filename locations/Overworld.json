@@ -302,10 +302,6 @@
             "ref": "Death Mountain Trail/Great Fairy Fountain/Reward"
           },
           {
-            "name": "Above Dodongo's Cavern - Piece of Heart",
-            "ref": "Death Mountain Trail/Above Dodongo's Cavern/Piece of Heart"
-          },
-          {
             "name": "Biggoron - Trade Broken Sword",
             "ref": "Death Mountain Trail/Biggoron/Trade Broken Sword"
           },
@@ -316,6 +312,10 @@
           {
             "name": "Biggoron - Trade Eyedrops",
             "ref": "Death Mountain Trail/Biggoron/Trade Eyedrops"
+          },
+          {
+            "name": "Above Dodongo's Cavern - Piece of Heart",
+            "ref": "Death Mountain Trail/Above Dodongo's Cavern/Piece of Heart"
           },
           {
             "name": "Bean Patch - Gold Skulltula",
@@ -1508,16 +1508,16 @@
             "ref": "Gerudo Valley/Behind Hammer Boulders/Chest"
           },
           {
+            "name": "Carpenter - Trade Saw",
+            "ref": "Gerudo Valley/Carpenter/Trade Saw"
+          },
+                    {
             "name": "Piece of Heart Crate - Piece of Heart",
             "ref": "Gerudo Valley/Piece of Heart Crate/Piece of Heart"
           },
           {
             "name": "Waterfall - Piece of Heart",
             "ref": "Gerudo Valley/Waterfall/Piece of Heart"
-          },
-          {
-            "name": "Carpenter - Trade Saw",
-            "ref": "Gerudo Valley/Carpenter/Trade Saw"
           },
           {
             "name": "Storms Grotto - Front Scrub",
@@ -3130,15 +3130,6 @@
             "name": "Deku Theater - Skull Mask",
             "ref": "Lost Woods/Deku Theater/Skull Mask"
           },
-
-          {
-            "name": "Ocarina Memory Game - Piece of Heart",
-            "ref": "Lost Woods/Ocarina Memory Game/Piece of Heart"
-          },
-          {
-            "name": "Skull Kid - Piece of Heart",
-            "ref": "Lost Woods/Skull Kid/Piece of Heart"
-          },
           {
             "name": "Skull Kid - Trade Cojiro",
             "ref": "Lost Woods/Skull Kid/Trade Cojiro"
@@ -3150,6 +3141,14 @@
           {
             "name": "Target in Woods - Bullet Bag",
             "ref": "Lost Woods/Target in Woods/Bullet Bag"
+          },
+          {
+            "name": "Ocarina Memory Game - Piece of Heart",
+            "ref": "Lost Woods/Ocarina Memory Game/Piece of Heart"
+          },
+          {
+            "name": "Skull Kid - Piece of Heart",
+            "ref": "Lost Woods/Skull Kid/Piece of Heart"
           },
           {
             "name": "Bean Patch Near Theater - Deku Scrub",
@@ -3278,12 +3277,12 @@
             "ref": "Market/Guard House/10 Big Poes Reward"
           },
           {
-            "name": "Lost Dog - Reward",
-            "ref": "Market/Lost Dog/Reward"
-          },
-          {
             "name": "Shooting Gallery - Reward",
             "ref": "Market/Shooting Gallery/Reward"
+          },
+          {
+            "name": "Lost Dog - Reward",
+            "ref": "Market/Lost Dog/Reward"
           },
           {
             "name": "Treasure Chest Game - Reward",
