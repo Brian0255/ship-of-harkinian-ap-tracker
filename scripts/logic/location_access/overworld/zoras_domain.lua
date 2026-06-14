@@ -109,15 +109,16 @@ local function set_region_rules(world)
                 Locations.ZD_GS_FROZEN_WATERFALL,
                 function(bundle)
                     return LogicHelpers.is_adult(bundle) and
-                        (LogicHelpers.hookshot_or_boomerang(bundle) or LogicHelpers.can_use(Items.FAIRY_SLINGSHOT, bundle) or
-                            LogicHelpers.can_use(Items.FAIRY_BOW, bundle) or
+                        (LogicHelpers.hookshot_or_boomerang(bundle) or
+                            LogicHelpers.can_use_any({Items.FAIRY_SLINGSHOT, Items.FAIRY_BOW}, bundle) or
                             (LogicHelpers.can_use(Items.MAGIC_SINGLE, bundle) and
-                                (LogicHelpers.can_use(Items.MASTER_SWORD, bundle) or
-                                    LogicHelpers.can_use(Items.KOKIRI_SWORD, bundle) or
-                                    LogicHelpers.can_use(Items.BIGGORONS_SWORD, bundle)))) or
-                        (LogicHelpers.can_do_trick(Tricks.ZD_GS, bundle) and
-                            LogicHelpers.can_jump_slash_except_hammer(bundle)) and
-                            LogicHelpers.can_get_nighttime_gs(bundle)
+                                (LogicHelpers.can_use_any(
+                                    {Items.MASTER_SWORD, Items.KOKIRI_SWORD, Items.BIGGORONS_SWORD},
+                                    bundle
+                                ))) or
+                            (LogicHelpers.can_do_trick(Tricks.ZD_GS, bundle) and
+                                LogicHelpers.can_jump_slash_except_hammer(bundle))) and
+                        LogicHelpers.can_get_nighttime_gs(bundle)
                 end
             },
             {
@@ -330,49 +331,49 @@ local function set_region_rules(world)
             {
                 Locations.ZD_SHOP_ITEM1,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM1, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM1, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM2,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM2, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM2, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM3,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM3, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM3, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM4,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM4, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM4, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM5,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM5, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM5, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM6,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM6, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM6, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM7,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM7, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM7, bundle)
                 end
             },
             {
                 Locations.ZD_SHOP_ITEM8,
                 function(bundle)
-                    return LogicHelpers.can_afford_item("shop_prices",Locations.ZD_SHOP_ITEM8, bundle)
+                    return LogicHelpers.can_afford_item("shop_prices", Locations.ZD_SHOP_ITEM8, bundle)
                 end
             }
         }
