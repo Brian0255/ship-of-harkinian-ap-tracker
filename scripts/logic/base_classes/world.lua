@@ -101,6 +101,26 @@ local slot_data_to_vanilla_shop_item = {
     ["Buy Blue Fire"] = Items.BUY_BLUE_FIRE
 }
 
+function World:_process_altar_hint(key, dungeon_reward_order)
+    --if the Altar hint tells us that the Link's pocket check has our own dungeon reward, mark that dungeon reward as "Free" instead of "???"
+    local links_pocket_location_ID = 1
+    if not self.static_hints[key] then return end
+    for index, hint in pairs(self.static_hints[key]) do
+        local player_number, location = hint[1], hint[2]
+        if player_number == Archipelago.PlayerNumber and location == links_pocket_location_ID then
+            local dungeon_reward = Tracker:FindObjectForCode(dungeon_reward_order[index])
+            dungeon_reward.CurrentStage = 1
+        end
+    end
+end
+
+function World:_scan_for_free_dungeon_reward()
+    local child_altar_stone_order = { Items.KOKIRIS_EMERALD, Items.GORONS_RUBY, Items.ZORAS_SAPPHIRE }
+    local adult_altar_stone_order = {Items.LIGHT_MEDALLION, Items.FOREST_MEDALLION, Items.FIRE_MEDALLION, Items.WATER_MEDALLION, Items.SHADOW_MEDALLION, Items.SPIRIT_MEDALLION}
+    self:_process_altar_hint("ToT Altar as Child", child_altar_stone_order)
+    self:_process_altar_hint("ToT Altar as Adult", adult_altar_stone_order)
+end
+
 function World:apply_slot_data(slot_data)
     self.shop_prices = slot_data["shop_prices"]
     self.shop_vanilla_items = slot_data["shop_vanilla_items"]
@@ -133,6 +153,8 @@ function World:apply_slot_data(slot_data)
             end
         end
     end
+
+    self:_scan_for_free_dungeon_reward()
 end
 
 function World:onClear()
