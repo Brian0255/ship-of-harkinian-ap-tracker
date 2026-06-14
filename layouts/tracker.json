@@ -19,7 +19,7 @@
                 "h_alignment": "left",
                 "tabs": [
                   {
-                    "title": "Equipment, Songs and Medallions",
+                    "title": "Equipment, Songs & Rewards",
                     "content": {
                       "type": "array",
                       "orientation": "horizontal",
@@ -52,7 +52,7 @@
                     }
                   },
                   {
-                    "title": "Dungeon Items and Overworld Keys",
+                    "title": "Dungeon Items & Overworld Keys",
                     "content": {
                       "type": "array",
                       "orientation": "horizontal",
