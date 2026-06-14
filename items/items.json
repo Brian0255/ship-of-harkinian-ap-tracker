@@ -70,6 +70,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Light Medallion is Unknown",
+        "img": "images/items/light_medallion.png"
+      },
+      {
+        "name": "Light Medallion is Free",
+        "img": "images/items/light_medallion.png"
+      },
+      {
         "name": "Light Medallion in Deku Tree",
         "img": "images/items/light_medallion.png",
         "codes": "light_medallion"
@@ -100,10 +108,6 @@
       },
       {
         "name": "Light Medallion in Spirit Temple",
-        "img": "images/items/light_medallion.png"
-      },
-      {
-        "name": "Light Medallion is Free",
         "img": "images/items/light_medallion.png"
       }
     ]
@@ -297,6 +301,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Fire Medallion is Unknown",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
+        "name": "Fire Medallion is Free",
+        "img": "images/items/fire_medallion.png"
+      },
+      {
         "name": "Fire Medallion in Deku Tree",
         "img": "images/items/fire_medallion.png",
         "codes": "fire_medallion"
@@ -327,10 +339,6 @@
       },
       {
         "name": "Fire Medallion in Spirit Temple",
-        "img": "images/items/fire_medallion.png"
-      },
-      {
-        "name": "Fire Medallion is Free",
         "img": "images/items/fire_medallion.png"
       }
     ]
@@ -365,6 +373,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Shadow Medallion is Unknown",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
+        "name": "Shadow Medallion is Free",
+        "img": "images/items/shadow_medallion.png"
+      },
+      {
         "name": "Shadow Medallion in Deku Tree",
         "img": "images/items/shadow_medallion.png",
         "codes": "shadow_medallion"
@@ -395,10 +411,6 @@
       },
       {
         "name": "Shadow Medallion in Spirit Temple",
-        "img": "images/items/shadow_medallion.png"
-      },
-      {
-        "name": "Shadow Medallion is Free",
         "img": "images/items/shadow_medallion.png"
       }
     ]
@@ -519,6 +531,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Kokiri's Emerald is Unknown",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
+        "name": "Kokiri's Emerald is Free",
+        "img": "images/items/kokiris_emerald.png"
+      },
+      {
         "name": "Kokiri's Emerald in Deku Tree",
         "img": "images/items/kokiris_emerald.png",
         "codes": "kokiris_emerald"
@@ -549,10 +569,6 @@
       },
       {
         "name": "Kokiri's Emerald in Spirit Temple",
-        "img": "images/items/kokiris_emerald.png"
-      },
-      {
-        "name": "Kokiri's Emerald is Free",
         "img": "images/items/kokiris_emerald.png"
       }
     ]
@@ -722,6 +738,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Goron's Ruby is Unknown",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
+        "name": "Goron's Ruby is Free",
+        "img": "images/items/gorons_ruby.png"
+      },
+      {
         "name": "Goron's Ruby in Deku Tree",
         "img": "images/items/gorons_ruby.png",
         "codes": "gorons_ruby"
@@ -753,10 +777,6 @@
       {
         "name": "Goron's Ruby in Spirit Temple",
         "img": "images/items/gorons_ruby.png"
-      },
-      {
-        "name": "Goron's Ruby is Free",
-        "img": "images/items/gorons_ruby.png"
       }
     ]
   },
@@ -783,6 +803,14 @@
     "type": "progressive_toggle",
     "overlay_align": "center",
     "stages": [
+      {
+        "name": "Spirit Medallion is Unknown",
+        "img": "images/items/spirit_medallion.png"
+      },
+      {
+        "name": "Spirit Medallion is Free",
+        "img": "images/items/spirit_medallion.png"
+      },
       {
         "name": "Spirit Medallion in Deku Tree",
         "img": "images/items/spirit_medallion.png",
@@ -814,10 +842,6 @@
       },
       {
         "name": "Spirit Medallion in Spirit Temple",
-        "img": "images/items/spirit_medallion.png"
-      },
-      {
-        "name": "Spirit Medallion is Free",
         "img": "images/items/spirit_medallion.png"
       }
     ]
@@ -906,6 +930,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Zora's Sapphire is Unknown",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
+        "name": "Zora's Sapphire is Free",
+        "img": "images/items/zoras_sapphire.png"
+      },
+      {
         "name": "Zora's Sapphire in Deku Tree",
         "img": "images/items/zoras_sapphire.png",
         "codes": "zoras_sapphire"
@@ -936,10 +968,6 @@
       },
       {
         "name": "Zora's Sapphire in Spirit Temple",
-        "img": "images/items/zoras_sapphire.png"
-      },
-      {
-        "name": "Zora's Sapphire is Free",
         "img": "images/items/zoras_sapphire.png"
       }
     ]
@@ -1305,6 +1333,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Forest Medallion is Unknown",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
+        "name": "Forest Medallion is Free",
+        "img": "images/items/forest_medallion.png"
+      },
+      {
         "name": "Forest Medallion in Deku Tree",
         "img": "images/items/forest_medallion.png",
         "codes": "forest_medallion"
@@ -1335,10 +1371,6 @@
       },
       {
         "name": "Forest Medallion in Spirit Temple",
-        "img": "images/items/forest_medallion.png"
-      },
-      {
-        "name": "Forest Medallion is Free",
         "img": "images/items/forest_medallion.png"
       }
     ]
@@ -1431,6 +1463,14 @@
     "overlay_align": "center",
     "stages": [
       {
+        "name": "Water Medallion is Unknown",
+        "img": "images/items/water_medallion.png"
+      },
+      {
+        "name": "Water Medallion is Free",
+        "img": "images/items/water_medallion.png"
+      },
+      {
         "name": "Water Medallion in Deku Tree",
         "img": "images/items/water_medallion.png",
         "codes": "water_medallion"
@@ -1461,10 +1501,6 @@
       },
       {
         "name": "Water Medallion in Spirit Temple",
-        "img": "images/items/water_medallion.png"
-      },
-      {
-        "name": "Water Medallion is Free",
         "img": "images/items/water_medallion.png"
       }
     ]
