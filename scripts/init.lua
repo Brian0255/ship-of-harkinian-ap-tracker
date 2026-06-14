@@ -77,7 +77,7 @@ local world = World()
 SoHRegion:create_regions_and_locations(world)
 SOH_COLLECTION_STATE = SoHCollectionState(world)
 
-local text = {"DT", "DC", "JJB", "FoT", "FiT", "WT", "ShT", "SpT", "Free"}
+local text = {"???","Free", "DT", "DC", "JJB", "FoT", "FiT", "WT", "ShT", "SpT"}
 
 local function medallion_changed(medallion)
     local m = Tracker:FindObjectForCode(medallion)

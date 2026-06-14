@@ -128,15 +128,15 @@ local item_affecting_settings_mapping = {
 }
 
 local boss_location_to_medallion_stage = {
-	[1] = 8,
-	[2] = 0,
-	[3] = 1,
-	[4] = 2,
-	[5] = 3,
-	[6] = 4,
-	[7] = 5,
-	[8] = 6,
-	[9] = 7
+	[1] = 1,
+	[2] = 2,
+	[3] = 3,
+	[4] = 4,
+	[5] = 5,
+	[6] = 6,
+	[7] = 7,
+	[8] = 8,
+	[9] = 9
 }
 
 local medallion_ids = {
@@ -389,21 +389,21 @@ function onClear(slot_data)
 		end
 	end
 	-- reset items
-	for _, mapping_entry in pairs(Items.MAPPING) do
-		for _, item_table in ipairs(mapping_entry) do
-			if item_table then
-				local item_code = item_table[1]
-				local item_type = item_table[2]
-				if item_code then
-					resetItem(item_code, item_type)
-				elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-					print(string.format("onClear: skipping item_table with no item_code"))
-				end
-			elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
-				print(string.format("onClear: skipping empty item_table"))
-			end
-		end
-	end
+    for _, mapping_entry in pairs(Items.MAPPING) do
+        for _, item_table in ipairs(mapping_entry) do
+            if item_table then
+                local item_code = item_table[1]
+                local item_type = item_table[2]
+                if item_code then
+                    resetItem(item_code, item_type)
+                elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                    print(string.format("onClear: skipping item_table with no item_code"))
+                end
+            elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+                print(string.format("onClear: skipping empty item_table"))
+            end
+        end
+    end
 	apply_slot_data(slot_data)
 	SOH_COLLECTION_STATE.world:apply_slot_data(slot_data)
 	LOCAL_ITEMS = {}
