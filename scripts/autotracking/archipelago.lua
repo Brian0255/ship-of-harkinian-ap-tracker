@@ -405,7 +405,9 @@ function onClear(slot_data)
         end
     end
 	apply_slot_data(slot_data)
-	SOH_COLLECTION_STATE.world:apply_slot_data(slot_data)
+    SOH_COLLECTION_STATE.world:apply_slot_data(slot_data)
+    resetItem(Items.DEKU_SHIELD, "progressive")
+	resetItem(Items.HYLIAN_SHIELD, "progressive")
 	LOCAL_ITEMS = {}
 	GLOBAL_ITEMS = {}
 	-- manually run snes interface functions after onClear in case we need to update them (i.e. because they need slot_data)
