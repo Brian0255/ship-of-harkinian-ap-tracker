@@ -72,8 +72,8 @@ Tracker:AddLayouts("layouts/main_map_variations/single_map.json")
 
 local SoHCollectionState = require("scripts/logic/soh_collection_state")
 local SoHRegion = require("scripts/logic/soh_region")
-local World = require("scripts/logic/base_classes/world")
-local world = World()
+local SoHWorld = require("scripts/logic/soh_world")
+local world = SoHWorld()
 SoHRegion:create_regions_and_locations(world)
 SOH_COLLECTION_STATE = SoHCollectionState(world)
 
