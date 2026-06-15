@@ -71,7 +71,8 @@
     "stages": [
       {
         "name": "Light Medallion is Unknown",
-        "img": "images/items/light_medallion.png"
+        "img": "images/items/light_medallion.png",
+        "codes": "light_medallion"
       },
       {
         "name": "Light Medallion is Free",
@@ -79,8 +80,7 @@
       },
       {
         "name": "Light Medallion in Deku Tree",
-        "img": "images/items/light_medallion.png",
-        "codes": "light_medallion"
+        "img": "images/items/light_medallion.png"
       },
       {
         "name": "Light Medallion in Dodongo's Cavern",
@@ -302,7 +302,8 @@
     "stages": [
       {
         "name": "Fire Medallion is Unknown",
-        "img": "images/items/fire_medallion.png"
+        "img": "images/items/fire_medallion.png",
+        "codes": "fire_medallion"
       },
       {
         "name": "Fire Medallion is Free",
@@ -310,8 +311,7 @@
       },
       {
         "name": "Fire Medallion in Deku Tree",
-        "img": "images/items/fire_medallion.png",
-        "codes": "fire_medallion"
+        "img": "images/items/fire_medallion.png"
       },
       {
         "name": "Fire Medallion in Dodongo's Cavern",
@@ -374,7 +374,8 @@
     "stages": [
       {
         "name": "Shadow Medallion is Unknown",
-        "img": "images/items/shadow_medallion.png"
+        "img": "images/items/shadow_medallion.png",
+        "codes": "shadow_medallion"
       },
       {
         "name": "Shadow Medallion is Free",
@@ -382,8 +383,7 @@
       },
       {
         "name": "Shadow Medallion in Deku Tree",
-        "img": "images/items/shadow_medallion.png",
-        "codes": "shadow_medallion"
+        "img": "images/items/shadow_medallion.png"
       },
       {
         "name": "Shadow Medallion in Dodongo's Cavern",
@@ -532,7 +532,8 @@
     "stages": [
       {
         "name": "Kokiri's Emerald is Unknown",
-        "img": "images/items/kokiris_emerald.png"
+        "img": "images/items/kokiris_emerald.png",
+        "codes": "kokiris_emerald"
       },
       {
         "name": "Kokiri's Emerald is Free",
@@ -540,8 +541,7 @@
       },
       {
         "name": "Kokiri's Emerald in Deku Tree",
-        "img": "images/items/kokiris_emerald.png",
-        "codes": "kokiris_emerald"
+        "img": "images/items/kokiris_emerald.png"
       },
       {
         "name": "Kokiri's Emerald in Dodongo's Cavern",
@@ -739,7 +739,8 @@
     "stages": [
       {
         "name": "Goron's Ruby is Unknown",
-        "img": "images/items/gorons_ruby.png"
+        "img": "images/items/gorons_ruby.png",
+        "codes": "gorons_ruby"
       },
       {
         "name": "Goron's Ruby is Free",
@@ -747,8 +748,7 @@
       },
       {
         "name": "Goron's Ruby in Deku Tree",
-        "img": "images/items/gorons_ruby.png",
-        "codes": "gorons_ruby"
+        "img": "images/items/gorons_ruby.png"
       },
       {
         "name": "Goron's Ruby in Dodongo's Cavern",
@@ -805,7 +805,8 @@
     "stages": [
       {
         "name": "Spirit Medallion is Unknown",
-        "img": "images/items/spirit_medallion.png"
+        "img": "images/items/spirit_medallion.png",
+        "codes": "spirit_medallion"
       },
       {
         "name": "Spirit Medallion is Free",
@@ -813,8 +814,7 @@
       },
       {
         "name": "Spirit Medallion in Deku Tree",
-        "img": "images/items/spirit_medallion.png",
-        "codes": "spirit_medallion"
+        "img": "images/items/spirit_medallion.png"
       },
       {
         "name": "Spirit Medallion in Dodongo's Cavern",
@@ -931,7 +931,8 @@
     "stages": [
       {
         "name": "Zora's Sapphire is Unknown",
-        "img": "images/items/zoras_sapphire.png"
+        "img": "images/items/zoras_sapphire.png",
+        "codes": "zoras_sapphire"
       },
       {
         "name": "Zora's Sapphire is Free",
@@ -939,8 +940,7 @@
       },
       {
         "name": "Zora's Sapphire in Deku Tree",
-        "img": "images/items/zoras_sapphire.png",
-        "codes": "zoras_sapphire"
+        "img": "images/items/zoras_sapphire.png"
       },
       {
         "name": "Zora's Sapphire in Dodongo's Cavern",
@@ -1334,7 +1334,8 @@
     "stages": [
       {
         "name": "Forest Medallion is Unknown",
-        "img": "images/items/forest_medallion.png"
+        "img": "images/items/forest_medallion.png",
+        "codes": "forest_medallion"
       },
       {
         "name": "Forest Medallion is Free",
@@ -1342,8 +1343,7 @@
       },
       {
         "name": "Forest Medallion in Deku Tree",
-        "img": "images/items/forest_medallion.png",
-        "codes": "forest_medallion"
+        "img": "images/items/forest_medallion.png"
       },
       {
         "name": "Forest Medallion in Dodongo's Cavern",
@@ -1464,7 +1464,8 @@
     "stages": [
       {
         "name": "Water Medallion is Unknown",
-        "img": "images/items/water_medallion.png"
+        "img": "images/items/water_medallion.png",
+        "codes": "water_medallion"
       },
       {
         "name": "Water Medallion is Free",
@@ -1472,8 +1473,7 @@
       },
       {
         "name": "Water Medallion in Deku Tree",
-        "img": "images/items/water_medallion.png",
-        "codes": "water_medallion"
+        "img": "images/items/water_medallion.png"
       },
       {
         "name": "Water Medallion in Dodongo's Cavern",
