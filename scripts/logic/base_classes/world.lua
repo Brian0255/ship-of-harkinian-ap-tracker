@@ -33,6 +33,7 @@ function World.new()
     self.required_trials = {}
     self.hintable_items = {}
     self.static_hints = {}
+    self.free_dungeon_reward = nil
 
     return self
 end
@@ -101,24 +102,32 @@ local slot_data_to_vanilla_shop_item = {
     ["Buy Blue Fire"] = Items.BUY_BLUE_FIRE
 }
 
-function World:_process_altar_hint(key, dungeon_reward_order)
+function World:_scan_altar_hint(key, dungeon_reward_order)
     --if the Altar hint tells us that the Link's pocket check has our own dungeon reward, mark that dungeon reward as "Free" instead of "???"
     local links_pocket_location_ID = 1
     if not self.static_hints[key] then return end
     for index, hint in pairs(self.static_hints[key]) do
         local player_number, location = hint[1], hint[2]
         if player_number == Archipelago.PlayerNumber and location == links_pocket_location_ID then
-            local dungeon_reward = Tracker:FindObjectForCode(dungeon_reward_order[index])
-            dungeon_reward.CurrentStage = 1
+            return dungeon_reward_order[index]
         end
+    end
+    return nil
+end
+
+function World:on_item(item_code)
+    if item_code == self.free_dungeon_reward then
+        Tracker:FindObjectForCode(item_code).CurrentStage = 1
     end
 end
 
 function World:_scan_for_free_dungeon_reward()
     local child_altar_stone_order = { Items.KOKIRIS_EMERALD, Items.GORONS_RUBY, Items.ZORAS_SAPPHIRE }
     local adult_altar_stone_order = {Items.LIGHT_MEDALLION, Items.FOREST_MEDALLION, Items.FIRE_MEDALLION, Items.WATER_MEDALLION, Items.SHADOW_MEDALLION, Items.SPIRIT_MEDALLION}
-    self:_process_altar_hint("ToT Altar as Child", child_altar_stone_order)
-    self:_process_altar_hint("ToT Altar as Adult", adult_altar_stone_order)
+    self.free_dungeon_reward = self:_scan_altar_hint("ToT Altar as Child", child_altar_stone_order)
+    if self.free_dungeon_reward == nil then
+        self.free_dungeon_reward = self:_scan_altar_hint("ToT Altar as Adult", adult_altar_stone_order)
+    end
 end
 
 function World:apply_slot_data(slot_data)
@@ -180,6 +189,7 @@ function World:onClear()
             end
         end
     end
+    self.free_dungeon_reward = nil
 end
 
 function World:_compute_child_adult_only_regions(state)

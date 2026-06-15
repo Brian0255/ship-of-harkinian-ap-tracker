@@ -459,7 +459,8 @@ function onItem(index, item_id, item_name, player_number)
 			local item_code = item_table[1]
 			local item_type = item_table[2]
 			local multiplier = item_table[3]
-			if item_code then
+            if item_code then
+				SOH_COLLECTION_STATE.world:on_item(item_code)
 				incrementItem(item_code, item_type, multiplier)
 				-- keep track which items we touch are local and which are global
 				if is_local then
