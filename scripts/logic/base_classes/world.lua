@@ -103,7 +103,7 @@ local slot_data_to_vanilla_shop_item = {
 }
 
 function World:_scan_altar_hint(key, dungeon_reward_order)
-    --if the Altar hint tells us that the Link's pocket check has our own dungeon reward, mark that dungeon reward as "Free" instead of "???"
+    --if the Altar hint tells us that the Link's pocket check has our own dungeon reward, return that as the free dungeon reward
     local links_pocket_location_ID = 1
     if not self.static_hints[key] then return end
     for index, hint in pairs(self.static_hints[key]) do
@@ -115,18 +115,18 @@ function World:_scan_altar_hint(key, dungeon_reward_order)
     return nil
 end
 
-function World:on_item(item_code)
-    if item_code == self.free_dungeon_reward then
-        Tracker:FindObjectForCode(item_code).CurrentStage = 1
-    end
-end
-
 function World:_scan_for_free_dungeon_reward()
     local child_altar_stone_order = { Items.KOKIRIS_EMERALD, Items.GORONS_RUBY, Items.ZORAS_SAPPHIRE }
     local adult_altar_stone_order = {Items.LIGHT_MEDALLION, Items.FOREST_MEDALLION, Items.FIRE_MEDALLION, Items.WATER_MEDALLION, Items.SHADOW_MEDALLION, Items.SPIRIT_MEDALLION}
     self.free_dungeon_reward = self:_scan_altar_hint("ToT Altar as Child", child_altar_stone_order)
     if self.free_dungeon_reward == nil then
         self.free_dungeon_reward = self:_scan_altar_hint("ToT Altar as Adult", adult_altar_stone_order)
+    end
+end
+
+function World:on_item(item_code)
+    if item_code == self.free_dungeon_reward then
+        Tracker:FindObjectForCode(item_code).CurrentStage = 1
     end
 end
 
