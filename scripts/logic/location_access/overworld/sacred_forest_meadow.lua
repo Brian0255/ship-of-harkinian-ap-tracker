@@ -198,7 +198,7 @@ local function set_region_rules(world)
         Regions.SFM_WOLFOS_GROTTO,
         world,
         {
-            {Regions.SACRED_FOREST_MEADOW, function(bundle)
+            {Regions.SFM_ENTRYWAY, function(bundle)
                     return true
                 end}
         }
