@@ -128,7 +128,7 @@ local item_affecting_settings_mapping = {
 	["setting_small_key_shuffle"] = {
 		items = ItemData.item_name_groups["Small Keys"],
 		func = function(code, item, setting)
-			if setting.CurrentStage == Options.SMALL_KEY_SHUFFLE_START_WITH then
+			if code ~= Items.GERUDO_FORTRESS_SMALL_KEY and setting.CurrentStage == Options.SMALL_KEY_SHUFFLE_START_WITH then
 				item.AcquiredCount = item.AcquiredCount + 10
 			end
 		end
@@ -136,7 +136,7 @@ local item_affecting_settings_mapping = {
 	["setting_boss_key_shuffle"] = {
 		items = ItemData.item_name_groups["Boss Keys"],
 		func = function(code, item, setting)
-			if code ~= Items.GERUDO_FORTRESS_SMALL_KEY and setting.CurrentStage == Options.BOSS_KEY_SHUFFLE_START_WITH then
+			if setting.CurrentStage == Options.BOSS_KEY_SHUFFLE_START_WITH then
 				item.Active = true
 			end
 		end
