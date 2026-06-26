@@ -129,7 +129,7 @@ local item_affecting_settings_mapping = {
 		items = ItemData.item_name_groups["Small Keys"],
 		func = function(code, item, setting)
 			if code ~= Items.GERUDO_FORTRESS_SMALL_KEY and setting.CurrentStage == Options.SMALL_KEY_SHUFFLE_START_WITH then
-				item.AcquiredCount = item.AcquiredCount + 10
+				item.AcquiredCount = item.MaxCount
 			end
 		end
     },
