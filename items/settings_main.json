@@ -837,9 +837,13 @@
     "allow_disabled": false,
     "stages": [
       {
-        "name": "Small Key Shuffle: Vanilla",
-        "img": "images/settings/small_keys_vanilla.png",
+        "name": "Small Key Shuffle: Start With",
+        "img": "images/settings/small_keys_start_with.png",
         "codes": "setting_small_key_shuffle"
+      },
+      {
+        "name": "Small Key Shuffle: Vanilla",
+        "img": "images/settings/small_keys_vanilla.png"
       },
       {
         "name": "Shuffle Key Shuffle: Own Dungeon",
@@ -858,7 +862,7 @@
         "img": "images/settings/small_keys_anywhere.png"
       }
     ],
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 2,
     "loop": true
   },
   {
@@ -893,9 +897,13 @@
     "allow_disabled": false,
     "stages": [
       {
-        "name": "Boss Key Shuffle: Vanilla",
-        "img": "images/settings/boss_keys_vanilla.png",
+        "name": "Boss Key Shuffle: Start With",
+        "img": "images/settings/boss_keys_start_with.png",
         "codes": "setting_boss_key_shuffle"
+      },
+      {
+        "name": "Boss Key Shuffle: Vanilla",
+        "img": "images/settings/boss_keys_vanilla.png"
       },
       {
         "name": "Boss Key Shuffle: Own Dungeon",
@@ -914,7 +922,7 @@
         "img": "images/settings/boss_keys_anywhere.png"
       }
     ],
-    "initial_stage_idx": 1,
+    "initial_stage_idx": 2,
     "loop": true
   },
   {
