@@ -1,6 +1,12 @@
 {
   "versions": [
     {
+      "package_version": "1.0.1",
+      "download_url": "https://github.com/Brian0255/ship-of-harkinian-ap-tracker/releases/download/1.0.1/ship-of-harkinian-ap-tracker-1.0.1.zip",
+      "sha256": "010190b30ba8f5fd90235c4b434a6e3f54a43c27bdcfca126e00acd88e62e8df",
+      "changelog": ["Bug fixes"]
+    },
+    {
       "package_version": "1.0.0",
       "download_url": "https://github.com/Brian0255/ship-of-harkinian-ap-tracker/releases/download/1.0.0/ship-of-harkinian-ap-tracker-1.0.0.zip",
       "sha256": "3de06368ece0fe74809096cfbf7d6b06e8afb38459fa9dbc3153c61e7f0dd2bc",
