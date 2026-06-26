@@ -124,7 +124,23 @@ local item_affecting_settings_mapping = {
 				item.CurrentStage = setting.CurrentStage
 			end
 		end
-	}
+    },
+	["setting_small_key_shuffle"] = {
+		items = ItemData.item_name_groups["Small Keys"],
+		func = function(code, item, setting)
+			if setting.CurrentStage == Options.SMALL_KEY_SHUFFLE_START_WITH then
+				item.AcquiredCount = item.AcquiredCount + 10
+			end
+		end
+    },
+	["setting_boss_key_shuffle"] = {
+		items = ItemData.item_name_groups["Boss Keys"],
+		func = function(code, item, setting)
+			if setting.CurrentStage == Options.BOSS_KEY_SHUFFLE_START_WITH then
+				item.Active = true
+			end
+		end
+    },
 }
 
 local boss_location_to_medallion_stage = {
