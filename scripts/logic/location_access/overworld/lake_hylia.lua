@@ -509,6 +509,7 @@ local function set_region_rules(world)
                     return LogicHelpers.has_item(Items.GOLDEN_SCALE, bundle) or
                         (LogicHelpers.can_do_trick(Tricks.LH_LAB_DIVING, bundle) and
                             LogicHelpers.can_use(Items.IRON_BOOTS, bundle) and
+                            LogicHelpers.can_use(Items.HOOKSHOT, bundle) and
                             LogicHelpers.has_item(Items.BRONZE_SCALE, bundle))
                 end
             },
