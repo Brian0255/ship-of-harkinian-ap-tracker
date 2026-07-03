@@ -712,7 +712,7 @@ local function set_region_rules(world)
                 function(bundle)
                     return (LogicHelpers.has_fire_source_with_torch(bundle) or
                         (LogicHelpers.can_do_trick(Tricks.DEKU_B1_BOW_WEBS, bundle) and
-                            LogicHelpers.is_adult(bundle) & LogicHelpers.can_use(Items.FAIRY_BOW, bundle))) and
+                            LogicHelpers.is_adult(bundle) and LogicHelpers.can_use(Items.FAIRY_BOW, bundle))) and
                         (LogicHelpers.has_item(Items.BRONZE_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
                 end
             }
