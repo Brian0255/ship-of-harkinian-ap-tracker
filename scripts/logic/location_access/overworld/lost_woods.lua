@@ -24,9 +24,12 @@ local function set_region_rules(world)
         Regions.LW_FOREST_EXIT,
         world,
         {
-            {Regions.KOKIRI_FOREST, function(bundle)
+            {
+                Regions.KOKIRI_FOREST,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -116,7 +119,7 @@ local function set_region_rules(world)
                 Locations.LW_DEKU_SCRUB_NEAR_BRIDGE,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and LogicHelpers.can_stun_deku(bundle) and
-                    LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_NEAR_BRIDGE,bundle)
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_NEAR_BRIDGE, bundle)
                 end
             },
             {
@@ -129,56 +132,64 @@ local function set_region_rules(world)
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE1,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE2,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE3,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE4,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE5,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE6,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE7,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
                 Locations.LW_UNDERWATER_SHORTCUT_RUPEE8,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) and
-                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle))
+                        (LogicHelpers.has_item(Items.SILVER_SCALE, bundle) or LogicHelpers.can_use(Items.IRON_BOOTS, bundle) or
+                            LogicHelpers.can_use(Items.BOOMERANG, bundle))
                 end
             },
             {
@@ -223,15 +234,24 @@ local function set_region_rules(world)
                     return LogicHelpers.can_use(Items.SONG_OF_STORMS, bundle)
                 end
             },
-            {Locations.LW_NEAR_SHORTCUTS_GRASS1, function(bundle)
+            {
+                Locations.LW_NEAR_SHORTCUTS_GRASS1,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_NEAR_SHORTCUTS_GRASS2, function(bundle)
+                end
+            },
+            {
+                Locations.LW_NEAR_SHORTCUTS_GRASS2,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_NEAR_SHORTCUTS_GRASS3, function(bundle)
+                end
+            },
+            {
+                Locations.LW_NEAR_SHORTCUTS_GRASS3,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end}
+                end
+            }
         }
     )
     --Connections
@@ -239,12 +259,18 @@ local function set_region_rules(world)
         Regions.LOST_WOODS,
         world,
         {
-            {Regions.LW_FOREST_EXIT, function(bundle)
+            {
+                Regions.LW_FOREST_EXIT,
+                function(bundle)
                     return true
-                end},
-            {Regions.GC_WOODS_WARP, function(bundle)
+                end
+            },
+            {
+                Regions.GC_WOODS_WARP,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.LW_BRIDGE,
                 function(bundle)
@@ -272,9 +298,12 @@ local function set_region_rules(world)
                         LogicHelpers.can_do_trick(Tricks.LW_MIDO_BACKFLIP, bundle)
                 end
             },
-            {Regions.LW_NEAR_SHORTCUTS_GROTTO, function(bundle)
+            {
+                Regions.LW_NEAR_SHORTCUTS_GROTTO,
+                function(bundle)
                     return LogicHelpers.blast_or_smash(bundle)
-                end}
+                end
+            }
         }
     )
 
@@ -308,15 +337,15 @@ local function set_region_rules(world)
             {
                 Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_RIGHT,
                 function(bundle)
-                    return LogicHelpers.is_child(bundle) and LogicHelpers.can_stun_deku(bundle)
-                    and LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_RIGHT,bundle)
+                    return LogicHelpers.is_child(bundle) and LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_RIGHT, bundle)
                 end
             },
             {
                 Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_LEFT,
                 function(bundle)
-                    return LogicHelpers.is_child(bundle) and LogicHelpers.can_stun_deku(bundle)
-                    and LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_LEFT,bundle)
+                    return LogicHelpers.is_child(bundle) and LogicHelpers.can_stun_deku(bundle) and
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_NEAR_DEKU_THEATER_LEFT, bundle)
                 end
             },
             {
@@ -341,9 +370,12 @@ local function set_region_rules(world)
                             (world:get_option("shuffle_scrubs") == false and LogicHelpers.can_reflect_nuts(bundle)))
                 end
             },
-            {Locations.LW_BOULDER_RUPEE, function(bundle)
+            {
+                Locations.LW_BOULDER_RUPEE,
+                function(bundle)
                     return LogicHelpers.blast_or_smash(bundle)
-                end},
+                end
+            },
             {
                 Locations.LW_BEAN_SPROUT_NEAR_THEATRE_FAIRY1,
                 function(bundle)
@@ -365,24 +397,42 @@ local function set_region_rules(world)
                         LogicHelpers.can_use(Items.SONG_OF_STORMS, bundle)
                 end
             },
-            {Locations.LW_AFTER_MIDO_GRASS1, function(bundle)
+            {
+                Locations.LW_AFTER_MIDO_GRASS1,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_AFTER_MIDO_GRASS2, function(bundle)
+                end
+            },
+            {
+                Locations.LW_AFTER_MIDO_GRASS2,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_AFTER_MIDO_GRASS3, function(bundle)
+                end
+            },
+            {
+                Locations.LW_AFTER_MIDO_GRASS3,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_NEAR_SFM_GRASS1, function(bundle)
+                end
+            },
+            {
+                Locations.LW_NEAR_SFM_GRASS1,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_NEAR_SFM_GRASS2, function(bundle)
+                end
+            },
+            {
+                Locations.LW_NEAR_SFM_GRASS2,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end},
-            {Locations.LW_NEAR_SFM_GRASS3, function(bundle)
+                end
+            },
+            {
+                Locations.LW_NEAR_SFM_GRASS3,
+                function(bundle)
                     return LogicHelpers.can_cut_shrubs(bundle)
-                end}
+                end
+            }
         }
     )
     --Connections
@@ -390,24 +440,36 @@ local function set_region_rules(world)
         Regions.LW_BEYOND_MIDO,
         world,
         {
-            {Regions.LW_FOREST_EXIT, function(bundle)
+            {
+                Regions.LW_FOREST_EXIT,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Regions.LOST_WOODS,
                 function(bundle)
                     return LogicHelpers.is_child(bundle) or LogicHelpers.can_use(Items.SARIAS_SONG, bundle)
                 end
             },
-            {Regions.SFM_ENTRYWAY, function(bundle)
+            {
+                Regions.SFM_ENTRYWAY,
+                function(bundle)
                     return true
-                end},
-            {Regions.DEKU_THEATER, function(bundle)
+                end
+            },
+            {
+                Regions.DEKU_THEATER,
+                function(bundle)
                     return true
-                end},
-            {Regions.LW_SCRUBS_GROTTO, function(bundle)
+                end
+            },
+            {
+                Regions.LW_SCRUBS_GROTTO,
+                function(bundle)
                     return LogicHelpers.blast_or_smash(bundle)
-                end}
+                end
+            }
         }
     )
 
@@ -452,9 +514,12 @@ local function set_region_rules(world)
         Regions.LW_NEAR_SHORTCUTS_GROTTO,
         world,
         {
-            {Locations.LW_NEAR_SHORTCUTS_GROTTO_CHEST, function(bundle)
+            {
+                Locations.LW_NEAR_SHORTCUTS_GROTTO_CHEST,
+                function(bundle)
                     return true
-                end},
+                end
+            },
             {
                 Locations.LW_NEAR_SHORTCUTS_GROTTO_FISH,
                 function(bundle)
@@ -516,9 +581,12 @@ local function set_region_rules(world)
         Regions.LW_NEAR_SHORTCUTS_GROTTO,
         world,
         {
-            {Regions.LOST_WOODS, function(bundle)
+            {
+                Regions.LOST_WOODS,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -547,9 +615,12 @@ local function set_region_rules(world)
         Regions.DEKU_THEATER,
         world,
         {
-            {Regions.LOST_WOODS, function(bundle)
+            {
+                Regions.LOST_WOODS,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -562,14 +633,14 @@ local function set_region_rules(world)
                 Locations.LW_DEKU_SCRUB_GROTTO_REAR,
                 function(bundle)
                     return LogicHelpers.can_stun_deku(bundle) and
-                    LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_GROTTO_REAR,bundle)
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_GROTTO_REAR, bundle)
                 end
             },
             {
                 Locations.LW_DEKU_SCRUB_GROTTO_FRONT,
                 function(bundle)
                     return LogicHelpers.can_stun_deku(bundle) and
-                    LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_GROTTO_FRONT,bundle)
+                        LogicHelpers.can_afford_item("scrub_prices", Locations.LW_DEKU_SCRUB_GROTTO_FRONT, bundle)
                 end
             },
             {
@@ -591,9 +662,12 @@ local function set_region_rules(world)
         Regions.LW_SCRUBS_GROTTO,
         world,
         {
-            {Regions.LW_BEYOND_MIDO, function(bundle)
+            {
+                Regions.LW_BEYOND_MIDO,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -603,9 +677,12 @@ local function set_region_rules(world)
         Regions.LW_BRIDGE_FROM_FOREST,
         world,
         {
-            {Locations.LW_GIFT_FROM_SARIA, function(bundle)
+            {
+                Locations.LW_GIFT_FROM_SARIA,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
     --Connections
@@ -613,9 +690,12 @@ local function set_region_rules(world)
         Regions.LW_BRIDGE_FROM_FOREST,
         world,
         {
-            {Regions.LW_BRIDGE, function(bundle)
+            {
+                Regions.LW_BRIDGE,
+                function(bundle)
                     return true
-                end}
+                end
+            }
         }
     )
 
@@ -625,15 +705,24 @@ local function set_region_rules(world)
         Regions.LW_BRIDGE,
         world,
         {
-            {Regions.KOKIRI_FOREST, function(bundle)
+            {
+                Regions.KOKIRI_FOREST,
+                function(bundle)
                     return true
-                end},
-            {Regions.HYRULE_FIELD, function(bundle)
+                end
+            },
+            {
+                Regions.HYRULE_FIELD,
+                function(bundle)
                     return true
-                end},
-            {Regions.LOST_WOODS, function(bundle)
+                end
+            },
+            {
+                Regions.LOST_WOODS,
+                function(bundle)
                     return LogicHelpers.can_use(Items.LONGSHOT, bundle)
-                end}
+                end
+            }
         }
     )
 end
