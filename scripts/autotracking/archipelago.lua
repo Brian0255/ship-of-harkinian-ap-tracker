@@ -353,8 +353,9 @@ function apply_slot_data(slot_data)
 					if item_code ~= Items.MASTER_SWORD then
 						Tracker:FindObjectForCode(item_code).Active = setting.Active
 					else
-						Tracker:FindObjectForCode(item_code).Active =
-							setting.Active and Tracker:FindObjectForCode("setting_shuffle_master_sword").Active == false
+						if setting.Active then
+							Tracker:FindObjectForCode(Items.MASTER_SWORD).Active = true
+						end
 					end
 				end
 			end
