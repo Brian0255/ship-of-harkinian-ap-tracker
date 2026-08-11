@@ -3092,6 +3092,10 @@
             "name": "Stables - Cow",
             "ref": "Lon Lon Ranch/Stables/Cow"
           },
+                    {
+            "name": "Tower - Cow",
+            "ref": "Lon Lon Ranch/Tower/Cow"
+          },
           {
             "name": "Deku Scrub Grotto - Beehive",
             "ref": "Lon Lon Ranch/Deku Scrub Grotto/Beehive"
