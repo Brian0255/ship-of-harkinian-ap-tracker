@@ -621,7 +621,7 @@ local function set_region_rules(world)
             {
                 Regions.DEKU_TREE_BASEMENT_BACK_ROOM,
                 function(bundle)
-                    return (LogicHelpers.has_fire_source_with_torch(bundle) or LogicHelpers.can_use(Items.FAIRY_BOW, bundle))
+                    return (LogicHelpers.has_fire_source_with_torch(bundle) or LogicHelpers.can_use(Items.FAIRY_BOW, bundle) and LogicHelpers.blast_or_smash(bundle))
                 end
             },
             {
