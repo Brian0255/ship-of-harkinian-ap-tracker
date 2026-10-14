@@ -2729,14 +2729,12 @@
             "ref": "Kokiri Forest/South Grass/Blue Rupee"
           },
           {
-            "name": "Saria's House - Heart",
-            "access_rules": ["^$REACHABLE|KF_SARIAS_HOUSE_TOP_LEFT_HEART"],
-            "chest_opened_img": "images/chest_images/heart_opened.png",
-            "chest_unopened_img": "images/chest_images/heart_unopened.png",
-            "visibility_rules": [
-              "$OPTION_FREESTANDING_ITEMS_OVERWORLD,$AGE_CHECK|KF_SARIAS_HOUSE_TOP_LEFT_HEART"
-            ],
-            "item_count": 7
+            "name": "Saria's House - House Heart",
+            "ref": "Kokiri Forest/Saria's House/House Heart"
+          },
+                    {
+            "name": "Saria's House - Roof Heart",
+            "ref": "Kokiri Forest/Saria's House/Roof Heart"
           },
           {
             "name": "Boulder Maze - Grass",
